@@ -4,17 +4,17 @@ module.exports = function() {
         'node_modules/jquery/dist/jquery.min.js',
         'node_modules/slick-carousel/slick/slick.min.js'
       ])
-      .pipe($.glp.concat('libs.min.js'))
-      .pipe($.gulp.dest('build/static/js/'))
-      .pipe($.bs.reload({
+      .pipe($.plugins.concat('libs.min.js'))
+      .pipe($.gulp.dest('build/js/'))
+      .pipe($.browserSync.reload({
         stream: true
       }));
   });
 
   $.gulp.task('scripts', function () {
-    return $.gulp.src('src/static/js/main.js')
-      .pipe($.gulp.dest('build/static/js/'))
-      .pipe($.bs.reload({
+    return $.gulp.src('app/assets/js/main.js')
+      .pipe($.gulp.dest('build/js/'))
+      .pipe($.browserSync.reload({
         stream: true
       }));
   });

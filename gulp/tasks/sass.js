@@ -1,18 +1,18 @@
 module.exports = function() {
   $.gulp.task('sass', function () {
-    return $.gulp.src('src/static/scss/main.scss')
-      .pipe($.glp.sourcemaps.init())
-      .pipe($.glp.sass().on('error', $.glp.sass.logError))
-      .pipe($.glp.autoprefixer({
-        browsers: ['last 10 versions']
+    return $.gulp.src('app/assets/scss/main.scss')
+      .pipe($.plugins.sourcemaps.init())
+      .pipe($.plugins.sass().on('error', $.plugins.sass.logError))
+      .pipe($.plugins.autoprefixer({
+        browsers: ['last 2 versions']
       }))
-      .on('error', $.glp.notify.onError({
+      .on('error', $.plugins.notify.onError({
         title: 'Style'
       }))
-      .pipe($.glp.csso())
-      .pipe($.glp.sourcemaps.write())
-      .pipe($.gulp.dest('build/static/css'))
-      .pipe($.bs.reload({
+      .pipe($.plugins.csso())
+      .pipe($.plugins.sourcemaps.write())
+      .pipe($.gulp.dest('build/css'))
+      .pipe($.browserSync.reload({
         stream: true
       }));
   });
