@@ -1,7 +1,7 @@
 {
   "name": "drupal_theme",
   "version": "1.0.0",
-  "description": "Drupal theme prototype description",
+  "description": "Drupal theme prototype based on Gulp build system",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/redlable/drupal_theme.git"
   },
-  "author": "",
+  "author": "Anton Rylov",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/redlable/drupal_theme/issues"
