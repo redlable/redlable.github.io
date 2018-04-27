@@ -1,0 +1,35 @@
+{
+  "name": "drupal_theme",
+  "version": "1.0.0",
+  "description": "Drupal theme prototype description",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/redlable/drupal_theme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/redlable/drupal_theme/issues"
+  },
+  "homepage": "https://github.com/redlable/drupal_theme#readme",
+  "devDependencies": {
+    "browser-sync": "^2.23.6",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-notify": "^3.2.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.4"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "slick-carousel": "^1.8.1"
+  }
+}
