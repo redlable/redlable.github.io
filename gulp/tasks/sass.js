@@ -1,6 +1,6 @@
 module.exports = function() {
   $.gulp.task('sass', function () {
-    return $.gulp.src('app/assets/scss/main.scss')
+    return $.gulp.src('app/assets/scss/screen.scss')
       .pipe($.plugins.sourcemaps.init())
       .pipe($.plugins.sass().on('error', $.plugins.sass.logError))
       .pipe($.plugins.autoprefixer({

@@ -1,0 +1,6 @@
+// Layout
+$site-width: 1024px;
+$grid-gutter: 33px;
+$col-width: 55px;
+$columns: 12;
+$content-width: $col-width * $columns + $grid-gutter * $columns - $grid-gutter;

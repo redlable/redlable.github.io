@@ -12,15 +12,18 @@ html(lang="ru-RU")
     meta(name="viewport" content="width=device-width,initial-scale=1")
     meta(name="keywords" content="")
 
-    link(rel="stylesheet" type='text/css' href="assets/css/main.css")
+    link(rel="stylesheet" type='text/css' href="css/screen.css")
 
   body(class=pageClass)
-    .wrapper
+    .main-wrapper
       include ../modules/header
+
       .content
+        h1 Content
         block content
-      include ../modules/footer
-    script(src="assets/js/jquery.js")
-    script(src="assets/js/libs.min.js")
-    script(src="assets/js/main.js")
-    block script
+
+    include ../modules/footer
+
+    script(src="js/jquery.js")
+    script(src="js/libs.min.js")
+    script(src="js/main.js")
