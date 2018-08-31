@@ -1,0 +1,37 @@
+#footer {
+  padding: 100px 0 225px;
+}
+
+.footer {
+  border-bottom: 1px solid rgba($gray, .2);
+  margin-bottom: 55px;
+  padding-bottom: 25px;
+
+  &__top {
+    .wysiwyg-content {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+
+      img {
+        margin-left: 20px;
+      }
+    }
+  }
+
+  &__center {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__bottom {
+    border: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .copyright {
+    @include font-size(12);
+    line-height: 16px;
+  }
+}

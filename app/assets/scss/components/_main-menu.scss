@@ -1,0 +1,28 @@
+.main-nav {
+  padding-bottom: 40px;
+}
+
+.main-menu {
+  display: flex;
+  justify-content: center;
+
+  &__item {
+    border-right: 2px solid $butterfly-bush;
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  &__link {
+    @include font-size(14);
+    color: $scorpion;
+    margin: 0 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:hover {
+      color: $gray;
+    }
+  }
+}

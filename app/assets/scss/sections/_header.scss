@@ -1,0 +1,23 @@
+#header {
+  position: relative;
+
+  &:after {
+    @include absolute();
+    background: $white-lilac;
+    content: '';
+    height: 530px;
+    z-index: -1;
+  }
+}
+
+.header {
+  &__top {
+    display: flex;
+    justify-content: center;
+    padding: 60px 0;
+  }
+
+  &__bottom {
+
+  }
+}

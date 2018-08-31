@@ -1,6 +1,17 @@
 // Layout
 $site-width: 1024px;
-$grid-gutter: 33px;
-$col-width: 55px;
+$grid-gutter: 20px;
+$col-width: 60px;
 $columns: 12;
 $content-width: $col-width * $columns + $grid-gutter * $columns - $grid-gutter;
+
+// Colors
+$white: #fff;
+$gray: #8A8A8A;
+$black: #000;
+
+$wild-sand: #F4F4F4;
+$boulder: #777;
+$scorpion: #5A5A5A;
+$butterfly-bush: #685194;
+$white-lilac: #ECEBF8;

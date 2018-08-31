@@ -1,0 +1,21 @@
+.footer-nav {
+
+}
+
+.footer-menu {
+  padding-right: 25px;
+
+  &__item {
+    margin-bottom: 30px;
+  }
+
+  &__link {
+    @include font-size(18);
+    color: $boulder;
+    text-decoration: none;
+
+    &:hover {
+      color: $scorpion;
+    }
+  }
+}

@@ -1,3 +1,9 @@
+// Navigation item
+mixin navItem(url, name, className)
+  li(class=className +'__item')
+    a(class=className +'__link' href=url)= name
+
+// Icons
 mixin icon(name, mod)
   - mod = mod || ''
   svg(class="icon icon-" + name + ' ' + mod)

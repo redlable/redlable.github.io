@@ -19,3 +19,9 @@ body {
 #footer {
   flex-shrink: 0;
 }
+
+.section-layout {
+  @include same(auto, margin-left, margin-right);
+  @include same($grid-gutter, padding-left, padding-right);
+  max-width: $content-width;
+}

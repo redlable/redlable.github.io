@@ -1,2 +1,6 @@
+@import "utils/variables";
+@import "utils/mixins";
 @import "utils/normalize";
-@import "base/include";
+@import "base/includes";
+@import "sections/includes";
+@import "components/includes";
