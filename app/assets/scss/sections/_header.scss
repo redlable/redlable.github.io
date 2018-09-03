@@ -4,6 +4,7 @@
   &:after {
     @include absolute();
     background: $white-lilac;
+    border-bottom: 1px solid rgba($logan, .2);
     content: '';
     height: 530px;
     z-index: -1;
