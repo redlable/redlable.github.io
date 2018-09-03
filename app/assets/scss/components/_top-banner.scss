@@ -24,4 +24,22 @@
       max-width: 280px;
     }
   }
+
+  &__info {
+    margin-top: 35px;
+  }
+
+  &__info-content {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+
+    p {
+      margin: 0;
+    }
+  }
+
+  &__info-image {
+    margin-left: 10px;
+  }
 }
