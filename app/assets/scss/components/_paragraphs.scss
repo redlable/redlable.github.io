@@ -2,7 +2,39 @@
   text-align: center;
 
   &.horizontal {
-    display: flex;
-    flex-wrap: wrap;
+    .paragraph__layout {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  &.one-col {
+    .paragraph__layout {
+      @include same(auto, margin-left, margin-right);
+      max-width: 620px;
+    }
+  }
+
+  &.purple-gradient {
+    background-image: radial-gradient(50% 100%, #B19ECF 0%, $butterfly-bush 100%);
+    color: $white;
+    padding: 60px 0;
+  }
+
+  &__title {
+    @include font-size(20);
+    letter-spacing: 4.3px;
+    margin-bottom: 30px;
+    position: relative;
+    text-transform: uppercase;
+
+    &:after {
+      background: $butterfly-bush;
+      content: '';
+      display: block;
+      height: 7px;
+      margin: 20px auto 0;
+      width: 20px;
+    }
   }
 }

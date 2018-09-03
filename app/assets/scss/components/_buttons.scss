@@ -1,0 +1,28 @@
+.btn {
+  @include font-size(14);
+  border: 2px solid transparent;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: $bold;
+  letter-spacing: 2px;
+  line-height: 25px;
+  outline: none;
+  padding: 8px 55px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .3s ease;
+  vertical-align: top;
+
+  &.purple {
+    background: $butterfly-bush;
+    color: $white;
+
+    &:hover {
+      background: $white;
+      border-color: $butterfly-bush;
+      color: $butterfly-bush;
+    }
+  }
+}

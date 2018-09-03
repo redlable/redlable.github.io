@@ -8,6 +8,21 @@
   }
 
   &__copy-with-image--content {
-    background: $logan;
+
+  }
+
+  .overlap-box {
+    background: $white;
+    border-radius: 10px;
+    color: $butterfly-bush;
+    margin: -70px auto 0;
+    padding: 25px 20px;
+    position: relative;
+    width: 75%;
+    z-index: 1;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
   }
 }
