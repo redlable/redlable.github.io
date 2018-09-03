@@ -1,4 +1,13 @@
 body {
+  @include font-size(18);
   background: $wild-sand;
   color: $boulder;
+  font-family: $roboto;
+  line-height: 1.4;
+  min-width: 320px;
+  overflow-x: hidden;
+  word-break: break-word;
+  word-wrap: break-word;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }

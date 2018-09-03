@@ -17,6 +17,9 @@
   &__link {
     @include font-size(14);
     color: $scorpion;
+    display: block;
+    font-weight: $bold;
+    line-height: 1.2;
     margin: 0 18px;
     text-transform: uppercase;
     text-decoration: none;

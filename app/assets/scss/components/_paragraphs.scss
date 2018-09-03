@@ -1,0 +1,8 @@
+.paragraph {
+  text-align: center;
+
+  &.horizontal {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

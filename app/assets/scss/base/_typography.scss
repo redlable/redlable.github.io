@@ -1,0 +1,251 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2;
+  margin: 0;
+  margin-bottom: .7em;
+}
+
+h1 {
+  @include font-size(30);
+
+  @include media-q(min, 768) {
+    @include font-size(36);
+  }
+}
+
+h2 {
+  @include font-size(26);
+
+  @include media-q(min, 768) {
+    @include font-size(30);
+  }
+}
+
+h3 {
+  @include font-size(20);
+
+  @include media-q(min, 768) {
+    @include font-size(22);
+  }
+}
+
+h4 {
+  @include font-size(18);
+
+  @include media-q(min, 768) {
+    @include font-size(20);
+  }
+}
+
+h5,
+h6 {
+  @include font-size(15);
+}
+
+p {
+  margin: 0 0 1.5em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+strong {
+  font-weight: 700;
+}
+
+// WYSIWYG content styles
+.content,
+.summary,
+.cke_editable {
+
+  ol,
+  ul {
+    margin: 0 0 1.5em 20px;
+    padding: 0;
+
+    li {
+      margin-bottom: 0.5em;
+    }
+  }
+
+  ol {
+    counter-reset: section;
+
+    li {
+      &::before {
+        counter-increment: section;
+        content: counter(section) '. ';
+        margin-right: 5px;
+      }
+    }
+  }
+
+  ul {
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    li {
+      padding-left: 25px;
+      position: relative;
+
+      &::before {
+        content: ' ';
+        position: absolute;
+        left: 0;
+        top: 8px;
+        width: 7px;
+        height: 7px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  // Update color for bullets inside table
+
+  blockquote {
+    position: relative;
+    //padding: 0 30px;
+    display: inline-block;
+    //font-style: italic;
+    margin: 20px 0;
+    //color: $primary;
+
+    &::before {
+      left: 0;
+      top: 0;
+    }
+
+    &::after {
+      right: 7px;
+      bottom: 0;
+    }
+
+    p {
+      @include font-size(33);
+      line-height: 1.2;
+      display: inline;
+      margin: 0;
+      font-family: inherit;
+    }
+  }
+}
+
+.low-margin-bottom {
+  margin-bottom: 5px;
+}
+
+.rtecenter {
+  text-align: center;
+}
+
+.rteright {
+  text-align: right;
+}
+
+.rtejustify {
+  text-align: justify;
+}
+
+// Table
+table {
+  margin-top: 3.1em;
+  text-align: left;
+  border: 0;
+
+  caption {
+    margin-bottom: 10px;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 15px;
+  }
+
+  tr {
+    td {
+      background: $white;
+      border-bottom: 1px solid $gray;
+    }
+
+    td:nth-child(odd) {
+      border-bottom: 1px solid $white;
+    }
+  }
+
+  td {
+    border: 0;
+    padding: 20px;
+
+    &:nth-child(odd) {
+      background: rgba($gray, .5);
+    }
+  }
+
+  .gray-bg & {
+    tr {
+      &:last-child {
+        td {
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+// Responsive tables wrapper
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 3.1em;
+  position: relative;
+
+  background: radial-gradient(farthest-side at 0% 50%, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)),
+  radial-gradient(farthest-side at 100% 50%, rgba(0, 0, 0, .2), rgba(0, 0, 0, 0)) 100% 0;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: 10px 100%;
+  margin-bottom: 15px;
+
+  @include media-q(min, 768) {
+    border: 0;
+    background: transparent;
+  }
+
+  table {
+    //min-width: 728px;
+    //margin-top: 0;
+
+    //background: linear-gradient(to right, white 30%, rgba(255, 255, 255, 0)),
+    //linear-gradient(to left, white 30%, rgba(255, 255, 255, 0)) 100% 0;
+    background-size: 50px 100%;
+    background-repeat: no-repeat;
+    max-width: none;
+    margin-bottom: 0;
+    margin-top: 0;
+    width: 100% !important;
+
+    @include media-q(min, 768) {
+      background: none;
+    }
+  }
+}
+
+th {
+  color: $white;
+  padding: 20px;
+  border: 0;
+  border-bottom: 1px solid rgba($white, .5);
+}
+
+thead {
+  th {
+    border-right: 1px solid rgba($white, .5);
+
+    &:last-child {
+      border-right: 0;
+    }
+  }
+}

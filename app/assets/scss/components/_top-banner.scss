@@ -1,0 +1,27 @@
+.top-banner {
+  text-align: center;
+
+  &__container {
+    display: flex;
+  }
+
+  &__content {
+    align-items: center;
+    display: flex;
+    padding: 30px 15px 30px 60px;
+  }
+
+  &__content,
+  &__image {
+    @include flex-basis(50%);
+  }
+
+  &__body {
+    color: $white;
+
+    p {
+      @include same(auto, margin-left, margin-right);
+      max-width: 280px;
+    }
+  }
+}
