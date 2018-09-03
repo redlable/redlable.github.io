@@ -1,13 +1,6 @@
 .paragraph {
   text-align: center;
 
-  &.horizontal {
-    .paragraph__layout {
-      display: flex;
-      flex-wrap: wrap;
-    }
-  }
-
   &.one-col {
     .paragraph__layout {
       @include same(auto, margin-left, margin-right);
@@ -23,10 +16,32 @@
     }
   }
 
+  &.two-cols {
+    .paragraph__layout {
+      align-items: center;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .paragraph__copy--body,
+    .paragraph__image--wrapper {
+      @include flex-basis(50%);
+    }
+
+    .paragraph__copy--body {
+      padding: 0 20px;
+    }
+  }
+
   &.purple-gradient {
     background-image: radial-gradient(50% 100%, #B19ECF 0%, $butterfly-bush 100%);
     color: $white;
     padding: 60px 0;
+  }
+
+  &.gray-bg {
+    background-color: $white-lilac;
+    padding: 60px 0 110px;
   }
 
   &__title {
