@@ -78,8 +78,25 @@
     position: relative;
     z-index: 1;
 
+    .app-store {
+      background: url(../img/content/app-store.png) center no-repeat;
+      background-size: cover;
+    }
+
+    .google-play {
+      background: url(../img/content/google-play.png) center no-repeat;
+      background-size: cover;
+    }
+
     a {
+      height: 42px;
       margin: 4px 0;
+      width: 127px;
+
+      @include media-q(min, 768) {
+        height: 52px;
+        width: 158px;
+      }
     }
   }
 
