@@ -26,6 +26,16 @@
       color: $butterfly-bush;
     }
   }
+
+  &.white {
+    background: $white;
+    color: $camelot;
+
+    &:hover {
+      background: $camelot;
+      color: $white;
+    }
+  }
 }
 
 .hamburger-btn {

@@ -35,13 +35,18 @@
 
     @include media-q(min, 768) {
       .paragraph__copy--body,
-      .paragraph__image--wrapper {
+      .paragraph__image--wrapper,
+      .paragraph__mobile-app {
         @include flex-basis(50%);
       }
     }
 
     .paragraph__copy--body {
-      padding: 0 20px;
+      padding: 0;
+
+      @include media-q(min, 768) {
+        padding: 0 20px;
+      }
 
       p:last-child {
         margin-bottom: 0;
@@ -75,6 +80,23 @@
     @include media-q(min, 768) {
       border-width: 20px;
       padding: 125px 0;
+    }
+  }
+
+  &.pink-bg {
+    background: $hopbush;
+    color: $white;
+    padding-top: 40px;
+
+    @include media-q(min, 768) {
+      overflow: hidden;
+      padding: 130px 0 105px;
+    }
+
+    .paragraph__title {
+      &:after {
+        background: $white;
+      }
     }
   }
 
