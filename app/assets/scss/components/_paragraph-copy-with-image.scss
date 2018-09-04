@@ -1,6 +1,10 @@
 .paragraph {
   &__copy-with-image {
-
+    .paragraph__image--wrapper {
+      img {
+        border-radius: 10px;
+      }
+    }
   }
 
   &__copy-with-image--container {

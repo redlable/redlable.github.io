@@ -33,8 +33,8 @@
     }
   }
 
-  &.purple-gradient {
-    background-image: radial-gradient(50% 100%, #B19ECF 0%, $butterfly-bush 100%);
+  &.purple-bg {
+    background-color: $butterfly-bush;
     color: $white;
     padding: 60px 0;
   }
@@ -42,6 +42,10 @@
   &.gray-bg {
     background-color: $white-lilac;
     padding: 60px 0 110px;
+  }
+
+  &.gradient {
+    background-image: radial-gradient(50% 100%, rgba($white, .3) 0%, rgba($white, 0) 100%);
   }
 
   &__title {
