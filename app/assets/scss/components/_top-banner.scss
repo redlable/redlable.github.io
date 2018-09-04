@@ -4,6 +4,7 @@
 
   &__container {
     display: flex;
+    min-height: 440px;
   }
 
   &__content {
@@ -24,6 +25,12 @@
       @include same(auto, margin-left, margin-right);
       max-width: 280px;
     }
+  }
+
+  &__image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   &__info {
