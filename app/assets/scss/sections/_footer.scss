@@ -1,17 +1,37 @@
 #footer {
-  padding: 100px 0 225px;
+  padding: 60px 0 30px;
+
+  @include media-q(min, 768) {
+    padding: 100px 0 225px;
+  }
 }
 
 .footer {
   border-bottom: 1px solid rgba($gray, .2);
-  margin-bottom: 55px;
-  padding-bottom: 25px;
+  margin-bottom: 35px;
+  padding-bottom: 30px;
+
+  @include media-q(min, 768) {
+    margin-bottom: 55px;
+    padding-bottom: 25px;
+  }
 
   &__top {
     .wysiwyg-content {
+      @include font-size(14);
       align-items: center;
       display: flex;
       flex-wrap: wrap;
+      justify-content: space-between;
+
+      @include media-q(min, 768) {
+        @include font-size(16);
+        justify-content: flex-start;
+      }
+
+      p {
+        margin: 0;
+      }
 
       img {
         margin-left: 20px;
@@ -20,8 +40,10 @@
   }
 
   &__center {
-    display: flex;
-    justify-content: space-between;
+    @include media-q(min, 768) {
+      display: flex;
+      justify-content: space-between;
+    }
   }
 
   &__bottom {

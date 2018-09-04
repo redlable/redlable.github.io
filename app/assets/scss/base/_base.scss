@@ -22,6 +22,17 @@ body {
   }
 }
 
+.active-menu {
+  overflow: hidden;
+
+  &:after {
+    @include absolute();
+    background: rgba($logan, .4);
+    content: '';
+    z-index: 1;
+  }
+}
+
 img {
   height: auto;
   max-width: 100%;

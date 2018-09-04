@@ -40,7 +40,7 @@
   justify-content: center;
   position: absolute;
   transition: background .3s ease;
-  z-index: 2;
+  z-index: 10;
 
   @include media-q(min, 991) {
     display: none;

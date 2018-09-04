@@ -22,14 +22,18 @@
 
   &.two-cols {
     .paragraph__layout {
-      align-items: center;
-      display: flex;
-      flex-wrap: wrap;
+      @include media-q(min, 768) {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+      }
     }
 
-    .paragraph__copy--body,
-    .paragraph__image--wrapper {
-      @include flex-basis(50%);
+    @include media-q(min, 768) {
+      .paragraph__copy--body,
+      .paragraph__image--wrapper {
+        @include flex-basis(50%);
+      }
     }
 
     .paragraph__copy--body {
@@ -49,7 +53,11 @@
 
   &.gray-bg {
     background-color: $white-lilac;
-    padding: 60px 0 110px;
+    padding: 40px 0;
+
+    @include media-q(min, 768) {
+      padding: 60px 0 110px;
+    }
   }
 
   &.gradient {

@@ -1,21 +1,41 @@
 .footer-nav {
+  &:last-child {
+    .footer-menu__item {
+      &:last-child {
+        margin-bottom: 0;
 
+        @include media-q(min, 768) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
 }
 
 .footer-menu {
-  padding-right: 25px;
+  @include media-q(min, 768) {
+    padding-right: 25px;
+  }
 
   &__item {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+
+    @include media-q(min, 768) {
+      margin-bottom: 30px;
+    }
   }
 
   &__link {
-    @include font-size(18);
+    @include font-size(15);
     color: $boulder;
     text-decoration: none;
 
     &:hover {
       color: $scorpion;
+    }
+
+    @include media-q(min, 768) {
+      @include font-size(18);
     }
   }
 }

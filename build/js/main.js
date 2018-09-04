@@ -41,8 +41,7 @@
   isTouchDevice();
 
   // Toggle mobile and desktop behavior
-  var $body = $('body'),
-      $headerBottom = $('.header__bottom');
+  var $body = $('body');
 
   window.innerWidth < 991 ? $body.addClass('mobile-behavior') : $body.addClass('desktop-behavior');
 
@@ -50,12 +49,12 @@
     return window.innerWidth < 991;
   }, function(isTrue) {
     isTrue ? $body.removeClass('desktop-behavior').addClass('mobile-behavior') : $body.removeClass('mobile-behavior').addClass('desktop-behavior');
-    !isTrue ? $headerBottom.removeClass('active-menu') : '';
+    !isTrue ? $body.removeClass('active-menu') : '';
   });
 
   // $('.slider').slick();
 
   $('.hamburger-btn').on('click', function() {
-    $(this).parent().toggleClass('active-menu');
+    $body.toggleClass('active-menu');
   });
 })(jQuery);

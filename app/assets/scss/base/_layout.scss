@@ -22,6 +22,10 @@ body {
 
 .section-layout {
   @include same(auto, margin-left, margin-right);
-  @include same($grid-gutter, padding-left, padding-right);
+  @include same(25px, padding-left, padding-right);
   max-width: $content-width;
+
+  @include media-q(min, 768) {
+    @include same($grid-gutter, padding-left, padding-right);
+  }
 }
