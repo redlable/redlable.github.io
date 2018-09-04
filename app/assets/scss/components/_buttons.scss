@@ -27,3 +27,46 @@
     }
   }
 }
+
+.hamburger-btn {
+  @include same(40px, height, width);
+  @include same(25px, right, top);
+  align-items: center;
+  background: $wild-sand;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  transition: background .3s ease;
+  z-index: 2;
+
+  @include media-q(min, 991) {
+    display: none;
+  }
+
+  > div {
+    background: $butterfly-bush;
+    height: 3px;
+    margin: 2px 0;
+    transition: .3s ease;
+    width: 18px;
+  }
+
+  .active-menu & {
+    > div {
+      &:first-child {
+        transform: rotate(45deg) translate(5px, 4px);
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:last-child {
+        transform: rotate(-45deg) translate(6px, -5px);
+      }
+    }
+  }
+}

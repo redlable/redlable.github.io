@@ -10,7 +10,7 @@ h6 {
 }
 
 h1 {
-  @include font-size(30);
+  @include font-size(21);
 
   @include media-q(min, 768) {
     @include font-size(36);
@@ -18,7 +18,7 @@ h1 {
 }
 
 h2 {
-  @include font-size(26);
+  @include font-size(21);
 
   @include media-q(min, 768) {
     @include font-size(30);
@@ -26,7 +26,7 @@ h2 {
 }
 
 h3 {
-  @include font-size(20);
+  @include font-size(18);
 
   @include media-q(min, 768) {
     @include font-size(22);
@@ -34,7 +34,7 @@ h3 {
 }
 
 h4 {
-  @include font-size(18);
+  @include font-size(16);
 
   @include media-q(min, 768) {
     @include font-size(20);

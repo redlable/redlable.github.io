@@ -19,11 +19,17 @@
     background: $white;
     border-radius: 10px;
     color: $butterfly-bush;
-    margin: -70px auto 0;
-    padding: 25px 20px;
+    margin: -40px auto 0;
+    padding: 20px 25px;
     position: relative;
-    width: 75%;
+    width: 87%;
     z-index: 1;
+
+    @include media-q(min, 768) {
+      margin-top: -70px;
+      padding: 25px 20px;
+      width: 75%;
+    }
 
     p:last-child {
       margin-bottom: 0;

@@ -5,7 +5,7 @@
 }
 
 body {
-  @include font-size(18);
+  @include font-size(16);
   background: $wild-sand;
   color: $boulder;
   font-family: $roboto;
@@ -16,6 +16,10 @@ body {
   word-wrap: break-word;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+
+  @include media-q(min, 768) {
+    @include font-size(18);
+  }
 }
 
 img {

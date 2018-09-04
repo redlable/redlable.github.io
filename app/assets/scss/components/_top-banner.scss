@@ -1,29 +1,50 @@
 .top-banner {
-  margin-bottom: 60px;
+  margin-bottom: 25px;
   text-align: center;
+
+  @include media-q(min, 768) {
+    margin-bottom: 60px;
+  }
 
   &__container {
     display: flex;
-    min-height: 440px;
+    min-height: 320px;
+
+    @include media-q(min, 768) {
+      min-height: 440px;
+    }
   }
 
   &__content {
     align-items: center;
     display: flex;
-    padding: 30px 15px 30px 60px;
+    padding: 40px 20px;
+
+    @include media-q(min, 768) {
+      padding: 30px 15px 30px 60px;
+    }
   }
 
   &__content,
   &__image {
-    @include flex-basis(50%);
+    @include media-q(min, 768) {
+      @include flex-basis(50%);
+    }
   }
 
   &__body {
+    @include font-size(15);
     color: $white;
 
+    @include media-q(min, 768) {
+      @include font-size(18);
+    }
+
     p {
-      @include same(auto, margin-left, margin-right);
-      max-width: 280px;
+      @include media-q(min, 768) {
+        @include same(auto, margin-left, margin-right);
+        max-width: 280px;
+      }
     }
   }
 
@@ -31,16 +52,32 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    display: none;
+
+    @include media-q(min, 768) {
+      display: block;
+    }
   }
 
   &__info {
-    margin-top: 35px;
+    margin-top: 20px;
+
+    @include media-q(min, 768) {
+      margin-top: 35px;
+    }
   }
 
   &__info-content {
+    @include font-size(14);
     align-items: center;
     display: flex;
     justify-content: center;
+    letter-spacing: 1.17px;
+
+    @include media-q(min, 768) {
+      @include font-size(18);
+      letter-spacing: 1.5px;
+    }
 
     p {
       margin: 0;
