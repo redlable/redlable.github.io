@@ -31,6 +31,8 @@
   @include media-q(min, 991) {
     display: flex;
     justify-content: center;
+    position: relative;
+    z-index: 1;
   }
 
   &__item {

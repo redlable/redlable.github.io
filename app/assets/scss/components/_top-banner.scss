@@ -1,6 +1,8 @@
 .top-banner {
   margin-bottom: 25px;
+  position: relative;
   text-align: center;
+  z-index: 1;
 
   @include media-q(min, 768) {
     margin-bottom: 60px;

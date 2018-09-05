@@ -7,7 +7,6 @@
     border-bottom: 1px solid rgba($logan, .2);
     content: '';
     height: 283px;
-    z-index: -1;
   }
 
   @include media-q(min, 991) {
@@ -30,6 +29,8 @@
 
   .site-logo {
     max-width: 175px;
+    position: relative;
+    z-index: 1;
 
     @include media-q(min, 991) {
       max-width: 100%;
