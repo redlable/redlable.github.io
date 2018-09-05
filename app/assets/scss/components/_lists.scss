@@ -1,0 +1,56 @@
+.list--links {
+  &__container {
+    @include media-q(min, 768) {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  &__item {
+
+  }
+
+  &__link {
+    @include font-size(14);
+    border-bottom: 1px solid rgba($dusty-gray, .2);
+    color: $boulder;
+    display: block;
+    font-weight: $bold;
+    letter-spacing: 2px;
+    padding: 25px 50px 25px 25px;
+    position: relative;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:after {
+      background: url(../img/svg/link-arrow-purple.svg) center no-repeat;
+      background-size: contain;
+      content: '';
+      display: block;
+      height: 12px;
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 15px;
+    }
+
+    @include media-q(min, 768) {
+      @include font-size(18);
+      letter-spacing: 2.5px;
+      padding: 25px;
+
+      &:after {
+        height: 16px;
+        left: calc(100% + 15px);
+        right: auto;
+        width: 20px;
+      }
+    }
+
+    &:hover {
+      color: $scorpion;
+    }
+  }
+}

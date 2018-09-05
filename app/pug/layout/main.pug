@@ -139,6 +139,21 @@ html(lang="ru-RU")
                     p
                       a(href="#" class="btn purple") zum austausch
 
+      section.paragraph.paragraph__links-with-image.horizontal.two-cols.white-bg
+        .paragraph__links-with-image--container.section-layout
+          .paragraph__links-with-image--content.paragraph__layout
+            .paragraph__links--body
+              h1 Gestalten Sie ihren Alltag
+              p
+                img(src='img/content/woman1.png')
+
+            .paragraph__links--body
+              .list--links__container
+                ul.list--links
+                  +navItem('#', 'Kosmetik-Seminare', 'list--links')
+                  +navItem('#', 'Ernährungsberatung', 'list--links')
+                  +navItem('#', 'yoga für patientinnen', 'list--links')
+
 
     include ../modules/footer
 
