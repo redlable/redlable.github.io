@@ -52,7 +52,11 @@
     !isTrue ? $body.removeClass('active-menu') : '';
   });
 
-  // $('.slider').slick();
+  $('.slider-wrapper').slick({
+    arrows: false,
+    dots: true,
+    fade: true
+  });
 
   $('.hamburger-btn').on('click', function() {
     $body.toggleClass('active-menu');

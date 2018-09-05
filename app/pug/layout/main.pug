@@ -34,8 +34,18 @@ html(lang="ru-RU")
               p
                 a(class='btn purple' href='#') ihre individuelle hilfe
 
-            .paragraph__image--wrapper
-              img(src='img/content/woman1.png')
+            .paragraph__slider--wrapper
+              .slider-wrapper.big
+                div.slick-item
+                  .slide-image
+                    img(src='img/content/woman1.png')
+                  .body
+                    p Sehen Sie in unserem Erklärvideo, welche Services Sie auf der Webseite finden und wie einfach sie Sie anwenden können.
+                div.slick-item
+                  .slide-image
+                    img(src='img/content/woman2.png')
+                  .body
+                    p Sehen Sie in unserem Erklärvideo, welche Services Sie auf der Webseite finden und wie einfach sie Sie anwenden können.
 
       section.paragraph.paragraph__copy-with-image.horizontal.two-cols.pink-border
         .paragraph__copy-with-image--container.section-layout
@@ -104,10 +114,35 @@ html(lang="ru-RU")
               .paragraph__mobile-app--image
                 img(src='img/content/phone.png')
 
+      section.paragraph.paragraph__copy-with-slider.horizontal.two-cols.white-box-bg
+        .paragraph__copy-with-slider--container.section-layout
+          .paragraph__copy-with-slider--content.paragraph__layout
+            .paragraph__copy--body
+              h2.paragraph__title AUSTAUSCH
+              h1 Lernen Sie andere Betroffene kennen
+              p Beim Austausch mit anderen Betroffenen erhalten Sie wertvolle Tipps und Hinweise für Ihren Alltag. Ob Sie dabei aktiv teilnehmen oder nur stiller Beobachter sind, bleibt ganz Ihnen überlassen.
+
+            .paragraph__slider--wrapper
+              .slider-wrapper.small
+                div.slick-item
+                  .slide-image
+                    img(src='img/content/woman1.png')
+                  .body
+                    p Vieles, von dem, was Sie zurzeit im Innersten bewegt können nur Betroffene nachvollziehen. Im Forum von Brigitte.de treffen Sie Betroffene zum Austausch.
+                    p
+                      a(href="#" class="btn purple") zum austausch
+                div.slick-item
+                  .slide-image
+                    img(src='img/content/woman2.png')
+                  .body
+                    p Vieles, von dem, was Sie zurzeit im Innersten bewegt können nur Betroffene nachvollziehen. Im Forum von Brigitte.de treffen Sie Betroffene zum Austausch.
+                    p
+                      a(href="#" class="btn purple") zum austausch
+
 
     include ../modules/footer
 
     script(src="https://code.jquery.com/jquery-1.10.2.min.js")
-    //script(src="js/libs.min.js")
+    script(src="js/libs.min.js")
     script(src="js/jquery.resizeAction.js")
     script(src="js/main.js")

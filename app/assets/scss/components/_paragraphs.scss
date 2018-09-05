@@ -36,6 +36,7 @@
     @include media-q(min, 768) {
       .paragraph__copy--body,
       .paragraph__image--wrapper,
+      .paragraph__slider--wrapper,
       .paragraph__mobile-app {
         @include flex-basis(50%);
       }
@@ -50,6 +51,14 @@
 
       p:last-child {
         margin-bottom: 0;
+      }
+    }
+
+    .paragraph__slider--wrapper {
+      margin-top: 30px;
+
+      @include media-q(min, 768) {
+        margin-top: 0;
       }
     }
   }
@@ -97,6 +106,30 @@
     .paragraph__title {
       &:after {
         background: $white;
+      }
+    }
+  }
+
+  &.white-box-bg {
+    background: $wild-sand;
+    padding: 100px 0;
+
+    .section-layout {
+      background-color: $white;
+      padding: 60px 0;
+    }
+
+    .paragraph__layout {
+      @include media-q(min, 768) {
+        justify-content: space-between;
+      }
+    }
+
+    .paragraph__copy--body,
+    .paragraph__slider--wrapper {
+      @include media-q(min, 768) {
+        @include flex-basis(calc(50% - 10px));
+        padding: 0 30px;
       }
     }
   }
