@@ -143,6 +143,18 @@
   justify-content: center;
   margin-top: 20px;
 
+  .small & {
+    margin-top: 60px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+
+    @include media-q(min, 768) {
+      margin-top: 20px;
+    }
+  }
+
   li {
     display: block;
     margin: 0 3px 3px;

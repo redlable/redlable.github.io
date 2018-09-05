@@ -112,16 +112,23 @@
 
   &.white-box-bg {
     background: $wild-sand;
-    padding: 100px 0;
+    padding: 110px 0 90px;
+
+    @include media-q(min, 768) {
+      padding: 100px 0;
+    }
 
     .section-layout {
-      background-color: $white;
-      padding: 60px 0;
+      max-width: 980px;
     }
 
     .paragraph__layout {
+      background-color: $white;
+      padding: 50px 25px 35px;
+
       @include media-q(min, 768) {
         justify-content: space-between;
+        padding: 60px 0;
       }
     }
 
