@@ -1,0 +1,40 @@
+#tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  position: relative;
+  z-index: 1;
+
+  .tabs {
+    display: flex;
+  }
+
+  li {
+    margin-right: 2px;
+  }
+
+  a {
+    background: rgba($white, .3);
+    color: $butterfly-bush;
+    display: block;
+    font-weight: $bold;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: background .3s ease;
+
+    &:hover,
+    &.active {
+      background: rgba($white, .5);
+    }
+
+    .front & {
+      background: rgba($butterfly-bush, .5);
+      color: $white;
+
+      &:hover,
+      &.active {
+        background: rgba($butterfly-bush, .8);
+      }
+    }
+  }
+}

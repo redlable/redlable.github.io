@@ -76,6 +76,12 @@
       }
     }
 
+    .not-front:not(.mobile) & {
+      &:hover {
+        color: $butterfly-bush;
+      }
+    }
+
     @include media-q(min, 991) {
       @include font-size(14);
       margin: 0 18px;
