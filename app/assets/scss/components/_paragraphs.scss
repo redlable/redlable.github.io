@@ -64,6 +64,17 @@
     }
   }
 
+  &__copy {
+    background-color: $wild-sand;
+    padding: 30px 0;
+
+    &--body {
+      p:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
   &__links--body {
     h1 {
       margin-bottom: 30px;
