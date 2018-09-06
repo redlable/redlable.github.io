@@ -262,6 +262,28 @@
   max-width: $value;
 }
 
+// ----------------------------------------------------------------------------
+// Responsive video
+%responsive-video {
+  position: relative;
+  padding-bottom: 56.25%; // 16/9 ratio
+  height: 0 !important;
+  overflow: hidden;
+  display: block;
+
+  iframe,
+  object,
+  embed,
+  .video-js {
+    border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+  }
+}
+
 //------------------------------------------------------------------------------
 // Keyframes
 @keyframes sonarEffect {

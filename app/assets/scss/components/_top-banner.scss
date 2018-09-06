@@ -61,6 +61,31 @@
     }
   }
 
+  &__video {
+    margin-bottom: 90px;
+    max-width: 820px;
+    position: relative;
+    text-align: center;
+
+    @include media-q(min, 768) {
+      margin-bottom: 80px;
+    }
+
+    .responsive-video {
+      border-radius: 10px;
+      margin-bottom: 30px;
+
+      @include media-q(min, 768) {
+        margin-bottom: 40px;
+      }
+    }
+
+    &--content {
+      margin: 0 auto;
+      max-width: 620px;
+    }
+  }
+
   &__info {
     margin-top: 20px;
 

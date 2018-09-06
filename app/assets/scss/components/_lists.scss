@@ -54,3 +54,43 @@
     }
   }
 }
+
+.paragraph__anchor--list {
+  display: none;
+
+  @include media-q(min, 768) {
+    display: block;
+  }
+}
+
+.anchor--list {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+
+  &__item {
+    border-right: 2px solid $butterfly-bush;
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  &__link {
+    @include font-size(14);
+    color: $boulder;
+    display: block;
+    font-weight: $bold;
+    line-height: 1.2;
+    margin: 0 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    body:not(.mobile) & {
+      &:hover {
+        color: $gray;
+      }
+    }
+  }
+}

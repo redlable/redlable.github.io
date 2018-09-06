@@ -18,7 +18,20 @@ html(lang="ru-RU")
     .main-wrapper(style="background-color: pink;")
       include ../modules/header
 
-      include ../modules/top-banner
+      //include ../modules/top-banner
+      include ../modules/top-banner-video
+
+      section.paragraph.paragraph__copy.paragraph__anchor--list(style="background-color: #ffffff")
+        .paragraph__copy--container.section-layout
+          .paragraph__copy--content.paragraph__layout
+            .paragraph__copy--body
+              //h3.paragraph__title Paragraph title
+              ul.anchor--list
+                +navItem('#', 'Teilnahme', 'anchor--list')
+                +navItem('#', 'Gallerie', 'anchor--list')
+                +navItem('#', 'Services', 'anchor--list')
+
+
       include ../paragraphs/paragraph-copy-with-image--vertical--one-col
 
       section.paragraph.paragraph__copy-with-image.horizontal.two-cols.gray-bg

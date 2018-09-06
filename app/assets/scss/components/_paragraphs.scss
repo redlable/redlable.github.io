@@ -65,7 +65,6 @@
   }
 
   &__copy {
-    background-color: $wild-sand;
     padding: 30px 0;
 
     .paragraph__copy--body {
@@ -187,6 +186,7 @@
     letter-spacing: 3px;
     margin-bottom: 20px;
     position: relative;
+    text-align: center;
     text-transform: uppercase;
 
     &:after {
