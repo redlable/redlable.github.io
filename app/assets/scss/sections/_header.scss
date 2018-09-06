@@ -1,6 +1,12 @@
 #header {
   position: relative;
 
+  .not-front & {
+    &:after {
+      background-image: radial-gradient(50% 100%, #b19ecf 0%, $butterfly-bush 100%);
+    }
+  }
+
   &:after {
     @include absolute();
     background: $white-lilac;
@@ -34,6 +40,18 @@
 
     @include media-q(min, 991) {
       max-width: 100%;
+    }
+  }
+
+  .not-front & {
+    .logo-black {
+      display: none;
+    }
+  }
+
+  .front & {
+    .logo-white {
+      display: none;
     }
   }
 

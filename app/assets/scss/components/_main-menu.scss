@@ -62,6 +62,14 @@
     text-transform: uppercase;
     text-decoration: none;
 
+    .not-front & {
+      color: $scorpion;
+
+      @include media-q(min, 991) {
+        color: $white;
+      }
+    }
+
     body:not(.mobile) & {
       &:hover {
         color: $gray;
