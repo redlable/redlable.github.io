@@ -67,6 +67,14 @@
   &__copy {
     padding: 30px 0;
 
+    &:last-child {
+      margin-bottom: -30px;
+
+      @include media-q(min, 768) {
+        margin-bottom: -90px;
+      }
+    }
+
     .paragraph__copy--body {
       p:last-child {
         margin-bottom: 0;
@@ -118,6 +126,14 @@
     background: $hopbush;
     color: $white;
     padding-top: 40px;
+
+    + .paragraph__copy {
+      padding-top: 90px;
+
+      @include media-q(min, 768) {
+        padding-top: 30px;
+      }
+    }
 
     @include media-q(min, 768) {
       overflow: hidden;
