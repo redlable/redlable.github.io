@@ -110,35 +110,59 @@
     ul {
       display: flex;
       flex-wrap: wrap;
-      justify-content: space-between;
       transform: translateX(-10px);
       width: calc(100% + 20px);
     }
 
     li {
-      @include flex-basis(33.33%);
+      @include flex-basis(100%);
       margin-bottom: 20px;
       padding: 0 10px;
+
+      @include media-q(min, 540) {
+        @include flex-basis(50%);
+      }
+
+      @include media-q(min, 768) {
+        @include flex-basis(33.33%);
+      }
     }
 
     .double {
-      @include flex-basis(66.66%);
+      @include flex-basis(100%);
       color: $white;
       text-align: center;
+
+      @include media-q(min, 768) {
+        @include flex-basis(66.66%);
+      }
 
       .box {
         align-items: center;
         background-image: radial-gradient(100% 100%,#b19ecf 0%,#685194 80%);
         display: flex;
         justify-content: center;
+        padding: 85px 0;
+
+        @include media-q(min, 540) {
+          max-width: 100%;
+        }
+
+        @include media-q(min, 768) {
+          padding: 0;
+        }
       }
 
       h2 {
-        @include font-size(36);
+        @include font-size(21);
         background: url(../img/svg/heart.svg) center top no-repeat;
         font-weight: $normal;
         margin-bottom: 0;
         padding-top: 110px;
+
+        @include media-q(min, 768) {
+          @include font-size(36);
+        }
       }
     }
 
@@ -146,6 +170,8 @@
       background-color: $white-lilac;
       border-radius: 10px;
       height: 100%;
+      margin: 0 auto;
+      max-width: 360px;
       overflow: hidden;
       position: relative;
     }
@@ -161,17 +187,20 @@
       color: $white;
       letter-spacing: .66px;
       line-height: 25px;
-      padding: 7px 23px;
+      padding: 7px 60px 7px 23px;
       position: absolute;
       width: 100%;
 
       &:after {
         background: url(../img/content/ribbon.png) center no-repeat;
+        background-size: cover;
         content: '';
-        display: inline-block;
+        display: block;
         height: 24px;
-        margin-left: 8px;
-        vertical-align: top;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 25px;
         width: 35px;
       }
     }
