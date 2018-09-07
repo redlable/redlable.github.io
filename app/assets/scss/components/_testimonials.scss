@@ -1,0 +1,89 @@
+.testimonials {
+  background-color: $white-lilac;
+  padding: 45px 0;
+
+  &__item {
+    padding-right: 100px;
+    position: relative;
+  }
+
+  .slick-item {
+    position: relative;
+  }
+}
+
+.big-pic,
+.small-pic {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.big-pic {
+  .image-wrapper {
+    &:after {
+      @include absolute();
+      background-color: rgba($black, .15);
+      content: '';
+    }
+  }
+
+  .text {
+    @include font-size(25);
+    background: $white;
+    color: $butterfly-bush;
+    font-weight: $bold;
+    line-height: .9;
+    padding: 14px 30px;
+    position: absolute;
+    bottom: 50px;
+    left: 65px;
+  }
+}
+
+.small-pic {
+  box-shadow: 1px 5px 18px rgba($black, .5);
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  .image-wrapper {
+    background-color: $alto;
+    border-radius: 10px;
+    height: 100%;
+    margin: 0 auto;
+    max-width: 360px;
+    overflow: hidden;
+    position: relative;
+  }
+
+  img {
+    display: block;
+  }
+
+  .text {
+    @include font-size(15);
+    @include same(0, left, bottom);
+    background: $logan;
+    color: $white;
+    letter-spacing: .66px;
+    line-height: 25px;
+    padding: 7px 60px 7px 23px;
+    position: absolute;
+    width: 100%;
+
+    &:after {
+      background: url(../img/content/ribbon.png) center no-repeat;
+      background-size: cover;
+      content: '';
+      display: block;
+      height: 24px;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 20px;
+      width: 35px;
+    }
+  }
+}

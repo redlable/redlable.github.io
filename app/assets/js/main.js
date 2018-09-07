@@ -52,10 +52,22 @@
     !isTrue ? $body.removeClass('active-menu') : '';
   });
 
-  $('.slider-wrapper').slick({
-    arrows: false,
-    dots: true,
-    fade: true
+  $('.slider-wrapper').each(function() {
+    var $slider = $(this),
+        simpleOpt = {
+          arrows: false,
+          dots: true,
+          fade: true
+        },
+        testimonialsOpt = {
+
+        };
+
+    if ($slider.children('.slick-item').length > 1) {
+      if ($slider.is('.simple')) {
+        $slider.slick(simpleOpt);
+      }
+    }
   });
 
   $('.hamburger-btn').on('click', function() {
