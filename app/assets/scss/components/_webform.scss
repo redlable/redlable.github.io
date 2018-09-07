@@ -1,0 +1,45 @@
+#user-login,
+#user-pass {
+  background: $white;
+  border: 2px solid $butterfly-bush;
+  margin: 0 auto 40px;
+  max-width: 620px;
+  padding: 30px 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.form-item {
+  margin-bottom: 40px;
+
+  label {
+    display: inline-block;
+    font-weight: $bold;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
+
+  .form-text {
+    margin-bottom: 5px;
+  }
+
+  .description {
+    @include font-size(14);
+  }
+}
+
+.form-text {
+  border: 2px solid $logan;
+  padding: 8px 15px;
+  width: 100%;
+}
+
+.form-actions {
+  text-align: center;
+}
+
+.form-submit {
+  @extend .btn;
+  @extend .purple;
+}
