@@ -60,12 +60,18 @@
           fade: true
         },
         testimonialsOpt = {
-
+          centerMode: true,
+          slidesToShow: 1,
+          variableWidth: true
         };
 
     if ($slider.children('.slick-item').length > 1) {
       if ($slider.is('.simple')) {
         $slider.slick(simpleOpt);
+      }
+
+      if ($slider.is('.testimonials')) {
+        $slider.slick(testimonialsOpt);
       }
     }
   });
