@@ -62,7 +62,17 @@
         testimonialsOpt = {
           centerMode: true,
           slidesToShow: 1,
-          variableWidth: true
+          centerPadding: 0,
+          variableWidth: true,
+          responsive: [
+            {
+              breakpoint: 768,
+              settings: {
+                centerMode: false,
+                variableWidth: false
+              }
+            }
+          ]
         };
 
     if ($slider.children('.slick-item').length > 1) {

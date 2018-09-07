@@ -1,11 +1,23 @@
 .testimonials {
-  background-color: $white-lilac;
-  padding: 45px 0;
+  margin: 0 auto;
+  max-width: 400px;
+
+  @include media-q(min, 768) {
+    max-width: 100%;
+  }
 
   &__item {
-    margin: 0 75px;
-    padding-right: 100px;
+    margin: 0 20px;
     position: relative;
+
+    @include media-q(min, 768) {
+      margin: 0 50px;
+      padding-right: 100px;
+    }
+
+    @include media-q(min, 991) {
+      margin: 0 75px;
+    }
   }
 
   .slick-item {
@@ -21,11 +33,32 @@
 }
 
 .big-pic {
+  margin-right: 47px;
+
+  @include media-q(min, 768) {
+    max-width: 50vw;
+    margin-right: 0;
+  }
+
   .image-wrapper {
     &:after {
       @include absolute();
       background-color: rgba($black, .15);
       content: '';
+    }
+  }
+
+  .image-desk {
+    display: none;
+
+    @include media-q(min, 768) {
+      display: block;
+    }
+  }
+
+  .image-mob {
+    @include media-q(min, 768) {
+      display: none;
     }
   }
 
@@ -35,19 +68,46 @@
     color: $butterfly-bush;
     font-weight: $bold;
     line-height: .9;
-    padding: 14px 30px;
+    margin: 0 25px;
     position: absolute;
-    bottom: 50px;
-    left: 65px;
+    bottom: 45px;
+    left: 0;
+    padding: 10px 12px;
+
+    @include media-q(min, 768) {
+      bottom: 20px;
+      left: 45px;
+      margin: 0;
+      padding: 14px 30px;
+    }
+
+    @include media-q(min, 991) {
+      bottom: 50px;
+      left: 65px;
+    }
   }
 }
 
 .small-pic {
   box-shadow: 1px 5px 18px rgba($black, .5);
-  position: absolute;
-  right: 0;
-  top: 50%;
-  transform: translateY(-50%);
+  margin: -35px 0 20px 40px;
+
+  &:after {
+    @include same(38px, height, width);
+    @include same(20px, right, top);
+    background: url(../img/svg/instagram.svg) center no-repeat;
+    content: '';
+    position: absolute;
+  }
+
+  @include media-q(min, 768) {
+    margin: 0;
+    max-width: 42%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
 
   .image-wrapper {
     background-color: $alto;

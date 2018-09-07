@@ -92,6 +92,11 @@
     }
   }
 
+  &__testimonials--container {
+    background-color: $white-lilac;
+    padding: 45px 0;
+  }
+
   &.purple-bg {
     background-color: $butterfly-bush;
     color: $white;
