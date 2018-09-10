@@ -133,6 +133,8 @@ html(lang="ru-RU")
 
       include ../modules/testimonials
 
+      include ../paragraphs/paragraph-copy
+
       include ../modules/photo-list
 
       section.paragraph.paragraph__copy-with-slider.horizontal.two-cols.white-box-bg
@@ -175,7 +177,13 @@ html(lang="ru-RU")
                   +navItem('#', 'Ernährungsberatung', 'list--links')
                   +navItem('#', 'yoga für patientinnen', 'list--links')
 
-      include ../paragraphs/paragraph-copy
+      section.paragraph.paragraph__copy(style="background-color: #F4F4F4")
+        .paragraph__copy--container.section-layout
+          .paragraph__copy--content.paragraph__layout
+            .paragraph__copy--body
+              p
+                a(href="#" class="btn purple") Alle Services
+
 
     include ../modules/footer
 
