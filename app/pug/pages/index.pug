@@ -7,5 +7,7 @@ block variables
 block content
   nav.prototype-nav
     ul.prototype-menu
-      +navItem('front-page.html', 'Front page', 'prototype-menu')
-      +navItem('article-page.html', 'Article page', 'prototype-menu')
+      li.prototype-menu__item
+        a.prototype-menu__link(href="build/front-page.html" target="_blank") Front page
+      li.prototype-menu__item
+        a.prototype-menu__link(href="build/article-page.html" target="_blank") Article page
