@@ -6,9 +6,8 @@
 
 body {
   @include font-size(16);
-  background: $wild-sand;
-  color: $boulder;
-  font-family: $roboto;
+  color: $baltic-sea;
+  font-family: $fsAlbertRegular;
   line-height: 1.4;
   min-width: 320px;
   overflow-x: hidden;
@@ -18,19 +17,12 @@ body {
   -webkit-font-smoothing: antialiased;
 
   @include media-q(min, 768) {
-    @include font-size(18);
+    @include font-size(16);
   }
 }
 
 .active-menu {
   overflow: hidden;
-
-  &:after {
-    @include absolute();
-    background: rgba($logan, .4);
-    content: '';
-    z-index: 1;
-  }
 }
 
 img,

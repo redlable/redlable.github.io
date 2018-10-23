@@ -14,57 +14,14 @@
     @include media-q(min, 768) {
       margin-bottom: 30px;
     }
-
-    &.fuzzy_wuzzy_brown {
-      .icons-list__image {
-        background-color: $fuzzy-wuzzy-brown;
-      }
-    }
-
-    &.calico {
-      .icons-list__image {
-        background-color: $calico;
-      }
-    }
-
-    &.sinbad {
-      .icons-list__image {
-        background-color: $sinbad;
-      }
-    }
-
-    &.moss_green {
-      .icons-list__image {
-        background-color: $moss-green;
-      }
-    }
-
-    &.lilac {
-      .icons-list__image {
-        background-color: $lilac;
-      }
-    }
-
-    &.zombie {
-      .icons-list__image {
-        background-color: $zombie;
-      }
-    }
   }
 
   &__link {
     align-items: center;
-    color: $scorpion;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-decoration: none;
-
-    &:hover {
-      .icons-list__image {
-        background-color: $silver-chalice;
-      }
-    }
   }
 
   &__image {

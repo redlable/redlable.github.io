@@ -1,60 +1,46 @@
 #footer {
-  background: $wild-sand;
-  padding: 60px 0 30px;
+  background-image: linear-gradient(0deg, #8e27f5, #3b004a);
+  background-color: $bossanova;
+  box-shadow: 0 -6px 15px rgba($black, .3);
+  position: relative;
 
-  @include media-q(min, 768) {
-    padding: 100px 0 225px;
+  .section-layout {
+    background: url(../img/general/footer-bg-1.png) left bottom no-repeat, url(../img/general/footer-bg-2.png) right center no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 35px;
+    padding-bottom: 40px;
   }
 }
 
 .footer {
-  border-bottom: 1px solid rgba($gray, .2);
-  margin-bottom: 35px;
-  padding-bottom: 30px;
+  color: $white;
 
-  @include media-q(min, 768) {
-    margin-bottom: 55px;
-    padding-bottom: 25px;
+  &__left {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  &__top {
-    .wysiwyg-content {
-      @include font-size(14);
-      align-items: center;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+  &__right {
+    max-width: 680px;
+    width: 45%;
 
-      @include media-q(min, 768) {
-        @include font-size(16);
-        justify-content: flex-start;
-      }
-
-      p {
-        margin: 0;
-      }
-
-      img {
-        margin-left: 20px;
-      }
+    p {
+      margin-bottom: 0;
     }
   }
 
-  &__center {
-    @include media-q(min, 768) {
-      display: flex;
-      justify-content: space-between;
+  &__logo {
+    margin-right: 10px;
+  }
+
+  &__slogan {
+    margin: 25px 90px 0 0;
+
+    p {
+      margin-bottom: 0;
     }
-  }
-
-  &__bottom {
-    border: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  .copyright {
-    @include font-size(12);
-    line-height: 16px;
   }
 }

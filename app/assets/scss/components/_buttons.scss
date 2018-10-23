@@ -17,22 +17,17 @@
   vertical-align: top;
 
   &.purple {
-    background: $butterfly-bush;
     color: $white;
 
     &:hover {
       background: $white;
-      border-color: $butterfly-bush;
-      color: $butterfly-bush;
     }
   }
 
   &.white {
     background: $white;
-    color: $camelot;
 
     &:hover {
-      background: $camelot;
       color: $white;
     }
   }
@@ -42,7 +37,6 @@
   @include same(40px, height, width);
   @include same(25px, right, top);
   align-items: center;
-  background: $wild-sand;
   border-radius: 50%;
   cursor: pointer;
   display: flex;
@@ -57,7 +51,6 @@
   }
 
   > div {
-    background: $butterfly-bush;
     height: 3px;
     margin: 2px 0;
     transition: .3s ease;

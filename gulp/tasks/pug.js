@@ -4,7 +4,12 @@ module.exports = function() {
       .pipe($.plugins.pug({
         pretty: true
       }))
-
+      .on('error', $.plugins.notify.onError(function(err) {
+        return {
+          title: 'Pug',
+          message: err.message
+        };
+      }))
       .pipe($.gulp.dest('build'))
       .on('end', $.browserSync.reload);
   });

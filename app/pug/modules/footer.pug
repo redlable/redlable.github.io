@@ -1,17 +1,18 @@
 footer#footer
   .section-layout
-    .footer.footer__top
-      .wysiwyg-content
-        p
-          strong Jeder&nbsp;
-          | Tag ist kostbar
-        p
-         img(src='img/content/pfizer-logo.png')
+    .footer.footer__left
+      .footer__logo
+        img(src="../img/general/pfizer-logo.png")
 
-    .footer.footer__center
-      include ../modules/footer-menu
+      .footer__slogan
+        p OPERATIONS CENTER OF EXCELLENCE
+        p Global Product Development
 
-    .footer.footer__bottom
-      .wysiwyg-content.copyright
-        p Copyright ©2017 Pfizer Deutschland GmbH. Alle Rechte vorbehalten.
-        p Mitglied im Verband der forschenden Pharmaunternehmen und im Verein Freiwillige Selbstkontrolle für die Arzneimittelindustrie e.V.
+      nav.footer-nav
+        ul.footer-menu
+          +navItem("#", 'Footer menu item', 'footer-menu')
+          +navItem("#", 'Footer menu item', 'footer-menu')
+
+
+    .footer.footer__right
+      p Cum sociis natoque penatibus et magnis dis parturient. Sed haec quis possit intrepidus aestimare tellus. Non equidem invideo, miror magis posuere velit aliquet. Pellentesque habitant morbi tristique senectus et netus. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. Fabio vel iudice vincam, sunt in culpa qui officia. Quisque ut dolor gravida, placerat libero vel, euismod.

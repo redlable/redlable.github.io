@@ -6,184 +6,21 @@ html(lang="ru-RU")
   head
     meta(charset="utf-8")
     title #{title}
-    <!--[if IE]>
     meta(http-equiv='X-UA-Compatible', content="IE = edge")
-    <![endif]-->
     meta(name="viewport" content="width=device-width,initial-scale=1")
     meta(name="keywords" content="")
 
     link(rel="stylesheet" type='text/css' href="css/screen.css")
 
   body(class=pageClass)
-    .main-wrapper(style="background-color: pink;")
+    main.main-wrapper
       include ../modules/header
 
-      include ../modules/tabs
-
+      //include ../modules/editor-tabs
       //include ../modules/login-form
 
-      include ../modules/top-banner
-      include ../modules/top-banner-video
-
-      section.paragraph.paragraph__copy.paragraph__anchor--list(style="background-color: #ffffff")
-        .paragraph__copy--container.section-layout
-          .paragraph__copy--content.paragraph__layout
-            .paragraph__copy--body
-              //h3.paragraph__title Paragraph title
-              ul.anchor--list
-                +navItem('#', 'Teilnahme', 'anchor--list')
-                +navItem('#', 'Gallerie', 'anchor--list')
-                +navItem('#', 'Services', 'anchor--list')
-
-
-      include ../paragraphs/paragraph-copy-with-image--vertical--one-col
-
-      section.paragraph.paragraph__copy-with-image.horizontal.two-cols.gray-bg
-        .paragraph__copy-with-image--container.section-layout
-          .paragraph__copy-with-image--content.paragraph__layout
-            .paragraph__copy--body
-              h2.paragraph__title Service
-              h1 Orientierung und Unterstützung für Ihre Patientinnenalltag.
-              p Ihre Zeit ist kostbar.
-              p &nbsp;
-              p
-                img(src='img/content/hilfe-fur-mich.png')
-              p
-                a(class='btn purple' href='#') ihre individuelle hilfe
-
-            .paragraph__slider--wrapper
-              .slider-wrapper.big.simple
-                div.slick-item
-                  .slide-image
-                    img(src='img/content/woman1.png')
-                  .body
-                    p Sehen Sie in unserem Erklärvideo, welche Services Sie auf der Webseite finden und wie einfach sie Sie anwenden können.
-                div.slick-item
-                  .slide-image
-                    img(src='img/content/woman2.png')
-                  .body
-                    p Sehen Sie in unserem Erklärvideo, welche Services Sie auf der Webseite finden und wie einfach sie Sie anwenden können.
-
-      section.paragraph.paragraph__copy-with-image.horizontal.two-cols.pink-border
-        .paragraph__copy-with-image--container.section-layout
-          .paragraph__copy-with-image--content.paragraph__layout
-            .paragraph__copy--body
-              h2.paragraph__title Service
-              h1 Erhalten Sie schnell Antworten auf Ihre wichtigsten Fragen.
-              p Ihre Zeit ist kostbar.
-              p &nbsp;
-              p
-                img(src='img/content/me.png')
-              p
-                a(class='btn purple' href='#') Antworten erhalten
-
-            .paragraph__copy--body
-              .icons.icons-list__container
-                ul.icons-list
-                  li.icons-list__item.fuzzy_wuzzy_brown
-                    a(href="#" class="icons-list__link")
-                      .icons-list__image
-                        img(src='img/svg/diagnose.svg')
-                      span.icons-list__label Diagnose
-                  li.icons-list__item.calico
-                    a(href="#" class="icons-list__link")
-                      .icons-list__image
-                        img(src='img/svg/gefuhle.svg')
-                      span.icons-list__label GEFÜHLE
-                  li.icons-list__item.sinbad
-                    a(href="#" class="icons-list__link")
-                      .icons-list__image
-                        img(src='img/svg/beziehungen.svg')
-                      span.icons-list__label BEZIEHUNGEN
-                  li.icons-list__item.moss_green
-                    a(href="#" class="icons-list__link")
-                      .icons-list__image
-                        img(src='img/svg/apple.svg')
-                      span.icons-list__label THERAPIE
-                  li.icons-list__item.lilac
-                    a(href="#" class="icons-list__link")
-                      .icons-list__image
-                        img(src='img/svg/behandlung.svg')
-                      span.icons-list__label BEHANDLUNG
-                  li.icons-list__item.zombie
-                    a(href="#" class="icons-list__link")
-                      .icons-list__image
-                        img(src='img/svg/checkbox.svg')
-                      span.icons-list__label ARBEIT
-
-              p Sie werden viele Fragen zu Ihrer Krankheit haben. Finden Sie kompetente Expertenantworten auf „Es geht um mich!“
-
-      section.paragraph.paragraph__copy-with-image.horizontal.two-cols.pink-bg
-        .paragraph__copy-with-image--container.section-layout
-          .paragraph__copy-with-image--content.paragraph__layout
-            .paragraph__copy--body
-              h2.paragraph__title Mobile app
-              h1 Ein geschützter Ort für Sie, Ihre Angehörigen und Ihre Gefühle
-              p EmotionSpace bietet Ihnen einen geschützten Ort, um Ihre Gefühle festzuhalten und auf Wunsch mit Angehörigen zu teilen. Zudem erhalten Sie wertvolle Tipps zum Ihre Stimmung positiv zu beeinflussen.
-              p
-                a(class='btn white' href='#') erfahren sie mehr
-
-            .paragraph__mobile-app
-              .paragraph__mobile-app--links
-                a(href="#" class="app-store")
-                a(href="#" class="google-play")
-
-              .paragraph__mobile-app--image
-                img(src='img/content/phone.png')
-
-      include ../modules/testimonials
-
-      include ../paragraphs/paragraph-copy
-
-      include ../modules/photo-list
-
-      section.paragraph.paragraph__copy-with-slider.horizontal.two-cols.white-box-bg
-        .paragraph__copy-with-slider--container.section-layout
-          .paragraph__copy-with-slider--content.paragraph__layout
-            .paragraph__copy--body
-              h2.paragraph__title AUSTAUSCH
-              h1 Lernen Sie andere Betroffene kennen
-              p Beim Austausch mit anderen Betroffenen erhalten Sie wertvolle Tipps und Hinweise für Ihren Alltag. Ob Sie dabei aktiv teilnehmen oder nur stiller Beobachter sind, bleibt ganz Ihnen überlassen.
-
-            .paragraph__slider--wrapper
-              .slider-wrapper.small.simple
-                div.slick-item
-                  .slide-image
-                    img(src='img/content/woman1.png')
-                  .body
-                    p Vieles, von dem, was Sie zurzeit im Innersten bewegt können nur Betroffene nachvollziehen. Im Forum von Brigitte.de treffen Sie Betroffene zum Austausch.
-                    p
-                      a(href="#" class="btn purple") zum austausch
-                div.slick-item
-                  .slide-image
-                    img(src='img/content/woman2.png')
-                  .body
-                    p Vieles, von dem, was Sie zurzeit im Innersten bewegt können nur Betroffene nachvollziehen. Im Forum von Brigitte.de treffen Sie Betroffene zum Austausch.
-                    p
-                      a(href="#" class="btn purple") zum austausch
-
-      section.paragraph.paragraph__links-with-image.horizontal.two-cols.white-bg
-        .paragraph__links-with-image--container.section-layout
-          .paragraph__links-with-image--content.paragraph__layout
-            .paragraph__links--body
-              h1 Gestalten Sie ihren Alltag
-              p
-                img(src='img/content/woman1.png')
-
-            .paragraph__links--body
-              .list--links__container
-                ul.list--links
-                  +navItem('#', 'Kosmetik-Seminare', 'list--links')
-                  +navItem('#', 'Ernährungsberatung', 'list--links')
-                  +navItem('#', 'yoga für patientinnen', 'list--links')
-
-      section.paragraph.paragraph__copy(style="background-color: #F4F4F4")
-        .paragraph__copy--container.section-layout
-          .paragraph__copy--content.paragraph__layout
-            .paragraph__copy--body
-              p
-                a(href="#" class="btn purple") Alle Services
-
+      .content-container
+        include ../modules/node-content
 
     include ../modules/footer
 
@@ -191,3 +28,6 @@ html(lang="ru-RU")
     script(src="js/libs.min.js")
     script(src="js/jquery.resizeAction.js")
     script(src="js/main.js")
+
+    // External fonts
+    script(src="https://docs.gcs.digitalpfizer.com/fonts/fs_albert_pro_web/font_FSAlbert.js")

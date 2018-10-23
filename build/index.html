@@ -4,20 +4,18 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>Front page</title><!--[if IE]>
-    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <title>Front page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
     <link rel="stylesheet" type="text/css" href="css/screen.css">
   </head>
   <body class="front">
-    <div class="main-wrapper" style="background-color: pink;">
+    <main class="main-wrapper">
       <header id="header">
         <div class="section-layout">
-          <div class="header header__top">
-            <div class="site-logo"><a href="/"><img class="logo-black" src="img/general/logo-black.png"><img class="logo-white" src="img/general/logo-white.png"></a></div>
-          </div>
-          <div class="header header__bottom">
+          <div class="header header__left">
+            <div class="site-logo"><a href="/"><img src="img/general/logo-white.svg"></a></div>
             <div class="hamburger-btn">
               <div></div>
               <div></div>
@@ -25,417 +23,158 @@
             </div>
             <nav class="main-nav" role="navigation">
               <ul class="main-menu">
-                <li class="main-menu__item"><a class="main-menu__link" href="#">Orientierung</a></li>
-                <li class="main-menu__item"><a class="main-menu__link" href="#">Information</a></li>
-                <li class="main-menu__item"><a class="main-menu__link" href="#">Emotionen</a></li>
-                <li class="main-menu__item"><a class="main-menu__link" href="#">Yoga</a></li>
-                <li class="main-menu__item"><a class="main-menu__link" href="#">Austausch</a></li>
-                <li class="main-menu__item"><a class="main-menu__link" href="#">Angebote</a></li>
+                <li class="is-active main-menu__item"><a class="is-active main-menu__link" href="/">Home</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="#">Monthly digest</a></li>
               </ul>
             </nav>
           </div>
+          <div class="header header__right">
+            <ul class="account-menu">
+              <li class="user-name account-menu__item"><a class="user-name account-menu__link" href="/">Hi, John</a></li>
+              <li class="user-logout account-menu__item"><a class="user-logout account-menu__link" href="#">Logout</a></li>
+            </ul>
+            <div class="search-form">
+              <form action="#">
+                <div class="form-item">
+                  <input class="form-text" type="text" placeholder="Enter your keywords">
+                </div>
+                <div class="form-actions">
+                  <input class="form-submit" type="submit" value="Search">
+                </div>
+              </form><a class="advanced-search" href="#">Advanced search</a>
+            </div>
+          </div>
         </div>
       </header>
-      <div id="tabs">
-        <ul class="tabs primary">
-          <li class="active"><a class="active" href="#">View published</a></li>
-          <li><a href="#">New draft</a></li>
-          <li><a href="#">Moderate</a></li>
-        </ul>
-      </div>
+      <!--include ../modules/editor-tabs-->
       <!--include ../modules/login-form-->
-      <div class="top-banner section-layout">
-        <div class="top-banner__container" style="background-color: #AEA2C4;">
-          <div class="top-banner__content">
-            <div class="top-banner__body">
-              <h2>Unterstützung für Ihren Alltag mit metastasierendem Brustkrebs</h2>
-              <p>Die Zeit nach der Diagnose ist für Sie eine emotionale Achterbahnfahrt. Wir möchten Ihnen einige Services vorstellen, die Ihnen und Ihren Angehörigen helfen, Ihre Krankheit zu verstehen und&nbsp;<strong>jeden Tag als kostbar anzusehen.</strong></p>
+      <div class="content-container">
+        <div class="node-container">
+          <div class="section-layout">
+            <div class="node-title">
+              <h1>Pfizer Sprinkl Training Series. Morbi fringilla convallis sapien, id pulvinar odio volutpat.</h1>
             </div>
-          </div>
-          <div class="top-banner__image" style="background-image: url('img/content/woman1.png')"></div>
-        </div>
-        <div class="top-banner__info">
-          <div class="top-banner__info-content">
-            <p><strong>Eine Initiative von</strong></p>
-            <div class="top-banner__info-image"><img src="img/content/pfizer-logo.png"></div>
-          </div>
-        </div>
-      </div>
-      <div class="top-banner__video section-layout">
-        <div class="top-banner__video--container">
-          <div class="responsive-video">
-            <iframe src="https://www.youtube.com/embed/tgbNymZ7vqY?playlist=tgbNymZ7vqY&amp;loop=1"></iframe>
-          </div>
-          <div class="top-banner__video--content">
-            <div class="top-banner__video--body">
-              <h2 class="paragraph__title">Aktion lorem ipsum 2018</h2>
-              <h1>… denn jeder Tag ist kostbar</h1>
-              <p>Die Zeit nach der Diagnose ist für Sie eine emotionale Achterbahnfahrt. Wir möchten Ihnen einige Services vorstellen, die Ihnen und Ihren Angehörigen helfen, Ihre Krankheit zu verstehen und&nbsp;<strong>jeden Tag als kostbar anzusehen.</strong></p>
-            </div>
-          </div>
-        </div>
-        <div class="top-banner__info">
-          <div class="top-banner__info-content">
-            <p><strong>Eine Initiative von</strong></p>
-            <div class="top-banner__info-image"><img src="img/content/pfizer-logo.png"></div>
-          </div>
-        </div>
-      </div>
-      <section class="paragraph paragraph__copy paragraph__anchor--list" style="background-color: #ffffff">
-        <div class="paragraph__copy--container section-layout">
-          <div class="paragraph__copy--content paragraph__layout">
-            <div class="paragraph__copy--body">
-              <!--h3.paragraph__title Paragraph title-->
-              <ul class="anchor--list">
-                <li class="anchor--list__item"><a class="anchor--list__link" href="#">Teilnahme</a></li>
-                <li class="anchor--list__item"><a class="anchor--list__link" href="#">Gallerie</a></li>
-                <li class="anchor--list__item"><a class="anchor--list__link" href="#">Services</a></li>
+            <div class="top-image"><img src="../img/content/top-image.png"></div>
+            <div class="wysiwyg-content">
+              <h2>Pfizer Sprinkl Training Series</h2>
+              <p>Non equidem invideo, miror magis posuere velit aliquet. Salutantibus vitae elit libero, a pharetra augue. Etiam habebis sem dicantur magna mollis euismod. Hi omnes lingua, institutis, legibus inter se differunt.</p>
+              <p>Donec sed odio operae, eu vulputate felis rhoncus.<a href="#">Salutantibus vitae</a> elit libero, a pharetra augue. Mercedem aut nummos unde unde extricat, amaras. Non equidem invideo, miror magis posuere velit aliquet. Ut enim ad minim veniam, quis nostrud exercitation. Nec dubitamus multa iter quae et nos invenerat. Fictum, deserunt mollit anim laborum astutumque! Tu quoque, Brute, fili mi, nihil timor populi, nihil! Ullamco laboris nisi ut aliquid ex ea commodi consequat. Quo usque tandem abutere, Catilina, patientia nostra?</p>
+              <p>Salutantibus vitae elit libero, a pharetra augue. Plura mihi bona sunt, inclinet, amari petere vellent. Quisque ut dolor gravida, placerat libero vel, euismod.Sed haec quis possit intrepidus aestimare tellus. Etiam habebis sem dicantur magna mollis euismod. Cum sociis natoque penatibus et magnis dis parturient. Cras mattis iudicium purus sit amet fermentum. Petierunt uti sibi concilium totius Galliae in diem certam indicere.</p>
+              <p>Paullum deliquit, ponderibus modulisque suis ratio utitur. Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. Phasellus laoreet lorem vel dolor tempus vehicula. Magna pars studiorum, prodita quaerimus. Unam incolunt Belgae, aliam Aquitani, tertiam.</p>
+              <h3>Plura mihi bona sunt, inclinet, amari petere vellent.</h3>
+              <p><strong>Quisque placerat facilisis egestas cillum dolore. Curabitur est gravida et libero vitae dictum. Idque Caesaris facere voluntate liceret: sese habere. At nos hinc posthac, sitientis piros Afros.</strong></p>
+              <ol>
+                <li>Ut enim ad minim veniam, quis nostrud exercitation. Excepteur sint obcaecat cupiditat non proident culpa.</li>
+                <li>Quam temere  in vitiis, legem sancimus haerentia. Etiam habebis sem dicantur magna mollis euismod.</li>
+                <li>Quo usque tandem abutere, Catilina, patientia nostra?</li>
+                <li>Praeterea iter est quasdam res quas ex communi.</li>
+              </ol>
+              <h4>Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae.</h4>
+              <p>Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. Unam incolunt Belgae, aliam Aquitani, tertiam. Praeterea iter est quasdam res quas ex communi.</p>
+              <ul>
+                <li>Ut enim ad minim veniam, quis nostrud exercitation. Excepteur sint obcaecat cupiditat non proident culpa.</li>
+                <li>Quam temere  in vitiis, legem sancimus haerentia. Etiam habebis sem dicantur magna mollis euismod.</li>
+                <li>Quo usque tandem abutere, Catilina, patientia nostra?</li>
+                <li>Praeterea iter est quasdam res quas ex communi.</li>
               </ul>
+              <h5>At nos hinc posthac, sitientis piros Afros.</h5>
+              <p>p Morbi odio eros, volutpat ut pharetra vitae, lobortis sed nibh. Unam incolunt Belgae, aliam Aquitani, tertiam.<a href="#">Praeterea iter est quasdam res quas ex communi.</a></p>
+            </div>
+            <div class="tags-container">
+              <ul class="tags-list">
+                <li class="tags-list__item"><a class="tags-list__link" href="#">Clinical</a></li>
+                <li class="tags-list__item"><a class="tags-list__link" href="#">Medical</a></li>
+                <li class="tags-list__item"><a class="tags-list__link" href="#">Safety</a></li>
+              </ul><span class="share-article">Share this article</span>
             </div>
           </div>
+          <section class="related-section">
+            <div class="section-layout">
+              <h2 class="section-title">Related articles</h2>
+              <div class="box-list">
+                <div class="box"><span class="share-article"></span>
+                  <div class="box__image"><img src="../img/content/image1.png"></div>
+                  <div class="box__body">
+                    <h4>Gallia est omnis divisa in partes tres, quarum.</h4>
+                    <p>Contra legem facit qui id facit quod lex prohibet. Unam incolunt Belgae, aliam Aquitani, tertiam.</p>
+                    <div class="post-info">07/24/18</div>
+                    <ul class="tags-list">
+                      <li class="active tags-list__item"><a class="active tags-list__link" href="#">Featured</a></li>
+                      <li class="tags-list__item"><a class="tags-list__link" href="#">Clinical</a></li>
+                      <li class="tags-list__item"><a class="tags-list__link" href="#">Medical</a></li>
+                      <li class="tags-list__item"><a class="tags-list__link" href="#">Safety</a></li>
+                    </ul>
+                    <div class="read-more"><a href="#">Read more</a></div>
+                  </div><a class="box__link" href="#"></a>
+                </div>
+                <div class="box"><span class="share-article"></span>
+                  <div class="box__image"><img src="../img/content/image1.png"></div>
+                  <div class="box__body">
+                    <h4>Gallia est omnis divisa in partes tres, quarum.</h4>
+                    <p>Contra legem facit qui id facit quod lex prohibet. Unam incolunt Belgae, aliam Aquitani, tertiam.</p>
+                    <div class="post-info">07/24/18</div>
+                    <ul class="tags-list">
+                      <li class="active tags-list__item"><a class="active tags-list__link" href="#">Featured</a></li>
+                      <li class="tags-list__item"><a class="tags-list__link" href="#">Clinical</a></li>
+                      <li class="tags-list__item"><a class="tags-list__link" href="#">Medical</a></li>
+                      <li class="tags-list__item"><a class="tags-list__link" href="#">Safety</a></li>
+                    </ul>
+                    <div class="read-more"><a href="#">Read more</a></div>
+                  </div><a class="box__link" href="#"></a>
+                </div>
+                <div class="box"><span class="share-article"></span>
+                  <div class="box__image"><img src="../img/content/image1.png"></div>
+                  <div class="box__body">
+                    <h4>Gallia est omnis divisa in partes tres, quarum.</h4>
+                    <p>Contra legem facit qui id facit quod lex prohibet. Unam incolunt Belgae, aliam Aquitani, tertiam.</p>
+                    <div class="post-info">07/24/18</div>
+                    <ul class="tags-list">
+                      <li class="active tags-list__item"><a class="active tags-list__link" href="#">Featured</a></li>
+                      <li class="tags-list__item"><a class="tags-list__link" href="#">Clinical</a></li>
+                      <li class="tags-list__item"><a class="tags-list__link" href="#">Medical</a></li>
+                      <li class="tags-list__item"><a class="tags-list__link" href="#">Safety</a></li>
+                    </ul>
+                    <div class="read-more"><a href="#">Read more</a></div>
+                  </div><a class="box__link" href="#"></a>
+                </div>
+                <div class="box"><span class="share-article"></span>
+                  <div class="box__image"><img src="../img/content/image1.png"></div>
+                  <div class="box__body">
+                    <h4>Gallia est omnis divisa in partes tres, quarum.</h4>
+                    <p>Contra legem facit qui id facit quod lex prohibet. Unam incolunt Belgae, aliam Aquitani, tertiam.</p>
+                    <div class="post-info">07/24/18</div>
+                    <ul class="tags-list">
+                      <li class="active tags-list__item"><a class="active tags-list__link" href="#">Featured</a></li>
+                      <li class="tags-list__item"><a class="tags-list__link" href="#">Clinical</a></li>
+                      <li class="tags-list__item"><a class="tags-list__link" href="#">Medical</a></li>
+                      <li class="tags-list__item"><a class="tags-list__link" href="#">Safety</a></li>
+                    </ul>
+                    <div class="read-more"><a href="#">Read more</a></div>
+                  </div><a class="box__link" href="#"></a>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
-      </section>
-      <section class="paragraph paragraph__copy-with-image vertical purple-bg gradient one-col">
-        <div class="paragraph__copy-with-image--container section-layout">
-          <div class="paragraph__copy-with-image--content paragraph__layout">
-            <div class="paragraph__copy--body">
-              <h3 class="paragraph__title">Aktion lorem ipsum 2018</h3>
-              <h1>Was macht Ihren Tag kostbar?</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-            <div class="paragraph__image--wrapper"><img src="img/content/woman2.png">
-              <div class="overlap-box">
-                <div class="wysiwyg-content">
-                  <p>Vom&nbsp;<strong>13.10-15.11&nbsp;</strong>kostbare Inspirationen teilen.</p>
-                  <p><a class="btn purple" href="#">Jetzt mitmachen</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="paragraph paragraph__copy-with-image horizontal two-cols gray-bg">
-        <div class="paragraph__copy-with-image--container section-layout">
-          <div class="paragraph__copy-with-image--content paragraph__layout">
-            <div class="paragraph__copy--body">
-              <h2 class="paragraph__title">Service</h2>
-              <h1>Orientierung und Unterstützung für Ihre Patientinnenalltag.</h1>
-              <p>Ihre Zeit ist kostbar.</p>
-              <p>&nbsp;</p>
-              <p><img src="img/content/hilfe-fur-mich.png"></p>
-              <p><a class="btn purple" href="#">ihre individuelle hilfe</a></p>
-            </div>
-            <div class="paragraph__slider--wrapper">
-              <div class="slider-wrapper big simple">
-                <div class="slick-item">
-                  <div class="slide-image"><img src="img/content/woman1.png"></div>
-                  <div class="body">
-                    <p>Sehen Sie in unserem Erklärvideo, welche Services Sie auf der Webseite finden und wie einfach sie Sie anwenden können.</p>
-                  </div>
-                </div>
-                <div class="slick-item">
-                  <div class="slide-image"><img src="img/content/woman2.png"></div>
-                  <div class="body">
-                    <p>Sehen Sie in unserem Erklärvideo, welche Services Sie auf der Webseite finden und wie einfach sie Sie anwenden können.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="paragraph paragraph__copy-with-image horizontal two-cols pink-border">
-        <div class="paragraph__copy-with-image--container section-layout">
-          <div class="paragraph__copy-with-image--content paragraph__layout">
-            <div class="paragraph__copy--body">
-              <h2 class="paragraph__title">Service</h2>
-              <h1>Erhalten Sie schnell Antworten auf Ihre wichtigsten Fragen.</h1>
-              <p>Ihre Zeit ist kostbar.</p>
-              <p>&nbsp;</p>
-              <p><img src="img/content/me.png"></p>
-              <p><a class="btn purple" href="#">Antworten erhalten</a></p>
-            </div>
-            <div class="paragraph__copy--body">
-              <div class="icons icons-list__container">
-                <ul class="icons-list">
-                  <li class="icons-list__item fuzzy_wuzzy_brown"><a class="icons-list__link" href="#">
-                      <div class="icons-list__image"><img src="img/svg/diagnose.svg"></div><span class="icons-list__label">Diagnose</span></a></li>
-                  <li class="icons-list__item calico"><a class="icons-list__link" href="#">
-                      <div class="icons-list__image"><img src="img/svg/gefuhle.svg"></div><span class="icons-list__label">GEFÜHLE</span></a></li>
-                  <li class="icons-list__item sinbad"><a class="icons-list__link" href="#">
-                      <div class="icons-list__image"><img src="img/svg/beziehungen.svg"></div><span class="icons-list__label">BEZIEHUNGEN</span></a></li>
-                  <li class="icons-list__item moss_green"><a class="icons-list__link" href="#">
-                      <div class="icons-list__image"><img src="img/svg/apple.svg"></div><span class="icons-list__label">THERAPIE</span></a></li>
-                  <li class="icons-list__item lilac"><a class="icons-list__link" href="#">
-                      <div class="icons-list__image"><img src="img/svg/behandlung.svg"></div><span class="icons-list__label">BEHANDLUNG</span></a></li>
-                  <li class="icons-list__item zombie"><a class="icons-list__link" href="#">
-                      <div class="icons-list__image"><img src="img/svg/checkbox.svg"></div><span class="icons-list__label">ARBEIT</span></a></li>
-                </ul>
-              </div>
-              <p>Sie werden viele Fragen zu Ihrer Krankheit haben. Finden Sie kompetente Expertenantworten auf „Es geht um mich!“</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="paragraph paragraph__copy-with-image horizontal two-cols pink-bg">
-        <div class="paragraph__copy-with-image--container section-layout">
-          <div class="paragraph__copy-with-image--content paragraph__layout">
-            <div class="paragraph__copy--body">
-              <h2 class="paragraph__title">Mobile app</h2>
-              <h1>Ein geschützter Ort für Sie, Ihre Angehörigen und Ihre Gefühle</h1>
-              <p>EmotionSpace bietet Ihnen einen geschützten Ort, um Ihre Gefühle festzuhalten und auf Wunsch mit Angehörigen zu teilen. Zudem erhalten Sie wertvolle Tipps zum Ihre Stimmung positiv zu beeinflussen.</p>
-              <p><a class="btn white" href="#">erfahren sie mehr</a></p>
-            </div>
-            <div class="paragraph__mobile-app">
-              <div class="paragraph__mobile-app--links"><a class="app-store" href="#"></a><a class="google-play" href="#"></a></div>
-              <div class="paragraph__mobile-app--image"><img src="img/content/phone.png"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="paragraph paragraph__testimonials--container">
-        <div class="paragraph__testimonials--content">
-          <div class="slider-wrapper testimonials">
-            <div class="slick-item">
-              <div class="testimonials__item">
-                <div class="big-pic">
-                  <div class="image-wrapper">
-                    <div class="image-desk"><img src="img/content/woman3.png"></div>
-                    <div class="image-mob"><img src="img/content/woman3_m.png"></div>
-                  </div>
-                  <div class="text">Anabelle Friderich</div>
-                </div>
-                <div class="small-pic">
-                  <div class="image-wrapper"><img src="img/content/flowers.png"></div>
-                  <div class="participation-text"><span>Lorem ipsum dolor sit amet, consetetur sadipscing</span></div>
-                  <div class="text">… denn jeder Tag ist kostbar.</div>
-                </div>
-              </div>
-            </div>
-            <div class="slick-item">
-              <div class="testimonials__item">
-                <div class="big-pic">
-                  <div class="image-wrapper">
-                    <div class="image-desk"><img src="img/content/woman3.png"></div>
-                    <div class="image-mob"><img src="img/content/woman3_m.png"></div>
-                  </div>
-                  <div class="text">Anabelle Friderich</div>
-                </div>
-                <div class="small-pic">
-                  <div class="image-wrapper"><img src="img/content/flowers.png"></div>
-                  <div class="participation-text"><span>Lorem ipsum dolor sit amet, consetetur sadipscing</span></div>
-                  <div class="text">… denn jeder Tag ist kostbar.</div>
-                </div>
-              </div>
-            </div>
-            <div class="slick-item">
-              <div class="testimonials__item">
-                <div class="big-pic">
-                  <div class="image-wrapper">
-                    <div class="image-desk"><img src="img/content/woman3.png"></div>
-                    <div class="image-mob"><img src="img/content/woman3_m.png"></div>
-                  </div>
-                  <div class="text">Anabelle Friderich</div>
-                </div>
-                <div class="small-pic">
-                  <div class="image-wrapper"><img src="img/content/flowers.png"></div>
-                  <div class="participation-text"><span>Lorem ipsum dolor sit amet, consetetur sadipscing</span></div>
-                  <div class="text">… denn jeder Tag ist kostbar.</div>
-                </div>
-              </div>
-            </div>
-            <div class="slick-item">
-              <div class="testimonials__item">
-                <div class="big-pic">
-                  <div class="image-wrapper">
-                    <div class="image-desk"><img src="img/content/woman3.png"></div>
-                    <div class="image-mob"><img src="img/content/woman3_m.png"></div>
-                  </div>
-                  <div class="text">Anabelle Friderich</div>
-                </div>
-                <div class="small-pic">
-                  <div class="image-wrapper"><img src="img/content/flowers.png"></div>
-                  <div class="participation-text"><span>Lorem ipsum dolor sit</span></div>
-                  <div class="text">… denn jeder Tag ist kostbar.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="paragraph paragraph__copy" style="background-color: #ECEBF8">
-        <div class="paragraph__copy--container section-layout">
-          <div class="paragraph__copy--content paragraph__layout">
-            <div class="paragraph__copy--body">
-              <!--h3.paragraph__title Paragraph title-->
-              <h1>Was macht Ihren Tag kostbar?</h1>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <p><strong>Mit jedem Beitrag spenden wir 2€.</strong></p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="photo-list__container">
-        <div class="photo-list__content section-layout">
-          <h1>Alle unsere Beiträge</h1>
-          <ul>
-            <li>
-              <div class="box"><img src="img/content/flowers.png">
-                <div class="label">… denn jeder Tag ist kostbar.</div>
-              </div>
-            </li>
-            <li>
-              <div class="box">
-                <div class="label">… denn jeder Tag ist kostbar.</div>
-              </div>
-            </li>
-            <li>
-              <div class="box"><img src="img/content/flowers.png">
-                <div class="label">… denn jeder Tag ist kostbar.</div>
-              </div>
-            </li>
-            <li>
-              <div class="box"><img src="img/content/flowers.png">
-                <div class="label">… denn jeder Tag ist kostbar.</div>
-              </div>
-            </li>
-            <li class="double">
-              <div class="box">
-                <h2>Danke für 200<br> kostbare Inspirationen!</h2>
-              </div>
-            </li>
-            <li>
-              <div class="box"><img src="img/content/flowers.png">
-                <div class="label">… denn jeder Tag ist kostbar.</div>
-              </div>
-            </li>
-            <li>
-              <div class="box"><img src="img/content/flowers.png">
-                <div class="label">… denn jeder Tag ist kostbar.</div>
-              </div>
-            </li>
-            <li>
-              <div class="box"><img src="img/content/flowers.png">
-                <div class="label">… denn jeder Tag ist kostbar.</div>
-              </div>
-            </li>
-            <li>
-              <div class="box"><img src="img/content/flowers.png">
-                <div class="label">… denn jeder Tag ist kostbar.</div>
-              </div>
-            </li>
-            <li>
-              <div class="box"><img src="img/content/flowers.png">
-                <div class="label">… denn jeder Tag ist kostbar.</div>
-              </div>
-            </li>
-            <li>
-              <div class="box"><img src="img/content/flowers.png">
-                <div class="label">… denn jeder Tag ist kostbar.</div>
-              </div>
-            </li>
-            <li>
-              <div class="box"><img src="img/content/flowers.png">
-                <div class="label">… denn jeder Tag ist kostbar.</div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <section class="paragraph paragraph__copy-with-slider horizontal two-cols white-box-bg">
-        <div class="paragraph__copy-with-slider--container section-layout">
-          <div class="paragraph__copy-with-slider--content paragraph__layout">
-            <div class="paragraph__copy--body">
-              <h2 class="paragraph__title">AUSTAUSCH</h2>
-              <h1>Lernen Sie andere Betroffene kennen</h1>
-              <p>Beim Austausch mit anderen Betroffenen erhalten Sie wertvolle Tipps und Hinweise für Ihren Alltag. Ob Sie dabei aktiv teilnehmen oder nur stiller Beobachter sind, bleibt ganz Ihnen überlassen.</p>
-            </div>
-            <div class="paragraph__slider--wrapper">
-              <div class="slider-wrapper small simple">
-                <div class="slick-item">
-                  <div class="slide-image"><img src="img/content/woman1.png"></div>
-                  <div class="body">
-                    <p>Vieles, von dem, was Sie zurzeit im Innersten bewegt können nur Betroffene nachvollziehen. Im Forum von Brigitte.de treffen Sie Betroffene zum Austausch.</p>
-                    <p><a class="btn purple" href="#">zum austausch</a></p>
-                  </div>
-                </div>
-                <div class="slick-item">
-                  <div class="slide-image"><img src="img/content/woman2.png"></div>
-                  <div class="body">
-                    <p>Vieles, von dem, was Sie zurzeit im Innersten bewegt können nur Betroffene nachvollziehen. Im Forum von Brigitte.de treffen Sie Betroffene zum Austausch.</p>
-                    <p><a class="btn purple" href="#">zum austausch</a></p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="paragraph paragraph__links-with-image horizontal two-cols white-bg">
-        <div class="paragraph__links-with-image--container section-layout">
-          <div class="paragraph__links-with-image--content paragraph__layout">
-            <div class="paragraph__links--body">
-              <h1>Gestalten Sie ihren Alltag</h1>
-              <p><img src="img/content/woman1.png"></p>
-            </div>
-            <div class="paragraph__links--body">
-              <div class="list--links__container">
-                <ul class="list--links">
-                  <li class="list--links__item"><a class="list--links__link" href="#">Kosmetik-Seminare</a></li>
-                  <li class="list--links__item"><a class="list--links__link" href="#">Ernährungsberatung</a></li>
-                  <li class="list--links__item"><a class="list--links__link" href="#">yoga für patientinnen</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="paragraph paragraph__copy" style="background-color: #F4F4F4">
-        <div class="paragraph__copy--container section-layout">
-          <div class="paragraph__copy--content paragraph__layout">
-            <div class="paragraph__copy--body">
-              <p><a class="btn purple" href="#">Alle Services</a></p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+      </div>
+    </main>
     <footer id="footer">
       <div class="section-layout">
-        <div class="footer footer__top">
-          <div class="wysiwyg-content">
-            <p><strong>Jeder&nbsp;</strong>Tag ist kostbar</p>
-            <p><img src="img/content/pfizer-logo.png"></p>
+        <div class="footer footer__left">
+          <div class="footer__logo"><img src="../img/general/pfizer-logo.png"></div>
+          <div class="footer__slogan">
+            <p>OPERATIONS CENTER OF EXCELLENCE</p>
+            <p>Global Product Development</p>
           </div>
-        </div>
-        <div class="footer footer__center">
-          <nav class="footer-nav" role="navigation">
+          <nav class="footer-nav">
             <ul class="footer-menu">
-              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Kontakt</a></li>
-              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Impressum</a></li>
-              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Pflichtangaben</a></li>
-            </ul>
-          </nav>
-          <nav class="footer-nav" role="navigation">
-            <ul class="footer-menu">
-              <li class="footer-menu__item"><a class="footer-menu__link" href="#">AGB</a></li>
-              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Nutzungsbedingungen</a></li>
-              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Datenschutz</a></li>
-            </ul>
-          </nav>
-          <nav class="footer-nav" role="navigation">
-            <ul class="footer-menu">
-              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Medizinische Anfragen</a></li>
-              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Pfizer Global</a></li>
-              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Fur Fachkreise - Pfizermed.de</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Footer menu item</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Footer menu item</a></li>
             </ul>
           </nav>
         </div>
-        <div class="footer footer__bottom">
-          <div class="wysiwyg-content copyright">
-            <p>Copyright ©2017 Pfizer Deutschland GmbH. Alle Rechte vorbehalten.</p>
-            <p>Mitglied im Verband der forschenden Pharmaunternehmen und im Verein Freiwillige Selbstkontrolle für die Arzneimittelindustrie e.V.</p>
-          </div>
+        <div class="footer footer__right">
+          <p>Cum sociis natoque penatibus et magnis dis parturient. Sed haec quis possit intrepidus aestimare tellus. Non equidem invideo, miror magis posuere velit aliquet. Pellentesque habitant morbi tristique senectus et netus. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. Fabio vel iudice vincam, sunt in culpa qui officia. Quisque ut dolor gravida, placerat libero vel, euismod.</p>
         </div>
       </div>
     </footer>
@@ -443,5 +182,7 @@
     <script src="js/libs.min.js"></script>
     <script src="js/jquery.resizeAction.js"></script>
     <script src="js/main.js"></script>
+    <!-- External fonts-->
+    <script src="https://docs.gcs.digitalpfizer.com/fonts/fs_albert_pro_web/font_FSAlbert.js"></script>
   </body>
 </html>

@@ -1,9 +1,15 @@
 header#header
   .section-layout
-    .header.header__top
+    .header.header__left
       .site-logo
         a(href='/')
-          img(src='img/general/logo-black.png' class="logo-black")
-          img(src='img/general/logo-white.png' class="logo-white")
-    .header.header__bottom
+          img(src='img/general/logo-white.svg')
+
       include ../modules/main-menu
+
+    .header.header__right
+      ul.account-menu
+        +navItem('/', 'Hi, John', 'user-name account-menu')
+        +navItem('#', 'Logout', 'user-logout account-menu')
+
+      include ../modules/search-form

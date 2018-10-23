@@ -1,7 +1,30 @@
+// Placeholders
+::-webkit-input-placeholder {
+  color: $dusty-gray;
+}
+
+::-moz-placeholder {
+  color: $dusty-gray;
+}
+
+// Firefox 19+
+:-moz-placeholder {
+  color: $dusty-gray;
+}
+
+// Firefox 18-
+:-ms-input-placeholder {
+  color: $dusty-gray;
+}
+
+::selection {
+  //background: $selection-color;
+}
+
 #user-login,
 #user-pass {
   background: $white;
-  border: 2px solid $butterfly-bush;
+  border: 2px solid $bossanova;
   margin: 0 auto 40px;
   max-width: 620px;
   padding: 30px 40px;
@@ -10,8 +33,6 @@
 }
 
 .form-item {
-  margin-bottom: 40px;
-
   label {
     display: inline-block;
     font-weight: $bold;
@@ -30,8 +51,10 @@
 }
 
 .form-text {
-  border: 2px solid $logan;
-  padding: 8px 15px;
+  border-radius: 32px;
+  color: $dusty-gray;
+  font-family: $fsAlbertBold;
+  padding: 22px 24px;
   width: 100%;
 }
 
@@ -40,6 +63,40 @@
 }
 
 .form-submit {
-  @extend .btn;
-  @extend .purple;
+
+}
+
+// Search form
+.search-form {
+  position: relative;
+  text-align: right;
+
+  .form-text {
+    margin-bottom: 10px;
+    width: 540px;
+  }
+
+  .form-submit {
+    @include same(55px, height, width);
+    background: $blue url(../img/general/search-icon.png) center no-repeat;
+    border-radius: 50%;
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    text-indent: -9999px;
+    transition: background-color .3s ease;
+
+    &:hover {
+      background-color: rgba($blue, .7);
+    }
+  }
+}
+
+.advanced-search {
+  @include font-size(14);
+  @include links($white, $white);
+  background: url(../img/general/search-icon.png) left center no-repeat;
+  background-size: 11px;
+  margin-right: 33px;
+  padding-left: 15px;
 }

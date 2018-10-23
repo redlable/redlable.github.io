@@ -4,20 +4,18 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title>Front page</title><!--[if IE]>
+    <title>Page 404</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
     <link rel="stylesheet" type="text/css" href="css/screen.css">
   </head>
-  <body class="front">
+  <body class="page-404">
     <div class="main-wrapper" style="background-color: pink;">
       <header id="header">
         <div class="section-layout">
-          <div class="header header__top">
-            <div class="site-logo"><a href="/"><img class="logo-black" src="img/general/logo-black.png"><img class="logo-white" src="img/general/logo-white.png"></a></div>
-          </div>
-          <div class="header header__bottom">
+          <div class="header header__left">
+            <div class="site-logo"><a href="/"><img src="img/general/logo-white.svg"></a></div>
             <div class="hamburger-btn">
               <div></div>
               <div></div>
@@ -25,14 +23,26 @@
             </div>
             <nav class="main-nav" role="navigation">
               <ul class="main-menu">
-                <li class="main-menu__item"><a class="main-menu__link" href="#">Orientierung</a></li>
-                <li class="main-menu__item"><a class="main-menu__link" href="#">Information</a></li>
-                <li class="main-menu__item"><a class="main-menu__link" href="#">Emotionen</a></li>
-                <li class="main-menu__item"><a class="main-menu__link" href="#">Yoga</a></li>
-                <li class="main-menu__item"><a class="main-menu__link" href="#">Austausch</a></li>
-                <li class="main-menu__item"><a class="main-menu__link" href="#">Angebote</a></li>
+                <li class="is-active main-menu__item"><a class="is-active main-menu__link" href="/">Home</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="#">Monthly digest</a></li>
               </ul>
             </nav>
+          </div>
+          <div class="header header__right">
+            <ul class="account-menu">
+              <li class="user-name account-menu__item"><a class="user-name account-menu__link" href="/">Hi, John</a></li>
+              <li class="user-logout account-menu__item"><a class="user-logout account-menu__link" href="#">Logout</a></li>
+            </ul>
+            <div class="search-form">
+              <form action="#">
+                <div class="form-item">
+                  <input class="form-text" type="text" placeholder="Enter your keywords">
+                </div>
+                <div class="form-actions">
+                  <input class="form-submit" type="submit" value="Search">
+                </div>
+              </form><a class="advanced-search" href="#">Advanced search</a>
+            </div>
           </div>
         </div>
       </header>
@@ -46,40 +56,21 @@
     </div>
     <footer id="footer">
       <div class="section-layout">
-        <div class="footer footer__top">
-          <div class="wysiwyg-content">
-            <p><strong>Jeder&nbsp;</strong>Tag ist kostbar</p>
-            <p><img src="img/content/pfizer-logo.png"></p>
+        <div class="footer footer__left">
+          <div class="footer__logo"><img src="../img/general/pfizer-logo.png"></div>
+          <div class="footer__slogan">
+            <p>OPERATIONS CENTER OF EXCELLENCE</p>
+            <p>Global Product Development</p>
           </div>
-        </div>
-        <div class="footer footer__center">
-          <nav class="footer-nav" role="navigation">
+          <nav class="footer-nav">
             <ul class="footer-menu">
-              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Kontakt</a></li>
-              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Impressum</a></li>
-              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Pflichtangaben</a></li>
-            </ul>
-          </nav>
-          <nav class="footer-nav" role="navigation">
-            <ul class="footer-menu">
-              <li class="footer-menu__item"><a class="footer-menu__link" href="#">AGB</a></li>
-              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Nutzungsbedingungen</a></li>
-              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Datenschutz</a></li>
-            </ul>
-          </nav>
-          <nav class="footer-nav" role="navigation">
-            <ul class="footer-menu">
-              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Medizinische Anfragen</a></li>
-              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Pfizer Global</a></li>
-              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Fur Fachkreise - Pfizermed.de</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Footer menu item</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Footer menu item</a></li>
             </ul>
           </nav>
         </div>
-        <div class="footer footer__bottom">
-          <div class="wysiwyg-content copyright">
-            <p>Copyright ©2017 Pfizer Deutschland GmbH. Alle Rechte vorbehalten.</p>
-            <p>Mitglied im Verband der forschenden Pharmaunternehmen und im Verein Freiwillige Selbstkontrolle für die Arzneimittelindustrie e.V.</p>
-          </div>
+        <div class="footer footer__right">
+          <p>Cum sociis natoque penatibus et magnis dis parturient. Sed haec quis possit intrepidus aestimare tellus. Non equidem invideo, miror magis posuere velit aliquet. Pellentesque habitant morbi tristique senectus et netus. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. Fabio vel iudice vincam, sunt in culpa qui officia. Quisque ut dolor gravida, placerat libero vel, euismod.</p>
         </div>
       </div>
     </footer>

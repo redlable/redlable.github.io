@@ -1,91 +1,30 @@
-.main-nav {
-  @include same(25px, right, top);
-  background: $wild-sand;
-  border-top-right-radius: 25px;
-  max-width: 280px;
-  opacity: 0;
-  visibility: hidden;
-  padding: 60px 40px 30px;
-  position: absolute;
-  transition: .3s ease;
-  z-index: 5;
-
-  .active-menu & {
-    opacity: 1;
-    visibility: visible;
-  }
-
-  @include media-q(min, 991) {
-    background: none;
-    border-radius: 0;
-    max-width: 100%;
-    opacity: 1;
-    visibility: visible;
-    padding: 0 0 40px;
-    position: static;
-    transform: none;
-  }
-}
-
 .main-menu {
-  @include media-q(min, 991) {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    z-index: 1;
-  }
+  display: flex;
+  flex-wrap: wrap;
 
   &__item {
-    border-bottom: 1px solid rgba($boulder, .3);
-
-    @include media-q(min, 991) {
-      border-bottom: none;
-      border-right: 2px solid $butterfly-bush;
-    }
+    margin-right: 50px;
 
     &:last-child {
-      border: none;
-
-      .main-menu__link {
-        padding-bottom: 0;
-      }
+      margin-right: 0;
     }
   }
 
   &__link {
-    @include font-size(16);
-    color: $scorpion;
+    @include font-size(18);
+    @include links($white, $white);
+    border-bottom: 3px solid transparent;
     display: block;
-    font-weight: $bold;
-    line-height: 1.2;
-    padding: 25px 0;
-    text-transform: uppercase;
-    text-decoration: none;
+    font-family: $fsAlbertBold;
+    padding: 5px 0;
+    transition: border-color .3s ease;
 
-    .not-front & {
-      color: $scorpion;
-
-      @include media-q(min, 991) {
-        color: $white;
-      }
+    &:hover {
+      border-color: $white;
     }
 
-    body:not(.mobile) & {
-      &:hover {
-        color: $gray;
-      }
-    }
-
-    .not-front:not(.mobile) & {
-      &:hover {
-        color: $butterfly-bush;
-      }
-    }
-
-    @include media-q(min, 991) {
-      @include font-size(14);
-      margin: 0 18px;
-      padding: 0;
+    &.is-active {
+      border-color: $green;
     }
   }
 }

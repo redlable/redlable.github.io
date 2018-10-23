@@ -1,208 +1,68 @@
-.list--links {
-  &__container {
-    @include media-q(min, 768) {
-      display: flex;
-      justify-content: center;
+.tags-container {
+  border-top: 1px solid $lavender-gray;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 90px;
+  padding: 45px 0 70px;
+
+  .share-article {
+    align-items: center;
+    background: url(../img/general/share-icon.png) left center no-repeat;
+    color: $dove-gray;
+    cursor: pointer;
+    display: flex;
+    height: 28px;
+    padding-left: 45px;
+    transition: color .3s ease;
+
+    &:hover {
+      color: $blue;
     }
   }
+}
+
+.tags-list {
+  background: url(../img/general/tags-icon.png) left 3px no-repeat;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 25px;
 
   &__item {
+    margin-right: 4px;
 
+    &:after {
+      color: $dusty-gray;
+      content: ', ';
+    }
+
+    &:last-child {
+      &:after {
+        content: none;
+      }
+    }
   }
 
   &__link {
-    @include font-size(14);
-    border-bottom: 1px solid rgba($dusty-gray, .2);
-    color: $boulder;
-    display: block;
-    font-weight: $bold;
-    letter-spacing: 2px;
-    padding: 25px 50px 25px 25px;
-    position: relative;
-    text-align: left;
-    text-decoration: none;
-    text-transform: uppercase;
+    @include links($blue, $blue);
+    border-bottom: 1px solid $blue;
+    transition: border-color .3s ease;
 
-    &:after {
-      background: url(../img/svg/link-arrow-purple.svg) center no-repeat;
-      background-size: contain;
-      content: '';
-      display: block;
-      height: 12px;
-      position: absolute;
-      right: 20px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 15px;
-    }
-
-    @include media-q(min, 768) {
-      @include font-size(18);
-      letter-spacing: 2.5px;
-      padding: 25px;
-
-      &:after {
-        height: 16px;
-        left: calc(100% + 15px);
-        right: auto;
-        width: 20px;
-      }
+    &.active {
+      border-color: $pink;
+      color: $pink;
     }
 
     &:hover {
-      color: $scorpion;
+      border-color: transparent;
     }
   }
 }
 
-.paragraph__anchor--list {
-  display: none;
-
-  @include media-q(min, 768) {
-    display: block;
-  }
-}
-
-.anchor--list {
+.box-list {
   display: flex;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
 
-  li {
-    border-right: 2px solid $butterfly-bush;
-
-    &:last-child {
-      border: none;
-    }
-  }
-
-  a {
-    @include font-size(14);
-    color: $boulder;
-    display: block;
-    font-weight: $bold;
-    line-height: 1.2;
-    margin: 0 18px;
-    text-transform: uppercase;
-    text-decoration: none;
-
-    body:not(.mobile) & {
-      &:hover {
-        color: $gray;
-      }
-    }
-  }
-}
-
-.photo-list {
-  &__container {
-    background: $white;
-    padding: 100px 0;
-  }
-
-  &__content {
-    h1 {
-      margin-bottom: 40px;
-      text-align: center;
-    }
-
-    ul {
-      display: flex;
-      flex-wrap: wrap;
-      transform: translateX(-10px);
-      width: calc(100% + 20px);
-    }
-
-    li {
-      @include flex-basis(100%);
-      margin-bottom: 20px;
-      padding: 0 10px;
-
-      @include media-q(min, 540) {
-        @include flex-basis(50%);
-      }
-
-      @include media-q(min, 768) {
-        @include flex-basis(33.33%);
-      }
-    }
-
-    .double {
-      @include flex-basis(100%);
-      color: $white;
-      text-align: center;
-
-      @include media-q(min, 768) {
-        @include flex-basis(66.66%);
-      }
-
-      .box {
-        align-items: center;
-        background-image: radial-gradient(100% 100%,#b19ecf 0%,#685194 80%);
-        display: flex;
-        justify-content: center;
-        padding: 85px 0;
-
-        @include media-q(min, 540) {
-          max-width: 100%;
-        }
-
-        @include media-q(min, 768) {
-          padding: 0;
-        }
-      }
-
-      h2 {
-        @include font-size(21);
-        background: url(../img/svg/heart.svg) center top no-repeat;
-        font-weight: $normal;
-        margin-bottom: 0;
-        padding-top: 110px;
-
-        @include media-q(min, 768) {
-          @include font-size(36);
-        }
-      }
-    }
-
-    .box {
-      background-color: $white-lilac;
-      border-radius: 10px;
-      height: 100%;
-      margin: 0 auto;
-      max-width: 360px;
-      overflow: hidden;
-      position: relative;
-    }
-
-    img {
-      display: block;
-    }
-
-    .label {
-      @include font-size(15);
-      @include same(0, left, bottom);
-      background: $logan;
-      color: $white;
-      letter-spacing: .66px;
-      line-height: 25px;
-      padding: 7px 60px 7px 23px;
-      position: absolute;
-      width: 100%;
-
-      &:after {
-        background: url(../img/content/ribbon.png) center no-repeat;
-        background-size: cover;
-        content: '';
-        display: block;
-        height: 24px;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        right: 20px;
-        width: 35px;
-      }
-    }
+  .box {
+    margin: 0 10px;
   }
 }

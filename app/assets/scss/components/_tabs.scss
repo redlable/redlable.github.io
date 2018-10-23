@@ -15,7 +15,7 @@
 
   a {
     background: rgba($white, .3);
-    color: $butterfly-bush;
+    color: $bossanova;
     display: block;
     font-weight: $bold;
     padding: 10px 15px;
@@ -28,12 +28,12 @@
     }
 
     .front & {
-      background: rgba($butterfly-bush, .5);
+      background: rgba($bossanova, .5);
       color: $white;
 
       &:hover,
       &.active {
-        background: rgba($butterfly-bush, .8);
+        background: rgba($bossanova, .8);
       }
     }
   }

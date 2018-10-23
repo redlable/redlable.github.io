@@ -37,16 +37,14 @@ html {
   font-family: sans-serif;
   text-size-adjust: 100%;
 }
-a:focus {
-  outline: thin dotted;
-}
 input,
 select,
 button,
 a:hover,
 textarea,
-a:active {
-  outline: 0;
+a:active,
+a:focus {
+  outline: none;
 }
 img,
 abbr,

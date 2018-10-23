@@ -1,61 +1,66 @@
 #header {
+  background-image: linear-gradient(0deg, #8e27f5, #3b004a);
+  background-color: $bossanova;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, .3);
+  margin-bottom: 60px;
   position: relative;
 
-  .not-front & {
-    &:after {
-      background-image: radial-gradient(50% 100%, #b19ecf 0%, $butterfly-bush 100%);
-    }
-  }
-
-  &:after {
-    @include absolute();
-    background: $white-lilac;
-    border-bottom: 1px solid rgba($logan, .2);
-    content: '';
-    height: 283px;
-  }
-
-  @include media-q(min, 991) {
-    &:after {
-      height: 530px;
-    }
+  .section-layout {
+    background: url(../img/general/head-bg-1.png) left top no-repeat, url(../img/general/head-bg-2.png) right top no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 }
 
 .header {
-  &__top {
+  &__left {
     display: flex;
-    justify-content: center;
-    padding: 33px 0;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 75px;
+  }
 
-    @include media-q(min, 991) {
-      padding: 60px 0;
-    }
+  &__right {
+    padding-top: 30px;
   }
 
   .site-logo {
-    max-width: 175px;
-    position: relative;
-    z-index: 1;
-
-    @include media-q(min, 991) {
-      max-width: 100%;
-    }
+    margin-bottom: 40px;
   }
 
-  .not-front & {
-    .logo-black {
-      display: none;
+  .account-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-bottom: 32px;
+
+    &__item {
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 0;
+      }
     }
-  }
 
-  .front & {
-    .logo-white {
-      display: none;
+    &__link {
+      @include links($white, $white);
+      display: block;
+      font-family: $fsAlbertBold;
+      line-height: 1.5;
+      padding-right: 37px;
+
+      &:hover {
+        text-decoration: underline;
+      }
     }
-  }
 
-  &__bottom {
+    .user-name {
+      background: url(../img/general/user-icon.png) right center no-repeat;
+    }
 
+    .user-logout {
+      background: url(../img/general/logout-icon.png) right center no-repeat;
+    }
   }
 }
