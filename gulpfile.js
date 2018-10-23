@@ -25,6 +25,11 @@ $.path.tasks.forEach(function (taskPath) {
 //   $.gulp.parallel('sass', 'pug', 'scripts:lib', 'svg', 'img', 'fonts','svg:copy')
 // ));
 
+$.gulp.task('build', $.gulp.series(
+  'clean',
+  $.gulp.parallel('sass', 'pug', 'scripts:lib', 'scripts', 'img')
+));
+
 $.gulp.task('copy', $.gulp.series(
   $.gulp.parallel('svg', 'img:theme')
 ));

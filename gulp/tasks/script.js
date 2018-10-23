@@ -12,7 +12,7 @@ module.exports = function() {
   });
 
   $.gulp.task('scripts', function () {
-    return $.gulp.src('app/assets/js/main.js')
+    return $.gulp.src('app/assets/js/**/*.js')
       .pipe($.gulp.dest('build/js/'))
       .pipe($.browserSync.reload({
         stream: true
