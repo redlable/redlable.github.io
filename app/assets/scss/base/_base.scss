@@ -38,3 +38,41 @@ iframe {
 .responsive-video {
   @extend %responsive-video;
 }
+
+// PROTOTYPE STYLES
+.prototype-nav {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 100px;
+  padding: 50px;
+}
+
+.prototype-menu {
+  display: flex;
+  font-family: $fsAlbertExtraBold;
+  flex-wrap: wrap;
+
+  &__item {
+    background-image: linear-gradient(0deg, #8e27f5, #3b004a);
+    border-radius: 20px;
+    border-top: 4px solid #3b004a;
+    border-bottom: 4px solid #8e27f5;
+    margin: 10px 20px;
+    transition: border-color .3s ease;
+
+    &:hover {
+      border-top: 4px solid #8e27f5;
+      border-bottom: 4px solid #3b004a;
+    }
+  }
+
+  &__link {
+    @include links($white, $white);
+    @include font-size(30);
+    background: url(../img/general/head-bg-1.png) left top no-repeat;
+    display: block;
+    padding: 10px 30px;
+    text-align: center;
+  }
+}

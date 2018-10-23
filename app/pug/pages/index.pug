@@ -1,6 +1,11 @@
 extends ../layout/main
 
 block variables
-  - var title = 'Article page'
-  - var pageClass = 'not-front'
+  - var title = 'Index page'
+  - var pageClass = 'index-page'
 
+block content
+  nav.prototype-nav
+    ul.prototype-menu
+      +navItem('front-page.html', 'Front page', 'prototype-menu')
+      +navItem('article-page.html', 'Article page', 'prototype-menu')
