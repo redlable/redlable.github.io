@@ -40,12 +40,49 @@ iframe {
 }
 
 // PROTOTYPE STYLES
+.ready-list {
+  display: flex;
+  font-family: $fsAlbertBold;
+  justify-content: center;
+  margin-top: 100px;
+
+  > div {
+    margin: 20px;
+
+    &:before {
+      @include same(15px, height, width);
+      border: 1px solid $black;
+      content: '';
+      display: inline-block;
+      margin: 3px 10px 0 0;
+      vertical-align: top;
+    }
+  }
+
+  .not-ready {
+    &:before {
+      background: $red;
+    }
+  }
+
+  .in-progress {
+    &:before {
+      background: $blue;
+    }
+  }
+
+  .ready {
+    &:before {
+      background: $green;
+    }
+  }
+}
+
 .prototype-nav {
   align-items: center;
   display: flex;
   justify-content: center;
-  margin: 100px;
-  padding: 50px;
+  margin: 100px 100px 50px;
 }
 
 .prototype-menu {
@@ -60,10 +97,38 @@ iframe {
     border-bottom: 4px solid #8e27f5;
     margin: 10px 20px;
     transition: border-color .3s ease;
+  }
+
+  .not-ready {
+    background-image: linear-gradient(0deg, $red, darken($red, 30));
+    border-bottom: 4px solid $red;
+    border-top: 4px solid darken($red, 30);
 
     &:hover {
-      border-top: 4px solid #8e27f5;
-      border-bottom: 4px solid #3b004a;
+      border-top: 4px solid $red;
+      border-bottom: 4px solid darken($red, 30);
+    }
+  }
+
+  .in-progress {
+    background-image: linear-gradient(0deg, $blue, darken($blue, 30));
+    border-bottom: 4px solid $blue;
+    border-top: 4px solid darken($blue, 30);
+
+    &:hover {
+      border-top: 4px solid $blue;
+      border-bottom: 4px solid darken($blue, 30);
+    }
+  }
+
+  .ready {
+    background-image: linear-gradient(0deg, $green, darken($green, 30));
+    border-bottom: 4px solid $green;
+    border-top: 4px solid darken($green, 30);
+
+    &:hover {
+      border-top: 4px solid $green;
+      border-bottom: 4px solid darken($green, 30);
     }
   }
 

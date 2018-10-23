@@ -5,9 +5,16 @@ block variables
   - var pageClass = 'index-page'
 
 block content
+  .ready-list
+    .not-ready Not ready
+    .in-progress In progress
+    .ready Ready
+
   nav.prototype-nav
     ul.prototype-menu
-      li.prototype-menu__item
+      li.prototype-menu__item.in-progress
         a.prototype-menu__link(href="build/front-page.html" target="_blank") Front page
-      li.prototype-menu__item
+      li.prototype-menu__item.ready
         a.prototype-menu__link(href="build/article-page.html" target="_blank") Article page
+      li.prototype-menu__item.not-ready
+        a.prototype-menu__link(href="build/search-page.html" target="_blank") Search page
