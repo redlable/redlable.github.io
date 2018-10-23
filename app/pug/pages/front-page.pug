@@ -1,0 +1,19 @@
+extends ../layout/main
+
+block variables
+  - var title = 'Front page'
+  - var pageClass = 'front'
+
+block content
+  section.related-section
+    .section-layout
+      h2.section-title.text-center Featured
+
+      .small-box-list
+        include ../modules/small-box
+        include ../modules/small-box
+        include ../modules/small-box
+        include ../modules/small-box
+
+      .long-box-list
+        include ../modules/long-box
