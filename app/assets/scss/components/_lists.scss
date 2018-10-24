@@ -5,21 +5,6 @@
   justify-content: space-between;
   margin-top: 90px;
   padding: 45px 0 70px;
-
-  .share-article {
-    align-items: center;
-    background: url(../img/general/share-icon.png) left center no-repeat;
-    color: $dove-gray;
-    cursor: pointer;
-    display: flex;
-    height: 28px;
-    padding-left: 45px;
-    transition: color .3s ease;
-
-    &:hover {
-      color: $blue;
-    }
-  }
 }
 
 .tags-list {
@@ -61,8 +46,21 @@
 
 .small-box-list {
   display: flex;
+  transform: translateX(-10px);
+  width: calc(100% + 20px);
 
   .box {
     margin: 0 10px;
+  }
+}
+
+.long-box-list {
+  background: $white;
+  padding-bottom: 85px;
+
+  .box {
+    border-top: 1px solid $lavender-gray;
+    margin-bottom: 50px;
+    padding-top: 50px;
   }
 }

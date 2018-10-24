@@ -1,14 +1,16 @@
-.long-box
-  span.share-article
+.box.long-box
+  .box__image.long-box__image
+    a(href="#")
+      img(src="./img/content/image1.png")
 
-  .box__image
-    img(src="./img/content/image1.png")
+  .long-box__body
+    .share-article
 
-  .box__body
-    h4 Gallia est omnis divisa in partes tres, quarum.
-    p Contra legem facit qui id facit quod lex prohibet. Unam incolunt Belgae, aliam Aquitani, tertiam.
+    h2
+      a(href="#") Cum sociis natoque penatibus et magnis dis parturient.
+    p Quam diu etiam furor iste tuus nos eludet? Quid securi etiam tamquam eu fugiat nulla pariatur. Fabio vel iudice vincam, sunt in culpa qui officia. Plura mihi bona sunt, inclinet, amari petere vellent. Prima luce, cum quibus mons aliud consensu ab eo.
 
-    .post-info 07/24/18
+    .post-info Posted: 07/24/18
 
     ul.tags-list
       +navItem('#', 'Featured', 'active tags-list')
@@ -18,5 +20,3 @@
 
     .read-more
       a(href="#") Read more
-
-  a(href="#").box__link

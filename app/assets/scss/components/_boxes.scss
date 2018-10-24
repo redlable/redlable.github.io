@@ -1,36 +1,47 @@
 .box {
-  &__link {
-    @include absolute();
+  position: relative;
+
+  &__image {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+
+    &:hover {
+      img {
+        transform: scale(1.1);
+      }
+    }
+
+    img {
+      transition: transform .3s ease;
+    }
   }
 
+  h2,
   h4,
   p {
     margin-bottom: 20px;
-    transition: color .3s ease;
+  }
+
+  @include headings() {
+    a {
+      @include links(inherit, $blue);
+      transition: color .3s ease;
+    }
   }
 
   .post-info {
-    @include font-size(13);
     background: url(../img/general/calendar-icon.png) left top no-repeat;
     color: $dusty-gray;
-    margin-bottom: 8px;
-    padding-left: 20px;
   }
 
   .tags-list {
-    @include font-size(13);
     background-position: left center;
-    background-size: 13px;
-    margin-bottom: 10px;
-    padding-left: 20px;
-    position: relative;
-    z-index: 1;
   }
 
   .read-more {
-    display: flex;
-    justify-content: flex-end;
-
     a {
       @include links($blue, $blue);
       background: url(../img/general/link-arrow-blue.png) 97% center no-repeat;
@@ -47,29 +58,18 @@
   }
 }
 
+// Small box
 .small-box {
   background: $mischka;
   border-radius: 20px;
   box-shadow: 0 6px 10px rgba($black, .1);
   overflow: hidden;
   max-width: 400px;
-  position: relative;
-
-  &:hover {
-    .small-box__image {
-      img {
-        transform: scale(1.1);
-      }
-    }
-
-    h4 {
-      color: $blue;
-    }
-  }
 
   .share-article {
     @include same(57px, height, width);
     @include same(0, right, top);
+    background: none;
     cursor: pointer;
     overflow: hidden;
     position: absolute;
@@ -103,20 +103,72 @@
     }
   }
 
-  &__image {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-
-    img {
-      transition: transform .3s ease;
-    }
-  }
-
   &__body {
     background: $white;
     padding: 20px 20px 20px 25px;
+  }
+
+  .post-info {
+    @include font-size(13);
+    background-size: 14px;
+    margin-bottom: 8px;
+    padding-left: 20px;
+  }
+
+  .tags-list {
+    @include font-size(13);
+    background-size: 13px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+  }
+
+  .read-more {
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+// Long box
+.long-box {
+  display: flex;
+  flex-wrap: wrap;
+
+  &__image {
+    @include flex-basis(400);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-right: 45px;
+  }
+
+  &__body {
+    @include flex-basis(calc(100% - 445px));
+    padding: 7px 140px 0 0;
+    position: relative;
+  }
+
+  .share-article {
+    background-position: left -32px;
+    height: 28px;
+    padding: 0;
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    width: 25px;
+
+    &:hover {
+      background-position: left top;
+    }
+  }
+
+  .post-info {
+    @include font-size(14);
+    margin-bottom: 13px;
+    padding: 3px 0 0 30px;
+  }
+
+  .tags-list {
+    @include font-size(14);
+    margin-bottom: 25px;
+    padding-left: 30px;
   }
 }

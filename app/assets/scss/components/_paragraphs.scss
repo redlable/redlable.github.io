@@ -23,3 +23,8 @@
     padding-bottom: 20px;
   }
 }
+
+.category-title {
+  @include font-size(32);
+  margin: 95px 0 15px;
+}

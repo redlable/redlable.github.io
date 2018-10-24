@@ -91,12 +91,17 @@ iframe {
   flex-wrap: wrap;
 
   &__item {
-    background-image: linear-gradient(0deg, #8e27f5, #3b004a);
+    background-image: linear-gradient(0deg, $red, darken($red, 30));
     border-radius: 20px;
-    border-top: 4px solid #3b004a;
-    border-bottom: 4px solid #8e27f5;
+    border-bottom: 4px solid $red;
+    border-top: 4px solid darken($red, 30);
     margin: 10px 20px;
     transition: border-color .3s ease;
+
+    &:hover {
+      border-top: 4px solid $red;
+      border-bottom: 4px solid darken($red, 30);
+    }
   }
 
   .not-ready {
