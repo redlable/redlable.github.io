@@ -2,92 +2,92 @@
 <!-- Navigation item-->
 <!-- Icons--><!DOCTYPE html>
 <html lang="ru-RU">
-<head>
-  <meta charset="utf-8">
-  <title>Index page</title>
-  <meta http-equiv="X-UA-Compatible" content="IE = edge">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="keywords" content="">
-  <link rel="stylesheet" type="text/css" href="build/css/screen.css">
-</head>
-<body class="index-page">
-<main class="main-wrapper">
-  <header id="header">
-    <div class="section-layout">
-      <div class="header header__left">
-        <div class="site-logo"><a href="/"><img src="build/img/general/logo-white.svg"></a></div>
-        <div class="hamburger-btn">
-          <div></div>
-          <div></div>
-          <div></div>
+  <head>
+    <meta charset="utf-8">
+    <title>Index page</title>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="css/screen.css">
+  </head>
+  <body class="index-page">
+    <main class="main-wrapper">
+      <header id="header">
+        <div class="section-layout">
+          <div class="header header__left">
+            <div class="site-logo"><a href="/"><img src="./img/general/logo-white.svg"></a></div>
+            <div class="hamburger-btn">
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <nav class="main-nav" role="navigation">
+              <ul class="main-menu">
+                <li class="is-active main-menu__item"><a class="is-active main-menu__link" href="/">Home</a></li>
+                <li class="main-menu__item"><a class="main-menu__link" href="#">Monthly digest</a></li>
+              </ul>
+            </nav>
+          </div>
+          <div class="header header__right">
+            <ul class="account-menu">
+              <li class="user-name account-menu__item"><a class="user-name account-menu__link" href="/">Hi, John</a></li>
+              <li class="user-logout account-menu__item"><a class="user-logout account-menu__link" href="#">Logout</a></li>
+            </ul>
+            <div class="search-form">
+              <form action="#">
+                <div class="form-item">
+                  <input class="form-text" type="text" placeholder="Enter your keywords">
+                </div>
+                <div class="form-actions">
+                  <input class="form-submit" type="submit" value="Search">
+                </div>
+              </form><a class="advanced-search" href="#">Advanced search</a>
+            </div>
+          </div>
         </div>
-        <nav class="main-nav" role="navigation">
-          <ul class="main-menu">
-            <li class="is-active main-menu__item"><a class="is-active main-menu__link" href="/">Home</a></li>
-            <li class="main-menu__item"><a class="main-menu__link" href="#">Monthly digest</a></li>
+      </header>
+      <!--include ../modules/editor-tabs-->
+      <!--include ../modules/login-form-->
+      <div class="content-container">
+        <div class="ready-list">
+          <div class="not-ready">Not ready</div>
+          <div class="in-progress">In progress</div>
+          <div class="ready">Ready</div>
+        </div>
+        <nav class="prototype-nav">
+          <ul class="prototype-menu">
+            <li class="prototype-menu__item in-progress"><a class="prototype-menu__link" href="build/front-page.html" target="_blank">Front page</a></li>
+            <li class="prototype-menu__item ready"><a class="prototype-menu__link" href="build/article-page.html" target="_blank">Article page</a></li>
+            <li class="prototype-menu__item not-ready"><a class="prototype-menu__link" href="build/search-page.html" target="_blank">Search page</a></li>
           </ul>
         </nav>
       </div>
-      <div class="header header__right">
-        <ul class="account-menu">
-          <li class="user-name account-menu__item"><a class="user-name account-menu__link" href="/">Hi, John</a></li>
-          <li class="user-logout account-menu__item"><a class="user-logout account-menu__link" href="#">Logout</a></li>
-        </ul>
-        <div class="search-form">
-          <form action="#">
-            <div class="form-item">
-              <input class="form-text" type="text" placeholder="Enter your keywords">
-            </div>
-            <div class="form-actions">
-              <input class="form-submit" type="submit" value="Search">
-            </div>
-          </form><a class="advanced-search" href="#">Advanced search</a>
+    </main>
+    <footer id="footer">
+      <div class="section-layout">
+        <div class="footer footer__left">
+          <div class="footer__logo"><img src="./img/general/pfizer-logo.png"></div>
+          <div class="footer__slogan">
+            <p>OPERATIONS CENTER OF EXCELLENCE</p>
+            <p>Global Product Development</p>
+          </div>
+          <nav class="footer-nav">
+            <ul class="footer-menu">
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Footer menu item</a></li>
+              <li class="footer-menu__item"><a class="footer-menu__link" href="#">Footer menu item</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="footer footer__right">
+          <p>Cum sociis natoque penatibus et magnis dis parturient. Sed haec quis possit intrepidus aestimare tellus. Non equidem invideo, miror magis posuere velit aliquet. Pellentesque habitant morbi tristique senectus et netus. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. Fabio vel iudice vincam, sunt in culpa qui officia. Quisque ut dolor gravida, placerat libero vel, euismod.</p>
         </div>
       </div>
-    </div>
-  </header>
-  <!--include ../modules/editor-tabs-->
-  <!--include ../modules/login-form-->
-  <div class="content-container">
-    <div class="ready-list">
-      <div class="not-ready">Not ready</div>
-      <div class="in-progress">In progress</div>
-      <div class="ready">Ready</div>
-    </div>
-    <nav class="prototype-nav">
-      <ul class="prototype-menu">
-        <li class="prototype-menu__item in-progress"><a class="prototype-menu__link" href="build/front-page.html" target="_blank">Front page</a></li>
-        <li class="prototype-menu__item ready"><a class="prototype-menu__link" href="build/article-page.html" target="_blank">Article page</a></li>
-        <li class="prototype-menu__item not-ready"><a class="prototype-menu__link" href="build/search-page.html" target="_blank">Search page</a></li>
-      </ul>
-    </nav>
-  </div>
-</main>
-<footer id="footer">
-  <div class="section-layout">
-    <div class="footer footer__left">
-      <div class="footer__logo"><img src="build/img/general/pfizer-logo.png"></div>
-      <div class="footer__slogan">
-        <p>OPERATIONS CENTER OF EXCELLENCE</p>
-        <p>Global Product Development</p>
-      </div>
-      <nav class="footer-nav">
-        <ul class="footer-menu">
-          <li class="footer-menu__item"><a class="footer-menu__link" href="#">Footer menu item</a></li>
-          <li class="footer-menu__item"><a class="footer-menu__link" href="#">Footer menu item</a></li>
-        </ul>
-      </nav>
-    </div>
-    <div class="footer footer__right">
-      <p>Cum sociis natoque penatibus et magnis dis parturient. Sed haec quis possit intrepidus aestimare tellus. Non equidem invideo, miror magis posuere velit aliquet. Pellentesque habitant morbi tristique senectus et netus. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. Fabio vel iudice vincam, sunt in culpa qui officia. Quisque ut dolor gravida, placerat libero vel, euismod.</p>
-    </div>
-  </div>
-</footer>
-<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-<script src="build/js/libs.min.js"></script>
-<script src="build/js/jquery.resizeAction.js"></script>
-<script src="build/js/main.js"></script>
-<!-- External fonts-->
-<script src="https://docs.gcs.digitalpfizer.com/fonts/fs_albert_pro_web/font_FSAlbert.js"></script>
-</body>
+    </footer>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="js/libs.min.js"></script>
+    <script src="js/jquery.resizeAction.js"></script>
+    <script src="js/main.js"></script>
+    <!-- External fonts-->
+    <script src="https://docs.gcs.digitalpfizer.com/fonts/fs_albert_pro_web/font_FSAlbert.js"></script>
+  </body>
 </html>

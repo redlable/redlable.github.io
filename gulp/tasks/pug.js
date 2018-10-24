@@ -10,7 +10,7 @@ module.exports = function() {
           message: err.message
         };
       }))
-      .pipe($.gulp.dest('build'))
+      .pipe($.gulp.dest('./'))
       .on('end', $.browserSync.reload);
   });
 };

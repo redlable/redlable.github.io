@@ -13,7 +13,7 @@ module.exports = function() {
       }))
       .pipe($.plugins.csso())
       .pipe($.plugins.sourcemaps.write())
-      .pipe($.gulp.dest('build/css'))
+      .pipe($.gulp.dest('css/'))
       .pipe($.browserSync.reload({
         stream: true
       }));

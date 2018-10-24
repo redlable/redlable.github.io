@@ -5,7 +5,7 @@ module.exports = function() {
         'node_modules/slick-carousel/slick/slick.min.js'
       ])
       .pipe($.plugins.concat('libs.min.js'))
-      .pipe($.gulp.dest('build/js/'))
+      .pipe($.gulp.dest('js/'))
       .pipe($.browserSync.reload({
         stream: true
       }));
@@ -13,7 +13,7 @@ module.exports = function() {
 
   $.gulp.task('scripts', function () {
     return $.gulp.src('app/assets/js/**/*.js')
-      .pipe($.gulp.dest('build/js/'))
+      .pipe($.gulp.dest('js/'))
       .pipe($.browserSync.reload({
         stream: true
       }));

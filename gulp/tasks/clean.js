@@ -1,7 +1,10 @@
 module.exports = function() {
   $.gulp.task('clean', function() {
     return $.del([
-      './build'
+      './*.html',
+      'css',
+      'js',
+      'img'
     ]);
   });
 };
