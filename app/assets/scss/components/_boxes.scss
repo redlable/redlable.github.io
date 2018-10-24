@@ -59,11 +59,11 @@
 
   // Small box
   .small & {
+    @include flex-basis(calc(25% - 20px));
     background: $mischka;
     border-radius: 20px;
     box-shadow: 0 6px 10px rgba($black, .1);
     overflow: hidden;
-    max-width: 400px;
 
     .share-article {
       @include same(57px, height, width);

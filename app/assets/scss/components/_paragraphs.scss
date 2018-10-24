@@ -12,7 +12,7 @@
   padding: 90px 0 100px;
 
   .front & {
-    padding: 60px 0 110px;
+    padding: 60px 0 80px;
   }
 
   .section-title {
@@ -27,4 +27,10 @@
 .category-title {
   @include font-size(32);
   margin: 95px 0 15px;
+
+  .small & {
+    border-bottom: 1px solid $lavender-gray;
+    margin: 65px 0 45px;
+    padding-bottom: 15px;
+  }
 }

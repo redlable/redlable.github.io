@@ -1,0 +1,25 @@
+extends ../layout/main
+
+block variables
+  - var title = 'Search page'
+  - var pageClass = 'not-front'
+
+block content
+  .section-layout
+    .layout-switcher
+      .line.active
+      .puzzles
+
+  .section-layout
+    .box-list-wrapper.long
+      h2.category-title CMCD updates
+
+      .box-list
+        include ../modules/box
+        include ../modules/box
+
+      h2.category-title CMCD updates
+
+      .box-list
+        include ../modules/box
+        include ../modules/box

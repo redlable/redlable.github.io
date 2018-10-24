@@ -88,3 +88,46 @@
     color: $blue;
   }
 }
+
+.layout-switcher {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 16px;
+  width: 48px;
+
+  margin: 50px 0;
+
+  > div {
+    background: url(../img/general/layout-switcher.png) no-repeat;
+    cursor: pointer;
+  }
+
+  .line {
+    background-position: left center;
+    width: 22px;
+
+    &:hover {
+      background-position: left bottom;
+    }
+
+    &.active {
+      background-position: left top;
+      cursor: default;
+    }
+  }
+
+  .puzzles {
+    background-position: right center;
+    width: 16px;
+
+    &:hover {
+      background-position: right bottom;
+    }
+
+    &.active {
+      background-position: right top;
+      cursor: default;
+    }
+  }
+}

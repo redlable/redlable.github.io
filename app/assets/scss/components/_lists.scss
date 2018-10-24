@@ -45,20 +45,20 @@
 }
 
 .box-list {
-  &.small {
+  margin-bottom: 85px;
+
+  .small & {
     display: flex;
+    flex-wrap: wrap;
     transform: translateX(-10px);
     width: calc(100% + 20px);
 
     .box {
-      margin: 0 10px;
+      margin: 0 10px 30px;
     }
   }
 
-  &.long {
-    background: $white;
-    padding-bottom: 85px;
-
+  .long & {
     .box {
       border-top: 1px solid $lavender-gray;
       margin-bottom: 50px;

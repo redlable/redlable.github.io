@@ -89,4 +89,25 @@
   $('.hamburger-btn').on('click', function() {
     $body.toggleClass('active-menu');
   });
+
+  // Layout switcher
+  $('.layout-switcher').on('click', function(e) {
+    var $target = $(e.target),
+        $boxList = $('.box-list-wrapper');
+
+    if (!$target.is('.active')) {
+      $(this).children().removeClass('active');
+
+      if ($target.is('.line')) {
+        $target.addClass('active');
+        $boxList.toggleClass('long small');
+      }
+
+      if ($target.is('.puzzles')) {
+        $target.addClass('active');
+        $boxList.toggleClass('small long');
+      }
+    }
+  });
+
 })(jQuery);

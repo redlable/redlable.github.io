@@ -7,20 +7,36 @@ block variables
 block content
   section.related-section
     .section-layout
-      h2.section-title.text-center Featured
+      .box-list-wrapper.small
+        h2.section-title.text-center Featured
 
-      .box-list.small
-        include ../modules/box
-        include ../modules/box
-        include ../modules/box
-        include ../modules/box
+        .box-list
+          include ../modules/box
+          include ../modules/box
+          include ../modules/box
+          include ../modules/box
 
-  .box-list.long
-    .section-layout
+  .section-layout
+    .box-list-wrapper.long
       h2.category-title CMCD updates
-      include ../modules/box
-      include ../modules/box
 
+      .box-list
+        include ../modules/box
+        include ../modules/box
+
+    .box-list-wrapper.long
+      h2.category-title CMCD updates
+
+      .box-list
+        include ../modules/box
+        include ../modules/box
+
+    .box-list-wrapper.small
       h2.category-title Integration updates
-      include ../modules/box
-      include ../modules/box
+
+      .box-list
+        include ../modules/box
+        include ../modules/box
+        include ../modules/box
+        include ../modules/box
+        include ../modules/box
