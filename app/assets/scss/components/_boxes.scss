@@ -56,119 +56,119 @@
       }
     }
   }
-}
 
-// Small box
-.small-box {
-  background: $mischka;
-  border-radius: 20px;
-  box-shadow: 0 6px 10px rgba($black, .1);
-  overflow: hidden;
-  max-width: 400px;
-
-  .share-article {
-    @include same(57px, height, width);
-    @include same(0, right, top);
-    background: none;
-    cursor: pointer;
+  // Small box
+  .small & {
+    background: $mischka;
+    border-radius: 20px;
+    box-shadow: 0 6px 10px rgba($black, .1);
     overflow: hidden;
-    position: absolute;
-    z-index: 1;
+    max-width: 400px;
 
-    &:before,
-    &:after {
-      @include same(150%, height, width);
-      @include same(0, left, top);
-      content: '';
+    .share-article {
+      @include same(57px, height, width);
+      @include same(0, right, top);
+      background: none;
+      cursor: pointer;
+      overflow: hidden;
       position: absolute;
-    }
+      z-index: 1;
 
-    &:after {
-      background: url(../img/general/share-icon-cornored.png) left top no-repeat;
-    }
-
-    &:before {
-      background: $blue;
-      transform: rotate(45deg) translate(-25%, -50%);
-    }
-
-    &:hover {
+      &:before,
       &:after {
-        background-position: left -63px;
+        @include same(150%, height, width);
+        @include same(0, left, top);
+        content: '';
+        position: absolute;
+      }
+
+      &:after {
+        background: url(../img/general/share-icon-cornored.png) left top no-repeat;
       }
 
       &:before {
-        background: $white;
+        background: $blue;
+        transform: rotate(45deg) translate(-25%, -50%);
+      }
+
+      &:hover {
+        &:after {
+          background-position: left -63px;
+        }
+
+        &:before {
+          background: $white;
+        }
       }
     }
-  }
 
-  &__body {
-    background: $white;
-    padding: 20px 20px 20px 25px;
-  }
+    &__body {
+      background: $white;
+      padding: 20px 20px 20px 25px;
+    }
 
-  .post-info {
-    @include font-size(13);
-    background-size: 14px;
-    margin-bottom: 8px;
-    padding-left: 20px;
-  }
+    .post-info {
+      @include font-size(13);
+      background-size: 14px;
+      margin-bottom: 8px;
+      padding-left: 20px;
+    }
 
-  .tags-list {
-    @include font-size(13);
-    background-size: 13px;
-    margin-bottom: 10px;
-    padding-left: 20px;
-  }
+    .tags-list {
+      @include font-size(13);
+      background-size: 13px;
+      margin-bottom: 10px;
+      padding-left: 20px;
+    }
 
-  .read-more {
-    display: flex;
-    justify-content: flex-end;
-  }
-}
-
-// Long box
-.long-box {
-  display: flex;
-  flex-wrap: wrap;
-
-  &__image {
-    @include flex-basis(400);
-    border-radius: 20px;
-    overflow: hidden;
-    margin-right: 45px;
-  }
-
-  &__body {
-    @include flex-basis(calc(100% - 445px));
-    padding: 7px 140px 0 0;
-    position: relative;
-  }
-
-  .share-article {
-    background-position: left -32px;
-    height: 28px;
-    padding: 0;
-    position: absolute;
-    right: 15px;
-    top: 10px;
-    width: 25px;
-
-    &:hover {
-      background-position: left top;
+    .read-more {
+      display: flex;
+      justify-content: flex-end;
     }
   }
 
-  .post-info {
-    @include font-size(14);
-    margin-bottom: 13px;
-    padding: 3px 0 0 30px;
-  }
+  // Long box
+  .long & {
+    display: flex;
+    flex-wrap: wrap;
 
-  .tags-list {
-    @include font-size(14);
-    margin-bottom: 25px;
-    padding-left: 30px;
+    &__image {
+      @include flex-basis(400);
+      border-radius: 20px;
+      overflow: hidden;
+      margin-right: 45px;
+    }
+
+    &__body {
+      @include flex-basis(calc(100% - 445px));
+      padding: 7px 140px 0 0;
+      position: relative;
+    }
+
+    .share-article {
+      background-position: left -32px;
+      height: 28px;
+      padding: 0;
+      position: absolute;
+      right: 15px;
+      top: 10px;
+      width: 25px;
+
+      &:hover {
+        background-position: left top;
+      }
+    }
+
+    .post-info {
+      @include font-size(14);
+      margin-bottom: 13px;
+      padding: 3px 0 0 30px;
+    }
+
+    .tags-list {
+      @include font-size(14);
+      margin-bottom: 25px;
+      padding-left: 30px;
+    }
   }
 }
