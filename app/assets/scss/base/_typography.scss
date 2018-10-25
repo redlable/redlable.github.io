@@ -184,23 +184,34 @@ strong {
 }
 
 // Table
+.tablesaw,
 table {
   border: 0;
+  border-collapse: separate;
   margin: 30px 0;
   text-align: left;
   width: 100%;
 
+  @media screen and (max-width: 39.9375em) {
+    border-collapse: collapse;
+  }
+
   caption {
+    @include font-size(20);
+    color: $ripe-plum;
+    font-family: $fsAlbertBold;
     margin-bottom: 10px;
-    text-align: left;
-    padding-left: 20px;
-    font-size: 15px;
+    text-align: center;
   }
 
   th,
   td {
     border: 0;
     padding: 20px;
+
+    @media screen and (max-width: 39.9375em) {
+      margin-bottom: 2px;
+    }
   }
 
   th {
@@ -215,7 +226,7 @@ table {
   tr {
     &:nth-child(even) {
       td {
-        background: rgba($dove-gray, .4);
+        background: darken($gallery, 5);
       }
     }
   }

@@ -99,4 +99,8 @@
   background-size: 11px;
   margin-right: 33px;
   padding-left: 15px;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }

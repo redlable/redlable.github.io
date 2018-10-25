@@ -9,3 +9,48 @@
 
 // Buttons
 @import 'components/buttons';
+
+.cke_editable {
+  table {
+    border: 0;
+    border-collapse: separate;
+    margin: 30px 0;
+    text-align: left;
+    width: 100%;
+    @media screen and (max-width: 39.9375em) {
+      border-collapse: collapse;
+    }
+    caption {
+      @include font-size(20);
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    th,
+    td {
+      border: 0;
+      padding: 20px;
+      @media screen and (max-width: 39.9375em) {
+        margin-bottom: 2px;
+      }
+    }
+    th {
+      background: $dove-gray;
+    }
+    td {
+      background: $gallery;
+    }
+    tr {
+      &:nth-child(even) {
+        td {
+          background: rgba($dove-gray, .4);
+        }
+      }
+    }
+    tfoot {
+      td {
+        background: $dove-gray;
+        color: $white;
+      }
+    }
+  }
+}
