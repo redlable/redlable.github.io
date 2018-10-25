@@ -1,40 +1,40 @@
-#tabs {
+#tabs,
+#block-ample-local-tasks {
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  margin: 40px 0;
   position: relative;
   z-index: 1;
 
-  .tabs {
+  .tabs,
+  > ul {
     display: flex;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba($black, .3);
+    overflow: hidden;
   }
 
   li {
     margin-right: 2px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   a {
-    background: rgba($white, .3);
-    color: $bossanova;
+    background: rgba($blue, .7);
+    color: $white;
     display: block;
     font-weight: $bold;
-    padding: 10px 15px;
+    padding: 15px 25px;
     text-decoration: none;
     transition: background .3s ease;
+    text-transform: uppercase;
 
     &:hover,
     &.active {
-      background: rgba($white, .5);
-    }
-
-    .front & {
-      background: rgba($bossanova, .5);
-      color: $white;
-
-      &:hover,
-      &.active {
-        background: rgba($bossanova, .8);
-      }
+      background: $blue;
     }
   }
 }

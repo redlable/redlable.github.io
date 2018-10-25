@@ -34,6 +34,11 @@ $.gulp.task('copy', $.gulp.series(
   $.gulp.parallel('svg', 'img:theme')
 ));
 
+$.gulp.task('theme', $.gulp.series(
+  $.gulp.parallel('sass:theme'),
+  $.gulp.parallel('watch:theme')
+));
+
 $.gulp.task('default', $.gulp.series(
   $.gulp.parallel('pug', 'sass', 'scripts:lib', 'scripts'),
   $.gulp.parallel('watch', 'serve')

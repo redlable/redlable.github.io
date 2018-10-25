@@ -4,4 +4,8 @@ module.exports = function() {
     $.gulp.watch('app/assets/js/main.js', $.gulp.series('scripts'));
     $.gulp.watch('app/assets/scss/**/*.scss', $.gulp.series('sass'));
   });
+
+  $.gulp.task('watch:theme', function() {
+    $.gulp.watch('app/assets/scss/**/*.scss', $.gulp.series('sass:theme'));
+  });
 };
