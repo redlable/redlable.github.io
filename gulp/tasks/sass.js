@@ -1,6 +1,6 @@
 module.exports = function() {
   $.gulp.task('sass', function () {
-    return $.gulp.src('app/assets/scss/screen.scss')
+    return $.gulp.src('app/assets/scss/*.scss')
       .pipe($.plugins.sourcemaps.init())
       .pipe($.plugins.sass().on('error', $.plugins.notify.onError(function(err) {
         return {
@@ -20,7 +20,7 @@ module.exports = function() {
   });
 
   $.gulp.task('sass:theme', function () {
-    return $.gulp.src('app/assets/scss/screen.scss')
+    return $.gulp.src('app/assets/scss/*.scss')
       .pipe($.plugins.sourcemaps.init())
       .pipe($.plugins.sass().on('error', $.plugins.notify.onError(function(err) {
         return {

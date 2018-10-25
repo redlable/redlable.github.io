@@ -49,6 +49,17 @@ h6 {
 
 .node-title {
   border-bottom: 1px solid $lavender-gray;
+  display: flex;
+  justify-content: space-between;
+
+  h1 {
+    max-width: 980px;
+    width: calc(100% - 260px);
+  }
+
+  .node-info {
+    @include flex-basis(260px);
+  }
 }
 
 p {

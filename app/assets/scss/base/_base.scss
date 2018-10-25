@@ -39,6 +39,34 @@ iframe {
   @extend %responsive-video;
 }
 
+.post-info {
+  @include font-size(18);
+  background: url(../img/general/calendar-icon.png) left 2px no-repeat;
+  color: $dusty-gray;
+  padding-left: 30px;
+}
+
+.node-info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 14px;
+
+  .post-info {
+    font-family: $fsAlbertBold;
+  }
+
+  .share-article {
+    height: 28px;
+    margin-left: 55px;
+    padding: 0;
+    width: 25px;
+
+    &:hover {
+      background-position: left bottom;
+    }
+  }
+}
+
 // PROTOTYPE STYLES
 .ready-list {
   display: flex;

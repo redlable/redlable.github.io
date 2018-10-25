@@ -32,11 +32,6 @@
     }
   }
 
-  .post-info {
-    background: url(../img/general/calendar-icon.png) left top no-repeat;
-    color: $dusty-gray;
-  }
-
   .tags-list {
     background-position: left center;
   }
@@ -109,6 +104,7 @@
 
     .post-info {
       @include font-size(13);
+      background-position: left top;
       background-size: 14px;
       margin-bottom: 8px;
       padding-left: 20px;
@@ -161,8 +157,9 @@
 
     .post-info {
       @include font-size(14);
+      background-position: left top;
       margin-bottom: 13px;
-      padding: 3px 0 0 30px;
+      padding-top: 3px;
     }
 
     .tags-list {
