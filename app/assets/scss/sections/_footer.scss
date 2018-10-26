@@ -27,6 +27,7 @@
   }
 
   &__right {
+    @include font-size(13);
     max-width: 680px;
     width: 45%;
 
