@@ -4,18 +4,20 @@
       img(src="./img/content/image1.png")
 
   .box__body
-    .share-article
-    h2
-      a(href="#") Gallia est omnis divisa in partes tres, quarum.
-    p Contra legem facit qui id facit quod lex prohibet. Unam incolunt Belgae, aliam Aquitani, tertiam.
+    div
+      .share-article
+      h2
+        a(href="#") Gallia est omnis divisa in partes tres, quarum.
+      p Contra legem facit qui id facit quod lex prohibet. Unam incolunt Belgae, aliam Aquitani, tertiam.
 
-    .post-info 07/24/18
+    div
+      .post-info 07/24/18
 
-    ul.tags-list
-      +navItem('#', 'Featured', 'active tags-list')
-      +navItem('#', 'Clinical', 'tags-list')
-      +navItem('#', 'Medical', 'tags-list')
-      +navItem('#', 'Safety', 'tags-list')
+      ul.tags-list
+        +navItem('#', 'Featured', 'active tags-list')
+        +navItem('#', 'Clinical', 'tags-list')
+        +navItem('#', 'Medical', 'tags-list')
+        +navItem('#', 'Safety', 'tags-list')
 
-    .read-more
-      a(href="#") Read more
+      .read-more
+        a(href="#") Read more
