@@ -106,6 +106,10 @@
       }
     }
 
+    &__image {
+      border-top-right-radius: 23px;
+    }
+
     &__body {
       background: $white;
       display: flex;
