@@ -203,3 +203,12 @@ embed {
     text-align: center;
   }
 }
+
+// Pfizer network
+.pfizer-login__connecting {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.pfizer-login__container {
+  margin-top: 100px;
+}
