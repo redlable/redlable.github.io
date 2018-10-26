@@ -52,38 +52,14 @@
     !isTrue ? $body.removeClass('active-menu') : '';
   });
 
-  $('.slider-wrapper').each(function() {
+  $('.related-section').find('.box-list').each(function() {
     var $slider = $(this),
-        simpleOpt = {
-          arrows: false,
-          dots: true,
-          fade: true
-        },
-        testimonialsOpt = {
-          centerMode: true,
-          slidesToShow: 1,
-          centerPadding: 0,
-          variableWidth: true,
-          responsive: [
-            {
-              breakpoint: 768,
-              settings: {
-                centerMode: false,
-                variableWidth: false
-              }
-            }
-          ]
+        options = {
+          infinite: false,
+          slidesToShow: 4
         };
 
-    if ($slider.children('.slick-item').length > 1) {
-      if ($slider.is('.simple')) {
-        $slider.slick(simpleOpt);
-      }
-
-      if ($slider.is('.testimonials')) {
-        $slider.slick(testimonialsOpt);
-      }
-    }
+    $slider.slick(options);
   });
 
   $('.hamburger-btn').on('click', function() {

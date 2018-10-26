@@ -2,6 +2,10 @@
   background: $white;
   position: relative;
 
+  &:focus {
+    outline: none;
+  }
+
   &__image {
     align-items: center;
     background: $mischka;
