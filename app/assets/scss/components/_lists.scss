@@ -4,7 +4,24 @@
   flex-wrap: wrap;
   justify-content: space-between;
   margin-top: 90px;
-  padding: 45px 0 70px;
+  padding: 45px 0 65px;
+
+  .tags-list {
+    @include flex-basis(75%);
+
+    &__item {
+      margin-bottom: 5px;
+    }
+
+    &__link {
+      @include links($blue, $dusty-gray);
+      border-color: $blue;
+
+      &:hover {
+        border-color: transparent;
+      }
+    }
+  }
 }
 
 .tags-list {

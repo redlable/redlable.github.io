@@ -31,6 +31,29 @@ svg {
   max-width: 100%;
 }
 
+.embedded-entity {
+  &.align-center {
+    text-align: center;
+
+    img {
+      margin-bottom: 30px;
+    }
+  }
+
+  &.align-right {
+    margin-left: 30px;
+  }
+
+  &.align-left {
+    margin-right: 30px;
+  }
+}
+
+figcaption {
+  color: $dusty-gray;
+  margin-bottom: 30px;
+}
+
 iframe,
 object,
 embed {

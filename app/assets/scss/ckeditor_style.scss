@@ -53,4 +53,23 @@
       }
     }
   }
+
+  .embedded-entity {
+    &.align-center {
+      text-align: center;
+    }
+
+    &.align-right {
+      margin-left: 30px;
+    }
+
+    &.align-left {
+      margin-right: 30px;
+    }
+  }
+
+  figcaption {
+    color: $dusty-gray;
+    margin-bottom: 30px;
+  }
 }
