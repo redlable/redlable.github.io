@@ -1,8 +1,10 @@
 .box {
+  background: $white;
   position: relative;
 
   &__image {
     align-items: center;
+    background: $mischka;
     display: flex;
     justify-content: center;
     overflow: hidden;
@@ -32,10 +34,6 @@
     }
   }
 
-  .tags-list {
-    background-position: left center;
-  }
-
   .read-more {
     a {
       @include links($blue, $blue);
@@ -55,7 +53,6 @@
   // Small box
   .small & {
     @include flex-basis(calc(25% - 20px));
-    background: $mischka;
     border-radius: 20px;
     box-shadow: 0 6px 10px rgba($black, .1);
     overflow: hidden;

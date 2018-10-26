@@ -29,8 +29,8 @@
   }
 
   &__link {
-    @include links($blue, $blue);
-    border-bottom: 1px solid $blue;
+    @include links($dusty-gray, $blue);
+    border-bottom: 1px solid $dusty-gray;
     transition: border-color .3s ease;
 
     &.active {
@@ -39,7 +39,8 @@
     }
 
     &:hover {
-      border-color: transparent;
+      border-color: $blue;
+      color: $blue;
     }
   }
 }
