@@ -4,8 +4,11 @@
   box-shadow: 0 -6px 15px rgba($black, .3);
   position: relative;
 
-  .section-layout {
+  .footer-bg {
     background: url(../img/general/footer-bg-1.png) left bottom no-repeat, url(../img/general/footer-bg-2.png) right center no-repeat;
+  }
+
+  .section-layout {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
