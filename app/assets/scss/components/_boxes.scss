@@ -117,6 +117,12 @@
       flex-grow: 1;
       justify-content: space-between;
       padding: 20px 20px 20px 25px;
+
+      > div {
+        > h2:first-of-type {
+          @include font-size(18);
+        }
+      }
     }
 
     .post-info {
