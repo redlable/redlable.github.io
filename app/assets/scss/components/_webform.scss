@@ -40,6 +40,10 @@
     border: 2px solid darken($lavender-gray, 5);
   }
 
+  label {
+    text-transform: uppercase;
+  }
+
   label,
   .description {
     margin-left: 25px;
@@ -65,7 +69,6 @@
     font-weight: $bold;
     letter-spacing: 1px;
     margin-bottom: 5px;
-    text-transform: uppercase;
   }
 
   .form-text {
@@ -78,11 +81,64 @@
 }
 
 .form-text {
-  border-radius: 32px;
-  color: $dusty-gray;
-  font-family: $fsAlbertBold;
-  padding: 22px 24px;
-  width: 100%;
+  &:not(.hasDatepicker) {
+    border-radius: 32px;
+    color: $dusty-gray;
+    font-family: $fsAlbertBold;
+    padding: 20px 24px;
+    width: 100%;
+  }
+}
+
+.form-radio {
+  @extend %element-invisible;
+
+  + label {
+    display: block;
+    margin-bottom: 13px;
+    padding: 1px 0 0 26px;
+    position: relative;
+
+    &:before,
+    &:after {
+      border-radius: 50%;
+      content: '';
+      position: absolute;
+    }
+
+    &:before {
+      @include same(18px, height, width);
+      background: $white;
+      border: 1px solid $seashell;
+      box-shadow: 0 1px 2px rgba($black, .2);
+      left: 0;
+      top: 0;
+    }
+
+    &:after {
+      @include same(8px, height, width);
+      background: transparent;
+      left: 5px;
+      top: 5px;
+      transition: background .3s ease;
+    }
+  }
+
+  &:hover {
+    + label {
+      &:after {
+        background: $dusty-gray;
+      }
+    }
+  }
+
+  &:checked {
+    + label {
+      &:after {
+        background: $bossanova;
+      }
+    }
+  }
 }
 
 .form-actions {
@@ -99,6 +155,8 @@
   text-align: right;
 
   .form-text {
+    border: 1px solid $seashell;
+    box-shadow: 0 6px 20px rgba($black, .1);
     margin-bottom: 10px;
     width: 540px;
   }
@@ -108,7 +166,7 @@
     background: $blue url(../img/general/search-icon.png) center no-repeat;
     border-radius: 50%;
     position: absolute;
-    top: 4px;
+    top: 3px;
     right: 4px;
     text-indent: -9999px;
     transition: background-color .3s ease;
@@ -129,5 +187,142 @@
 
   &:hover {
     text-decoration: underline;
+  }
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+
+  > legend {
+    float: left;
+
+    + * {
+      clear: both;
+    }
+  }
+}
+
+legend {
+  @include font-size(15);
+  font-family: $fsAlbertExtraBold;
+  margin-bottom: 10px;
+  padding: 0;
+}
+
+// Search filter
+.search {
+  .search-form {
+    text-align: left;
+  }
+
+  .views-exposed-form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  label {
+    @include font-size(13);
+  }
+
+  .text-search-fieldset {
+    @include flex-basis(100%);
+    border-top: 1px solid $lavender-gray;
+    margin-bottom: 25px;
+    padding-top: 30px;
+
+    legend {
+      display: none;
+    }
+
+    .fieldset-wrapper {
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+
+  .filter-by-fieldset {
+    padding-left: 25px;
+  }
+
+  .filter-by-fieldset,
+  .date-fieldset {
+    border-right: 1px solid $lavender-gray;
+    margin-right: 25px;
+    padding-right: 25px;
+  }
+
+  .filter-by-fieldset,
+  .date-fieldset,
+  .status-fieldset {
+    margin-bottom: 30px;
+  }
+
+  .status-fieldset {
+    .fieldset-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+
+      > div {
+        padding-right: 25px;
+
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+
+  .fieldset-wrapper {
+    position: relative;
+  }
+
+  .sort-group-fieldset {
+    @include flex-basis(100%);
+    border-top: 1px solid $lavender-gray;
+    display: table;
+    padding-top: 30px;
+
+    > legend,
+    > .fieldset-wrapper {
+      display: table-cell
+    }
+
+    > legend {
+      padding: 13px 16px 0 0;
+    }
+
+    .fieldgroup {
+      background: $alabaster;
+      border: 1px solid $seashell;
+      border-radius: 24px;
+      padding: 13px 5px 0 13px;
+
+      legend {
+        display: none;
+      }
+
+      .form-item {
+        display: inline-block;
+        margin-right: 10px;
+        vertical-align: top;
+      }
+    }
+  }
+}
+
+// Search results
+.search-results {
+  .box-list {
+    border-bottom: 1px solid $lavender-gray;
+    overflow: hidden;
+  }
+
+  .box {
+    &:first-child {
+      border: none;
+      padding-top: 30px;
+    }
   }
 }

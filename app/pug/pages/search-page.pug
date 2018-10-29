@@ -11,15 +11,14 @@ block content
       .puzzles
 
   .section-layout
-    .box-list-wrapper.long
-      h2.category-title CMCD updates
+    .search
+      include ../modules/search-form-with-filters
 
-      .box-list
-        include ../modules/box
-        include ../modules/box
-
-      h2.category-title CMCD updates
-
-      .box-list
-        include ../modules/box
-        include ../modules/box
+  .search-results
+    .section-layout
+      .box-list-wrapper.long
+        .box-list
+          include ../modules/box
+          include ../modules/box
+          include ../modules/box
+          include ../modules/box

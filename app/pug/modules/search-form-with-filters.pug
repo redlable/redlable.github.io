@@ -1,0 +1,91 @@
+.search-form
+  form(action="#").views-exposed-form.bef-exposed-form
+    fieldset.text-search-fieldset.js-form-item.form-item.js-form-wrapper.form-wrapper#edit-fulltext-group
+      legend
+        span.visually-hidden.fieldset-legend Search
+      .fieldset-wrapper
+        .js-form-item.form-item.js-form-type-textfield.form-item-fulltext.js-form-item-fulltext.form-no-label
+          input(type="text" placeholder="Enter your keywords" size="30" autocomplete="off").form-text
+
+        .form-actions.js-form-wrapper.form-wrapper
+          input(type="submit" value="Apply").button.js-form-submit.form-submit
+
+    fieldset.filter-by-fieldset.js-form-item.form-item.js-form-wrapper.form-wrapper#edit-filter-group
+      legend
+        span.fieldset-legend Filter by:
+      .fieldset-wrapper
+        .js-form-item.form-item.js-form-type-select.form-item-type.js-form-item-type.form-no-label
+          select.form-select
+            option(value="All" selected="selected") - Any -
+            option(value="1") Article type
+            option(value="16") Article type 2
+            option(value="21") Article type 3
+
+        .js-form-item.form-item.js-form-type-select.form-item-groups.js-form-item-groups.form-no-label
+          select(multiple="multiple" size="3").form-select
+            option(value="6") Group
+            option(value="26") Group 2
+            option(value="31") Group 3
+
+        .js-form-item.form-item.js-form-type-select.form-item-topics.js-form-item-topics.form-no-label
+          select(multiple="multiple" size="3").form-select
+            option(value="11") Topic
+            option(value="36") Topic 2
+            option(value="41") Topic 3
+
+    fieldset.date-fieldset.js-form-item.form-item.js-form-wrapper.form-wrapper#edit-filter-date
+      legend
+        span.fieldset-legend Date:
+      .fieldset-wrapper
+        .js-form-item.form-item.js-form-type-textfield.form-item-created-min.js-form-item-created-min
+          label(for="edit-created-min") From
+          input(placeholder="From" type="text" size="30" maxlength="128" autocomplete="off").bef-datepicker.form-text.hasDatepicker#edit-created-min
+
+        .js-form-item.form-item.js-form-type-textfield.form-item-created-max.js-form-item-created-max
+          label(for="edit-created-max") To
+          input(placeholder="To" type="text" size="30" maxlength="128" autocomplete="off").bef-datepicker.form-text.hasDatepicker#edit-created-max
+
+    fieldset.status-fieldset.js-form-item.form-item.js-form-wrapper.form-wrapper#edit-status-group
+      legend
+        span.fieldset-legend Status:
+      .fieldset-wrapper
+        #edit-expired
+          .form-radios
+            .js-form-item.form-item.js-form-type-radio.form-item-expired.js-form-item-expired
+              input(type="radio" checked="checked" value="0" name="expired").form-radio#edit-expired-0
+              label(for="edit-expired-0").option Active
+            .js-form-item.form-item.js-form-type-radio.form-item-expired.js-form-item-expired
+              input(type="radio" value="1" name="expired").form-radio#edit-expired-1
+              label(for="edit-expired-1").option Expired
+
+        #edit-featured
+          .form-radios
+            .js-form-item.form-item.js-form-type-radio.form-item-featured.js-form-item-featured
+              input(type="radio" checked="checked" value="1" name="featured").form-radio#edit-featured-1
+              label(for="edit-featured-1").option Featured
+            .js-form-item.form-item.js-form-type-radio.form-item-featured.js-form-item-featured
+              input(type="radio" value="0" name="featured").form-radio#edit-featured-0
+              label(for="edit-featured-0").option Not featured
+
+    fieldset.sort-group-fieldset.js-form-item.form-item.js-form-wrapper.form-wrapper#edit-sort-group
+      legend
+        span.fieldset-legend Sort by:
+      .fieldset-wrapper
+        fieldset.fieldgroup.form-composite.js-form-item.form-item.js-form-wrapper.form-wrapper#edit-sort-bef-combine--wrapper
+          legend
+            span.fieldset-legend.visually-hidden Sort by:
+          .fieldset-wrapper
+            #edit-sort-bef-combine
+              div
+                .js-form-item.form-item.js-form-type-radio.form-item-sort-bef-combine.js-form-item-sort-bef-combine
+                  input(type="radio" checked="checked" value="created DESC" name="sort_bef_combine").form-radio#edit-sort-bef-combine-created-desc
+                  label(for="edit-sort-bef-combine-created-desc").option New to old
+
+                .js-form-item.form-item.js-form-type-radio.form-item-sort-bef-combine.js-form-item-sort-bef-combine
+                  input(type="radio" value="created ASC" name="sort_bef_combine").form-radio#edit-sort-bef-combine-created-asc
+                  label(for="edit-sort-bef-combine-created-asc").option Old to new
+
+                .js-form-item.form-item.js-form-type-radio.form-item-sort-bef-combine.js-form-item-sort-bef-combine
+                  input(type="radio" value="statistics_weight DESC" name="sort_bef_combine").form-radio#edit-sort-bef-combine-statistics-weight-desc
+                  label(for="edit-sort-bef-combine-statistics-weight-desc").option Most popular
+
