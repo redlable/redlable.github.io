@@ -425,7 +425,42 @@ legend {
 
   .hasDatepicker,
   .hasMonthpicker {
+    margin-bottom: 0;
     min-width: 0;
+  }
+}
+
+.monthly-digest {
+  .search-form {
+    border-top: 1px solid $lavender-gray;
+    padding-top: 30px;
+  }
+
+  .filter-by-fieldset {
+    @include flex-basis(100%);
+    border: none;
+    margin-bottom: 20px;
+    padding: 0;
+
+    .fieldset-wrapper {
+      align-items: flex-end;
+    }
+  }
+
+  .form-item-field-groups-target-id {
+    max-width: 305px;
+    width: 100%;
+  }
+
+  .form-submit {
+    @include same(auto, height, width);
+    background-image: none;
+    border-radius: 20px;
+    color: $white;
+    margin-left: 10px;
+    padding: 11px 25px;
+    position: static;
+    text-indent: 0;
   }
 }
 

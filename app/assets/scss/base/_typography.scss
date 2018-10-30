@@ -168,7 +168,7 @@ strong {
 
 // Table
 .tablesaw,
-table {
+table:not(.ui-datepicker-calendar) {
   border: 0;
   border-collapse: separate;
   margin: 30px 0;

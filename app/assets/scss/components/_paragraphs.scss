@@ -52,6 +52,12 @@
 
 .page-title-wrapper {
   margin: 55px 0 40px;
+
+  h1,
+  p {
+    max-width: 960px;
+    width: calc(100% - 70px);
+  }
 }
 
 .page-title {
@@ -61,6 +67,5 @@
 
   h1 {
     margin-bottom: 0;
-    width: calc(100% - 70px);
   }
 }
