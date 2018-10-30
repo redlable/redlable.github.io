@@ -34,3 +34,33 @@
     padding-bottom: 15px;
   }
 }
+
+.node-title {
+  border-bottom: 1px solid $lavender-gray;
+  display: flex;
+  justify-content: space-between;
+
+  h1 {
+    max-width: 980px;
+    width: calc(100% - 260px);
+  }
+
+  .node-info {
+    @include flex-basis(260px);
+  }
+}
+
+.page-title-wrapper {
+  margin: 55px 0 40px;
+}
+
+.page-title {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 35px;
+
+  h1 {
+    margin-bottom: 0;
+    width: calc(100% - 70px);
+  }
+}

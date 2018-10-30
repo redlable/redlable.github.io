@@ -5,18 +5,25 @@ block variables
   - var pageClass = 'not-front'
 
 block content
-  .section-layout
-    .layout-switcher
-      .line.active
-      .puzzles
-
   .search
     .section-layout
+      .page-title-wrapper
+        .page-title
+          h1 Search Results
+
+          .layout-switcher
+            .line.active
+            .puzzles
+
+        p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae consectetur deleniti dignissimos ducimus et excepturi exercitationem fugiat inventore ipsam maiores non officiis, pariatur perferendis quod ratione sit totam ullam voluptate!
+
       include ../modules/search-form-with-filters
 
       .search-results
         .box-list-wrapper.long
           .box-list
+            include ../modules/box
+            include ../modules/box
             include ../modules/box
             include ../modules/box
             include ../modules/box

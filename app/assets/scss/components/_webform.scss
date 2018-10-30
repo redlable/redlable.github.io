@@ -81,7 +81,7 @@
 }
 
 .form-text {
-  &:not(.hasDatepicker) {
+  &:not(.hasDatepicker):not(.hasMonthpicker) {
     border-radius: 32px;
     color: $dusty-gray;
     font-family: $fsAlbertBold;
@@ -101,16 +101,38 @@ select {
   padding: 12px 35px 12px 15px;
 }
 
-.chosen-container-multi {
+.chosen-container {
+  width: 100% !important;
+
   .chosen-choices {
     @extend select;
     background-image: url(../img/general/filter-arrow.png);
-    padding: 6px 40px 6px 2px;
+    padding: 1px 40px 1px 4px;
+
+    li.search-choice {
+      background: $white;
+      border: 1px solid $lavender-gray;
+      border-radius: 16px;
+      padding: 8px 30px 8px 10px;
+
+      .search-choice-close {
+        @include same(9px, right, top);
+        @include same(11px, height, width);
+        background: url(../img/general/chosen-close-icon.png) center top no-repeat;
+
+        &:hover {
+          background-position: center bottom;
+        }
+      }
+    }
   }
 }
 
-.hasDatepicker {
+.hasDatepicker,
+.hasMonthpicker {
   @extend select;
+  background: url(../img/general/calendar_icon.png) right 13px center no-repeat;
+  background-size: 16px;
 }
 
 .form-radio {
@@ -178,7 +200,7 @@ select {
   text-align: right;
 
   .form-text {
-    &:not(.hasDatepicker) {
+    &:not(.hasDatepicker):not(.hasMonthpicker) {
       border: 1px solid $seashell;
       box-shadow: 0 6px 20px rgba($black, .1);
       margin-bottom: 10px;
@@ -268,11 +290,10 @@ legend {
   }
 
   .filter-by-fieldset {
-    padding-left: 25px;
+    @include flex-basis(50%);
 
     .fieldset-wrapper {
       display: flex;
-      flex-wrap: wrap;
     }
 
     label {
@@ -287,11 +308,22 @@ legend {
       }
     }
 
+    .form-item-groups {
+      max-width: 305px;
+      width: 100%;
+    }
+
+    .form-item-topics {
+      max-width: 275px;
+      width: 100%;
+    }
+
     .chosen-choices {
       .search-field {
         .chosen-search-input {
           color: $bossanova;
           font-family: $fsAlbertBold;
+          margin: 6px 0;
           max-width: 100%;
           padding-left: 15px;
         }
@@ -302,14 +334,13 @@ legend {
   .filter-by-fieldset,
   .date-fieldset {
     border-right: 1px solid $lavender-gray;
-    margin-right: 25px;
-    padding-right: 25px;
   }
 
   .filter-by-fieldset,
   .date-fieldset,
   .status-fieldset {
     margin-bottom: 30px;
+    padding: 0 25px;
   }
 
   .date-fieldset {
@@ -374,7 +405,7 @@ legend {
       background: $alabaster;
       border: 1px solid $seashell;
       border-radius: 24px;
-      padding: 13px 5px 0 13px;
+      padding: 13px 10px 0 13px;
 
       legend {
         display: none;
@@ -392,7 +423,8 @@ legend {
     min-width: 160px;
   }
 
-  .hasDatepicker {
+  .hasDatepicker,
+  .hasMonthpicker {
     min-width: 0;
   }
 }
@@ -402,12 +434,15 @@ legend {
   .box-list {
     border-bottom: 1px solid $lavender-gray;
     overflow: hidden;
+    margin-top: 30px;
   }
 
-  .box {
-    &:first-child {
-      border: none;
-      padding-top: 30px;
+  .long {
+    .box {
+      &:first-child {
+        border: none;
+        padding-top: 0;
+      }
     }
   }
 }
