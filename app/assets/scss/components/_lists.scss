@@ -1,106 +1,36 @@
-.tags-container {
-  border-top: 1px solid $lavender-gray;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 90px;
-  padding: 45px 0 65px;
-
-  .tags-list {
-    @include flex-basis(75%);
-
-    &__item {
-      margin-bottom: 5px;
-    }
-
-    &__link {
-      @include font-size(14);
-      @include links($blue, $dusty-gray);
-      border-color: $blue;
-
-      &:hover {
-        border-color: transparent;
-      }
-    }
-  }
-
-  .share-article {
-    margin-right: 20px;
-  }
-}
-
-.tags-list {
-  background: url(../img/general/tags-icon.png) left 3px no-repeat;
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 25px;
-
-  &__item {
-    margin-right: 4px;
-
-    &:after {
-      color: $dusty-gray;
-      content: ', ';
-    }
-
-    &:last-child {
-      &:after {
-        content: none;
-      }
-    }
-  }
-
-  &__link {
-    @include links($dusty-gray, $blue);
-    border-bottom: 1px solid $dusty-gray;
-    transition: border-color .3s ease;
-
-    &.active {
-      border-color: $pink;
-      color: $pink;
-    }
-
-    &:hover {
-      border-color: $blue;
-      color: $blue;
-    }
-  }
-}
-
 .box-list {
-  margin-bottom: 85px;
+  margin-bottom: 25px;
 
-  .small & {
+  .list-container {
     display: flex;
     flex-wrap: wrap;
-    transform: translateX(-10px);
-    width: calc(100% + 20px);
-
-    .box {
-      margin: 0 10px 30px;
-    }
-
-    &.slick-slider {
-      margin: 0 auto;
-      transform: none;
-      width: calc(100% - 20px);
-
-      @include media-q(min, 1730) {
-        transform: translateX(-10px);
-        width: calc(100% + 20px);
-      }
-    }
   }
+}
 
-  .long & {
-    .box {
-      border-top: 1px solid $lavender-gray;
-      margin-bottom: 50px;
-      padding-top: 50px;
-    }
+.big-blocks-list {
+  .box {
+    @include flex-basis(33.333%);
+    padding: 1px;
   }
+}
 
-  .slick-track {
+.small-blocks-list {
+  .box {
+    @include flex-basis(25%);
+    padding: 5px;
+  }
+}
+
+.teaser-list {
+  padding-left: 25px;
+
+  .list-container {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .teaser {
+    @include flex-basis(calc(50% - 18px));
   }
 }

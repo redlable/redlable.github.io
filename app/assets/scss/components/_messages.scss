@@ -17,7 +17,7 @@
     position: absolute;
     left: 0;
     top: 0;
-    background: $gray;
+    background: $grey-light;
   }
 
   &.error::before {
@@ -37,7 +37,7 @@
   }
 
   a {
-    @include links($black, $gray, true);
+    @include links($black, $grey-light, true);
   }
 
   .placeholder {

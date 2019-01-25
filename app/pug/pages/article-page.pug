@@ -1,43 +1,43 @@
-extends ../layout/main
-
-block variables
-  - var title = 'Article page'
-  - var pageClass = 'not-front'
-  - var nodeClass = 'node-article'
-
-block content
-  include ../modules/node-content
-
-  section.related-section
-    .section-layout
-      .box-list-wrapper.small
-        h2.section-title Related articles
-
-        .box-list
-          include ../modules/box
-          include ../modules/box
-          .box
-            .box__image
-              a(href="#")
-                img(src="./img/content/image1.png")
-
-            .box__body
-              div
-                .share-article
-                h2
-                  a(href="#") Gallia est
-                p Contra legem facit
-
-              div
-                .post-info 07/24/18
-
-                ul.tags-list
-                  +navItem('#', 'Featured', 'active tags-list')
-                  +navItem('#', 'Clinical', 'tags-list')
-                  +navItem('#', 'Medical', 'tags-list')
-                  +navItem('#', 'Safety', 'tags-list')
-
-                .read-more
-                  a(href="#") Read more
-
-          include ../modules/box
+//extends ../layout/main
+//
+//block variables
+//  - var title = 'Article page'
+//  - var pageClass = 'not-front'
+//  - var nodeClass = 'node-article'
+//
+//block content
+//  include ../modules/node-content
+//
+//  section.related-section
+//    .section-layout
+//      .box-list-wrapper.small
+//        h2.section-title Related articles
+//
+//        .box-list
+//          include ../modules/box
+//          include ../modules/box
+//          .box
+//            .box__image
+//              a(href="#")
+//                img(src="./img/content/image1.png")
+//
+//            .box__body
+//              div
+//                .share-article
+//                h2
+//                  a(href="#") Gallia est
+//                p Contra legem facit
+//
+//              div
+//                .post-info 07/24/18
+//
+//                ul.tags-list
+//                  +navItem('#', 'Featured', 'active tags-list')
+//                  +navItem('#', 'Clinical', 'tags-list')
+//                  +navItem('#', 'Medical', 'tags-list')
+//                  +navItem('#', 'Safety', 'tags-list')
+//
+//                .read-more
+//                  a(href="#") Read more
+//
+//          include ../modules/box

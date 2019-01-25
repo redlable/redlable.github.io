@@ -6,9 +6,9 @@
 
 body {
   @include font-size(16);
-  color: $baltic-sea;
-  font-family: $fsAlbertRegular;
-  line-height: 1.4;
+  color: $black;
+  font-family: $opensans;
+  line-height: 1.2;
   min-width: 320px;
   overflow-x: hidden;
   word-break: break-word;
@@ -19,6 +19,10 @@ body {
   @include media-q(min, 768) {
     @include font-size(16);
   }
+}
+
+.ios {
+  cursor: pointer;
 }
 
 .active-menu {
@@ -54,8 +58,7 @@ svg {
 }
 
 figcaption {
-  color: $dusty-gray;
-  margin-bottom: 30px;
+  color: $grey;
 }
 
 iframe,
@@ -68,147 +71,12 @@ embed {
   @extend %responsive-video;
 }
 
-.post-info {
-  @include font-size(18);
-  background: url(../img/general/calendar_icon.png) left 2px no-repeat;
-  color: $dusty-gray;
-  padding-left: 30px;
-}
-
-.node-info {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 14px;
-
-  .post-info {
-    font-family: $fsAlbertBold;
-  }
-
-  .share-article {
-    height: 28px;
-    margin-left: 55px;
-    padding: 0;
-    width: 25px;
-
-    &:hover {
-      background-position: left bottom;
-    }
-  }
-}
-
-// PROTOTYPE STYLES
-.ready-list {
-  display: flex;
-  font-family: $fsAlbertBold;
-  justify-content: center;
-  margin-top: 100px;
-
-  > div {
-    margin: 20px;
-
-    &:before {
-      @include same(15px, height, width);
-      border: 1px solid $black;
-      content: '';
-      display: inline-block;
-      margin: 3px 10px 0 0;
-      vertical-align: top;
-    }
-  }
-
-  .not-ready {
-    &:before {
-      background: $red;
-    }
-  }
-
-  .in-progress {
-    &:before {
-      background: $blue;
-    }
-  }
-
-  .ready {
-    &:before {
-      background: $green;
-    }
-  }
-}
-
-.prototype-nav {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin: 100px 100px 50px;
-}
-
-.prototype-menu {
-  display: flex;
-  font-family: $fsAlbertExtraBold;
-  flex-wrap: wrap;
-
-  &__item {
-    background-image: linear-gradient(0deg, $red, darken($red, 30));
-    border-radius: 20px;
-    border-bottom: 4px solid $red;
-    border-top: 4px solid darken($red, 30);
-    margin: 10px 20px;
-    transition: border-color .3s ease;
-
-    &:hover {
-      border-top: 4px solid $red;
-      border-bottom: 4px solid darken($red, 30);
-    }
-  }
-
-  .not-ready {
-    background-image: linear-gradient(0deg, $red, darken($red, 30));
-    border-bottom: 4px solid $red;
-    border-top: 4px solid darken($red, 30);
-
-    &:hover {
-      border-top: 4px solid $red;
-      border-bottom: 4px solid darken($red, 30);
-    }
-  }
-
-  .in-progress {
-    background-image: linear-gradient(0deg, $blue, darken($blue, 30));
-    border-bottom: 4px solid $blue;
-    border-top: 4px solid darken($blue, 30);
-
-    &:hover {
-      border-top: 4px solid $blue;
-      border-bottom: 4px solid darken($blue, 30);
-    }
-  }
-
-  .ready {
-    background-image: linear-gradient(0deg, $green, darken($green, 30));
-    border-bottom: 4px solid $green;
-    border-top: 4px solid darken($green, 30);
-
-    &:hover {
-      border-top: 4px solid $green;
-      border-bottom: 4px solid darken($green, 30);
-    }
-  }
-
-  &__link {
-    @include links($white, $white);
-    @include font-size(30);
-    background: url(../img/general/head-bg-1.png) left top no-repeat;
-    display: block;
-    padding: 10px 30px;
-    text-align: center;
-  }
-}
-
 // Drupal styles
 .fieldgroup {
   border-width: 0;
   padding: 0;
 }
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px);

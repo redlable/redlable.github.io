@@ -1,43 +1,68 @@
 extends ../layout/main
 
 block variables
-  - var title = 'Front page'
+  - var pageTitle = 'Front page'
   - var pageClass = 'front'
 
 block content
-  section.related-section
-    .section-layout
-      .box-list-wrapper.small
-        h2.section-title.text-center Featured
+  section.big-blocks-section
+    .box-list.big-blocks-list
+      .list-container
+        each big_blocks_item in big_blocks
+          - var imageUrl = big_blocks_item.imageUrl
+          - var infoText = big_blocks_item.infoText
+          - var title = big_blocks_item.title
+          - var linkUrl = big_blocks_item.linkUrl
+          - var linkText = big_blocks_item.linkText
 
-        .box-list
           include ../modules/box
+
+  section.small-blocks-section
+    h2.section-title
+      span In case
+      |&nbsp;you missed it
+
+    .box-list.small-blocks-list
+      .list-container
+        each small_blocks_item in small_blocks
+          - var imageUrl = small_blocks_item.imageUrl
+          - var title = small_blocks_item.title
+          - var description = small_blocks_item.description
+          - var linkUrl = small_blocks_item.linkUrl
+          - var linkText = small_blocks_item.linkText
+
           include ../modules/box
+
+  section.small-blocks-section
+    h2.section-title
+      span Video on demand
+      | &nbsp;highlights
+
+    .box-list.small-blocks-list.video
+      .list-container
+        each video_blocks_item in video_blocks
+          - var playBtn = video_blocks_item.playBtn
+          - var imageUrl = video_blocks_item.imageUrl
+          - var title = video_blocks_item.title
+          - var description = video_blocks_item.description
+          - var linkUrl = video_blocks_item.linkUrl
+          - var linkText = video_blocks_item.linkText
+
           include ../modules/box
-          include ../modules/box
-          include ../modules/box
 
-  .section-layout
-    .box-list-wrapper.long
-      h2.category-title CMCD updates
+  section.teaser-section
+    h2.section-title
+      span Knowledge center
+      |&nbsp;hightlights
 
-      .box-list
-        include ../modules/box
-        include ../modules/box
+    .teaser-list
+      .list-container
+        - for (var i = 0; i < 2; i++) {
+          each teaser in teasers
+            - var title = teaser.title
+            - var author = teaser.author
+            - var history = teaser.history
+            - var publishInfo = teaser.publishInfo
 
-    .box-list-wrapper.long
-      h2.category-title CMCD updates
-
-      .box-list
-        include ../modules/box
-        include ../modules/box
-
-    .box-list-wrapper.small
-      h2.category-title Integration updates
-
-      .box-list
-        include ../modules/box
-        include ../modules/box
-        include ../modules/box
-        include ../modules/box
-        include ../modules/box
+            include ../modules/teaser
+        - }

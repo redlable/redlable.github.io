@@ -1,132 +1,48 @@
 .btn {
-  @include font-size(14);
-  border: 2px solid transparent;
-  cursor: pointer;
+  @include font-size(16);
+  background: rgba($white, .8);
+  border-radius: 5px;
+  color: $grey;
   display: inline-block;
-  font-weight: $bold;
-  letter-spacing: 2px;
-  line-height: 25px;
-  min-width: 235px;
-  outline: none;
-  padding: 8px 15px;
-  position: relative;
-  text-align: center;
+  padding: 10px 26px;
   text-decoration: none;
   text-transform: uppercase;
-  transition: .3s ease;
+  transition: background-color .3s ease;
   vertical-align: top;
 
-  &.purple {
-    color: $white;
-
-    &:hover {
-      background: $white;
-    }
+  &:hover {
+    background: rgba($white, .9);
   }
 
-  &.white {
+  &:active {
     background: $white;
-
-    &:hover {
-      color: $white;
-    }
   }
 }
 
-.hamburger-btn {
-  @include same(40px, height, width);
-  @include same(25px, right, top);
-  align-items: center;
-  border-radius: 50%;
-  cursor: pointer;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: absolute;
-  transition: background .3s ease;
-  z-index: 10;
-
-  @include media-q(min, 991) {
-    display: none;
-  }
-
-  > div {
-    height: 3px;
-    margin: 2px 0;
-    transition: .3s ease;
-    width: 18px;
-  }
-
-  .active-menu & {
-    > div {
-      &:first-child {
-        transform: rotate(45deg) translate(5px, 4px);
-      }
-
-      &:nth-child(2) {
-        opacity: 0;
-      }
-
-      &:last-child {
-        transform: rotate(-45deg) translate(6px, -5px);
-      }
-    }
-  }
-}
-
-.share-article {
-  align-items: center;
-  background: url(../img/general/share-icon.png) left top no-repeat;
-  color: $dove-gray;
-  cursor: pointer;
-  display: flex;
-  height: 28px;
-  padding-left: 45px;
-  transition: color .3s ease;
+.btn-red {
+  background: $red;
+  color: $white;
 
   &:hover {
-    color: $blue;
+    background: darken($red, 4);
+  }
+
+  &:active {
+    background: darken($red, 8);
   }
 }
 
-.layout-switcher {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  height: 16px;
-  margin-top: 20px;
-  width: 48px;
+.play-btn {
+  @include same(76px, height, width);
+  background: url(../img/general/play-btn.png) center top no-repeat;
+  cursor: pointer;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
 
-  > div {
-    background: url(../img/general/layout-switcher.png) no-repeat;
-    cursor: pointer;
-  }
-
-  .line {
-    background-position: left center;
-    width: 22px;
-
-    &:hover {
-      background-position: left bottom;
-    }
-
-    &.active {
-      background-position: left top;
-      cursor: default;
-    }
-  }
-
-  .puzzles {
-    background-position: right center;
-    width: 16px;
-
-    &:hover {
-      background-position: right bottom;
-    }
-
-    &.active {
-      background-position: right top;
-      cursor: default;
-    }
+  &:hover {
+    background-position: center bottom;
   }
 }

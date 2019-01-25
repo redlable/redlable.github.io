@@ -1,23 +1,16 @@
 .footer-menu {
-  display: flex;
-  flex-wrap: wrap;
 
   &__item {
-    margin-right: 50px;
 
     &:last-child {
-      margin-right: 0;
+
     }
   }
 
   &__link {
-    @include font-size(14);
-    @include links($white, $white, true);
-    font-family: $fsAlbertBold;
-    transition: color .3s ease;
 
     &:hover {
-      color: rgba($white, .7);
+
     }
   }
 }

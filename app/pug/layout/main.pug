@@ -1,3 +1,4 @@
+include ../vars
 include ../mixins
 block variables
 
@@ -5,7 +6,7 @@ doctype html
 html(lang="ru-RU")
   head
     meta(charset="utf-8")
-    title #{title}
+    title #{pageTitle}
     meta(http-equiv='X-UA-Compatible', content="IE = edge")
     meta(name="viewport" content="width=device-width,initial-scale=1")
     meta(name="keywords" content="")
@@ -14,20 +15,22 @@ html(lang="ru-RU")
 
   body(class=pageClass)
     main.main-wrapper
-      include ../modules/header
+      //include ../modules/header
 
       //include ../modules/editor-tabs
       //include ../modules/login-form
 
       .content-container
-        block content
+        .section-layout
+          block content
 
-    include ../modules/footer
+    //include ../modules/footer
 
-    script(src="https://code.jquery.com/jquery-1.10.2.min.js")
+    //script(src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js")
+    //script(src="https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js")
     script(src="js/libs.min.js")
-    script(src="js/jquery.resizeAction.js")
     script(src="js/main.js")
+    //script(src="js/main-vue.js")
 
     // External fonts
-    script(src="https://docs.gcs.digitalpfizer.com/fonts/fs_albert_pro_web/font_FSAlbert.js")
+

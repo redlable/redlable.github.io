@@ -155,40 +155,40 @@
 // @example:
 //   @font(12px, bold);
 //   @font(12px, 30px, thin);
-@mixin font($size, $line-height: false, $weight: false) {
-  font-size: $size;
-
-  // Try to get a value from "font-weights" map.
-  $possible-weight: font-weight($line-height);
-
-  @if $possible-weight == null {
-    // Check for one of defaults value.
-    $defaults: bold, bolder, lighter, normal;
-    $index: index($defaults, $line-height);
-
-    @if $index != null {
-      $possible-weight: nth($defaults, $index);
-    }
-  }
-
-  @if $possible-weight != null {
-    $line-height: false;
-    font-weight: $possible-weight;
-  }
-  @elseif $weight != false {
-    $value: font-weight($weight);
-
-    @if $value == null {
-      $value: $weight;
-    }
-
-    font-weight: $value;
-  }
-
-  @if $line-height != false {
-    line-height: $line-height;
-  }
-}
+//@mixin font($size, $line-height: false, $weight: false) {
+//  font-size: $size;
+//
+//  // Try to get a value from "font-weights" map.
+//  $possible-weight: font-weight($line-height);
+//
+//  @if $possible-weight == null {
+//    // Check for one of defaults value.
+//    $defaults: bold, bolder, lighter, normal;
+//    $index: index($defaults, $line-height);
+//
+//    @if $index != null {
+//      $possible-weight: nth($defaults, $index);
+//    }
+//  }
+//
+//  @if $possible-weight != null {
+//    $line-height: false;
+//    font-weight: $possible-weight;
+//  }
+//  @elseif $weight != false {
+//    $value: font-weight($weight);
+//
+//    @if $value == null {
+//      $value: $weight;
+//    }
+//
+//    font-weight: $value;
+//  }
+//
+//  @if $line-height != false {
+//    line-height: $line-height;
+//  }
+//}
 
 // =============================================================================
 // Custom

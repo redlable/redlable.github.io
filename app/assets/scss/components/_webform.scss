@@ -1,20 +1,20 @@
 // Placeholders
 ::-webkit-input-placeholder {
-  color: $dusty-gray;
+  color: $grey-light;
 }
 
 ::-moz-placeholder {
-  color: $dusty-gray;
+  color: $grey-light;
 }
 
 // Firefox 19+
 :-moz-placeholder {
-  color: $dusty-gray;
+  color: $grey-light;
 }
 
 // Firefox 18-
 :-ms-input-placeholder {
-  color: $dusty-gray;
+  color: $grey-light;
 }
 
 ::selection {
@@ -24,8 +24,8 @@
 #user-login,
 #user-login-form,
 #user-pass {
-  background: rgba($lavender-gray, .5);
-  box-shadow: 7px 7px 0 rgba($bossanova, .5);
+  background: rgba($grey-light, .5);
+  box-shadow: 7px 7px 0 rgba($grey, .5);
   margin: 0 auto 40px;
   max-width: 620px;
   padding: 30px 40px;
@@ -37,7 +37,7 @@
   }
 
   .form-text {
-    border: 2px solid darken($lavender-gray, 5);
+    border: 2px solid darken($grey-light, 5);
   }
 
   label {
@@ -50,15 +50,14 @@
   }
 
   .form-submit {
-    background: rgba($bossanova, .8);
+    background: rgba($grey-light, .8);
     border-radius: 30px;
     color: $white;
-    font-family: $fsAlbertExtraBold;
     padding: 20px 40px;
     text-transform: uppercase;
 
     &:hover {
-      background: $bossanova;
+      background: $grey-light;
     }
   }
 }
@@ -81,23 +80,15 @@
 }
 
 .form-text {
-  &:not(.hasDatepicker):not(.hasMonthpicker) {
-    border-radius: 32px;
-    color: $dusty-gray;
-    font-family: $fsAlbertBold;
-    padding: 20px 24px;
-    width: 100%;
-  }
+
 }
 
 select {
   @include font-size(12);
   background: $white url(../img/general/select-arrow.png) center right no-repeat;
-  border: 1px solid $seashell;
+  border: 1px solid $grey-light;
   border-radius: 20px;
   box-shadow: 0 1px 5px rgba($black, 0.1);
-  color: $bossanova;
-  font-family: $fsAlbertBold;
   padding: 12px 35px 12px 15px;
 }
 
@@ -111,7 +102,7 @@ select {
 
     li.search-choice {
       background: $white;
-      border: 1px solid $lavender-gray;
+      border: 1px solid $grey-light;
       border-radius: 16px;
       padding: 8px 30px 8px 10px;
 
@@ -126,13 +117,6 @@ select {
       }
     }
   }
-}
-
-.hasDatepicker,
-.hasMonthpicker {
-  @extend select;
-  background: url(../img/general/calendar_icon.png) right 13px center no-repeat;
-  background-size: 16px;
 }
 
 .form-radio {
@@ -154,7 +138,7 @@ select {
     &:before {
       @include same(18px, height, width);
       background: $white;
-      border: 1px solid $seashell;
+      border: 1px solid $grey;
       box-shadow: 0 1px 2px rgba($black, .2);
       left: 0;
       top: 0;
@@ -172,7 +156,7 @@ select {
   &:hover {
     + label {
       &:after {
-        background: $dusty-gray;
+        background: $grey;
       }
     }
   }
@@ -180,7 +164,7 @@ select {
   &:checked {
     + label {
       &:after {
-        background: $bossanova;
+        background: $grey;
       }
     }
   }
@@ -196,288 +180,10 @@ select {
 
 // Search form
 .search-form {
-  position: relative;
-  text-align: right;
 
-  .form-text {
-    &:not(.hasDatepicker):not(.hasMonthpicker) {
-      border: 1px solid $seashell;
-      box-shadow: 0 6px 20px rgba($black, .1);
-      margin-bottom: 10px;
-      width: 540px;
-    }
-  }
-
-  .form-submit {
-    @include same(55px, height, width);
-    background: $blue url(../img/general/search-icon.png) center no-repeat;
-    border-radius: 50%;
-    position: absolute;
-    top: 3px;
-    right: 4px;
-    text-indent: -9999px;
-    transition: background-color .3s ease;
-
-    &:hover {
-      background-color: rgba($blue, .7);
-    }
-  }
-}
-
-.advanced-search {
-  @include font-size(14);
-  @include links($white, $white);
-  background: url(../img/general/search-icon.png) left center no-repeat;
-  background-size: 11px;
-  margin-right: 33px;
-  padding-left: 15px;
-
-  &:hover {
-    text-decoration: underline;
-  }
-}
-
-fieldset {
-  border: none;
-  margin: 0;
-  padding: 0;
-
-  > legend {
-    float: left;
-
-    + * {
-      clear: both;
-    }
-  }
-}
-
-legend {
-  @include font-size(15);
-  font-family: $fsAlbertExtraBold;
-  margin-bottom: 15px;
-  padding: 0;
-}
-
-// Search filter
-.search {
-  .search-form {
-    text-align: left;
-  }
-
-  .views-exposed-form {
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  label {
-    @include font-size(13);
-  }
-
-  .text-search-fieldset {
-    @include flex-basis(100%);
-    border-top: 1px solid $lavender-gray;
-    margin-bottom: 25px;
-    padding-top: 30px;
-
-    legend {
-      display: none;
-    }
-
-    .fieldset-wrapper {
-      display: inline-block;
-      vertical-align: top;
-    }
-  }
-
-  .filter-by-fieldset {
-    @include flex-basis(50%);
-
-    .fieldset-wrapper {
-      display: flex;
-    }
-
-    label {
-      display: block;
-    }
-
-    .form-item {
-      margin-right: 20px;
-
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-
-    .form-item-groups {
-      max-width: 305px;
-      width: 100%;
-    }
-
-    .form-item-topics {
-      max-width: 275px;
-      width: 100%;
-    }
-
-    .chosen-choices {
-      .search-field {
-        .chosen-search-input {
-          color: $bossanova;
-          font-family: $fsAlbertBold;
-          margin: 6px 0;
-          max-width: 100%;
-          padding-left: 15px;
-        }
-      }
-    }
-  }
-
-  .filter-by-fieldset,
-  .date-fieldset {
-    border-right: 1px solid $lavender-gray;
-  }
-
-  .filter-by-fieldset,
-  .date-fieldset,
-  .status-fieldset {
-    margin-bottom: 30px;
-    padding: 0 25px;
-  }
-
-  .date-fieldset {
-    .fieldset-wrapper {
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    .form-item {
-      margin-right: 20px;
-
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-
-    label {
-      display: block;
-    }
-
-    .form-text {
-      color: $dusty-gray;
-      max-width: 130px;
-    }
-  }
-
-  .status-fieldset {
-    .fieldset-wrapper {
-      display: flex;
-      flex-wrap: wrap;
-
-      > div {
-        padding-right: 25px;
-
-        &:last-child {
-          padding-right: 0;
-        }
-      }
-    }
-  }
-
-  .fieldset-wrapper {
-    position: relative;
-  }
-
-  .sort-group-fieldset {
-    @include flex-basis(100%);
-    border-top: 1px solid $lavender-gray;
-    display: table;
-    padding-top: 30px;
-
-    > legend,
-    > .fieldset-wrapper {
-      display: table-cell
-    }
-
-    > legend {
-      padding: 13px 16px 0 0;
-    }
-
-    .fieldgroup {
-      background: $alabaster;
-      border: 1px solid $seashell;
-      border-radius: 24px;
-      padding: 13px 10px 0 13px;
-
-      legend {
-        display: none;
-      }
-
-      .form-item {
-        display: inline-block;
-        margin-right: 10px;
-        vertical-align: top;
-      }
-    }
-  }
-
-  select {
-    min-width: 160px;
-  }
-
-  .hasDatepicker,
-  .hasMonthpicker {
-    margin-bottom: 0;
-    min-width: 0;
-  }
-}
-
-.monthly-digest {
-  .search-form {
-    border-top: 1px solid $lavender-gray;
-    padding-top: 30px;
-  }
-
-  .filter-by-fieldset {
-    @include flex-basis(100%);
-    border: none;
-    margin-bottom: 20px;
-    padding: 0;
-
-    .fieldset-wrapper {
-      align-items: flex-end;
-    }
-  }
-
-  .form-item-field-groups-target-id {
-    max-width: 305px;
-    width: 100%;
-  }
-
-  .form-submit {
-    @include same(auto, height, width);
-    background-image: none;
-    border-radius: 20px;
-    color: $white;
-    margin-left: 10px;
-    padding: 11px 25px;
-    position: static;
-    text-indent: 0;
-  }
 }
 
 // Search results
 .search-results {
-  .box-list {
-    border-bottom: 1px solid $lavender-gray;
-    overflow: hidden;
-    margin-top: 30px;
-  }
 
-  .long {
-    .box {
-      &:first-child {
-        border: none;
-        padding-top: 0;
-      }
-    }
-  }
 }

@@ -1,194 +1,124 @@
 .box {
-  background: $white;
   position: relative;
 
-  &:focus {
-    outline: none;
-  }
-
-  &__image {
-    align-items: center;
-    background: $mischka;
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-    position: relative;
-
-    &:hover {
-      img {
-        transform: scale(1.1);
-      }
-    }
-
-    img {
-      transition: transform .3s ease;
-    }
-  }
-
-  h2,
-  h4,
-  p {
-    margin-bottom: 20px;
-  }
-
-  @include headings() {
-    a {
-      @include links(inherit, $blue);
-      transition: color .3s ease;
-    }
-  }
-
-  .read-more {
-    a {
-      @include links($blue, $blue);
-      background: url(../img/general/link-arrow-blue.png) 97% center no-repeat;
-      cursor: pointer;
-      padding-right: 23px;
-      transition: background-position .3s ease;
-      position: relative;
-      z-index: 1;
-
-      &:hover {
-        background-position: 100% center;
-      }
-    }
-  }
-
-  // Small box
-  .small & {
-    @include flex-basis(calc(25% - 20px));
-    border-radius: 20px;
-    box-shadow: 0 6px 10px rgba($black, .1);
+  &__body {
+    color: $white;
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    position: absolute;
+    z-index: 3;
+  }
 
-    &.slick-slide {
-      display: flex;
-      height: auto;
-    }
+  .info {
+    @include font-size(14);
+    margin-bottom: 5px;
+  }
 
-    .share-article {
-      @include same(57px, height, width);
-      @include same(0, right, top);
-      background: none;
-      cursor: pointer;
-      overflow: hidden;
-      padding: 0;
-      position: absolute;
-      z-index: 1;
+  h3 {
+    color: $white;
+  }
 
+  // Big block styles
+  .big-blocks-list & {
+    &__image {
       &:before,
       &:after {
-        @include same(150%, height, width);
-        @include same(0, left, top);
+        @include absolute();
         content: '';
-        position: absolute;
       }
 
       &:after {
-        background: url(../img/general/share-icon-cornored.png) left top no-repeat;
+        background: rgba($white, .2);
+        z-index: 1;
       }
 
       &:before {
-        background: $blue;
-        transform: rotate(45deg) translate(-25%, -50%);
+        background: linear-gradient(to bottom, rgba($white, 0) 0%, rgba($white, .75) 100%);
+        z-index: 2;
       }
-
-      &:hover {
-        &:after {
-          background-position: left -63px;
-        }
-
-        &:before {
-          background: $white;
-        }
-      }
-    }
-
-    &__image {
-      border-top-right-radius: 23px;
     }
 
     &__body {
-      background: $white;
-      display: flex;
-      flex-direction: column;
-      flex-grow: 1;
-      justify-content: space-between;
-      padding: 20px 20px 20px 25px;
-
-      > div {
-        > h2:first-of-type {
-          @include font-size(18);
-        }
-      }
+      @include same(19px, left, right, bottom);
+      background: rgba($red, .7);
+      padding: 12px 12px 15px 12px;
     }
 
-    .post-info {
-      @include font-size(13);
-      background-position: left top;
-      background-size: 14px;
-      margin-bottom: 8px;
-      padding-left: 20px;
+    h3 {
+      @include font-size(20);
     }
 
-    .tags-list {
-      @include font-size(13);
-      background-size: 13px;
-      margin-bottom: 10px;
-      padding-left: 20px;
-    }
-
-    .read-more {
-      display: flex;
-      justify-content: flex-end;
+    .btn {
+      @extend .btn-red;
+      float: right;
     }
   }
 
-  // Long box
-  .long & {
-    display: flex;
-    flex-wrap: wrap;
-
-    &__image {
-      @include flex-basis(400);
-      border-radius: 20px;
-      overflow: hidden;
-      margin-right: 45px;
-    }
-
+  // Small block styles
+  .small-blocks-list & {
     &__body {
-      @include flex-basis(calc(100% - 445px));
-      padding: 7px 140px 0 0;
-      position: relative;
-    }
+      @include same(16px, left, right);
+      background: rgba($black, .4);
+      bottom: 33px;
+      max-height: calc(100% - 60px);
+      padding: 20px 12px;
 
-    .share-article {
-      background-position: left -32px;
-      height: 28px;
-      padding: 0;
-      position: absolute;
-      right: 15px;
-      top: 10px;
-      width: 25px;
-
-      &:hover {
-        background-position: left top;
+      > div:not(.link-box) {
+        overflow-y: auto;
       }
     }
 
-    .post-info {
-      @include font-size(14);
-      background-position: left center;
-      margin-bottom: 13px;
-      padding-top: 3px;
+    h3 {
+      @include font-size(24);
     }
 
-    .tags-list {
-      @include font-size(14);
-      margin-bottom: 25px;
-      padding: 0 0 2px 30px;
+    h3,
+    .description {
+      text-shadow: 0 1px 3px rgba($black, .5);
+    }
+
+    .link-box {
+      text-align: center;
+    }
+
+    .btn {
+      font-weight: bold;
+    }
+  }
+
+  // Video block styles
+  .video & {
+    &:after {
+      border-bottom: 2px solid $red-light;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 5px;
+      width: calc(100% - 10px);
+    }
+
+    &__image {
+      position: relative;
+
+      &:after {
+        @include absolute;
+        background: rgba($black, .2);
+        content: '';
+      }
+    }
+
+    &__body {
+      background: none;
+      padding: 10px 12px 15px;
+      position: static;
+    }
+
+    h3 {
+      @include font-size(20);
+      color: $grey;
+      font-weight: $normal;
+      margin: 0;
+      text-shadow: none;
     }
   }
 }

@@ -1,71 +1,24 @@
-.node-container {
-  margin-top: 100px;
-}
+.section-title {
+  color: $grey;
+  margin-bottom: 0;
+  text-transform: uppercase;
 
-.top-image {
-  margin-bottom: 60px;
-}
-
-.related-section {
-  background: $gallery;
-  box-shadow: inset 0 0 20px rgba($black, 0.2);
-  padding: 90px 0 70px;
-
-  .front & {
-    padding: 60px 0 80px;
+  span {
+    color: $red;
   }
+}
+
+.small-blocks-section,
+.teaser-section {
+  margin: 0 48px;
 
   .section-title {
-    @include font-size(28);
-    border-bottom: 1px solid $lavender-gray;
-    font-family: $fsAlbertExtraBold;
-    margin-bottom: 45px;
-    padding-bottom: 20px;
+    padding: 0 5px;
   }
 }
 
-.category-title {
-  @include font-size(32);
-  margin: 95px 0 15px;
-
-  .small & {
-    border-bottom: 1px solid $lavender-gray;
-    margin: 65px 0 45px;
-    padding-bottom: 15px;
-  }
-}
-
-.node-title {
-  border-bottom: 1px solid $lavender-gray;
-  display: flex;
-  justify-content: space-between;
-
-  h1 {
-    max-width: 980px;
-    width: calc(100% - 260px);
-  }
-
-  .node-info {
-    @include flex-basis(260px);
-  }
-}
-
-.page-title-wrapper {
-  margin: 55px 0 40px;
-
-  h1,
-  p {
-    max-width: 960px;
-    width: calc(100% - 70px);
-  }
-}
-
-.page-title {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 35px;
-
-  h1 {
-    margin-bottom: 0;
+.teaser-section {
+  .section-title {
+    margin-bottom: 25px;
   }
 }

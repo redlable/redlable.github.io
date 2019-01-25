@@ -4,8 +4,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $fsAlbertBold;
-  color: $ripe-plum;
+  font-family: $roboto;
+  color: $black;
   margin: 0;
   margin-bottom: .6em;
 }
@@ -48,7 +48,7 @@ h6 {
 }
 
 p {
-  margin: 0 0 30px;
+  margin: 0 0 20px;
 }
 
 .text-center {
@@ -56,7 +56,7 @@ p {
 }
 
 strong {
-  font-family: $fsAlbertBold;
+  font-weight: $bold;
 }
 
 // WYSIWYG content styles
@@ -92,10 +92,8 @@ strong {
 
     li {
       &::before {
-        color: $ripe-plum;
         counter-increment: section;
         content: counter(section) '. ';
-        font-family: $fsAlbertBold;
         margin-right: 5px;
       }
     }
@@ -112,7 +110,6 @@ strong {
 
       &::before {
         @include same(6px, height, width);
-        background: $ripe-plum;
         content: ' ';
         position: absolute;
         left: 0;
@@ -124,18 +121,19 @@ strong {
 
   blockquote {
     position: relative;
-    //padding: 0 30px;
+    padding: 0 30px;
     display: inline-block;
-    //font-style: italic;
+    font-style: italic;
     margin: 20px 0;
-    //color: $primary;
 
     &::before {
+      content: '"';
       left: 0;
       top: 0;
     }
 
     &::after {
+      content: '"';
       right: 7px;
       bottom: 0;
     }
@@ -148,22 +146,6 @@ strong {
       font-family: inherit;
     }
   }
-}
-
-.low-margin-bottom {
-  margin-bottom: 5px;
-}
-
-.rtecenter {
-  text-align: center;
-}
-
-.rteright {
-  text-align: right;
-}
-
-.rtejustify {
-  text-align: justify;
 }
 
 // Table
@@ -181,8 +163,6 @@ table:not(.ui-datepicker-calendar) {
 
   caption {
     @include font-size(20);
-    color: $ripe-plum;
-    font-family: $fsAlbertBold;
     margin-bottom: 10px;
     text-align: center;
   }
@@ -198,25 +178,25 @@ table:not(.ui-datepicker-calendar) {
   }
 
   th {
-    background: $dove-gray;
+    background: $grey-dark;
     color: $white;
   }
 
   td {
-    background: $gallery;
+    background: $grey-dark;
   }
 
   tr {
     &:nth-child(even) {
       td {
-        background: darken($gallery, 5);
+        background: darken($grey-dark, 5);
       }
     }
   }
 
   tfoot {
     td {
-      background: $dove-gray;
+      background: $grey-dark;
       color: $white;
     }
   }
@@ -261,6 +241,6 @@ table:not(.ui-datepicker-calendar) {
 
 hr {
   border: none;
-  border-top: 1px solid $lavender-gray;
+  border-top: 1px solid $grey;
   margin: 30px 0;
 }
