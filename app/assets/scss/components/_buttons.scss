@@ -46,3 +46,32 @@
     background-position: center bottom;
   }
 }
+
+.pdf-btn {
+  background: url(../img/general/pdf-icon.png) center top no-repeat;
+  display: inline-block;
+  height: 25px;
+  vertical-align: top;
+  width: 68px;
+
+  &:hover {
+    background-position: center bottom;
+  }
+}
+
+.ext-link {
+  @include font-size(10);
+  background: url(../img/general/ext-link-icon.png) right top no-repeat;
+  color: $red;
+  display: inline-block;
+  font-weight: $bold;
+  min-height: 13px;
+  padding-right: 18px;
+  text-decoration: none;
+  vertical-align: top;
+
+  &:hover {
+    background-position: right bottom;
+    color: $red-light;
+  }
+}

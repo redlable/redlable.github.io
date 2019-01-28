@@ -1,6 +1,10 @@
 .teaser
   .teaser__body
-    h3 #{title}
-    .teaser__author #{author}
-    .teaser__history #{history}
-    .teaser__publish-info #{publishInfo}
+    div
+      h3 #{title}
+      .teaser__author #{author}
+      .teaser__history #{history}
+      .teaser__publish-info #{publishInfo}
+
+    .link-box
+      a(href=linkUrl class=linkFormat === 'pdf' ? 'pdf-btn' : 'ext-link') #{linkText}

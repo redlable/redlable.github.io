@@ -81,6 +81,8 @@
     &__body {
       @include same(19px, left, right, bottom);
       background: rgba($red, .7);
+      justify-content: space-between;
+      min-height: 164px;
       padding: 12px 12px 15px 12px;
     }
 
