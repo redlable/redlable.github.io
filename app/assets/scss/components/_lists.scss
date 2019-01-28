@@ -1,6 +1,10 @@
 .box-list {
   margin-bottom: 25px;
 
+  &.hero-section {
+    margin-bottom: 0;
+  }
+
   .list-container {
     display: flex;
     flex-wrap: wrap;
