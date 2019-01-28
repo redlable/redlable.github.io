@@ -8,11 +8,13 @@
   }
 
   .left-block {
-    @include flex-basis(73.5%);
+    @include flex-basis(calc(100% - 380px));
+    background-position: center top;
+    background-repeat: no-repeat;
   }
 
   .right-block {
-    @include flex-basis(26.5%);
+    @include flex-basis(380px);
   }
 }
 

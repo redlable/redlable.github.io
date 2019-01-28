@@ -66,8 +66,7 @@
   label {
     display: inline-block;
     font-weight: $bold;
-    letter-spacing: 1px;
-    margin-bottom: 5px;
+    margin-bottom: 7px;
   }
 
   .form-text {
@@ -175,7 +174,40 @@ select {
 }
 
 .form-submit {
+  @extend .btn;
+  @extend .btn-red;
+  cursor: pointer;
+}
 
+// Janrain markets
+.markets-switcher {
+  .login-header {
+    background: $red;
+    padding: 35px 48px 10px;
+  }
+
+  h2 {
+    color: $white;
+    font-weight: $normal;
+    margin: 0;
+  }
+
+  .login-contrent {
+    color: $grey;
+    padding: 40px 48px;
+  }
+
+  .description {
+    margin-bottom: 28px;
+  }
+
+  .markets-select {
+    margin-bottom: 35px;
+  }
+
+  .footer-description {
+    margin-bottom: 15px;
+  }
 }
 
 // Search form

@@ -6,11 +6,8 @@ block variables
 
 block content
   section.box-list.hero-section
-   .left-block
+   .left-block(style='background-image: url("./img/content/hero-banner.png")')
       .box
-        .box__image
-          img(src="./img/content/hero-banner.png")
-
         .box__body
           div
             h3
@@ -25,8 +22,26 @@ block content
             a(href="#").btn Join now
 
    .right-block
+     #block-markets-switcher
+       .markets-switcher
+         .login-header
+           h2(role="heading") Login
 
+         .login-contrent
+           p.description Select your country and click log in to gain access to Webinars.
+           form#janrain-markets.janrain-markets(autocomplete="off")
+             .js-form-item.form-item.js-form-type-select.form-item-markets.js-form-item-markets
+               label(for="edit-markets") Please select your country
+               select.markets-select.form-select
+                option(value="none") No country selected
+                option(value="hk") Hong Kong S.A.R., China
+                option(value="tw") Taiwan
+                option(value="sg") Singapore
+                option(value="in") India
 
+             p.footer-description Not yet registered? Select a country first.
+
+             input.button.js-form-submit.form-submit.form-disabled(type="submit" value="Submit" disabled)
 
   section.big-blocks-section
     .box-list.big-blocks-list

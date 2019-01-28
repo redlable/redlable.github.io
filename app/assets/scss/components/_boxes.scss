@@ -21,6 +21,8 @@
 
   // Hero banner
   .hero-section & {
+    height: 100%;
+
     &__body {
       align-items: center;
       background: rgba($black, .55);

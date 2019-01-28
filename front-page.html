@@ -18,9 +18,8 @@
       <div class="content-container">
         <div class="section-layout">
           <section class="box-list hero-section">
-            <div class="left-block">
+            <div class="left-block" style="background-image: url(&quot;./img/content/hero-banner.png&quot;)">
               <div class="box">
-                <div class="box__image"><img src="./img/content/hero-banner.png"></div>
                 <div class="box__body">
                   <div>
                     <h3><span>Q&A Session of SOS, VOD, SCT</span><img src="./img/content/live-mark.png"></h3>
@@ -30,7 +29,32 @@
                 </div>
               </div>
             </div>
-            <div class="right-block"></div>
+            <div class="right-block">
+              <div id="block-markets-switcher">
+                <div class="markets-switcher">
+                  <div class="login-header">
+                    <h2 role="heading">Login</h2>
+                  </div>
+                  <div class="login-contrent">
+                    <p class="description">Select your country and click log in to gain access to Webinars.</p>
+                    <form class="janrain-markets" id="janrain-markets" autocomplete="off">
+                      <div class="js-form-item form-item js-form-type-select form-item-markets js-form-item-markets">
+                        <label for="edit-markets">Please select your country</label>
+                        <select class="markets-select form-select">
+                          <option value="none">No country selected</option>
+                          <option value="hk">Hong Kong S.A.R., China</option>
+                          <option value="tw">Taiwan</option>
+                          <option value="sg">Singapore</option>
+                          <option value="in">India</option>
+                        </select>
+                      </div>
+                      <p class="footer-description">Not yet registered? Select a country first.</p>
+                      <input class="button js-form-submit form-submit form-disabled" type="submit" value="Submit" disabled>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
           <section class="big-blocks-section">
             <div class="box-list big-blocks-list">
