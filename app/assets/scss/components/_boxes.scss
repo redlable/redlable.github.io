@@ -2,6 +2,7 @@
   position: relative;
 
   &__body {
+    @include same(19px, left, right, bottom);
     color: $white;
     display: flex;
     flex-direction: column;
@@ -21,7 +22,6 @@
   // Hero banner
   .hero-section & {
     &__body {
-      @include same(19px, left, right, bottom);
       align-items: center;
       background: rgba($black, .55);
       flex-direction: row;
@@ -74,6 +74,12 @@
         background: linear-gradient(to bottom, rgba($white, 0) 0%, rgba($white, .75) 100%);
         z-index: 2;
       }
+    }
+
+    &__body {
+      @include same(19px, left, right, bottom);
+      background: rgba($red, .7);
+      padding: 12px 12px 15px 12px;
     }
 
     h3 {
