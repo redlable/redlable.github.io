@@ -1,0 +1,54 @@
+#footer {
+  background: $red;
+
+  .section-layout {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 27px 65px;
+  }
+}
+
+.footer-logo {
+  padding-right: 30px;
+}
+
+.footer-nav {
+  padding-right: 90px;
+}
+
+.footer-menu {
+  &__item {
+    margin-bottom: 7px;
+  }
+
+  &__link {
+    @include font-size(14);
+    color: $white;
+    text-decoration: none;
+
+    .social & {
+      padding-left: 25px;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .social-link {
+    background-image: url(../img/general/social-icons.png);
+    background-repeat: no-repeat;
+  }
+
+  .facebook {
+    background-position: 0 4px;
+  }
+
+  .twitter {
+    background-position: 0 -20px;
+  }
+
+  .instagram {
+    background-position: 0 -45px;
+  }
+}

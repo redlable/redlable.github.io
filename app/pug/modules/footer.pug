@@ -1,19 +1,16 @@
 footer#footer
-  .footer-bg
-    .section-layout
-      .footer.footer__left
-        .footer__logo
-          img(src="./img/general/pfizer-logo.png")
+  .section-layout
+    .footer-logo
+      img(src="./img/general/footer-logo.png")
 
-        .footer__slogan
-          p OPERATIONS CENTER OF EXCELLENCE
-          p Global Product Development
+    nav.footer-nav
+      ul.footer-menu
+        +navItem("#", 'About Us', 'footer-menu')
+        +navItem("#", 'Contact', 'footer-menu')
+        +navItem("#", 'Terms & Conditions', 'footer-menu')
 
-        nav.footer-nav
-          ul.footer-menu
-            +navItem("#", 'Footer menu item', 'footer-menu')
-            +navItem("#", 'Footer menu item', 'footer-menu')
-
-
-      .footer.footer__right
-        p Cum sociis natoque penatibus et magnis dis parturient. Sed haec quis possit intrepidus aestimare tellus. Non equidem invideo, miror magis posuere velit aliquet. Pellentesque habitant morbi tristique senectus et netus. Nihilne te nocturnum praesidium Palati, nihil urbis vigiliae. Fabio vel iudice vincam, sunt in culpa qui officia. Quisque ut dolor gravida, placerat libero vel, euismod.
+    nav.footer-nav.social
+      ul.footer-menu
+        +navItem("#", 'Facebook', 'social-link facebook footer-menu')
+        +navItem("#", 'Twitter', 'social-link twitter footer-menu')
+        +navItem("#", 'Instagram', 'social-link instagram footer-menu')
