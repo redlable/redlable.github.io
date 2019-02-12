@@ -118,6 +118,10 @@
     margin: 0 10px 10px;
     text-indent: -9999px;
     transition: background .3s ease-in-out;
+
+    &:hover {
+      background: rgba($white, .3);
+    }
   }
 
   .slick-active {

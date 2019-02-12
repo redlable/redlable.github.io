@@ -4,12 +4,17 @@
   line-height: 1.25;
 
   &__item {
+    position: relative;
+    min-height: 500px;
+    padding-top: 160px;
+  }
+
+  &__media {
+    @include absolute();
     background-position: center top;
     background-repeat: no-repeat;
     display: flex;
     flex-wrap: wrap;
-    min-height: 500px;
-    padding-top: 160px;
   }
 
   .center-text {
@@ -37,6 +42,11 @@
     margin-bottom: 10px;
     width: 70%;
   }
+}
+
+.hero-body {
+  position: relative;
+  z-index: 1;
 }
 
 .section-title {
