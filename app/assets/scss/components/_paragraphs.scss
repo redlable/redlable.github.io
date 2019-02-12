@@ -1,20 +1,37 @@
-.hero-section {
+.hero-banner {
+  @include font-size(20);
+  background: url(../img/content/section-bg-1.png) center top no-repeat;
+  color: $white;
   display: flex;
   flex-wrap: wrap;
+  line-height: 1.25;
+  min-height: 500px;
+  padding-top: 160px;
 
-  .left-block,
-  .right-block {
-    padding: 0 1px;
+  .center-text {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 83%;
+
+    h1 {
+      width: 100%;
+    }
   }
 
-  .left-block {
-    @include flex-basis(calc(100% - 380px));
-    background-position: center top;
-    background-repeat: no-repeat;
+  .right-text {
+    align-items: flex-end;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
   }
 
-  .right-block {
-    @include flex-basis(380px);
+  h1 {
+    @include font-size(50);
+    color: $white;
+    line-height: 1.1;
+    margin-bottom: 10px;
+    width: 70%;
   }
 }
 
@@ -42,3 +59,4 @@
     margin-bottom: 25px;
   }
 }
+

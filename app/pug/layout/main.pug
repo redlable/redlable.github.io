@@ -15,14 +15,13 @@ html(lang="ru-RU")
 
   body(class=pageClass)
     main.main-wrapper
-      //include ../modules/header
+      include ../modules/header
 
       //include ../modules/editor-tabs
       //include ../modules/login-form
 
       .content-container
-        .section-layout
-          block content
+        block content
 
     include ../modules/footer
 

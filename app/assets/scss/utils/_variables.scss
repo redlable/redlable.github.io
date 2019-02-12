@@ -10,9 +10,9 @@ $medium: 600;
 $bold: 700;
 
 // Layout
-$site-width: 1440px;
-$grid-gutter: 0;
-$col-width: 120px;
+$site-width: 1330px;
+$grid-gutter: 20px;
+$col-width: 65px;
 $columns: 12;
 $content-width: $col-width * $columns + $grid-gutter * $columns - $grid-gutter;
 
@@ -31,8 +31,12 @@ $pink: #d900c7;
 $red: #b4284a;
 $red-light: #E94B59;
 
-$green: #52d984;
+$green: #01C1B5;
 
-$blue: #0088ff;
+$blue: #3000FF;
+$blue-light: #0088ff;
+$blue-dark: #2C5697;
+
+$purple: #84329B;
 
 $yellow: #cc0;

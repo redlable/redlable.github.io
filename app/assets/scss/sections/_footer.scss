@@ -1,10 +1,11 @@
 #footer {
-  background: $red;
+  background: $blue;
   margin-top: 35px;
 
   .section-layout {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding: 15px 27px 60px;
   }
 }
@@ -18,6 +19,9 @@
 }
 
 .footer-menu {
+  display: flex;
+  flex-wrap: wrap;
+
   &__item {
     margin-bottom: 7px;
   }
@@ -34,22 +38,5 @@
     &:hover {
       text-decoration: underline;
     }
-  }
-
-  .social-link {
-    background-image: url(../img/general/social-icons.png);
-    background-repeat: no-repeat;
-  }
-
-  .facebook {
-    background-position: 0 4px;
-  }
-
-  .twitter {
-    background-position: 0 -20px;
-  }
-
-  .instagram {
-    background-position: 0 -45px;
   }
 }

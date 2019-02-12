@@ -1,0 +1,18 @@
+#header {
+  padding-top: 34px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  .section-layout {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .site-logo {
+    width: 163px;
+  }
+}

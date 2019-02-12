@@ -12,7 +12,7 @@ global.$ = {
   source: {
     scss: './app/assets/scss/**/*.scss',
     js: './app/assets/js',
-    drupal_theme: '../'
+    drupal_theme: './'
   }
 };
 
