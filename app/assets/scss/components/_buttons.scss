@@ -1,12 +1,12 @@
 .btn {
   @include font-size(18);
-  background-image: linear-gradient(-136deg, $green 0%, $blue-dark 52%, $purple 100%);
+  background-image: $gradient;
   border-radius: 40px;
   box-shadow: 0 10px 30px rgba($blue, .5);
   color: $white;
   display: inline-block;
   font-weight: $medium;
-  padding: 16px 57px;
+  padding: 19px 57px;
   position: relative;
   text-decoration: none;
   transition: background .3s ease;

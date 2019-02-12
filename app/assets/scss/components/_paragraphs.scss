@@ -1,3 +1,4 @@
+// Hero section
 .hero-banner {
   @include font-size(20);
   color: $white;
@@ -49,6 +50,7 @@
   z-index: 1;
 }
 
+// Section title
 .section-title {
   color: $grey;
   margin-bottom: 0;
@@ -59,18 +61,52 @@
   }
 }
 
-.small-blocks-section,
-.teaser-section {
-  margin: 0 48px;
+// Trial guide section
+.trial-guide {
+  @include font-size(15);
+  background-image: $gradient;
+  color: $white;
+  line-height: 1.34;
+  padding: 100px;
+  text-align: center;
 
-  .section-title {
-    padding: 0 5px;
+  .trial-info {
+    margin: 0 auto 40px;
+    width: 58%;
+  }
+
+  h2 {
+    @include font-size(30);
+    color: $white;
+    line-height: 1.17;
+    margin-bottom: 5px;
   }
 }
 
-.teaser-section {
-  .section-title {
-    margin-bottom: 25px;
+.step-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 40px;
+  padding: 0 30px;
+  text-align: left;
+
+  .step-item {
+    @include flex-basis(33.333%);
+    font-weight: $bold;
+  }
+
+  .step-image {
+    position: relative;
+  }
+
+  .step-number {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  p {
+    margin: 20px 0 0;
+    max-width: 250px;
   }
 }
-
