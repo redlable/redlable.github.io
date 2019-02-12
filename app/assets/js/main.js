@@ -51,14 +51,22 @@
     !isTrue ? $body.removeClass('active-menu') : '';
   });
 
-  $('.slider-wrapper').each(function() {
-    let $slider = $(this),
-        options = {
-          infinite: false,
-          slidesToShow: 4
-        };
+  // Hero slider
+  let $heroBanner = $('.hero-banner');
 
-    $slider.slick(options);
-  });
+  if ($heroBanner.children().length > 1) {
+    $heroBanner.each(function() {
+      let $slider = $(this),
+          options = {
+            autoplay: true,
+            arrows: false,
+            dots: true,
+            fade: true,
+            speed: 1000
+          };
+
+      $slider.slick(options);
+    });
+  }
 
 })(jQuery);

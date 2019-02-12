@@ -53,14 +53,22 @@
     !isTrue ? $body.removeClass('active-menu') : '';
   });
 
-  $('.slider-wrapper').each(function () {
-    var $slider = $(this),
-        options = {
-      infinite: false,
-      slidesToShow: 4
-    };
+  // Hero slider
+  var $heroBanner = $('.hero-banner');
 
-    $slider.slick(options);
-  });
+  if ($heroBanner.children().length > 1) {
+    $heroBanner.each(function () {
+      var $slider = $(this),
+          options = {
+        autoplay: true,
+        arrows: false,
+        dots: true,
+        fade: true,
+        speed: 1000
+      };
+
+      $slider.slick(options);
+    });
+  }
 })(jQuery);
 //# sourceMappingURL=main.js.map

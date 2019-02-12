@@ -1,12 +1,16 @@
 .hero-banner {
   @include font-size(20);
-  background: url(../img/content/section-bg-1.png) center top no-repeat;
   color: $white;
-  display: flex;
-  flex-wrap: wrap;
   line-height: 1.25;
-  min-height: 500px;
-  padding-top: 160px;
+
+  &__item {
+    background-position: center top;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 500px;
+    padding-top: 160px;
+  }
 
   .center-text {
     margin-left: auto;
