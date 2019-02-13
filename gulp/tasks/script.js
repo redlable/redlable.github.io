@@ -1,7 +1,7 @@
 module.exports = function() {
   $.gulp.task('scripts:lib', function() {
     return $.gulp.src([
-        'app/bower_components/jquery/dist/jquery.js',
+        // 'app/bower_components/jquery/dist/jquery.js',
         'app/bower_components/slick-carousel/slick/slick.js',
         'app/bower_components/vue/dist/vue.js',
         'app/assets/js/libs/*.js'
