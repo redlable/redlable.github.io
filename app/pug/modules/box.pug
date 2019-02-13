@@ -1,20 +1,11 @@
 .box
-  .box__image
-    img(src="./img/content/" + imageUrl + ".png")
+  .box__bg.box__bg-image(style="background-image: url(../img/content/" + bgImage + ".png)")
+  .box__bg.box__bg-overlay
+  .box__bg.box__bg-gradient(style="background-image: linear-gradient(-225deg, rgba(0, 0, 0, 0) 0%," + bgColor + " 100%)")
 
-    if playBtn
-      .play-btn
+  .box__content
+    .box__image
+      img(src="./img/content/" + avatar + ".png")
 
-  .box__body
-    div
-      if infoText
-        .info #{infoText}
-
-      h3 #{title}
-
-      if description
-        p.description #{description}
-
-    if linkText
-      .link-box
-        a(href=linkUrl).btn #{linkText}
+    .box__body
+      h2 #{title}

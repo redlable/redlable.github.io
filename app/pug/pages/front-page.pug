@@ -9,6 +9,15 @@ block content
   include ../paragraphs/trial-guide
   include ../paragraphs/product-view
 
+  section.people-list
+    each people_item in people
+      - var title = people_item.title
+      - var avatar = people_item.avatar
+      - var bgImage = people_item.bgImage
+      - var bgColor = people_item.bgColor
+
+      include ../modules/box
+
   //section.box-list.hero-section
   // .left-block(style='background-image: url("./img/content/hero-banner.png")')
   //    .box

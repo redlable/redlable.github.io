@@ -1,165 +1,35 @@
 .box {
+  min-height: 320px;
+  overflow: hidden;
   position: relative;
 
-  &__body {
-    @include same(19px, left, right, bottom);
-    color: $white;
+  &__bg {
+    @include absolute();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scale(1.05);
+    filter: blur(5px);
+  }
+
+  &__bg-overlay {
+    background: $black;
+    opacity: .6;
+  }
+
+  &__content {
     display: flex;
-    flex-direction: column;
-    position: absolute;
-    z-index: 3;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    position: relative;
+    z-index: 1;
   }
 
-  .info {
-    @include font-size(14);
-    margin-bottom: 5px;
-  }
-
-  h3 {
+  h2 {
+    @include font-size(30);
     color: $white;
-  }
-
-  // Hero banner
-  .hero-section & {
-    height: 100%;
-
-    &__body {
-      align-items: center;
-      background: rgba($black, .55);
-      flex-direction: row;
-      padding: 17px 40px 15px;
-
-      > div:not(.link-box) {
-        padding-right: 50px;
-      }
-    }
-
-    h3 {
-      margin-bottom: 5px;
-
-      span {
-        padding-right: 25px;
-      }
-    }
-
-    .description {
-      line-height: 1.6;
-      margin-bottom: 0;
-    }
-
-    .link-box {
-      flex-shrink: 0;
-    }
-
-    .btn {
-      font-weight: $bold;
-      padding-left: 16px;
-      padding-right: 16px;
-    }
-  }
-
-  // Big block styles
-  .big-blocks-list & {
-    &__image {
-      &:before,
-      &:after {
-        @include absolute();
-        content: '';
-      }
-
-      &:after {
-        background: rgba($white, .2);
-        z-index: 1;
-      }
-
-      &:before {
-        background: linear-gradient(to bottom, rgba($white, 0) 0%, rgba($white, .75) 100%);
-        z-index: 2;
-      }
-    }
-
-    &__body {
-      @include same(19px, left, right, bottom);
-      background: rgba($red, .7);
-      justify-content: space-between;
-      min-height: 164px;
-      padding: 12px 12px 15px 12px;
-    }
-
-    h3 {
-      @include font-size(20);
-    }
-
-    .btn {
-      float: right;
-    }
-  }
-
-  // Small block styles
-  .small-blocks-list & {
-    &__body {
-      @include same(16px, left, right);
-      background: rgba($black, .4);
-      bottom: 33px;
-      max-height: calc(100% - 60px);
-      padding: 20px 12px;
-
-      > div:not(.link-box) {
-        overflow-y: auto;
-      }
-    }
-
-    h3 {
-      @include font-size(24);
-    }
-
-    h3,
-    .description {
-      text-shadow: 0 1px 3px rgba($black, .5);
-    }
-
-    .link-box {
-      text-align: center;
-    }
-
-    .btn {
-      font-weight: bold;
-    }
-  }
-
-  // Video block styles
-  .video & {
-    &:after {
-      border-bottom: 2px solid $red-light;
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 5px;
-      width: calc(100% - 10px);
-    }
-
-    &__image {
-      position: relative;
-
-      &:after {
-        @include absolute;
-        background: rgba($black, .2);
-        content: '';
-      }
-    }
-
-    &__body {
-      background: none;
-      padding: 10px 12px 15px;
-      position: static;
-    }
-
-    h3 {
-      @include font-size(20);
-      color: $grey;
-      font-weight: $normal;
-      margin: 0;
-      text-shadow: none;
-    }
+    line-height: 1.17;
+    margin-bottom: 0;
+    text-transform: uppercase;
   }
 }
