@@ -159,11 +159,24 @@
     line-height: 1.34;
     padding: 90px 0;
     width: 40%;
+
+    .faq-page & {
+      @include font-size(20);
+      line-height: 1.25;
+      padding-top: 200px;
+      width: 77%;
+
+      h1 {
+        margin-bottom: 5px;
+        text-transform: uppercase;
+      }
+    }
   }
 
   h1 {
     @include font-size(50);
     color: $white;
+    line-height: 1.1;
     margin-bottom: 10px;
   }
 

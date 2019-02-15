@@ -18,8 +18,8 @@
     &:last-child {
       @include flex-basis(50%);
 
-      .box__image {
-        margin-left: 90px;
+      .box__content {
+        padding-left: 90px;
       }
 
       .box__body {
@@ -28,3 +28,55 @@
     }
   }
 }
+
+// FAQ
+.faq-list {
+  margin: 100px auto 200px;
+  max-width: 800px;
+}
+
+.faq-item {
+  border-bottom: 1px solid $purple;
+  line-height: 1.25;
+  margin-bottom: 30px;
+}
+
+.faq-header {
+  cursor: pointer;
+  padding: 0 50px 30px;
+
+  &.active {
+    + .faq-content {
+      display: block;
+    }
+  }
+
+  h2 {
+    @include font-size(30);
+    color: $purple;
+    line-height: 1.17;
+    margin: 0;
+  }
+}
+
+.faq-content {
+  //display: none;
+  overflow: hidden;
+  padding: 0 50px;
+  transition: all .3s ease;
+}
+
+//.slide-enter{
+//  opacity: 0;
+//}
+//.slide-enter-active{
+//  transition: all 1s;
+//}
+//.slide-leave{
+//  /* opacity: 1; */
+//}
+//.slide-leave-active{
+//  transition: all 1s;
+//  opacity: 0;
+//}
+

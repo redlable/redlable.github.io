@@ -4,13 +4,13 @@
 <html lang="ru-RU">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>FAQ page</title>
     <meta http-equiv="X-UA-Compatible" content="IE = edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="keywords" content="">
     <link rel="stylesheet" type="text/css" href="css/screen.css">
   </head>
-  <body class="index-page">
+  <body class="faq-page">
     <main class="main-wrapper">
       <header id="header">
         <div class="header-bg">
@@ -35,6 +35,31 @@
       <!--include ../modules/editor-tabs-->
       <!--include ../modules/login-form-->
       <div class="content-container">
+        <section class="product-view no-image">
+          <div class="section-layout">
+            <div class="product-body">
+              <h1>Freaquently asked questions</h1>
+              <p>Queries? Questions? Searching for answers? You should find just about everything you need below. If not, please get in touch.</p>
+              <div><a class="btn btn-white" href="#">Get in touch</a></div>
+            </div>
+          </div>
+        </section>
+        <section class="faq-container">
+          <div class="section-layout">
+            <div class="faq-list" id="accordion">
+              <div class="faq-item" v-for="(item, id) in items">
+                <div class="faq-header" v-on:click="item.show = !item.show">
+                  <h2>{{item.title}}</h2>
+                </div>
+                <transition name="slide" v-on:before-enter="beforeEnter" v-on:enter="enter" v-on:before-leave="beforeLeave" v-on:leave="leave">
+                  <div class="faq-content" v-if="item.show">
+                    <p>{{item.content}}</p>
+                  </div>
+                </transition>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
     </main>
     <footer id="footer">
