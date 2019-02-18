@@ -1,44 +1,48 @@
 'use strict';
 
-var accordion = new Vue({
-  el: '#accordion',
-  delimiters: ['${', '}'],
-  data: {
-    // show: false,
-    items: [{
-      title: '1What is presbyopia?',
-      content: '1Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut consequatur doloribus eos ex impedit nostrum sint sunt suscipit velit. Assumenda aut autem cupiditate debitis deleniti dolore ea expedita iste, molestiae molestias non odio officia quis rem sed vitae voluptatem. Cum expedita itaque minus nobis odio possimus rem sed totam.',
-      show: false
-    }, {
-      title: '2What is presbyopia?',
-      content: '2Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut consequatur doloribus eos ex impedit nostrum sint sunt suscipit velit. Assumenda aut autem cupiditate debitis deleniti dolore ea expedita iste, molestiae molestias non odio officia quis rem sed vitae voluptatem. Cum expedita itaque minus nobis odio possimus rem sed totam.',
-      show: false
-    }, {
-      title: '3What is presbyopia?',
-      content: '3Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut consequatur doloribus eos ex impedit nostrum sint sunt suscipit velit. Assumenda aut autem cupiditate debitis deleniti dolore ea expedita iste, molestiae molestias non odio officia quis rem sed vitae voluptatem. Cum expedita itaque minus nobis odio possimus rem sed totam.',
-      show: false
-    }]
-  },
-  methods: {
-    // toggle: function(e) {
-    //   this.show = !this.show;
-    //   // this.accItem = e.target.closest('.faq-item').children[1];
-    // },
-    beforeEnter: function beforeEnter(el) {
-      el.style.height = '0';
-    },
-    enter: function enter(el) {
-      el.style.height = el.scrollHeight + 'px';
-    },
-    beforeLeave: function beforeLeave(el) {
-      el.style.height = el.scrollHeight + 'px';
-    },
-    leave: function leave(el) {
-      el.style.height = '0';
-    }
-  },
-  mounted: function mounted() {
-    // this.items = this.$el.children;
+window.onload = function () {
+  if (!!document.getElementById('accordion')) {
+    var accordion = new Vue({
+      el: '#accordion',
+      delimiters: ['${', '}'],
+      data: {
+        nodeId: drupalSettings.internalPath,
+        items: [],
+        response: ''
+      },
+      methods: {
+        beforeEnter: function beforeEnter(el) {
+          this.items.forEach(function (item) {
+            item.show = false;
+          });
+          el.style.height = '0';
+        },
+        enter: function enter(el) {
+          el.style.height = el.scrollHeight + 'px';
+        },
+        beforeLeave: function beforeLeave(el) {
+          el.style.height = el.scrollHeight + 'px';
+        },
+        leave: function leave(el) {
+          el.style.height = '0';
+        }
+      },
+      created: function created() {
+        var _this = this;
+
+        var self = this;
+
+        axios.get(window.location.origin + '/entity/router?path=' + this.nodeId + '&format=api_json').then(function (response) {
+          self.items = response.data.data.attributes.items;
+        }).catch(function (error) {
+          console.log(error);
+        }).then(function () {
+          for (var i = 0; i < self.items.length; i++) {
+            self.$set(_this.items[i], 'show', false);
+          }
+        });
+      }
+    });
   }
-});
+};
 //# sourceMappingURL=main-vue.js.map

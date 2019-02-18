@@ -31,14 +31,13 @@
 
 // FAQ
 .faq-list {
-  margin: 100px auto 200px;
+  margin: 70px auto 200px;
   max-width: 800px;
 }
 
 .faq-item {
   border-bottom: 1px solid $purple;
   line-height: 1.25;
-  margin-bottom: 30px;
   transition: opacity .3s ease;
 
   [v-cloak] & {
@@ -48,7 +47,7 @@
 
 .faq-header {
   cursor: pointer;
-  padding: 0 50px 30px;
+  padding: 30px 50px;
 
   &.active {
     h2 {
