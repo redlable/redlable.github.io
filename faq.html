@@ -10,7 +10,7 @@
     <meta name="keywords" content="">
     <link rel="stylesheet" type="text/css" href="css/screen.css">
   </head>
-  <body class="faq-page">
+  <body class="node-qa-page">
     <main class="main-wrapper">
       <header id="header">
         <div class="header-bg">
@@ -49,11 +49,11 @@
             <div class="faq-list" id="accordion">
               <div class="faq-item" v-for="(item, id) in items">
                 <div class="faq-header" v-on:click="item.show = !item.show">
-                  <h2>{{item.title}}</h2>
+                  <h2>${item.title}</h2>
                 </div>
                 <transition name="slide" v-on:before-enter="beforeEnter" v-on:enter="enter" v-on:before-leave="beforeLeave" v-on:leave="leave">
                   <div class="faq-content" v-if="item.show">
-                    <p>{{item.content}}</p>
+                    <p>${item.content}</p>
                   </div>
                 </transition>
               </div>

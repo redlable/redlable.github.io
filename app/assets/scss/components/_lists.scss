@@ -39,6 +39,11 @@
   border-bottom: 1px solid $purple;
   line-height: 1.25;
   margin-bottom: 30px;
+  transition: opacity .3s ease;
+
+  [v-cloak] & {
+    opacity: 0;
+  }
 }
 
 .faq-header {
@@ -46,8 +51,10 @@
   padding: 0 50px 30px;
 
   &.active {
-    + .faq-content {
-      display: block;
+    h2 {
+      &:after {
+        transform: rotateX(180deg);
+      }
     }
   }
 
@@ -56,6 +63,19 @@
     color: $purple;
     line-height: 1.17;
     margin: 0;
+    padding-right: 30px;
+    position: relative;
+
+    &:after {
+      background: url(../img/svg/arrow-down.svg) center no-repeat;
+      content: '';
+      height: 12px;
+      position: absolute;
+      right: 0;
+      top: 10px;
+      transition: transform .3s ease;
+      width: 22px;
+    }
   }
 }
 
@@ -63,20 +83,12 @@
   //display: none;
   overflow: hidden;
   padding: 0 50px;
-  transition: all .3s ease;
-}
+  transition: all .3s ease-in-out;
 
-//.slide-enter{
-//  opacity: 0;
-//}
-//.slide-enter-active{
-//  transition: all 1s;
-//}
-//.slide-leave{
-//  /* opacity: 1; */
-//}
-//.slide-leave-active{
-//  transition: all 1s;
-//  opacity: 0;
-//}
+  .answer-body {
+    > *:last-child {
+      margin-bottom: 30px;
+    }
+  }
+}
 

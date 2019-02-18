@@ -31,4 +31,20 @@ module.exports = function() {
         stream: true
       }));
   });
+
+  $.gulp.task('scripts:theme', function() {
+    return $.gulp.src('app/assets/js/*.js')
+      .pipe($.plugins.sourcemaps.init())
+      .pipe($.plugins.babel({
+        presets: ['env']
+      }))
+      .on('error', $.plugins.notify.onError(function(err) {
+        return {
+          title: 'Scripts',
+          message: err.message
+        };
+      }))
+      .pipe($.plugins.sourcemaps.write('.'))
+      .pipe($.gulp.dest('js/'));
+  });
 };

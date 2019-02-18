@@ -6,6 +6,7 @@ module.exports = function() {
   });
 
   $.gulp.task('watch:theme', function() {
+    $.gulp.watch('app/assets/js/*.js', $.gulp.series('scripts:theme'));
     $.gulp.watch('app/assets/scss/**/*.scss', $.gulp.series('sass:theme'));
   });
 };

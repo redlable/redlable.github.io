@@ -25,6 +25,11 @@ $.path.tasks.forEach(function (taskPath) {
 //   $.gulp.parallel('sass', 'pug', 'scripts:lib', 'svg', 'img', 'fonts','svg:copy')
 // ));
 
+$.gulp.task('dev', $.gulp.series(
+  'clean',
+  $.gulp.parallel('sass', 'scripts:lib', 'scripts', 'img')
+));
+
 $.gulp.task('build', $.gulp.series(
   'clean',
   $.gulp.parallel('sass', 'pug', 'scripts:lib', 'scripts', 'img')
@@ -35,8 +40,7 @@ $.gulp.task('copy', $.gulp.series(
 ));
 
 $.gulp.task('theme', $.gulp.series(
-  $.gulp.parallel('sass:theme'),
-  $.gulp.parallel('watch:theme')
+  $.gulp.series($.gulp.parallel('sass:theme', 'scripts:theme'), 'watch:theme')
 ));
 
 $.gulp.task('default', $.gulp.series(

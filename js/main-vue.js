@@ -2,6 +2,7 @@
 
 var accordion = new Vue({
   el: '#accordion',
+  delimiters: ['${', '}'],
   data: {
     // show: false,
     items: [{
