@@ -75,6 +75,10 @@ embed {
   @extend %responsive-video;
 }
 
+sup {
+  font-size: 30%;
+}
+
 .note {
   @include font-size(15);
   color: $white;
