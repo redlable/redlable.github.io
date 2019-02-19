@@ -40,22 +40,20 @@
   line-height: 1.25;
   transition: opacity .3s ease;
 
-  [v-cloak] & {
-    opacity: 0;
+  &.active {
+    .faq-header {
+      h2 {
+        &:after {
+          transform: rotateX(180deg);
+        }
+      }
+    }
   }
 }
 
 .faq-header {
   cursor: pointer;
   padding: 30px 50px;
-
-  &.active {
-    h2 {
-      &:after {
-        transform: rotateX(180deg);
-      }
-    }
-  }
 
   h2 {
     @include font-size(30);
@@ -79,15 +77,12 @@
 }
 
 .faq-content {
-  //display: none;
+  display: none;
   overflow: hidden;
   padding: 0 50px;
-  transition: all .3s ease-in-out;
 
-  .answer-body {
-    > *:last-child {
-      margin-bottom: 30px;
-    }
+  > *:last-child {
+    margin-bottom: 30px;
   }
 }
 

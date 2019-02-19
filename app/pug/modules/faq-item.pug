@@ -1,7 +1,23 @@
-.faq-item(v-for="(item, id) in items")
-  .faq-header(v-on:click="item.show = !item.show")
-    h2 {{item.title}}
+.faq-item
+  .faq-header
+    h2 Quesion 1
 
-  transition(name="slide" v-on:before-enter="beforeEnter" v-on:enter="enter" v-on:before-leave="beforeLeave" v-on:leave="leave")
-    .faq-content(v-if="item.show")
-      p {{item.content}}
+  .faq-content
+    p consectetur adipisicing elit. Architecto, sequi.
+    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
+
+.faq-item
+  .faq-header
+    h2 Quesion 2
+
+  .faq-content
+    p consectetur adipisicing elit. Architecto, sequi.
+    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto
+
+.faq-item
+  .faq-header
+    h2 Quesion 3
+
+  .faq-content
+    p consectetur adipisicing elit. Architecto, sequi.
+    p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto

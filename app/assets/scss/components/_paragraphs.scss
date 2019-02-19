@@ -52,12 +52,21 @@
 
 // Section title
 .section-title {
-  color: $grey;
-  margin-bottom: 0;
-  text-transform: uppercase;
+  color: $purple;
+  margin: 35px auto;
+  text-align: center;
+  width: 680px;
 
-  span {
-    color: $red;
+  h2 {
+    @include font-size(30);
+    color: $purple;
+    line-height: 1.17;
+    margin-bottom: 5px;
+  }
+
+  .desc {
+    @include font-size(16);
+    line-height: 1.4;
   }
 }
 
@@ -80,6 +89,10 @@
     color: $white;
     line-height: 1.17;
     margin-bottom: 5px;
+  }
+
+  .note {
+    margin-top: 20px;
   }
 }
 

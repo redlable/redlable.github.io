@@ -75,6 +75,12 @@ embed {
   @extend %responsive-video;
 }
 
+.note {
+  @include font-size(15);
+  color: $white;
+  margin: 10px 0 0;
+}
+
 // Drupal styles
 .fieldgroup {
   border-width: 0;
@@ -97,8 +103,4 @@ embed {
 }
 .pfizer-login__container {
   margin-top: 100px;
-}
-
-[v-cloak] {
-  display: none;
 }

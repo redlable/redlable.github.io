@@ -69,4 +69,16 @@
     });
   }
 
+  // Accordion
+  $('.faq-header').on('click', function() {
+    let $this = $(this);
+
+    $this.closest('.faq-item').siblings().removeClass('active')
+      .find('.faq-content').slideUp();
+
+    $this
+      .siblings('.faq-content').slideToggle()
+      .closest('.faq-item').toggleClass('active');
+  });
+
 })(jQuery);

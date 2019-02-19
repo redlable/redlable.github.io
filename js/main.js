@@ -70,5 +70,14 @@
       $slider.slick(options);
     });
   }
+
+  // Accordion
+  $('.faq-header').on('click', function () {
+    var $this = $(this);
+
+    $this.closest('.faq-item').siblings().removeClass('active').find('.faq-content').slideUp();
+
+    $this.siblings('.faq-content').slideToggle().closest('.faq-item').toggleClass('active');
+  });
 })(jQuery);
 //# sourceMappingURL=main.js.map

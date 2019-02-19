@@ -12,6 +12,10 @@
 
 .footer-nav {
   margin-bottom: 50px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .footer-menu {
@@ -36,5 +40,9 @@
 }
 
 .footer-bottom {
-  padding: 50px 0 35px;
+  padding-top: 35px;
+
+  p:last-child {
+    margin-bottom: 0;
+  }
 }
