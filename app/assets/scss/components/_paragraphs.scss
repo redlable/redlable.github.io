@@ -64,9 +64,10 @@
     margin-bottom: 5px;
   }
 
-  .desc {
+  p {
     @include font-size(16);
     line-height: 1.4;
+    margin: 0;
   }
 }
 
