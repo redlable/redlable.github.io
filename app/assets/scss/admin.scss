@@ -1,2 +1,6 @@
 @import "utils/variables";
 @import "utils/mixins";
+
+.field--widget-text-textarea .filter-wrapper {
+  display: none;
+}

@@ -81,8 +81,18 @@
   overflow: hidden;
   padding: 0 50px;
 
-  > *:last-child {
+  p {
     margin-bottom: 30px;
+  }
+
+  .image {
+    &__desktop {
+      margin: 65px 0 55px;
+    }
+
+    &__mobile {
+      display: none;
+    }
   }
 }
 

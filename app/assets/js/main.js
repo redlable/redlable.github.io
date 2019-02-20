@@ -70,15 +70,46 @@
   }
 
   // Accordion
-  $('.faq-header').on('click', function() {
-    let $this = $(this);
+  (function accordion() {
+    $('.faq-header').on('click', function() {
+      let $this = $(this);
 
-    $this.closest('.faq-item').siblings().removeClass('active')
-      .find('.faq-content').slideUp();
+      $this.closest('.faq-item').siblings().removeClass('active')
+        .find('.faq-content').slideUp();
 
-    $this
-      .siblings('.faq-content').slideToggle()
-      .closest('.faq-item').toggleClass('active');
-  });
+      $this
+        .siblings('.faq-content').slideToggle()
+        .closest('.faq-item').toggleClass('active');
+    });
+  })();
+
+  // In view
+  (function inViewAnimaiton() {
+    let $sections = $('.content-container').children();
+
+    $sections.each(function (i, el) {
+      let $el = $(el);
+
+      if ($el.isVisible(true)) {
+        $el.addClass('in-view');
+      }
+    });
+
+    $(window).scroll(function () {
+      let $window = $(window);
+      let thirdhWinHeight = $window.height() / 3;
+      let viewTop = $window.scrollTop();
+      let viewBottom = viewTop + $window.height();
+
+      $sections.each(function (i, el) {
+        let $el = $(el);
+        let elemTopPos = $el.offset().top;
+
+        if ($el.isVisible(true) && elemTopPos < (viewBottom - thirdhWinHeight)) {
+          $el.addClass("in-view");
+        }
+      });
+    });
+  })();
 
 })(jQuery);

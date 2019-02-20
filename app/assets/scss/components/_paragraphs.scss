@@ -48,6 +48,45 @@
 .hero-body {
   position: relative;
   z-index: 1;
+
+  // Before view
+  @for $i from 1 through 6 {
+    h#{$i} {
+      opacity: 0;
+      transform: translateY(10px);
+      transition-property: opacity, transform;
+      transition-duration: .6s, .6s;
+      transition-timing-function: ease-out, ease-out;
+    }
+  }
+
+  p,
+  .btn,
+  .note {
+    opacity: 0;
+    transform: translateY(10px);
+    transition-property: opacity, transform;
+    transition-duration: .6s, .6s;
+    transition-timing-function: ease-out, ease-out;
+  }
+
+  @for $i from 1 through 6 {
+    h#{$i} {
+      transition-delay: .1s, .1s;
+    }
+  }
+
+  p {
+    transition-delay: .2s, .2s;
+  }
+
+  .btn {
+    transition-delay: .4s, .3s;
+  }
+
+  .note {
+    transition-delay: .5s, .4s;
+  }
 }
 
 // Section title
@@ -69,6 +108,20 @@
     line-height: 1.4;
     margin: 0;
   }
+
+  // Before view
+  h2,
+  p {
+    opacity: 0;
+    transform: translateY(10px);
+    transition-property: opacity, transform;
+    transition-duration: .6s, .6s;
+    transition-timing-function: ease-out, ease-out;
+  }
+
+  p {
+    transition-delay: .2s, .2s;
+  }
 }
 
 // Trial guide section
@@ -83,30 +136,76 @@
   .trial-info {
     margin: 0 auto 40px;
     width: 58%;
+
+    h2 {
+      @include font-size(30);
+      color: $white;
+      line-height: 1.17;
+      margin-bottom: 5px;
+      transition-delay: .1s, .1s;
+    }
+
+    // Before view
+    h2,
+    p {
+      opacity: 0;
+      transform: translateY(10px);
+      transition-property: opacity, transform;
+      transition-duration: .6s, .6s;
+      transition-timing-function: ease-out, ease-out;
+    }
+
+    p {
+      transition-delay: .2s, .2s;
+    }
   }
 
-  h2 {
-    @include font-size(30);
-    color: $white;
-    line-height: 1.17;
-    margin-bottom: 5px;
+  .btn {
+    transition: opacity .6s ease-out .4s, transform .6s ease-out .4s;
   }
 
   .note {
     margin-top: 20px;
+    transition: opacity .6s ease-out .5s, transform .6s ease-out .5s;
+  }
+
+  // Before view
+  .btn,
+  .note {
+    opacity: 0;
+    transform: translateY(100px);
   }
 }
 
 .step-container {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   margin-bottom: 40px;
-  padding: 0 30px;
+  padding-left: 30px;
   text-align: left;
 
   .step-item {
-    @include flex-basis(33.333%);
+    @include flex-basis(250px);
+    display: flex;
+    justify-content: center;
     font-weight: $bold;
+
+    // Before view
+    opacity: 0;
+    transform: translateX(-100px);
+
+    @for $i from 1 through 4 {
+      &:nth-child(#{$i}) {
+        transform: translateY($i * 25%);
+        transition: transform .5s, opacity .5s;
+        transition-delay: calc(.1 * #{$i}s);
+        transition-timing-function: ease-out;
+      }
+    }
+  }
+
+  .step-content {
+    @include flex-basis(100%);
   }
 
   .step-image {
@@ -209,6 +308,45 @@
 
   .btn {
     margin-top: 20px;
+  }
+
+  // Before view
+  @for $i from 1 through 6 {
+    h#{$i} {
+      opacity: 0;
+      transform: translateY(10px);
+      transition-property: opacity, transform;
+      transition-duration: .6s, .6s;
+      transition-timing-function: ease-out, ease-out;
+    }
+  }
+
+  p,
+  .btn,
+  .note {
+    opacity: 0;
+    transform: translateY(10px);
+    transition-property: opacity, transform;
+    transition-duration: .6s, .6s;
+    transition-timing-function: ease-out, ease-out;
+  }
+
+  @for $i from 1 through 6 {
+    h#{$i} {
+      transition-delay: .1s, .1s;
+    }
+  }
+
+  p {
+    transition-delay: .2s, .2s;
+  }
+
+  .btn {
+    transition-delay: .4s, .3s;
+  }
+
+  .note {
+    transition-delay: .5s, .4s;
   }
 }
 

@@ -1,14 +1,34 @@
 .box {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
   min-height: 320px;
+  overflow: hidden;
+  position: relative;
+
+  @for $i from 1 through 5 {
+    &:nth-child(#{$i}) {
+      .box__bg,
+      .box__content {
+        transition-delay: calc(.165 * #{$i}s);
+      }
+    }
+  }
+
+  &__bg {
+    @include absolute();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transform: scale(1.5);
+    transition: transform .5s ease-out;
+  }
 
   &__content {
     display: flex;
     flex-wrap: wrap;
+    opacity: 0;
     padding: 40px 25px 0;
     position: relative;
+    transition: all .5s;
+    transform: translateY(25%);
     z-index: 1;
   }
 
