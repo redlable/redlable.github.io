@@ -10,7 +10,7 @@
     }
 
     &__body {
-      @include flex-basis(220px);
+      @include flex-basis(250px);
       padding-top: 105px;
     }
 
@@ -56,9 +56,8 @@
   padding: 30px 50px;
 
   h2 {
-    @include font-size(30);
     color: $purple;
-    line-height: 1.17;
+    line-height: 1.46;
     margin: 0;
     padding-right: 30px;
     position: relative;
@@ -86,6 +85,12 @@
   }
 
   .image {
+    &:first-child {
+      .image__desktop {
+        margin-top: 0;
+      }
+    }
+
     &__desktop {
       margin: 65px 0 55px;
     }

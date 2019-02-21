@@ -50,4 +50,20 @@
       transform: translateY(0);
     }
   }
+
+  &#user-login,
+  &#user-login-form,
+  &#user-pass {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes orbit {
+  from {
+    transform: rotate(0deg) translateX(20px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translateX(20px) rotate(-360deg);
+  }
 }

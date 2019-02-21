@@ -61,6 +61,7 @@
       var $slider = $(this),
           options = {
         autoplay: true,
+        autoplaySpeed: 8000,
         arrows: false,
         dots: true,
         fade: true,
@@ -82,8 +83,8 @@
     });
   })();
 
-  // In view
-  (function inViewAnimaiton() {
+  // Scroll animations
+  (function scrollAnimaiton() {
     var $sections = $('.content-container').children();
 
     $sections.each(function (i, el) {
@@ -94,7 +95,7 @@
       }
     });
 
-    $(window).scroll(function () {
+    $(window).on('scroll', function () {
       var $window = $(window);
       var thirdhWinHeight = $window.height() / 3;
       var viewTop = $window.scrollTop();
@@ -108,6 +109,28 @@
           $el.addClass("in-view");
         }
       });
+    });
+
+    // Sticky header
+    var $header = $('#header');
+
+    if (window.scrollY > 0) {
+      $header.addClass('sticky');
+    }
+
+    $.scrollAction(function () {
+      return $(window).scrollTop() > 0;
+    }, function (isTrue) {
+      isTrue ? $header.addClass('sticky') : $header.removeClass('sticky');
+    });
+  })();
+
+  // Toggle status messages
+  (function toggleMessage() {
+    $('.message').on('click', function (e) {
+      if (!$(e.target).is('a')) {
+        $(this).toggleClass('hidden-msg');
+      }
     });
   })();
 })(jQuery);

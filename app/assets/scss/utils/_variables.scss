@@ -28,19 +28,22 @@ $grey-dark: #333;
 
 $pink: #d900c7;
 
-$red: #b4284a;
+$red: #af272f;
 $red-light: #E94B59;
 
-$green: #01C1B5;
+$green: #63c8bb;
 
 $blue: #3000FF;
 $blue-light: #0088ff;
-$blue-dark: #2C5697;
+$blue-dark: #2f5597;
 
-$purple: #84329B;
-$purple-dark: #5E639F;
+$purple: #87339b;
+$purple-dark: #2e1159;
 
 $yellow: #cc0;
 
+$orange: #db8a06;
+
 // Gradients
 $gradient: linear-gradient(-246deg, $green 0%, $blue-dark 52%, $purple 100%);
+$gradient1: linear-gradient(-246deg, $purple 0%, $blue-dark 62%, $green 100%)

@@ -59,6 +59,7 @@
       let $slider = $(this),
           options = {
             autoplay: true,
+            autoplaySpeed: 8000,
             arrows: false,
             dots: true,
             fade: true,
@@ -83,8 +84,8 @@
     });
   })();
 
-  // In view
-  (function inViewAnimaiton() {
+  // Scroll animations
+  (function scrollAnimaiton() {
     let $sections = $('.content-container').children();
 
     $sections.each(function (i, el) {
@@ -95,7 +96,7 @@
       }
     });
 
-    $(window).scroll(function () {
+    $(window).on('scroll', function () {
       let $window = $(window);
       let thirdhWinHeight = $window.height() / 3;
       let viewTop = $window.scrollTop();
@@ -109,6 +110,28 @@
           $el.addClass("in-view");
         }
       });
+    });
+
+    // Sticky header
+    let $header = $('#header');
+
+    if (window.scrollY > 0) {
+      $header.addClass('sticky');
+    }
+
+    $.scrollAction(function() {
+      return $(window).scrollTop() > 0;
+    }, function(isTrue) {
+      isTrue ? $header.addClass('sticky') : $header.removeClass('sticky');
+    });
+  })();
+
+  // Toggle status messages
+  (function toggleMessage() {
+    $('.message').on('click', function(e) {
+      if (!$(e.target).is('a')) {
+        $(this).toggleClass('hidden-msg');
+      }
     });
   })();
 

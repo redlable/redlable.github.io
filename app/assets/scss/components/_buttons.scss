@@ -1,23 +1,41 @@
 .btn {
   @include font-size(18);
-  background-image: $gradient;
   border-radius: 40px;
   box-shadow: 0 10px 30px rgba($blue, .5);
   color: $white;
   display: inline-block;
   font-weight: $medium;
+  overflow: hidden;
   padding: 19px 57px;
   position: relative;
   text-decoration: none;
-  transition: background .3s ease;
   vertical-align: top;
 
+  &:after {
+    background-image: $gradient;
+    content: '';
+    padding-top: 100%;
+    position: absolute;
+    top: 0;
+    left: -5%;
+    right: -5%;
+    bottom: 0;
+    transform: translateY(-50%) rotate(0deg);
+    transition: transform .6s;
+    will-change: transform;
+    z-index: -1;
+  }
+
   &:hover {
-    background-image: linear-gradient(-246deg, $purple 0%, $blue-dark 52%, $green 100%);
+    box-shadow: 0 10px 30px -8px rgba($blue, .5);
+
+    &:after {
+      transform: translateY(-50%) rotate(45deg);
+    }
   }
 
   &:active {
-    background-image: linear-gradient(-246deg, $green 0%, $blue-dark 52%, $purple 100%);
+    box-shadow: 0 10px 30px -20px rgba($blue, .5);
   }
 }
 
@@ -25,12 +43,18 @@
   background: $white;
   color: $purple;
 
+  &:after {
+    content: none;
+  }
+
   &:hover {
-    background: darken($white, 4);
+    background: $white;
+    box-shadow: 0 10px 30px -8px rgba($blue, .5);
   }
 
   &:active {
-    background: darken($white, 8);
+    background: $white;
+    box-shadow: 0 10px 30px -20px rgba($blue, .5);
   }
 }
 
@@ -38,6 +62,10 @@
   background: transparent;
   border: 2px solid $white;
   box-shadow: none;
+
+  &:after {
+    content: none;
+  }
 
   &:hover {
     background: rgba($white, .1);

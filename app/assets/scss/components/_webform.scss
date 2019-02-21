@@ -24,12 +24,18 @@
 #user-login,
 #user-login-form,
 #user-pass {
-  background: rgba($grey-light, .5);
-  box-shadow: 7px 7px 0 rgba($grey, .5);
+  background: $gradient;
+  box-shadow: 0 10px 30px rgba($blue, .5);
+  border-radius: 40px;
+  color: $white;
   margin: 0 auto 40px;
   max-width: 620px;
-  padding: 30px 40px;
+  opacity: 0;
+  padding: 40px;
   position: relative;
+  transform: scale(0);
+  transition: opacity .6s ease-out, transform .6s cubic-bezier(0, 0, 0.5, 1.3);
+  will-change: transform;
   z-index: 1;
 
   .form-item {
@@ -37,7 +43,8 @@
   }
 
   .form-text {
-    border: 2px solid darken($grey-light, 5);
+    border-radius: 40px;
+    padding: 10px 20px;
   }
 
   label {
@@ -46,19 +53,12 @@
 
   label,
   .description {
-    margin-left: 25px;
+    margin-left: 15px;
   }
 
   .form-submit {
-    background: rgba($grey-light, .8);
-    border-radius: 30px;
-    color: $white;
-    padding: 20px 40px;
-    text-transform: uppercase;
-
-    &:hover {
-      background: $grey-light;
-    }
+    @extend .btn;
+    @extend .btn-transparent;
   }
 }
 

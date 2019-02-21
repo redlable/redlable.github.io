@@ -1,10 +1,62 @@
 #header {
-  padding-top: 34px;
-  position: absolute;
+  padding: 34px 0;
+  position: fixed;
   top: 0;
   left: 0;
+  transition: background .3s ease-out;
   width: 100%;
   z-index: 10;
+
+  .toolbar-fixed & {
+    top: 39px;
+  }
+
+  .toolbar-tray-open & {
+    top: 79px;
+  }
+
+  &:before,
+  &:after {
+    @include absolute();
+    content: '';
+    opacity: 0;
+    transition: opacity .3s, transform .3s linear .3s;
+    width: 200%;
+    z-index: -1;
+  }
+
+  &:after {
+    background: rgba($white, .5);
+    transform: translateX(-200%) skewX(-30deg);
+  }
+
+  &:before {
+    background: $white;
+    transform: translateX(-200%) skewX(-30deg);
+  }
+
+  &.sticky {
+    &:after {
+      opacity: 1;
+      transform: translateX(-25%) skewX(-30deg);
+      transition: transform .3s linear;
+    }
+
+    &:before {
+      opacity: 1;
+      transform: translateX(-25%) skewX(-30deg);
+      transition: transform .3s linear .2s;
+    }
+
+    path,
+    polygon {
+      fill: $purple;
+    }
+
+    mask {
+      display: none;
+    }
+  }
 
   .section-layout {
     align-items: center;
