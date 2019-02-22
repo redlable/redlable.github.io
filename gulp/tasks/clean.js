@@ -4,7 +4,8 @@ module.exports = function() {
       './*.html',
       'css',
       'js',
-      'img'
+      'img',
+      'fonts'
     ]);
   });
 };

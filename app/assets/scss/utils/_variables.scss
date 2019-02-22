@@ -1,7 +1,9 @@
 // Fonts
 $opensans: 'Open Sans', Helvetica, Arial, sans-serif;
+$euclid-circular-b: 'Euclid Circular A Bold';
+$euclid-circular-r: 'Euclid Circular A Regular';
 
-$roboto: 'Roboto', sans-serif;
+//$roboto: 'Roboto', sans-serif;
 
 // Weights
 $light: 300;
@@ -10,11 +12,12 @@ $medium: 600;
 $bold: 700;
 
 // Layout
-$site-width: 1330px;
+$site-width: 1600px;
 $grid-gutter: 20px;
 $col-width: 65px;
 $columns: 12;
-$content-width: $col-width * $columns + $grid-gutter * $columns - $grid-gutter;
+//$content-width: $col-width * $columns + $grid-gutter * $columns - $grid-gutter;
+$content-width: 1440px;
 
 // Colors
 $white: #fff;

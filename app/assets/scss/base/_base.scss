@@ -8,7 +8,7 @@ body {
   @include font-size(16);
   color: $black;
   font-family: $opensans;
-  line-height: 1.2;
+  line-height: 1.38;
   min-width: 320px;
   overflow-x: hidden;
   word-break: break-word;
@@ -31,6 +31,10 @@ body {
 
 a {
   color: inherit;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 img,
@@ -80,9 +84,9 @@ sup {
 }
 
 .note {
-  @include font-size(15);
+  @include font-size(12);
   color: $white;
-  margin: 10px 0 0;
+  margin: 20px 0 0;
 }
 
 // Drupal styles

@@ -3,7 +3,8 @@ module.exports = function() {
     return $.gulp.src([
         // 'app/bower_components/jquery/dist/jquery.js',
         'app/bower_components/slick-carousel/slick/slick.js',
-        'app/bower_components/vue/dist/vue.js',
+        // 'app/bower_components/axios/dist/axios.js',
+        // 'app/bower_components/vue/dist/vue.js',
         'app/assets/js/libs/*.js'
       ])
       .pipe($.plugins.concat('libs.min.js'))

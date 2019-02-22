@@ -4,17 +4,18 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $roboto;
-  color: $black;
+  //font-family: $euclid-circular-b;
+  font-family: $euclid-circular-b;
+  color: $purple;
   margin: 0;
   margin-bottom: .6em;
 }
 
 h1 {
-  @include font-size(28);
+  @include font-size(26);
 
   @include media-q(min, 768) {
-    @include font-size(36);
+    @include font-size(50);
   }
 }
 
@@ -22,7 +23,7 @@ h2 {
   @include font-size(20);
 
   @include media-q(min, 768) {
-    @include font-size(24);
+    @include font-size(30);
   }
 }
 
@@ -30,7 +31,7 @@ h3 {
   @include font-size(18);
 
   @include media-q(min, 768) {
-    @include font-size(22);
+    @include font-size(24);
   }
 }
 

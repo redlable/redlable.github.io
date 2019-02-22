@@ -11,7 +11,7 @@
 
     &__body {
       @include flex-basis(250px);
-      padding-top: 105px;
+      padding-top: 90px;
     }
 
     &:nth-last-child(2),
@@ -19,11 +19,11 @@
       @include flex-basis(50%);
 
       .box__content {
-        padding-left: 90px;
+        padding-left: 50px;
       }
 
       .box__body {
-        padding-top: 120px;
+        padding-top: 100px;
       }
     }
   }
@@ -38,11 +38,15 @@
 .faq-item {
   border-bottom: 1px solid $purple;
   line-height: 1.25;
-  transition: opacity .3s ease;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity .3s ease, transform .3s ease;
 
   &.active {
     .faq-header {
-      h2 {
+      padding-bottom: 15px;
+
+      h3 {
         &:after {
           transform: rotateX(180deg);
         }
@@ -54,10 +58,10 @@
 .faq-header {
   cursor: pointer;
   padding: 30px 50px;
+  transition: padding .4s linear;
 
-  h2 {
+  h3 {
     color: $purple;
-    line-height: 1.46;
     margin: 0;
     padding-right: 30px;
     position: relative;
@@ -80,10 +84,6 @@
   overflow: hidden;
   padding: 0 50px;
 
-  p {
-    margin-bottom: 30px;
-  }
-
   .image {
     &:first-child {
       .image__desktop {
@@ -92,12 +92,16 @@
     }
 
     &__desktop {
-      margin: 65px 0 55px;
+      margin: 35px 0;
     }
 
     &__mobile {
       display: none;
     }
+  }
+
+  > *:last-child {
+    margin-bottom: 45px;
   }
 }
 

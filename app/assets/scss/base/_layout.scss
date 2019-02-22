@@ -21,6 +21,11 @@ body {
   }
 }
 
+.content-container {
+  margin: 0 auto;
+  max-width: $site-width;
+}
+
 #footer {
   flex-shrink: 0;
 }

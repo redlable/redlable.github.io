@@ -32,7 +32,7 @@ $.gulp.task('dev', $.gulp.series(
 
 $.gulp.task('build', $.gulp.series(
   'clean',
-  $.gulp.parallel('sass', 'pug', 'scripts:lib', 'scripts', 'img')
+  $.gulp.parallel('sass', 'pug', 'scripts:lib', 'scripts', 'img', 'fonts')
 ));
 
 $.gulp.task('copy', $.gulp.series(

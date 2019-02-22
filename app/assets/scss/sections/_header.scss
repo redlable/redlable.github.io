@@ -1,8 +1,11 @@
 #header {
+  max-width: $site-width;
+  overflow: hidden;
   padding: 34px 0;
   position: fixed;
   top: 0;
-  left: 0;
+  left: 50%;
+  transform: translateX(-50%);
   transition: background .3s ease-out;
   width: 100%;
   z-index: 10;
@@ -13,6 +16,11 @@
 
   .toolbar-tray-open & {
     top: 79px;
+  }
+
+  .page-user-login &,
+  .page-user-pass & {
+    @extend .sticky;
   }
 
   &:before,
@@ -36,6 +44,8 @@
   }
 
   &.sticky {
+    box-shadow: 0 0 10px rgba($blue, .3);
+
     &:after {
       opacity: 1;
       transform: translateX(-25%) skewX(-30deg);
@@ -48,13 +58,8 @@
       transition: transform .3s linear .2s;
     }
 
-    path,
-    polygon {
+    path {
       fill: $purple;
-    }
-
-    mask {
-      display: none;
     }
   }
 

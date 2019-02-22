@@ -82,13 +82,17 @@
         .siblings('.faq-content').slideToggle()
         .closest('.faq-item').toggleClass('active');
     });
+
+    $('.faq-item').each(function(i, el) {
+      $(el).css('transition-delay', (i * .1) + 's');
+    });
   })();
 
   // Scroll animations
   (function scrollAnimaiton() {
     let $sections = $('.content-container').children();
 
-    $sections.each(function (i, el) {
+    $sections.each(function(i, el) {
       let $el = $(el);
 
       if ($el.isVisible(true)) {

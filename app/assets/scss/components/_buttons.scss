@@ -6,7 +6,7 @@
   display: inline-block;
   font-weight: $medium;
   overflow: hidden;
-  padding: 19px 57px;
+  padding: 18px 57px;
   position: relative;
   text-decoration: none;
   vertical-align: top;
@@ -28,6 +28,7 @@
 
   &:hover {
     box-shadow: 0 10px 30px -8px rgba($blue, .5);
+    text-decoration: none;
 
     &:after {
       transform: translateY(-50%) rotate(45deg);

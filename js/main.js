@@ -81,6 +81,10 @@
 
       $this.siblings('.faq-content').slideToggle().closest('.faq-item').toggleClass('active');
     });
+
+    $('.faq-item').each(function (i, el) {
+      $(el).css('transition-delay', i * .1 + 's');
+    });
   })();
 
   // Scroll animations

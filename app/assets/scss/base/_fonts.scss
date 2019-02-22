@@ -1,1 +1,16 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+//@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700');
+
+@font-face {
+  font-family: 'Euclid Circular A Bold';
+  src: url('../fonts/EuclidCircularA-Bold.eot');
+  src: url('../fonts/EuclidCircularA-Bold.eot?#iefix') format('embedded-opentype'), url('../fonts/EuclidCircularA-Bold.woff') format('woff'), url('../fonts/EuclidCircularA-Bold.ttf') format('truetype'), url('../fonts/EuclidCircularA-Bold.svg#FontName') format('svg');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Euclid Circular A Regular';
+  src: url('../fonts/EuclidCircularA-Regular.ttf') format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
