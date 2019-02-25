@@ -91,8 +91,9 @@
   // Scroll animations
   (function scrollAnimaiton() {
     let $sections = $('.content-container').children();
+    let $rowList = $('.step-row');
 
-    $sections.each(function(i, el) {
+    $sections.add($rowList).each(function(i, el) {
       let $el = $(el);
 
       if ($el.isVisible(true)) {
@@ -106,7 +107,7 @@
       let viewTop = $window.scrollTop();
       let viewBottom = viewTop + $window.height();
 
-      $sections.each(function (i, el) {
+      $sections.add($rowList).each(function (i, el) {
         let $el = $(el);
         let elemTopPos = $el.offset().top;
 

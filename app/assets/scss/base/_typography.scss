@@ -4,9 +4,9 @@ h3,
 h4,
 h5,
 h6 {
-  //font-family: $euclid-circular-b;
   font-family: $euclid-circular-b;
   color: $purple;
+  line-height: 1.1;
   margin: 0;
   margin-bottom: .6em;
 }
@@ -36,16 +36,20 @@ h3 {
 }
 
 h4 {
-  @include font-size(16);
+  @include font-size(17);
 
   @include media-q(min, 768) {
-    @include font-size(18);
+    @include font-size(22);
   }
 }
 
 h5,
 h6 {
-  @include font-size(15);
+  @include font-size(16);
+
+  @include media-q(min, 768) {
+    @include font-size(20);
+  }
 }
 
 p {
@@ -57,7 +61,7 @@ p {
 }
 
 strong {
-  font-weight: $bold;
+  font-family: $euclid-circular-b;
 }
 
 // WYSIWYG content styles
@@ -66,7 +70,7 @@ strong {
 .wysiwyg-content,
 .cke_editable {
   a {
-    @include links($blue, $blue, true);
+    @include links(inherit, inherit, true);
 
     &:hover {
       text-decoration: none;
@@ -75,11 +79,13 @@ strong {
 
   ol,
   ul {
-    margin: 0 0 30px 12px;
+    margin: 0 0 20px 12px;
     padding: 0;
 
     li {
-      margin-bottom: 20px;
+      margin-bottom: 0;
+      padding-left: 25px;
+      position: relative;
     }
 
     ol,
@@ -94,8 +100,11 @@ strong {
     li {
       &::before {
         counter-increment: section;
-        content: counter(section) '. ';
-        margin-right: 5px;
+        //content: counter(section) '. ';
+        content: counter(section);
+        position: absolute;
+        left: 0;
+        top: 0;
       }
     }
   }
@@ -106,11 +115,9 @@ strong {
     }
 
     li {
-      padding-left: 20px;
-      position: relative;
-
       &::before {
         @include same(6px, height, width);
+        background: $black;
         content: ' ';
         position: absolute;
         left: 0;
