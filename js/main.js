@@ -54,10 +54,10 @@
   });
 
   // Hero slider
-  var $heroBanner = $('.hero-banner');
+  var $slider = $('.slider');
 
-  if ($heroBanner.children().length > 1) {
-    $heroBanner.each(function () {
+  if ($slider.children().length > 1) {
+    $slider.each(function () {
       var $slider = $(this),
           options = {
         autoplay: true,
@@ -90,9 +90,10 @@
   // Scroll animations
   (function scrollAnimaiton() {
     var $sections = $('.content-container').children();
+    var $rowTitle = $('.group-title');
     var $rowList = $('.step-row');
 
-    $sections.add($rowList).each(function (i, el) {
+    $sections.add($rowList).add($rowTitle).each(function (i, el) {
       var $el = $(el);
 
       if ($el.isVisible(true)) {
@@ -106,7 +107,7 @@
       var viewTop = $window.scrollTop();
       var viewBottom = viewTop + $window.height();
 
-      $sections.add($rowList).each(function (i, el) {
+      $sections.add($rowList).add($rowTitle).each(function (i, el) {
         var $el = $(el);
         var elemTopPos = $el.offset().top;
 

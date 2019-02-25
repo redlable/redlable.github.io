@@ -142,6 +142,7 @@
     }
 
     // Before view
+    h1,
     h2,
     p {
       opacity: 0;
@@ -149,6 +150,10 @@
       transition-property: opacity, transform;
       transition-duration: .6s, .6s;
       transition-timing-function: ease-out, ease-out;
+    }
+
+    h1 {
+      transition-delay: .1s, .1s;
     }
 
     p {
@@ -240,6 +245,9 @@
   .group-title {
     line-height: 1.17;
     margin-bottom: 40px;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity .6s ease-out .3s, transform .6s ease-out .3s;
   }
 
   .step-container {
@@ -558,7 +566,7 @@
 
   .wysiwyg-content {
     text-align: left;
-    
+
     > * {
       margin-left: auto;
       margin-right: auto;
@@ -578,5 +586,46 @@
 
   .btn {
     margin-top: 45px;
+  }
+}
+
+// Quote slider
+.quote-slider-section {
+  .quote-img {
+    img {
+      display: block;
+    }
+  }
+}
+
+.quote-slider {
+  background-image: $gradient;
+  color: $white;
+  padding: 50px 0 80px;
+
+  .quote-item {
+    align-items: center;
+    display: flex !important;
+  }
+
+  .quote-body {
+    font-family: $euclid-circular-r;
+    margin: 0 auto;
+    max-width: 800px;
+    text-align: center;
+
+    &__text {
+      @include font-size(30);
+      line-height: 1.17;
+    }
+
+    &__author {
+      @include font-size(20);
+      margin-top: 10px;
+    }
+  }
+
+  .slick-dots {
+    bottom: 15px;
   }
 }

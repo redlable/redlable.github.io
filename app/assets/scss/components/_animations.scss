@@ -37,6 +37,7 @@
 
   .trial-info,
   &.section-title {
+    h1,
     h2,
     p {
       opacity: 1;
@@ -49,6 +50,11 @@
       opacity: 1;
       transform: translateY(0);
     }
+  }
+
+  &.group-title {
+    opacity: 1;
+    transform: translateY(0);
   }
 
   &#user-login,

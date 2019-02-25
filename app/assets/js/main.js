@@ -52,10 +52,10 @@
   });
 
   // Hero slider
-  let $heroBanner = $('.hero-banner');
+  let $slider = $('.slider');
 
-  if ($heroBanner.children().length > 1) {
-    $heroBanner.each(function() {
+  if ($slider.children().length > 1) {
+    $slider.each(function() {
       let $slider = $(this),
           options = {
             autoplay: true,
@@ -91,9 +91,10 @@
   // Scroll animations
   (function scrollAnimaiton() {
     let $sections = $('.content-container').children();
+    let $rowTitle = $('.group-title');
     let $rowList = $('.step-row');
 
-    $sections.add($rowList).each(function(i, el) {
+    $sections.add($rowList).add($rowTitle).each(function(i, el) {
       let $el = $(el);
 
       if ($el.isVisible(true)) {
@@ -107,7 +108,7 @@
       let viewTop = $window.scrollTop();
       let viewBottom = viewTop + $window.height();
 
-      $sections.add($rowList).each(function (i, el) {
+      $sections.add($rowList).add($rowTitle).each(function (i, el) {
         let $el = $(el);
         let elemTopPos = $el.offset().top;
 
