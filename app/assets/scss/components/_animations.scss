@@ -8,6 +8,8 @@
       }
     }
 
+    ol,
+    ul,
     p,
     .btn,
     .note {
@@ -52,6 +54,8 @@
     }
   }
 
+  &.video-container .responsive-video,
+  &.video-container .btn,
   &.group-title {
     opacity: 1;
     transform: translateY(0);
@@ -67,6 +71,10 @@
   .faq-item {
     opacity: 1;
     transform: translateY(0);
+  }
+
+  .product-image {
+    transform: translateY(105px);
   }
 }
 

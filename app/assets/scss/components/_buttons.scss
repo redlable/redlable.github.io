@@ -6,10 +6,14 @@
   display: inline-block;
   font-weight: $medium;
   overflow: hidden;
-  padding: 18px 57px;
+  padding: 18px 30px;
   position: relative;
   text-decoration: none;
   vertical-align: top;
+
+  @include media-q(min, 1024) {
+    padding: 18px 57px;
+  }
 
   &:after {
     background-image: $gradient;
@@ -24,6 +28,14 @@
     transition: transform .6s;
     will-change: transform;
     z-index: -1;
+  }
+
+  .safari & {
+    transform: translate3d(0, 0, 0);
+
+    &:after {
+      padding-top: 250%;
+    }
   }
 
   &:hover {
@@ -70,6 +82,7 @@
 
   &:hover {
     background: rgba($white, .1);
+    box-shadow: none;
   }
 }
 

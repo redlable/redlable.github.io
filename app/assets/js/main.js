@@ -42,16 +42,16 @@
   // Toggle mobile and desktop behavior
   let $body = $('body');
 
-  window.innerWidth < 991 ? $body.addClass('mobile-behavior') : $body.addClass('desktop-behavior');
+  window.innerWidth < 1024 ? $body.addClass('mobile-behavior') : $body.addClass('desktop-behavior');
 
   $.resizeAction(function() {
-    return window.innerWidth < 991;
+    return window.innerWidth < 1024;
   }, function(isTrue) {
     isTrue ? $body.removeClass('desktop-behavior').addClass('mobile-behavior') : $body.removeClass('mobile-behavior').addClass('desktop-behavior');
     !isTrue ? $body.removeClass('active-menu') : '';
   });
 
-  // Hero slider
+  // Sliders
   let $slider = $('.slider');
 
   if ($slider.children().length > 1) {
@@ -69,6 +69,27 @@
       $slider.slick(options);
     });
   }
+
+  if (window.innerWidth < 768) {
+    $('.guide-slider').find('.step-row').slick({
+      arrows: false,
+      infinite: false
+    });
+  }
+
+  $.resizeAction(function() {
+    return window.innerWidth < 768;
+  }, function(isTrue) {
+    if (!isTrue) {
+      $('.guide-slider').find('.step-row').slick('unslick');
+    }
+    else {
+      $('.guide-slider').find('.step-row').slick({
+        arrows: false,
+        infinite: false
+      });
+    }
+  });
 
   // Accordion
   (function accordion() {
@@ -129,6 +150,21 @@
       return $(window).scrollTop() > 0;
     }, function(isTrue) {
       isTrue ? $header.addClass('sticky') : $header.removeClass('sticky');
+    });
+  })();
+
+  // Mobile menu
+  (function mobileMenu() {
+    let $header = $('#header');
+    let $mobMenuBtn = $('.hamburger-btn');
+    let $closeMenuBtn = $('.close-menu');
+
+    $mobMenuBtn.on('click', function() {
+      $header.addClass('active-menu');
+    });
+
+    $closeMenuBtn.on('click', function() {
+      $header.removeClass('active-menu');
     });
   })();
 

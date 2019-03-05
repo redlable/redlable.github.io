@@ -10,11 +10,19 @@
 }
 
 .footer-logo {
-  margin-bottom: 30px;
+  margin-bottom: 70px;
+
+  @include media-q(min, 768) {
+    margin-bottom: 30px;
+  }
 }
 
 .footer-nav {
-  margin-bottom: 50px;
+  margin-bottom: 25px;
+
+  @include media-q(min, 768) {
+    margin-bottom: 50px;
+  }
 
   &:last-child {
     margin-bottom: 0;
@@ -23,10 +31,14 @@
 
 .footer-menu {
   &__item {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 
     &:first-child {
 
+    }
+
+    @include media-q(min, 768) {
+      margin-bottom: 20px;
     }
   }
 

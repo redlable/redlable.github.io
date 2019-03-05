@@ -32,10 +32,10 @@ body {
 
 .section-layout {
   @include same(auto, margin-left, margin-right);
-  @include same(25px, padding-left, padding-right);
-  max-width: $content-width + 50px;
+  @include same(20px, padding-left, padding-right);
+  max-width: $content-width + 40px;
 
-  @include media-q(min, 768) {
+  @include media-q(min, 1024) {
     @include same($grid-gutter, padding-left, padding-right);
     max-width: $content-width + $grid-gutter * 2;
   }
@@ -57,5 +57,18 @@ body {
 
   .content-container {
     padding-top: 112px;
+  }
+}
+
+.page-user-canonical {
+  .main-wrapper {
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+  }
+
+  .content-container {
+    padding: 200px 100px;
+    width: 100%;
   }
 }
