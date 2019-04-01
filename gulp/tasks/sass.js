@@ -11,7 +11,10 @@ module.exports = function() {
       .pipe($.plugins.autoprefixer({
         browsers: ['last 2 versions']
       }))
-      .pipe($.plugins.csso())
+      .pipe($.plugins.csso({
+        // ONLY FOR MYALCON PROJECT
+        restructure: false
+      }))
       .pipe($.plugins.sourcemaps.write())
       .pipe($.gulp.dest('css/'))
       .pipe($.browserSync.reload({

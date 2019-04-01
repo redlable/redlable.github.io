@@ -1,7 +1,7 @@
 // Fonts
 $opensans: 'Open Sans', Helvetica, Arial, sans-serif;
-$euclid-circular-b: 'Euclid Circular A Bold';
-$euclid-circular-r: 'Euclid Circular A Regular';
+$euclid-circular-b: 'Euclid Circular A Bold', $opensans;
+$euclid-circular-r: 'Euclid Circular A Regular', $opensans;
 
 //$roboto: 'Roboto', sans-serif;
 

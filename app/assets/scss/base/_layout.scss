@@ -48,7 +48,8 @@ body {
 }
 
 .page-user-login,
-.page-user-pass {
+.page-user-pass,
+.page-user-reset-form {
   .main-wrapper {
     align-items: center;
     display: flex;
@@ -56,6 +57,7 @@ body {
   }
 
   .content-container {
+    margin: 0;
     padding-top: 112px;
   }
 }
@@ -68,6 +70,7 @@ body {
   }
 
   .content-container {
+    margin: 0;
     padding: 200px 100px;
     width: 100%;
   }

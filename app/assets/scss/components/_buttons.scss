@@ -1,15 +1,21 @@
 .btn {
-  @include font-size(18);
+  @include font-size(15);
   border-radius: 40px;
   box-shadow: 0 10px 30px rgba($blue, .5);
   color: $white;
   display: inline-block;
   font-weight: $medium;
   overflow: hidden;
-  padding: 18px 30px;
+  padding: 18px 20px;
   position: relative;
+  text-align: center;
   text-decoration: none;
   vertical-align: top;
+
+  @include media-q(min, 375) {
+    @include font-size(18);
+    padding: 18px 57px;
+  }
 
   @include media-q(min, 1024) {
     padding: 18px 57px;
@@ -18,14 +24,14 @@
   &:after {
     background-image: $gradient;
     content: '';
-    padding-top: 100%;
+    padding-top: 150%;
     position: absolute;
     top: 0;
     left: -5%;
     right: -5%;
     bottom: 0;
     transform: translateY(-50%) rotate(0deg);
-    transition: transform .6s;
+    transition: transform .6s, opacity .6s;
     will-change: transform;
     z-index: -1;
   }
@@ -34,7 +40,7 @@
     transform: translate3d(0, 0, 0);
 
     &:after {
-      padding-top: 250%;
+      padding-top: 300%;
     }
   }
 
@@ -57,12 +63,15 @@
   color: $purple;
 
   &:after {
-    content: none;
+    opacity: 0;
   }
 
   &:hover {
-    background: $white;
     box-shadow: 0 10px 30px -8px rgba($blue, .5);
+
+    &:after {
+      opacity: .25;
+    }
   }
 
   &:active {

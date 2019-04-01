@@ -12,7 +12,11 @@ h6 {
 }
 
 h1 {
-  @include font-size(26);
+  @include font-size(22);
+
+  @include media-q(min, 375) {
+    @include font-size(26);
+  }
 
   @include media-q(min, 768) {
     @include font-size(50);
@@ -20,7 +24,11 @@ h1 {
 }
 
 h2 {
-  @include font-size(20);
+  @include font-size(18);
+
+  @include media-q(min, 375) {
+    @include font-size(20);
+  }
 
   @include media-q(min, 768) {
     @include font-size(30);
@@ -28,7 +36,11 @@ h2 {
 }
 
 h3 {
-  @include font-size(18);
+  @include font-size(16);
+
+  @include media-q(min, 375) {
+    @include font-size(18);
+  }
 
   @include media-q(min, 768) {
     @include font-size(24);
@@ -36,7 +48,11 @@ h3 {
 }
 
 h4 {
-  @include font-size(17);
+  @include font-size(15);
+
+  @include media-q(min, 375) {
+    @include font-size(17);
+  }
 
   @include media-q(min, 768) {
     @include font-size(22);
@@ -45,7 +61,11 @@ h4 {
 
 h5,
 h6 {
-  @include font-size(16);
+  @include font-size(14);
+
+  @include media-q(min, 375) {
+    @include font-size(16);
+  }
 
   @include media-q(min, 768) {
     @include font-size(20);
@@ -79,52 +99,58 @@ strong {
 
   ol,
   ul {
-    margin: 0 0 20px 12px;
-    padding: 0;
+    list-style-position: inside;
+    margin-bottom: 20px;
 
-    li {
-      margin-bottom: 0;
-      padding-left: 25px;
-      position: relative;
-    }
+    //margin: 0 0 20px 12px;
+    //padding: 0;
+
+    //li {
+    //  margin-bottom: 0;
+    //  padding-left: 25px;
+    //  position: relative;
+    //}
 
     ol,
     ul {
-      margin-top: 20px;
+      margin: 5px 0 5px 25px;
     }
   }
 
   ol {
-    counter-reset: section;
-
-    li {
-      &::before {
-        counter-increment: section;
-        //content: counter(section) '. ';
-        content: counter(section);
-        position: absolute;
-        left: 0;
-        top: 0;
-      }
-    }
+    list-style-type: decimal;
+    //counter-reset: section;
+    //
+    //li {
+    //  &::before {
+    //    counter-increment: section;
+    //    //content: counter(section) '. ';
+    //    content: counter(section);
+    //    position: absolute;
+    //    left: 0;
+    //    top: 0;
+    //  }
+    //}
   }
 
   ul {
-    &:last-child {
-      margin-bottom: 0;
-    }
+    list-style-type: disc;
 
-    li {
-      &::before {
-        @include same(6px, height, width);
-        background: $black;
-        content: ' ';
-        position: absolute;
-        left: 0;
-        top: 8px;
-        border-radius: 50%;
-      }
-    }
+    //&:last-child {
+    //  margin-bottom: 0;
+    //}
+    //
+    //li {
+    //  &::before {
+    //    @include same(6px, height, width);
+    //    background: $black;
+    //    content: ' ';
+    //    position: absolute;
+    //    left: 0;
+    //    top: 8px;
+    //    border-radius: 50%;
+    //  }
+    //}
   }
 
   blockquote {

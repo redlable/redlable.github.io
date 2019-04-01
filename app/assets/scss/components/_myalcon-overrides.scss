@@ -1,0 +1,466 @@
+// Variables
+// -----------------------------------------------------------------------------
+$white: #fff;
+
+$black: #000;
+
+$grey-light: #c5c5c7;
+
+$red: #af272f;
+
+$green: #63c8bb;
+
+$brown: #865F63;
+$brown-dark: #4A3B40;
+
+
+// Mixins
+// -----------------------------------------------------------------------------
+@mixin font-size($size-value: 16) {
+  font-size: ($size-value / 16) + rem;
+}
+
+@mixin flex-basis($value) {
+  flex-basis: $value;
+  max-width: $value;
+}
+
+@mixin media-q($extrema: null, $point: null, $orient: null) {
+
+  @if $extrema == 'min' {
+    $extrema: min;
+  }
+
+  @if $extrema == 'max' {
+    $extrema: max;
+  }
+
+  @if $orient == 'p' {
+    $orient: portrait
+  }
+
+  @if $orient == 'l' {
+    $orient: landscape
+  }
+
+  @if $orient == null {
+    @media only screen and (#{$extrema}-width: $point+'px') {
+      @content;
+    }
+  }
+
+  @else {
+    @media only screen and (#{$extrema}-width: $point+'px') and (orientation: #{$orient}) {
+      @content;
+    }
+  }
+}
+
+// Status messages
+// -----------------------------------------------------------------------------
+.message {
+  @include font-size(14);
+  background: $white;
+  box-shadow: 2px 2px 10px rgba(193, 197, 207, 0.8);
+  cursor: pointer;
+  margin: 0 auto 30px;
+  overflow: hidden;
+  max-width: 600px;
+  padding: 20px 15px 20px 40px;
+  position: relative;
+  transition: transform .4s ease-out;
+  z-index: 1000;
+
+  &::before {
+    content: ' ';
+    width: 20px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: $grey-light;
+  }
+
+  &.error::before {
+    background: $red;
+  }
+
+  &.status::before {
+    background: $green;
+  }
+
+  &.warning::before {
+    background: $red;
+  }
+
+  &.hidden-msg {
+    transform: translateX(100%);
+    transition: transform .8s cubic-bezier(0.5, -0.28, 0.64, 1.18);
+  }
+
+  p {
+    margin-bottom: 15px;
+  }
+
+  a {
+    @include links($black, $grey-light, true);
+  }
+
+  .placeholder {
+    font-style: normal;
+  }
+
+  label {
+    display: block;
+  }
+
+  @include media-q(min, 769) {
+    margin-bottom: 0;
+    position: fixed;
+    right: 16px;
+    bottom: 40px;
+  }
+}
+
+
+// Typography
+// -----------------------------------------------------------------------------
+h1 {
+  @include font-size(40);
+
+  @include media-q(min, 768) {
+    @include font-size(50);
+  }
+
+  @include media-q(min, 1024) {
+    @include font-size(60);
+  }
+}
+
+h2 {
+  @include font-size(28);
+
+  @include media-q(min, 768) {
+    @include font-size(32);
+  }
+
+  @include media-q(min, 1024) {
+    @include font-size(40);
+  }
+}
+
+h3 {
+  @include font-size(20);
+
+  @include media-q(min, 768) {
+    @include font-size(20);
+  }
+
+  @include media-q(min, 1024) {
+    @include font-size(24);
+  }
+}
+
+h4 {
+  @include font-size(18);
+
+  @include media-q(min, 768) {
+    @include font-size(18);
+  }
+
+  @include media-q(min, 1024) {
+    @include font-size(20);
+  }
+}
+
+h5,
+h6 {
+  @include font-size(16);
+}
+
+// Product page
+// -----------------------------------------------------------------------------
+.node-product {
+  background: $brown;
+  color: $white;
+
+  .o-heading {
+    @include font-size(30);
+    color: $white;
+    margin-bottom: 14px;
+
+    @include media-q(min, 768) {
+      @include font-size(40);
+      margin-bottom: 23px;
+    }
+  }
+}
+
+.product {
+  &__section {
+    overflow: hidden;
+    padding-top: 200px;
+
+    .o-wrap--max-width-content {
+      display: flex;
+      flex-direction: column-reverse;
+
+      @include media-q(min, 768) {
+        display: block;
+      }
+    }
+
+    .top-section {
+      .product__image {
+        display: none;
+
+        @include media-q(min, 768) {
+          display: flex;
+        }
+      }
+    }
+  }
+
+  &__teaser {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+    @include media-q(min, 768) {
+      margin-bottom: 60px;
+    }
+  }
+
+  &__image {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 240px;
+    margin-bottom: 50px;
+    padding: 20px;
+    position: relative;
+    text-transform: uppercase;
+
+    @include media-q(min, 768) {
+      height: 330px;
+      margin-bottom: 30px;
+      padding: 0;
+      justify-content: center;
+    }
+
+    &:before {
+      border-radius: 50%;
+      content: '';
+      height: 240px;
+      margin: 0;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 240px;
+
+      @include media-q(min, 768) {
+        height: 330px;
+        width: 330px;
+      }
+    }
+  }
+
+  &__recipe {
+    margin-bottom: 50px;
+    position: relative;
+
+    @include media-q(min, 768) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__body {
+    max-width: 760px;
+    position: relative;
+
+    @include media-q(min, 768) {
+      &:before {
+        background: rgba($black, .1);
+        border-radius: 50%;
+        content: '';
+        height: 2186px;
+        position: absolute;
+        left: 50%;
+        bottom: 20px;
+        transform: translateX(-50%);
+        width: 2186px;
+        z-index: -1;
+      }
+    }
+  }
+
+  &__desc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 115px;
+    padding: 0 20px;
+
+    @include media-q(min, 768) {
+      margin-bottom: 40px;
+    }
+
+    .wysiwyg-content {
+      @include font-size(15);
+      line-height: 20px;
+      margin-bottom: 35px;
+
+      h4 {
+        @include font-size(16);
+        margin-bottom: 10px;
+
+        @include media-q(min, 768) {
+          @include font-size(20);
+        }
+      }
+
+      @include media-q(min, 768) {
+        @include flex-basis(50%);
+        margin-bottom: 0;
+
+        &:first-child {
+          padding-right: 10px;
+        }
+
+        &:last-child {
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+
+  &__link {
+    background: $white;
+    display: flex;
+    justify-content: center;
+    padding: 25px 20px;
+
+    @include media-q(min, 768) {
+      background: none;
+      padding: 0;
+    }
+
+    a {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.related-product-list {
+  @include media-q(min, 768) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 103px;
+
+    > div {
+      margin-right: 50px;
+
+      &:first-child:not(.slick-list) {
+        display: none;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  .product {
+    &__image {
+      height: 240px;
+      margin: 0 0 50px;
+      padding: 25px 8px;
+
+      @include media-q(min, 768) {
+        height: 100px;
+        margin: 0;
+      }
+
+      &:before {
+        height: 240px;
+        width: 240px;
+
+        @include media-q(min, 768) {
+          height: 100px;
+          width: 100px;
+        }
+      }
+
+      img {
+        max-width: 288px;
+
+        @include media-q(min, 768) {
+          max-width: 132px;
+        }
+      }
+    }
+
+    &__recipe {
+      @include media-q(min, 768) {
+        @include font-size(6);
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .slick-list {
+    //padding: 0 20%;
+
+    .product__image {
+      transform: scale(.42);
+      transition: transform .4s ease;
+
+      @include media-q(min, 768) {
+        transform: none;
+      }
+    }
+  }
+
+  .slick-slide {
+    outline: none;
+  }
+
+  .slick-center,
+  .slick-clone-current {
+    .product__image {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+
+  .prev-slide,
+  .slick-clone-prev-current {
+    .product__image {
+      transform: scale(.42) translateX(65%);
+    }
+  }
+
+  .next-slide,
+  .slick-clone-next-current {
+    .product__image {
+      transform: scale(.42) translateX(-65%);
+    }
+  }
+
+  .prev-prev-slide,
+  .slick-clone-prev-prev-current {
+    .product__image {
+      transform: scale(.42) translateX(150%);
+    }
+  }
+
+  .next-next-slide,
+  .slick-clone-next-next-current {
+    .product__image {
+      transform: scale(.42) translateX(-150%);
+    }
+  }
+}
