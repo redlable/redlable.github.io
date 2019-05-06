@@ -11,26 +11,26 @@ html(lang="ru-RU")
     meta(name="viewport" content="width=device-width,initial-scale=1")
     meta(name="keywords" content="")
 
+    link(rel="stylesheet" type='text/css' href="main.css")
     link(rel="stylesheet" type='text/css' href="css/screen.css")
 
   body(class=pageClass)
-    main.main-wrapper
-      include ../modules/header
+    include ../modules/header-beauty
 
-      //include ../modules/editor-tabs
-      //include ../modules/login-form
+    //include ../modules/editor-tabs
+    //include ../modules/login-form
 
-      .content-container
-        block content
+    .content-container
+      block content
 
-    include ../modules/footer
+    //include ../modules/footer
 
-    //script(src="https://cdn.jsdelivr.net/npm/axios@0.12.0/dist/axios.min.js")
     //script(src="https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js")
     script(src='app/bower_components/jquery/dist/jquery.js')
     script(src="js/libs.min.js")
+    script(src="main.es5.js")
+    script(src="vendors~main.es5.js")
     script(src="js/main.js")
-    //script(src="js/main-vue.js")
 
     // External fonts
 

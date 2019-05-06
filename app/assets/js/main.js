@@ -18,6 +18,9 @@ if (window.location.hash.length) {
   else if (!!navigator.userAgent.match(/Trident.*rv\:11\./)) {
     $('body').addClass('ie ie11');
   }
+  else if (/Edge\/\d./i.test(navigator.userAgent)) {
+    $('body').addClass('ie edge');
+  }
 
   // Detect Firefox.
   if( navigator.userAgent.toLowerCase().indexOf('firefox') > -1 ){
@@ -114,53 +117,10 @@ if (window.location.hash.length) {
 
   // Sliders
   (function slider() {
-    let $slider = $('.slider');
-
-    if ($slider.children().length > 1) {
-      $slider.each(function() {
-        let $slider = $(this),
-            options = {
-              autoplay: true,
-              autoplaySpeed: 8000,
-              arrows: false,
-              dots: true,
-              fade: true,
-              speed: 1000
-            };
-
-        $slider.slick(options);
-      });
-    }
-
-    // Guide slider
-    let $guideSlider = $('.guide-slider').find('.step-container'),
-        guideSliderOpt = {
-          arrows: false,
-          infinite: false
-        };
-
-    if (window.innerWidth < 768) {
-      $guideSlider.slick(guideSliderOpt);
-    }
-
-    $.resizeAction(function() {
-      return window.innerWidth < 768;
-    }, function(isTrue) {
-      if (!isTrue) {
-
-        $guideSlider.slick('unslick');
-      }
-      else {
-        if (!$guideSlider.is('.slick-initialized')) {
-          $guideSlider.slick(guideSliderOpt);
-        }
-      }
-    });
-
     // Product slider
     let $prodSlider = $('.related-product-list'),
         prodSliderOpt = {
-          // arrows: false,
+          arrows: false,
           centerMode: true,
           variableWidth: true
         };
@@ -169,8 +129,8 @@ if (window.location.hash.length) {
       slick.$slides.removeClass('prev-slide prev-prev-slide').removeClass('next-slide next-next-slide');
 
       // find current slide
-      for (var i = 0; i < slick.$slides.length; i++) {
-        var $slide = $(slick.$slides[i]);
+      for (let i = 0; i < slick.$slides.length; i++) {
+        let $slide = $(slick.$slides[i]);
 
         if ($slide.hasClass('slick-current')) {
           // update DOM siblings
@@ -182,31 +142,31 @@ if (window.location.hash.length) {
         }
       }
     })
-    .on('beforeChange', function(e, slick, currentSlide, nextSlide) {
-      var slideCount = slick.$slides.length - 1,
-          nextSlideIsFirst = currentSlide === slideCount && 0 === nextSlide,
-          nextSlideIsLast  = nextSlide === slideCount && 0 === currentSlide,
-          $activeSlide = $('.slick-active');
+      .on('beforeChange', function(e, slick, currentSlide, nextSlide) {
+        let slideCount = slick.$slides.length - 1,
+            nextSlideIsFirst = currentSlide === slideCount && 0 === nextSlide,
+            nextSlideIsLast  = nextSlide === slideCount && 0 === currentSlide,
+            $activeSlide = $('.slick-active');
 
-      if (nextSlideIsFirst) {
-        $activeSlide.next('.slick-slide').addClass('slick-clone-current');
-        $activeSlide.next('.slick-slide').next('.slick-slide').addClass('slick-clone-next-current');
-        $activeSlide.next('.slick-slide').next('.slick-slide').next('.slick-slide').addClass('slick-clone-next-next-current');
-        $activeSlide.addClass('slick-clone-prev-current');
-        $activeSlide.prev('.slick-slide').addClass('slick-clone-prev-prev-current');
-      }
+        if (nextSlideIsFirst) {
+          $activeSlide.next('.slick-slide').addClass('slick-clone-current');
+          $activeSlide.next('.slick-slide').next('.slick-slide').addClass('slick-clone-next-current');
+          $activeSlide.next('.slick-slide').next('.slick-slide').next('.slick-slide').addClass('slick-clone-next-next-current');
+          $activeSlide.addClass('slick-clone-prev-current');
+          $activeSlide.prev('.slick-slide').addClass('slick-clone-prev-prev-current');
+        }
 
-      if (nextSlideIsLast) {
-        $activeSlide.prev('.slick-slide').addClass('slick-clone-current');
-        $activeSlide.prev('.slick-slide').prev('.slick-slide').addClass('slick-clone-prev-current');
-        $activeSlide.prev('.slick-slide').prev('.slick-slide').prev('.slick-slide').addClass('slick-clone-prev-prev-current');
-        $activeSlide.addClass('slick-clone-next-current');
-        $activeSlide.next('.slick-slide').addClass('slick-clone-next-next-current');
-      }
-    })
-    .on('afterChange', function(e, slick, currentSlide, nextSlide) {
-      $('.slick-slide').removeClass('slick-clone-current slick-clone-next-current slick-clone-next-next-current slick-clone-prev-current slick-clone-prev-prev-current');
-    });
+        if (nextSlideIsLast) {
+          $activeSlide.prev('.slick-slide').addClass('slick-clone-current');
+          $activeSlide.prev('.slick-slide').prev('.slick-slide').addClass('slick-clone-prev-current');
+          $activeSlide.prev('.slick-slide').prev('.slick-slide').prev('.slick-slide').addClass('slick-clone-prev-prev-current');
+          $activeSlide.addClass('slick-clone-next-current');
+          $activeSlide.next('.slick-slide').addClass('slick-clone-next-next-current');
+        }
+      })
+      .on('afterChange', function(e, slick, currentSlide, nextSlide) {
+        $('.slick-slide').removeClass('slick-clone-current slick-clone-next-current slick-clone-next-next-current slick-clone-prev-current slick-clone-prev-prev-current');
+      });
 
     if (window.innerWidth < 768) {
       $prodSlider.each(function() {
@@ -228,10 +188,10 @@ if (window.location.hash.length) {
     });
 
     $prodSlider.on('click', function(event) {
-      var $target = $(event.target);
+      let $target = $(event.target);
 
       if ($target.is('.slick-next') || $target.is('.slick-prev') || $target.is('.slick-dots button')) {
-        var $activeSlide = $(this).find('.slick-current');
+        let $activeSlide = $(this).find('.slick-current');
 
         $(this).find('.slick-slide').removeClass('prev-slide prev-prev-slide next-slide next-next-slide');
 
@@ -245,7 +205,6 @@ if (window.location.hash.length) {
     $prodSlider.on('swipe', function(event, slick, direction) {
       event.preventDefault();
       let $activeSlide = $(this).find('.slick-current');
-      console.log(direction);
 
       $(this).find('.slick-slide').removeClass('prev-slide prev-prev-slide next-slide next-next-slide');
 
@@ -254,95 +213,108 @@ if (window.location.hash.length) {
       $activeSlide.next().addClass('next-slide');
       $activeSlide.next().next().addClass('next-next-slide');
     });
-  })();
 
-  // Accordion
-  (function accordion() {
-    $('.faq-header').on('click', function() {
-      let $this = $(this);
+    // Solution links slider
+    let $solutionSlider = $('.c-category-pillar__container'),
+        solutionSliderOpt = {
+          arrows: false,
+          infinite: false,
+          dots: true
+        };
 
-      $this.closest('.faq-item').siblings().removeClass('active')
-        .find('.faq-content').slideUp();
+    if (window.innerWidth <= 768) {
+      $solutionSlider.each(function() {
+        $(this).slick(solutionSliderOpt);
+      });
+    }
 
-      $this.siblings('.faq-content').slideToggle(400, function() {
-        let self = $(this);
-
-        if (self.is(':visible') && self.find('iframe').length) {
-          self.find('iframe').each(function(i, el) {
-            let iframe = $(el);
-
-            if (!iframe.is('.refreshed')) {
-              iframe.attr('src', iframe.attr('src'));
-              iframe.addClass('refreshed');
-            }
-          });
+    $.resizeAction(function() {
+      return window.innerWidth <= 768;
+    }, function(isTrue) {
+      if (!isTrue) {
+        $solutionSlider.slick('unslick');
+      }
+      else {
+        if (!$solutionSlider.is('.slick-initialized')) {
+          $solutionSlider.slick(solutionSliderOpt);
         }
-      }).closest('.faq-item').toggleClass('active');
-    });
-
-    $('.faq-item').each(function(i, el) {
-      $(el).css('transition-delay', (i * .1) + 's');
-    });
-  })();
-
-  // Scroll animations
-  (function scrollAnimaiton() {
-    let $sections = $('.content-container').children();
-    let $rowTitle = $('.group-title');
-    let $rowList = $('.step-item');
-
-    $sections.add($rowList).add($rowTitle).each(function(i, el) {
-      let $el = $(el);
-
-      if ($el.isVisible(true)) {
-        $el.addClass('in-view');
       }
     });
 
-    $(window).on('scroll', function () {
-      let $window = $(window);
-      let sixthWinHeight = $window.height() / 6;
-      let viewTop = $window.scrollTop();
-      let viewBottom = viewTop + $window.height();
-
-      $sections.add($rowList).add($rowTitle).each(function (i, el) {
-        let $el = $(el);
-        let elemTopPos = $el.offset().top;
-
-        if ($el.isVisible(true) && elemTopPos < (viewBottom - sixthWinHeight)) {
-          $el.addClass("in-view");
-        }
-      });
-    });
-
-    // Sticky header
-    let $header = $('#header');
-
-    if (window.scrollY > 0) {
-      $header.addClass('sticky');
-    }
-
-    $.scrollAction(function() {
-      return $(window).scrollTop() > 0;
-    }, function(isTrue) {
-      isTrue ? $header.addClass('sticky') : $header.removeClass('sticky');
-    });
   })();
 
-  // Mobile menu
-  (function mobileMenu() {
-    let $header = $('#header');
-    let $mobMenuBtn = $('.hamburger-btn');
-    let $closeMenuBtn = $('.close-menu');
+  // Accordion
+  // (function accordion() {
+  //   $('.faq-header').on('click', function() {
+  //     let $this = $(this);
+  //
+  //     $this.closest('.faq-item').siblings().removeClass('active')
+  //       .find('.faq-content').slideUp();
+  //
+  //     $this.siblings('.faq-content').slideToggle(400, function() {
+  //       let self = $(this);
+  //
+  //       if (self.is(':visible') && self.find('iframe').length) {
+  //         self.find('iframe').each(function(i, el) {
+  //           let iframe = $(el);
+  //
+  //           if (!iframe.is('.refreshed')) {
+  //             iframe.attr('src', iframe.attr('src'));
+  //             iframe.addClass('refreshed');
+  //           }
+  //         });
+  //       }
+  //     }).closest('.faq-item').toggleClass('active');
+  //   });
+  //
+  //   $('.faq-item').each(function(i, el) {
+  //     $(el).css('transition-delay', (i * .1) + 's');
+  //   });
+  // })();
 
-    $mobMenuBtn.on('click', function() {
-      $header.addClass('active-menu');
-    });
-
-    $closeMenuBtn.on('click', function() {
-      $header.removeClass('active-menu');
-    });
-  })();
+  // Scroll animations
+  // (function scrollAnimaiton() {
+  //   let $sections = $('.content-container').children();
+  //   let $rowTitle = $('.group-title');
+  //   let $rowList = $('.step-item');
+  //
+  //   $sections.add($rowList).add($rowTitle).each(function(i, el) {
+  //     let $el = $(el);
+  //
+  //     if ($el.isVisible(true)) {
+  //       $el.addClass('in-view');
+  //     }
+  //   });
+  //
+  //   $(window).on('scroll', function () {
+  //     let $window = $(window);
+  //     let sixthWinHeight = $window.height() / 6;
+  //     let viewTop = $window.scrollTop();
+  //     let viewBottom = viewTop + $window.height();
+  //
+  //     $sections.add($rowList).add($rowTitle).each(function (i, el) {
+  //       let $el = $(el);
+  //       let elemTopPos = $el.offset().top;
+  //
+  //       if ($el.isVisible(true) && elemTopPos < (viewBottom - sixthWinHeight)) {
+  //         $el.addClass("in-view");
+  //       }
+  //     });
+  //   });
+  //
+  //   // Sticky header
+  //   let $header = $('#header');
+  //
+  //   if (window.scrollY > 0) {
+  //     $header.addClass('sticky');
+  //   }
+  //
+  //   $.scrollAction(function() {
+  //     return $(window).scrollTop() > 0;
+  //   }, function(isTrue) {
+  //     isTrue ? $header.addClass('sticky') : $header.removeClass('sticky');
+  //   });
+  // })();
 
   // Toggle status messages
   (function toggleMessage() {
