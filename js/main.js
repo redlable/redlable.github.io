@@ -19,6 +19,8 @@ if (window.location.hash.length) {
     $('body').addClass('ie ie' + parseInt(ua.substring(msie + 5, ua.indexOf(".", msie))));
   } else if (!!navigator.userAgent.match(/Trident.*rv\:11\./)) {
     $('body').addClass('ie ie11');
+  } else if (/Edge\/\d./i.test(navigator.userAgent)) {
+    $('body').addClass('ie edge');
   }
 
   // Detect Firefox.
