@@ -4,6 +4,17 @@
       background: $white-f5;
       overflow: hidden;
       position: relative;
+
+      .btn-wrapper {
+        margin-bottom: 65px;
+        text-align: center;
+      }
+
+      .btn {
+        padding-left: 80px;
+        padding-right: 80px;
+        transform: translateY(-50%);
+      }
     }
 
     &-hero {
