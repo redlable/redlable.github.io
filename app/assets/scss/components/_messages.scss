@@ -1,37 +1,67 @@
 .message {
   @include font-size(14);
   background: $white;
-  box-shadow: 2px 2px 10px rgba(193, 197, 207, 0.8);
+  box-shadow: inset 20px 0 0 $grey-light, 2px 2px 10px rgba(193, 197, 207, 0.8);
+  color: $black;
   cursor: pointer;
   font-weight: $light;
   margin: 0 auto 30px;
-  overflow: hidden;
+  //overflow: hidden;
   max-width: 600px;
   padding: 20px 15px 20px 40px;
   position: relative;
   transition: transform .4s ease-out;
   z-index: 1000;
 
+  &.hidden-msg {
+    &:before {
+      @include font-size(18);
+      content: '\0027a3';
+      left: -15px;
+      transition: transform .4s linear, left .4s linear .4s, width .4s linear;
+      transform: rotateY(180deg);
+      width: 25px;
+    }
+  }
+
   &::before {
-    content: ' ';
-    width: 20px;
+    @include font-size(26);
+    content: '\00d7';
+    color: $white;
+    font-weight: $bold;
+    line-height: 20px;
     height: 100%;
     position: absolute;
     left: 0;
     top: 0;
+    text-align: center;
+    transition: transform .4s linear;
+    width: 20px;
     background: $grey-light;
   }
 
-  &.error::before {
-    background: $red;
+  &.error {
+    box-shadow: inset 20px 0 0 red, 2px 2px 10px rgba(193, 197, 207, 0.8);;
+
+    &::before {
+      background: red;
+    }
   }
 
-  &.status::before {
-    background: $green;
+  &.status {
+    box-shadow: inset 20px 0 0 green, 2px 2px 10px rgba(193, 197, 207, 0.8);;
+
+    &::before {
+      background: green;
+    }
   }
 
-  &.warning::before {
-    background: $red;
+  &.warning {
+    box-shadow: inset 20px 0 0 orange, 2px 2px 10px rgba(193, 197, 207, 0.8);;
+
+    &::before {
+      background: orange;
+    }
   }
 
   &.hidden-msg {
@@ -44,7 +74,12 @@
   }
 
   a {
-    @include links($black, $grey-light, true);
+    @include links($blue-dark, $blue-dark, false);
+    font-weight: $bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   .placeholder {

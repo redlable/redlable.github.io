@@ -20,10 +20,10 @@ html(lang="ru-RU")
     //include ../modules/editor-tabs
     //include ../modules/login-form
 
-    .content-container
+    main#main(itemprop="mainContentOfPage")
       block content
 
-    //include ../modules/footer
+    include ../modules/footer-beauty
 
     //script(src="https://cdn.jsdelivr.net/npm/lodash@4.13.1/lodash.min.js")
     script(src='app/bower_components/jquery/dist/jquery.js')
