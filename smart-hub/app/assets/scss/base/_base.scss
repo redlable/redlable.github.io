@@ -1,0 +1,55 @@
+.ios {
+  cursor: pointer;
+}
+
+img,
+svg {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe,
+object,
+embed {
+  max-width: 100%;
+}
+
+.responsive-video {
+  @extend %responsive-video;
+}
+
+// Popup
+.c-popup {
+  .c-exit-popup__logo {
+    width: auto;
+  }
+
+  a:not([class]) {
+    color: #04A2FF;
+    text-decoration: none;
+  }
+}
+
+// Drupal styles
+.fieldgroup {
+  border-width: 0;
+  padding: 0;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+  width: 1px;
+  word-wrap: normal;
+}
+
+// Pfizer network
+.pfizer-login__connecting {
+  top: 50%;
+  transform: translateY(-50%);
+}
+.pfizer-login__container {
+  margin-top: 100px;
+}

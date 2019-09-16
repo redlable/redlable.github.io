@@ -1,0 +1,48 @@
+// Fonts
+$opensans: 'Open Sans', Helvetica, Arial, sans-serif;
+$euclid-circular-b: 'Euclid Circular A Bold', $opensans;
+$euclid-circular-r: 'Euclid Circular A Regular', $opensans;
+
+//$roboto: 'Roboto', sans-serif;
+
+// Weights
+$light: 300;
+$normal: 400;
+$medium: 600;
+$bold: 700;
+$extrabold: 900;
+
+// Layout
+$site-width: 1600px;
+$grid-gutter: 20px;
+$col-width: 65px;
+$columns: 12;
+$content-width: $col-width * $columns + $grid-gutter * $columns - $grid-gutter;
+//$content-width: 1440px;
+
+// Colors
+$white: #fff;
+$black: #000;
+
+$dusk-blue: #223d83;
+$azure: #2590dd;
+$rouge: #901a34;
+$darkish-purple: #4f2280;
+$spruce: #094444;
+$dark-blue-grey: #203242;
+$pale-blue: #dfe4e9;
+$body-text: #35383f;
+$cool-grey: #9ba3ab;
+$orangey-red: #ff3b30;
+$marigold: #ffcc00;
+$weird-green: #4cd964;
+$deep-sky-blue: #007aff;
+$warm-blue: #5856d6;
+$orangey-reddish-pink: #ff2d55;
+$pale-grey: #efeff4;
+$pale-lilac: #e5e5ea;
+$light-blue-grey: #d1d1d6;
+$light-blue-grey-two: #c7c7cc;
+$deep-sky-blue-grey: #8e8e93;
+
+// Gradients

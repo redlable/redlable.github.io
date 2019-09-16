@@ -1,0 +1,100 @@
+.message {
+  @include font-size(14);
+  background: $white;
+  box-shadow: inset 20px 0 0 $pale-grey, 2px 2px 10px rgba(193, 197, 207, 0.8);
+  color: $black;
+  cursor: pointer;
+  font-weight: $light;
+  margin: 0 auto 30px;
+  //overflow: hidden;
+  max-width: 600px;
+  padding: 20px 15px 20px 40px;
+  position: relative;
+  transition: transform .4s ease-out;
+  z-index: 1000;
+
+  &.hidden-msg {
+    &:before {
+      @include font-size(18);
+      content: '\0027a3';
+      left: -15px;
+      transition: transform .4s linear, left .4s linear .4s, width .4s linear;
+      transform: rotateY(180deg);
+      width: 25px;
+    }
+  }
+
+  &::before {
+    @include font-size(26);
+    content: '\00d7';
+    color: $white;
+    font-weight: $bold;
+    line-height: 20px;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-align: center;
+    transition: transform .4s linear;
+    width: 20px;
+    background: $pale-grey;
+  }
+
+  &.error {
+    box-shadow: inset 20px 0 0 red, 2px 2px 10px rgba(193, 197, 207, 0.8);;
+
+    &::before {
+      background: red;
+    }
+  }
+
+  &.status {
+    box-shadow: inset 20px 0 0 green, 2px 2px 10px rgba(193, 197, 207, 0.8);;
+
+    &::before {
+      background: green;
+    }
+  }
+
+  &.warning {
+    box-shadow: inset 20px 0 0 orange, 2px 2px 10px rgba(193, 197, 207, 0.8);;
+
+    &::before {
+      background: orange;
+    }
+  }
+
+  &.hidden-msg {
+    transform: translateX(100%);
+    transition: transform .8s cubic-bezier(0.5, -0.28, 0.64, 1.18);
+  }
+
+  p {
+    margin-bottom: 15px;
+  }
+
+  a {
+    @include links($warm-blue, $warm-blue, false);
+    font-weight: $bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .placeholder {
+    font-weight: $normal;
+    font-style: normal;
+  }
+
+  label {
+    display: block;
+  }
+
+  @include media-q(min, 769) {
+    margin-bottom: 0;
+    position: fixed;
+    right: 16px;
+    bottom: 40px;
+  }
+}

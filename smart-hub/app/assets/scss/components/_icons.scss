@@ -1,0 +1,50 @@
+.c-signup-steps__steps-item {
+  .c-circle-button__icon-wrap {
+    svg {
+      height: 25px;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 25px;
+
+      path {
+        fill: $white;
+      }
+    }
+  }
+}
+
+.c-page-header__utility-nav-wrap {
+  [href*="alcon.com"] {
+    svg {
+      height: 2.5rem;
+      max-width: none;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 2.5rem;
+    }
+  }
+}
+
+.beauty {
+  .c-page-header {
+    .c-circle-button__icon-wrap {
+      border-color: $warm-blue;
+
+      svg {
+        color: $warm-blue;
+
+        path {
+          fill: $warm-blue;
+        }
+      }
+    }
+
+    .c-circle-button__text {
+      color: $warm-blue;
+    }
+  }
+}

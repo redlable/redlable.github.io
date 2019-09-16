@@ -1,0 +1,96 @@
+body:not(.front):not(.page-user-login):not(.page-user-pass):not(.page-user-reset-form):not(.exception-status-404):not(.exception-status-403) {
+  .c-footer__nav-grid-item--push-right {
+    @include media-q(min, 481) {
+      flex: 1 0 50%;
+      max-width: 50%;
+      width: 50%;
+    }
+
+    @include media-q(min, 1025) {
+      margin-left: 0;
+    }
+  }
+}
+
+.c-footer__nav-grid-item-heading {
+  font-weight: 700;
+
+  .node-article &,
+  .node-hcp-page &,
+  .node-patient-page &,
+  .node-product &,
+  .page-taxonomy-term-canonical & {
+    display: none;
+  }
+}
+
+.c-botnav__link {
+  font-weight: 400;
+}
+
+.front,
+.exception-status-404,
+.exception-status-403,
+.page-user-login,
+.page-user-pass,
+.page-user-reset-form {
+  .c-footer__logo-wrap {
+    .c-logo__link {
+      display: block;
+    }
+
+    .c-homepage-hero__logo {
+      @include media-q(min, 768) {
+        height: 40px;
+      }
+    }
+  }
+}
+
+.ie11 {
+  .c-footer__logo {
+    .c-logo__link {
+      display: block;
+    }
+
+    svg {
+      height: 40px;
+    }
+  }
+}
+
+.c-footer {
+  &__copyright-wrap,
+  &__disclaimer-wrap {
+    a {
+      color: inherit;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__disclaimer-wrap {
+    p {
+      line-height: 24px;
+      margin-bottom: 8px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .beauty & {
+    &__disclaimer-list {
+      max-width: 100%;
+    }
+  }
+}
+
+.c-cookie {
+  a {
+    color: inherit;
+  }
+}

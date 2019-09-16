@@ -1,0 +1,11 @@
+.c-page-header--my-alcon {
+  .c-page-header__overlay--tablet {
+    .toolbar-horizontal & {
+      padding-top: 159px;
+    }
+
+    .toolbar-tray-open & {
+      padding-top: 199px;
+    }
+  }
+}

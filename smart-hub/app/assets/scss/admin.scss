@@ -1,0 +1,98 @@
+@import "utils/variables";
+@import "utils/mixins";
+
+.field--widget-text-textarea .filter-wrapper {
+  display: none;
+}
+
+.field--name-field-footnote .form-text {
+  width: 100%;
+}
+
+.seven-details__wrapper {
+  padding: 1em 1.5em;
+}
+
+#paragraphs-library-item-add-form {
+  .dropbutton-single {
+    .field-add-more-submit {
+      padding: 4px 1.5em;
+      border: 1px solid #a6a6a6;
+      border-radius: 20em;
+      background-color: #f2f1eb;
+      background-image: linear-gradient(to bottom, #f6f6f3, #e7e7df);
+
+      &:hover {
+        background-image: linear-gradient(to bottom, #fcfcfa, #e9e9dd);
+      }
+    }
+  }
+}
+
+.field--name-field-left-description {
+  margin-right: calc(4% - 4px);
+}
+
+.field--name-field-left-description,
+.field--name-field-right-description {
+  display: inline-block;
+  width: 48%;
+}
+
+.icons-list {
+  .form-radios {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px 0;
+
+    > .form-item {
+      @include font-size(24);
+      box-shadow: 0 0 5px #ccc;
+      display: inline-block;
+      margin: 0 10px 10px 0;
+      padding: 10px;
+      vertical-align: top;
+      transition: .3s ease;
+
+      &:hover {
+        box-shadow: 0 0 5px #999;
+      }
+    }
+
+    .form-radio {
+      display: inline-block;
+      margin-right: 5px;
+      vertical-align: top;
+    }
+
+    [class^="product-style-"],
+    [class*=" product-style-"] {
+      width: 70px;
+      height: 70px;
+      display: inline-block;
+      vertical-align: top;
+      background-size: cover;
+    }
+
+    .product-style-two {
+      background-image: url("../images/product-style-two.png");
+    }
+
+    .product-style-three {
+      background-image: url("../images/product-style-three.png");
+    }
+  }
+}
+
+.field--widget-options-buttons-image-position {
+  .image-anchor {
+    width: auto;
+  }
+  .image-anchor tr {
+    background: none;
+  }
+  .image-anchor td {
+    border: 1px solid #ccc;
+    padding: 10px 12px;
+  }
+}

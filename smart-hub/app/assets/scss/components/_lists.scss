@@ -1,0 +1,17 @@
+.c-breadcrumb__nav-item {
+  .ie11 & {
+    &:before {
+      background-position: -5px 0;
+    }
+  }
+
+  sup {
+    align-self: flex-start;
+    margin-top: 5px;
+  }
+
+  sub {
+    align-self: flex-end;
+    margin-bottom: 5px;
+  }
+}

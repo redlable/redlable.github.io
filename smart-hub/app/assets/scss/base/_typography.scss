@@ -1,0 +1,56 @@
+h1 {
+  @include font-size(40);
+
+  @include media-q(min, 768) {
+    @include font-size(50);
+  }
+
+  @include media-q(min, 1024) {
+    @include font-size(60);
+  }
+}
+
+h2 {
+  @include font-size(28);
+
+  @include media-q(min, 768) {
+    @include font-size(32);
+  }
+
+  @include media-q(min, 1024) {
+    @include font-size(40);
+  }
+}
+
+h3 {
+  @include font-size(20);
+
+  @include media-q(min, 768) {
+    @include font-size(20);
+  }
+
+  @include media-q(min, 1024) {
+    @include font-size(24);
+  }
+}
+
+h4 {
+  @include font-size(18);
+
+  @include media-q(min, 768) {
+    @include font-size(18);
+  }
+
+  @include media-q(min, 1024) {
+    @include font-size(20);
+  }
+}
+
+h5,
+h6 {
+  @include font-size(16);
+}
+
+strong {
+  font-weight: bold;
+}

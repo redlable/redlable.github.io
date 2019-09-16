@@ -1,0 +1,15 @@
+.c-my-alcon-hero__card {
+  .hide-mobile {
+    display: none;
+
+    @include media-q(min, 1025) {
+      display: block;
+    }
+  }
+
+  .mobile {
+    @include media-q(min, 1025) {
+      display: none;
+    }
+  }
+}

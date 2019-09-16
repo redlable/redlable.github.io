@@ -1,0 +1,14 @@
+.btn {
+  @include font-size(16);
+  border-radius: 30px;
+  color: $black;
+  display: inline-block;
+  font-weight: $bold;
+  line-height: 1.4;
+  padding: 19px 35px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  vertical-align: top;
+}
