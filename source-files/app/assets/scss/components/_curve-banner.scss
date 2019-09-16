@@ -1,0 +1,129 @@
+.beauty {
+  .c-curve {
+    &-wrap {
+      background: $white-f5;
+      overflow: hidden;
+      position: relative;
+
+      .btn-wrapper {
+        margin-bottom: 40px;
+        text-align: center;
+
+        a {
+          @extend .btn;
+          @extend .gold;
+          @extend .lens;
+          padding-left: 80px;
+          padding-right: 80px;
+          transform: translateY(-50%);
+        }
+      }
+    }
+
+    &-hero {
+      animation: curve 1s 0s ease-out forwards;
+      background: $white;
+      overflow: hidden;
+      padding-top: 35px;
+      position: relative;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 120%;
+
+      &__wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0 auto;
+        max-width: 100vw;
+      }
+
+      &__model {
+        animation: model .75s .25s ease-out forwards;
+        align-self: flex-end;
+        max-width: 50%;
+        opacity: 0;
+        padding: 0 30px;
+        transform: translateY(10%);
+      }
+
+      &__product {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 50%;
+        padding: 80px 30px 50px;
+        text-align: center;
+
+        &-image {
+          animation: fadeIn 2s 1.5s ease forwards;
+          opacity: 0;
+          transform: translateY(30px);
+        }
+
+        &-desc {
+          animation: fadeIn 2s 1.8s ease forwards;
+          color: $black-21;
+          font-weight: 100;
+          line-height: 1.5;
+          opacity: 0;
+          transform: translateY(30px);
+        }
+      }
+
+      &__tagline {
+        animation: fadeIn 2s 1s ease forwards;
+        margin-bottom: 10px;
+        opacity: 0;
+        position: relative;
+        transform: translateY(30px);
+
+        &:after {
+          @include absolute();
+          animation: fadeIn 2s 1s ease forwards;
+          background-image: url(../img/content/tagline-light.png);
+          background-size: cover;
+          content: '';
+          transform: translateX(-20%);
+        }
+
+        + .c-curve-hero__product-desc {
+          margin-top: 25px;
+        }
+      }
+    }
+  }
+}
+
+@keyframes model {
+  0%   {
+    transform: translateY(15%);
+  }
+  25% {
+    opacity: 0;
+
+  }
+  100%  {
+    transform: translateY(0%);
+    opacity: 1;
+  }
+}
+
+@keyframes curve {
+  0%   {
+    border-radius: 0;
+  }
+  100%  {
+    border-radius: 0 0 50% 50% / 0 0 15vw 15vw;
+  }
+}
+
+@keyframes fadeIn {
+  0%   {
+    opacity: 0;
+  }
+  100%  {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
