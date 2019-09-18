@@ -1,96 +1,61 @@
-body:not(.front):not(.page-user-login):not(.page-user-pass):not(.page-user-reset-form):not(.exception-status-404):not(.exception-status-403) {
-  .c-footer__nav-grid-item--push-right {
-    @include media-q(min, 481) {
-      flex: 1 0 50%;
-      max-width: 50%;
-      width: 50%;
-    }
+#footer {
+  background-image: $gradient-dusk-blue;
+  color: $white;
+  line-height: 1.5;
+  padding: 25px 0;
 
-    @include media-q(min, 1025) {
-      margin-left: 0;
-    }
+  .section-layout {
+    display: flex;
+    flex-wrap: wrap;
   }
-}
 
-.c-footer__nav-grid-item-heading {
-  font-weight: 700;
+  .section-col {
+    flex: 1;
+    border-right: 1px solid #091d3e;
+    padding: 40px 32px 50px;
 
-  .node-article &,
-  .node-hcp-page &,
-  .node-patient-page &,
-  .node-product &,
-  .page-taxonomy-term-canonical & {
-    display: none;
-  }
-}
-
-.c-botnav__link {
-  font-weight: 400;
-}
-
-.front,
-.exception-status-404,
-.exception-status-403,
-.page-user-login,
-.page-user-pass,
-.page-user-reset-form {
-  .c-footer__logo-wrap {
-    .c-logo__link {
-      display: block;
-    }
-
-    .c-homepage-hero__logo {
-      @include media-q(min, 768) {
-        height: 40px;
-      }
-    }
-  }
-}
-
-.ie11 {
-  .c-footer__logo {
-    .c-logo__link {
-      display: block;
-    }
-
-    svg {
-      height: 40px;
-    }
-  }
-}
-
-.c-footer {
-  &__copyright-wrap,
-  &__disclaimer-wrap {
-    a {
-      color: inherit;
-
-      &:hover {
-        text-decoration: none;
-      }
+    &:last-child {
+      border: none;
     }
   }
 
-  &__disclaimer-wrap {
+  .footer-logo {
+    margin-bottom: 24px;
+  }
+
+  h2 {
+    margin-bottom: 16px;
+  }
+
+  .footer-menu {
+    line-height: 1.38;
+
+    &__item {
+      margin-bottom: 16px;
+    }
+
+    &__link {
+      color: $white;
+    }
+  }
+
+  .btn-arrow {
+    display: block;
+    margin-top: 24px;
+  }
+
+  .small-text {
+    @include font-size(14);
+    line-height: 1.43;
+
     p {
-      line-height: 24px;
-      margin-bottom: 8px;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
+      margin-bottom: 1.43em;
     }
   }
 
-  .beauty & {
-    &__disclaimer-list {
-      max-width: 100%;
+  p {
+    &:last-child {
+      margin-bottom: 0;
     }
-  }
-}
-
-.c-cookie {
-  a {
-    color: inherit;
   }
 }

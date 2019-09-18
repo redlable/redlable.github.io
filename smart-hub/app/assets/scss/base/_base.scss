@@ -1,3 +1,10 @@
+body {
+  @include font-size(16);
+  color: $black;
+  font-family: $avenirRegular;
+  line-height: 1.38;
+}
+
 .ios {
   cursor: pointer;
 }

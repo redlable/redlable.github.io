@@ -1,7 +1,8 @@
 // Fonts
 $opensans: 'Open Sans', Helvetica, Arial, sans-serif;
-$euclid-circular-b: 'Euclid Circular A Bold', $opensans;
-$euclid-circular-r: 'Euclid Circular A Regular', $opensans;
+$avenirRegular: 'AvenirNextLTW01-Regular';
+$avenirItalic: 'AvenirNextLTW01-Italic';
+$avenirMedium: 'AvenirNextLTW01-Medium';
 
 //$roboto: 'Roboto', sans-serif;
 
@@ -14,10 +15,11 @@ $extrabold: 900;
 
 // Layout
 $site-width: 1600px;
-$grid-gutter: 20px;
+$grid-gutter: 32px;
+$grid-margin: 34px;
 $col-width: 65px;
 $columns: 12;
-$content-width: $col-width * $columns + $grid-gutter * $columns - $grid-gutter;
+$content-width: $col-width * $columns + $grid-gutter * $columns - $grid-gutter - $grid-margin * 2;
 //$content-width: 1440px;
 
 // Colors
@@ -46,3 +48,5 @@ $light-blue-grey-two: #c7c7cc;
 $deep-sky-blue-grey: #8e8e93;
 
 // Gradients
+$gradient-blue: radial-gradient(circle at 99% 1%, #0080ca 0%, #0058b8);
+$gradient-dusk-blue: linear-gradient(241deg, $dusk-blue, #02162a);

@@ -23,7 +23,7 @@ body {
 
 .content-container {
   margin: 0 auto;
-  max-width: $site-width;
+  //max-width: $site-width;
 }
 
 #footer {
@@ -36,7 +36,7 @@ body {
   max-width: $content-width + 40px;
 
   @include media-q(min, 1024) {
-    @include same($grid-gutter, padding-left, padding-right);
-    max-width: $content-width + $grid-gutter * 2;
+    @include same($grid-margin, padding-left, padding-right);
+    max-width: $content-width + $grid-margin * 2;
   }
 }

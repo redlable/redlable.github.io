@@ -1,49 +1,30 @@
 h1 {
-  @include font-size(40);
+  @include font-size(28);
+  line-height: 1.25;
 
   @include media-q(min, 768) {
-    @include font-size(50);
+    @include font-size(36);
+    line-height: 1.26;
   }
 
   @include media-q(min, 1024) {
-    @include font-size(60);
+    @include font-size(42);
   }
 }
 
 h2 {
   @include font-size(28);
-
-  @include media-q(min, 768) {
-    @include font-size(32);
-  }
-
-  @include media-q(min, 1024) {
-    @include font-size(40);
-  }
+  line-height: 1.25;
 }
 
 h3 {
-  @include font-size(20);
-
-  @include media-q(min, 768) {
-    @include font-size(20);
-  }
-
-  @include media-q(min, 1024) {
-    @include font-size(24);
-  }
+  @include font-size(22);
+  line-height: 1.41;
 }
 
 h4 {
   @include font-size(18);
-
-  @include media-q(min, 768) {
-    @include font-size(18);
-  }
-
-  @include media-q(min, 1024) {
-    @include font-size(20);
-  }
+  line-height: 1.39;
 }
 
 h5,
@@ -52,5 +33,5 @@ h6 {
 }
 
 strong {
-  font-weight: bold;
+  font-weight: $bold;
 }
