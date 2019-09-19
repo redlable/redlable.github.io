@@ -130,6 +130,11 @@
     &__link {
       @extend .btn;
     }
+
+    .user-login {
+      padding-left: 22px;
+      padding-right: 22px;
+    }
   }
 
   .page-title {
@@ -149,8 +154,11 @@
 
     .section {
       &__left {
+        padding-bottom: 20px;
+
         @include media-q(min, 768) {
           @include flex-basis(66%);
+          padding-bottom: 0q;
           padding-right: 20px;
         }
       }
@@ -168,7 +176,6 @@
 
   .head-logo {
     background-image: $gradient-blue;
-    margin-top: 20px;
     padding: 15px 0;
     text-align: center;
     transform: translateX(-16px);

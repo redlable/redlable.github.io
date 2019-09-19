@@ -47,11 +47,6 @@
   }
 }
 
-.user-login {
-  padding-left: 22px;
-  padding-right: 22px;
-}
-
 .hamburger-btn {
   @include media-q(min, 768) {
     display: none;

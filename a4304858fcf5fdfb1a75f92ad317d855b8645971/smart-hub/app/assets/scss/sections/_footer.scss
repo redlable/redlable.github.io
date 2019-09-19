@@ -36,16 +36,19 @@
 
     @include media-q(min, 768) {
       flex: 1;
+      border: none;
       border-right: 1px solid #091d3e;
       padding: 40px 32px 50px;
 
       &:first-child {
+        padding-top: 40px;
         padding-left: 20px;
       }
 
       &:last-child {
         border: none;
         padding-right: 20px;
+        padding-bottom: 50px;
       }
     }
   }
