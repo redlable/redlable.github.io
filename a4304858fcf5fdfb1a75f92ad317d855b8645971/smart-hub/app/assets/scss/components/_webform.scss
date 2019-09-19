@@ -211,6 +211,7 @@ select {
 
 }
 
-#janrainModal {
-  z-index: 999999 !important;
+// Janrain modal fix
+#janrainModalOverlay + #janrainModal {
+  z-index: 99999 !important;
 }
