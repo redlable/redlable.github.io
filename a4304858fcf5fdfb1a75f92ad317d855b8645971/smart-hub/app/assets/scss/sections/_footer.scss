@@ -1,23 +1,46 @@
 #footer {
-  background-image: $gradient-dusk-blue-h;
-  color: $white;
-  line-height: 1.5;
-  padding: 35px 0;
-  text-align: center;
-
-  @include media-q(min, 768) {
-    background-image: $gradient-dusk-blue;
-    padding: 25px 0;
-    text-align: left;
-  }
-
-  .section-layout {
-    padding: 0;
+  .prefooter {
+    border-top: 1px solid #e5e5e5;
+    color: $body-text;
+    line-height: 1.2;
+    padding: 13px 0 25px;
+    text-align: center;
 
     @include media-q(min, 768) {
-      display: flex;
-      flex-wrap: wrap;
-      padding: 0 $grid-margin;
+      padding: 24px 0;
+    }
+
+    .section-layout {
+      display: block;
+      max-width: 1000px;
+    }
+
+    p:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .footer {
+    background-image: $gradient-dusk-blue-h;
+    color: $white;
+    line-height: 1.5;
+    padding: 35px 0;
+    text-align: center;
+
+    @include media-q(min, 768) {
+      background-image: $gradient-dusk-blue;
+      padding: 25px 0;
+      text-align: left;
+    }
+
+    .section-layout {
+      padding: 0;
+
+      @include media-q(min, 768) {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 $grid-margin;
+      }
     }
   }
 
