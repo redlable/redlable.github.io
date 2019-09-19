@@ -32,10 +32,10 @@ body {
 
 .section-layout {
   @include same(auto, margin-left, margin-right);
-  @include same(20px, padding-left, padding-right);
+  @include same(16px, padding-left, padding-right);
   max-width: $content-width + 40px;
 
-  @include media-q(min, 1024) {
+  @include media-q(min, 768) {
     @include same($grid-margin, padding-left, padding-right);
     max-width: $content-width + $grid-margin * 2;
   }

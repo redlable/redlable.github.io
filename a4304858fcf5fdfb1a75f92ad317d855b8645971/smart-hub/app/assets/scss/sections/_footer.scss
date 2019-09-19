@@ -1,26 +1,52 @@
 #footer {
-  background-image: $gradient-dusk-blue;
+  background-image: $gradient-dusk-blue-h;
   color: $white;
   line-height: 1.5;
-  padding: 25px 0;
+  padding: 35px 0;
+  text-align: center;
+
+  @include media-q(min, 768) {
+    background-image: $gradient-dusk-blue;
+    padding: 25px 0;
+    text-align: left;
+  }
 
   .section-layout {
-    display: flex;
-    flex-wrap: wrap;
+    padding: 0;
+
+    @include media-q(min, 768) {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 $grid-margin;
+    }
   }
 
   .section-col {
-    flex: 1;
-    border-right: 1px solid #091d3e;
-    padding: 40px 32px 50px;
+    border-bottom: 2px solid #091d3e;
+    padding: 32px 40px;
 
     &:first-child {
-      padding-left: 20px;
+      padding-top: 0;
     }
 
     &:last-child {
       border: none;
-      padding-right: 20px;
+      padding-bottom: 0;
+    }
+
+    @include media-q(min, 768) {
+      flex: 1;
+      border-right: 1px solid #091d3e;
+      padding: 40px 32px 50px;
+
+      &:first-child {
+        padding-left: 20px;
+      }
+
+      &:last-child {
+        border: none;
+        padding-right: 20px;
+      }
     }
   }
 

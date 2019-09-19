@@ -8,11 +8,16 @@
   text-align: center;
   text-decoration: none;
   vertical-align: top;
+
+  &:hover {
+    box-shadow: 0 6px 10px 0 rgba(72, 90, 137, .15);
+    transform: scale(1.02);
+  }
 }
 
 .btn-white {
   background: $white;
-  box-shadow: 0 4px 8px rgba(72, 90, 137, 0.15);
+  box-shadow: 0 4px 8px rgba(72, 90, 137, .15);
   color: $dusk-blue;
   padding-left: 22px;
   padding-right: 22px;
@@ -45,4 +50,17 @@
 .user-login {
   padding-left: 22px;
   padding-right: 22px;
+}
+
+.hamburger-btn {
+  @include media-q(min, 768) {
+    display: none;
+  }
+
+  .label {
+    @extend .btn;
+    @extend .btn-white;
+    padding-left: 33px;
+    padding-right: 33px;
+  }
 }

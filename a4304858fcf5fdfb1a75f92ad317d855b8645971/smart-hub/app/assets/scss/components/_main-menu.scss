@@ -1,6 +1,8 @@
-.hamburger-btn {
+.main-nav {
+  display: none;
+
   @include media-q(min, 768) {
-    display: none;
+    display: block;
   }
 }
 
