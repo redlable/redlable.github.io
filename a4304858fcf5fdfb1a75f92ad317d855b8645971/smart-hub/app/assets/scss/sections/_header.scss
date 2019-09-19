@@ -1,3 +1,14 @@
+.disclaimer {
+  @include font-size(10);
+  line-height: normal;
+  padding: 8px 0;
+  text-align: right;
+
+  p {
+    margin: 0;
+  }
+}
+
 #header {
   background-image: $gradient-blue;
   box-shadow: 0 2px 8px 1px rgba($black, .17);
@@ -31,6 +42,10 @@
     align-items: center;
     display: flex;
     margin-right: 32px;
+  }
+
+  .notification {
+
   }
 
   .user-menu {
