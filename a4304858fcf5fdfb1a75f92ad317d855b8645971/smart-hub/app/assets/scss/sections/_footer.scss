@@ -14,8 +14,13 @@
     border-right: 1px solid #091d3e;
     padding: 40px 32px 50px;
 
+    &:first-child {
+      padding-left: 20px;
+    }
+
     &:last-child {
       border: none;
+      padding-right: 20px;
     }
   }
 

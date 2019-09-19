@@ -40,7 +40,7 @@
     &__item {
       margin-right: 16px;
 
-      &:first-child {
+      &:first-child:not(:only-child) {
         .user-menu__link {
           @extend .btn-white-outline;
         }
@@ -72,6 +72,7 @@
     .section {
       &__left {
         @include flex-basis(66%);
+        padding-right: 20px;
       }
 
       &__right {
@@ -81,5 +82,9 @@
         justify-content: flex-end;
       }
     }
+  }
+
+  .head-logo {
+    padding-top: 20px;
   }
 }
