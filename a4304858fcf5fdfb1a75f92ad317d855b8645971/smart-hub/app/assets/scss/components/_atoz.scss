@@ -28,6 +28,10 @@
       content: "";
       position: absolute;
       width: 2.875rem;
+
+      @include media-q(min, 992) {
+        content: none;
+      }
     }
   }
 
