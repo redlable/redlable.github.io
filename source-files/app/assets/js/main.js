@@ -19,8 +19,8 @@ if (window.location.hash.length) {
     $('body').addClass('ie ie11');
   }
   else if (/Edge\/\d./i.test(navigator.userAgent)) {
-    $('body').addClass('ie edge');
-  }
+      $('body').addClass('ie edge');
+    }
 
   // Detect Firefox.
   if( navigator.userAgent.toLowerCase().indexOf('firefox') > -1 ){
@@ -75,38 +75,42 @@ if (window.location.hash.length) {
 
     $window.on('load', function() {
       let adminMenuHeight = parseInt($body.css('padding-top')) || 0;
-          // headerHeight = $('#header').outerHeight(),
-          // fixedHeaderHeight = $window.width() >= 1024 ? headerHeight : 0;
+      // headerHeight = $('#header').outerHeight(),
+      // fixedHeaderHeight = $window.width() >= 1024 ? headerHeight : 0;
 
       // *only* if we have anchor on the url
       if (anchorHash) {
 
         // smooth scroll to the anchor id
         $root.animate({
-          scrollTop: $(anchorHash).offset().top - adminMenuHeight /* - fixedHeaderHeight*/
+          scrollTop: $('[data-anchor-id=' + anchorHash.substring(1) + ']').offset().top - adminMenuHeight /* - fixedHeaderHeight */
         }, 800, 'swing');
 
         window.location.hash = anchorHash;
       }
     });
 
-    $('a[href^=\\#]').on('click', function(e) {
-      e.preventDefault();
+    $('a[href*=\\#]').on('click', function(e) {
+      var $scrollEl = $('[data-anchor-id=' + this.hash.substring(1) + ']');
 
-      let $scrollEl = $(this.hash),
-          scrollElOffset = Math.round($scrollEl.offset().top),
-          adminMenuHeight = parseInt($body.css('padding-top')),
-          // headerHeight = $('#header').outerHeight(),
-          // fixedHeaderHeight = $window.width() >= 1024 ? headerHeight : 0,
-          speed = 400;
+      if ($scrollEl.length) {
+        e.preventDefault();
 
-      if (scrollElOffset > $document.scrollTop() + $window.height()) {
-        speed = 800;
+        let $scrollEl = $(this.hash),
+            scrollElOffset = Math.round($scrollEl.offset().top),
+            adminMenuHeight = parseInt($body.css('padding-top')),
+            // headerHeight = $('#header').outerHeight(),
+            // fixedHeaderHeight = $window.width() >= 1024 ? headerHeight : 0,
+            speed = 400;
+
+        if (scrollElOffset > $document.scrollTop() + $window.height()) {
+          speed = 800;
+        }
+
+        $root.animate({
+          scrollTop: scrollElOffset - adminMenuHeight /* - fixedHeaderHeight */
+        }, speed);
       }
-
-      $root.animate({
-        scrollTop: scrollElOffset - adminMenuHeight /* - fixedHeaderHeight*/
-      }, speed);
     });
 
     // Stop scroll animation on user scroll

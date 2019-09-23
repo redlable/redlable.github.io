@@ -48,9 +48,7 @@
 }
 
 .hamburger-btn {
-  @include media-q(min, 768) {
-    display: none;
-  }
+  cursor: pointer;
 
   .label {
     @extend .btn;

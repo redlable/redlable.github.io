@@ -31,6 +31,10 @@ embed {
   @extend %responsive-video;
 }
 
+a {
+  color: #007fff;
+}
+
 // Popup
 .c-popup {
   .c-exit-popup__logo {

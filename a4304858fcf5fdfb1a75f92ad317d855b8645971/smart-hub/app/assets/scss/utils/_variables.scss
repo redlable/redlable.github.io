@@ -1,8 +1,8 @@
 // Fonts
 $opensans: 'Open Sans', Helvetica, Arial, sans-serif;
-$avenirRegular: 'AvenirNextLTW01-Regular';
-$avenirItalic: 'AvenirNextLTW01-Italic';
-$avenirMedium: 'AvenirNextLTW01-Medium';
+$avenirRegular: 'AvenirNextLTW01-Regular', Helvetica, Arial, sans-serif;
+$avenirItalic: 'AvenirNextLTW01-Italic', Helvetica, Arial, sans-serif;
+$avenirMedium: 'AvenirNextLTW01-Medium', Helvetica, Arial, sans-serif;
 
 //$roboto: 'Roboto', sans-serif;
 
@@ -51,3 +51,4 @@ $deep-sky-blue-grey: #8e8e93;
 $gradient-blue: radial-gradient(circle at 99% 1%, #0080ca 0%, #0058b8);
 $gradient-dusk-blue: linear-gradient(241deg, $dusk-blue, #02162a);
 $gradient-dusk-blue-h: linear-gradient(341deg, $dusk-blue, #02162a);
+$gradient-blue-button: radial-gradient(circle at 100% 50%, #71ecff, #187dd5);
