@@ -1,0 +1,74 @@
+.atoz {
+  display: flex;
+  overflow-x: auto;
+  justify-content: space-between;
+
+  &__wrapper {
+    margin-bottom: 35px;
+    min-height: 35px;
+    position: relative;
+
+    &:before {
+      background-image: radial-gradient(circle at 100% 50%,#71ecff,#187dd5);
+      box-shadow: 0 4px 8px 0 rgba(72,90,137,.15);
+      height: 1px;
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    &:after {
+      background-image: linear-gradient(270deg, $white, rgba($white, 0));
+      height: 100%;
+      pointer-events: none;
+      top: 0;
+      right: 0;
+      content: "";
+      position: absolute;
+      width: 2.875rem;
+    }
+  }
+
+  &__letter {
+    align-content: center;
+    cursor: pointer;
+    display: flex;
+    flex: auto;
+    height: 24px;
+    justify-content: center;
+    list-style: none;
+    line-height: 1.38;
+    margin-bottom: 11px;
+    user-select: none;
+    min-width: 35px;
+    text-transform: uppercase;
+
+    &--active {
+      color: $dusk-blue;
+      position: relative;
+
+      &:after {
+        background-image: radial-gradient(circle at 100% 50%,#2c9ce2,#0062cd);
+        content: "";
+        display: block;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        width: 100%;
+      }
+    }
+
+    &--inactive {
+      color: #aeafb2;
+      cursor: default;
+    }
+
+    &:last-child {
+      background: $white;
+      z-index: 1;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+.atoz__wrapper
+  ul.atoz
+    each val, index in ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
+      if index === 0
+        li.atoz__letter.atoz__letter--active= val
+      else if index % 5 === 0
+        li.atoz__letter.atoz__letter--inactive= val
+      else
+        li.atoz__letter= val

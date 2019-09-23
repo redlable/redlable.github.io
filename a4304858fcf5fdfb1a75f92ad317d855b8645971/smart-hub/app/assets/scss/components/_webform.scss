@@ -55,10 +55,8 @@
 
 .form-item {
   label {
-    color: $warm-blue;
+    color: $body-text;
     display: inline-block;
-    font-weight: $bold;
-    margin-bottom: 7px;
   }
 
   .form-text {
@@ -71,7 +69,11 @@
 }
 
 .form-text {
-
+  border-radius: 24px;
+  box-shadow: 0 4px 8px rgba(72, 90, 137, .15);
+  background-color: $white;
+  color: #717171;
+  padding: 15px 15px 15px 53px;
 }
 
 select {
@@ -114,9 +116,10 @@ select {
   @extend %element-invisible;
 
   + label {
+    @include font-size(14);
+    color: $body-text;
     display: block;
-    margin-bottom: 13px;
-    padding: 1px 0 0 26px;
+    padding-left: 22px;
     position: relative;
 
     &:before,
@@ -127,18 +130,16 @@ select {
     }
 
     &:before {
-      @include same(18px, height, width);
-      background: $white;
-      border: 1px solid $cool-grey;
-      box-shadow: 0 1px 2px rgba($black, .2);
+      @include same(14px, height, width);
+      border: 1px solid #686868;
       left: 0;
-      top: 0;
+      top: 2px;
     }
 
     &:after {
       @include same(8px, height, width);
       background: transparent;
-      left: 5px;
+      left: 3px;
       top: 5px;
       transition: background .3s ease;
     }
@@ -154,8 +155,10 @@ select {
 
   &:checked {
     + label {
+      color: #0f75d4;
+
       &:after {
-        background: $cool-grey;
+        background-image: radial-gradient(circle at 98% 0, #71ecff, #0062cd);
       }
     }
   }
@@ -203,7 +206,75 @@ select {
 
 // Search form
 .search-form {
+  .content-container & {
+    margin-top: -25px;
+    position: relative;
+    z-index: 1;
+  }
 
+  .form-text {
+    margin-bottom: 32px;
+    width: 100%;
+  }
+
+  .cart-filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 42px;
+  }
+
+  .form-radios {
+    display: flex;
+    flex-wrap: wrap;
+
+    .form-item {
+      align-self: center;
+
+      &:not(:last-child) {
+        margin-right: 32px;
+      }
+    }
+  }
+
+  .status {
+    @include font-size(14);
+    color: #aeafb2;
+    display: flex;
+    flex-wrap: wrap;
+    line-height: 1.43;
+
+    &__item {
+      cursor: pointer;
+      padding-left: 30px;
+      padding-top: 2px;
+      position: relative;
+
+      &:not(:last-child) {
+        margin-right: 32px;
+      }
+
+      &:before {
+        background: #aeafb2;
+        border-radius: 50%;
+        content: '';
+        height: 20px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 20px;
+      }
+    }
+
+    .active {
+      color: #0f75d4;
+      font-weight: $medium;
+
+      &:before {
+        background: #0f75d4;
+      }
+    }
+  }
 }
 
 // Search results
