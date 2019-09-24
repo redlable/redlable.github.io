@@ -57,3 +57,28 @@
     padding-right: 33px;
   }
 }
+
+.supply-info {
+  @include font-size(14);
+  align-items: center;
+  display: flex;
+  margin: 32px 0;
+
+  @include media-q(min, 768) {
+    margin: 10px 0 40px;
+  }
+
+  &:before {
+    background: $white url(../img/svg/sprite.svg) -73px -153px no-repeat;
+    box-shadow: 0 2px 7px rgba($black, .17);
+    border-radius: 50%;
+    content: '';
+    height: 35px;
+    margin-right: 16px;
+    width: 35px;
+  }
+
+  a {
+    color: $dusk-blue;
+  }
+}
