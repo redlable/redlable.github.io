@@ -1,0 +1,22 @@
+extends ../layout/main
+
+block variables
+  - var pageTitle = 'Brand page'
+  - var pageClass = 'brand-page'
+  -
+    var headContent = {
+      title: 'ACLIYXION',
+      summary: '',
+      headLogo: ''
+    };
+
+block content
+  .section-layout
+    include ../modules/search-form
+
+    .cart-list
+      include ../modules/product-cart
+      include ../modules/product-cart
+      include ../modules/product-cart
+
+    include ../modules/get-in-touch

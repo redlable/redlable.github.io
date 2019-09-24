@@ -1,4 +1,8 @@
 .cart {
+  &:not(.product):hover {
+    transform: scale(1.01);
+  }
+
   &__content {
     background: #f9f9f9;
     border-radius: 4px;
@@ -15,6 +19,7 @@
   &__body {
     border-left: 4px solid #6979f8;
     padding: 24px 16px;
+    width: 100%;
 
     @include media-q(min, 768) {
       padding: 16px;
@@ -110,5 +115,126 @@
         background-position: -28px -83px
       }
     }
+  }
+}
+
+.product {
+  &.status {
+    &--in {
+      .cart__body {
+        border-color: #3e7406;
+      }
+
+      .status-icon {
+        &:before {
+          background-position: -32px -32px;
+        }
+      }
+    }
+
+    &--low {
+      .cart__body {
+        border-color: #f5b403;
+      }
+
+      .status-icon {
+        &:before {
+          background-position: -32px -63px;
+        }
+      }
+    }
+
+    &--out {
+      .cart__body {
+        border-color: #a60d0d;
+      }
+
+      .status-icon {
+        &:before {
+          background-position: -32px -95px;
+        }
+      }
+    }
+  }
+
+  .status-icon {
+    @include font-size(12);
+    color: #717171;
+    font-family: $avenirDemiBold;
+    position: absolute;
+    top: 16px;
+    right: 32px;
+    text-align: center;
+
+    &:before {
+      background-image: url(../img/svg/sprite.svg);
+      background-repeat: no-repeat;
+      background-size: 80px;
+      content: '';
+      display: block;
+      height: 16px;
+      margin-bottom: 4px;
+      width: 16px;
+    }
+  }
+
+  .brand-name {
+    margin-bottom: 16px;
+  }
+
+  .products {
+    margin-bottom: 16px;
+  }
+
+  .details {
+    @include font-size(14);
+    color: #0f75d4;
+    cursor: pointer;
+    margin-top: 16px;
+    position: relative;
+    text-decoration: underline;
+
+    &__content {
+      //display: none;
+      background-image: linear-gradient(to right, #c9ccce 90%, rgba($white,0) 0%);
+      background-position: top;
+      background-size: 30px 1px;
+      background-repeat: repeat-x;
+      color: $dusk-blue;
+      font-family: $avenirMedium;
+      line-height: 1.94;
+    }
+  }
+
+  .recieve-updates {
+    @include font-size(14);
+    align-items: center;
+    display: flex;
+    color: $dusk-blue;
+    line-height: 1.43;
+    margin-bottom: 16px;
+    padding-top: 16px;
+    text-decoration: underline;
+
+    &:before {
+      background: $white url(../img/general/bell-plus.png) center no-repeat;
+      box-shadow: 0 2px 7px rgba($black, .17);
+      border-radius: 50%;
+      content: '';
+      display: inline-block;
+      height: 30px;
+      margin-right: 8px;
+      vertical-align: top;
+      width: 30px;
+    }
+  }
+
+  .info-list {
+    margin: 16px 0;
+  }
+
+  .summary,
+  .patient-info {
+    color: $dusk-blue;
   }
 }
