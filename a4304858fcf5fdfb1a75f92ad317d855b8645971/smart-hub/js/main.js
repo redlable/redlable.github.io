@@ -212,6 +212,13 @@ if (window.location.hash.length) {
         $this.text('View Details').siblings('.details__content').slideUp();
       }
     });
+  })(); // Card filter
+
+
+  (function cardFilter() {
+    $('.cart-filter').on('click', '.status__item', function () {
+      $(this).addClass('active').siblings().removeClass('active');
+    });
   })(); // Toggle status messages
 
 

@@ -1,5 +1,6 @@
 .disclaimer {
   @include font-size(10);
+  font-family: $avenirMedium;
   line-height: normal;
   padding: 8px 55px;
   text-align: center;

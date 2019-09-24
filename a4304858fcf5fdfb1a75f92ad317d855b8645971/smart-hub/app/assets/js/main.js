@@ -236,6 +236,14 @@ if (window.location.hash.length) {
     });
   })();
 
+  // Card filter
+  (function cardFilter() {
+    $('.cart-filter').on('click', '.status__item', function() {
+      $(this).addClass('active')
+        .siblings().removeClass('active');
+    });
+  })();
+
   // Toggle status messages
   (function toggleMessage() {
     $('.message').on('click', function(e) {
