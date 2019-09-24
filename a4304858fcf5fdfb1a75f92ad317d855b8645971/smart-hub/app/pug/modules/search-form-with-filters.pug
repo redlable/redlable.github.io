@@ -8,7 +8,7 @@
     .cart-filter
       .form-radios
         .form-item
-          input(type="radio" name="name").form-radio#generic-name
+          input(type="radio" name="name" checked).form-radio#generic-name
           label(for="generic-name") Generic Name
 
         .form-item
@@ -16,8 +16,13 @@
           label(for="brand-name") Brand Name
 
       .status
-        .status__item.all.active View All
-        .status__item.in In
-        .status__item.low Low
-        .status__item.out Out
-        .status__item.evergency Emergency
+        .status__item.all.active
+          span View All
+        .status__item.in
+          span In
+        .status__item.low
+          span Low
+        .status__item.out
+          span Out
+        .status__item.emergency
+          span Emergency

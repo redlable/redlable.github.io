@@ -117,34 +117,11 @@
   }
 
   .notification {
+    background: url(../img/general/notification@2x.png) center no-repeat;
+    background-size: contain;
+    height: 100%;
     margin-right: 24px;
-    position: relative;
-
-    .icon {
-      // TEMPORARY STYLES
-      border: 1px solid $white;
-      height: 22px;
-      margin-right: 10px;
-      width: 18px;
-    }
-
-    .amount {
-      @include font-size(14);
-      align-items: center;
-      background: $white;
-      border-radius: 50%;
-      color: #ff5e5e;
-      display: flex;
-      font-family: $avenirMedium;
-      font-weight: $medium;
-      justify-content: center;
-      height: 18px;
-      line-height: 1.43;
-      position: absolute;
-      top: 0;
-      right: 0;
-      width: 18px;
-    }
+    width: 40px;
   }
 
   .user-menu {
