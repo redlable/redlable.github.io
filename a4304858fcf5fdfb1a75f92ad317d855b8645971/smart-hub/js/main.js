@@ -199,6 +199,19 @@ if (window.location.hash.length) {
         bodyScrollLock.enableBodyScroll(targetElement);
       }
     });
+  })(); // Card details
+
+
+  (function cardDetails() {
+    $('.details').on('click', function () {
+      var $this = $(this);
+
+      if (!$this.siblings('.details__content').is(':visible')) {
+        $this.text('Close Details').siblings('.details__content').slideDown();
+      } else {
+        $this.text('View Details').siblings('.details__content').slideUp();
+      }
+    });
   })(); // Toggle status messages
 
 

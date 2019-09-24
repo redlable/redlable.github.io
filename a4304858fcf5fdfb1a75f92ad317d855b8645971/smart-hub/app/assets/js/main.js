@@ -220,6 +220,22 @@ if (window.location.hash.length) {
     });
   })();
 
+  // Card details
+  (function cardDetails() {
+    $('.details').on('click', function() {
+      let $this = $(this);
+
+      if (!$this.siblings('.details__content').is(':visible')) {
+        $this.text('Close Details')
+          .siblings('.details__content').slideDown();
+      }
+      else {
+        $this.text('View Details')
+          .siblings('.details__content').slideUp();
+      }
+    });
+  })();
+
   // Toggle status messages
   (function toggleMessage() {
     $('.message').on('click', function(e) {
