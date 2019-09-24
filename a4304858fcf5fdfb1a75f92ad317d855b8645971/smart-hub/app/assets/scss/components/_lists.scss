@@ -1,17 +1,39 @@
-.c-breadcrumb__nav-item {
-  .ie11 & {
-    &:before {
-      background-position: -5px 0;
+.cart-list {
+  @include media-q(min, 768) {
+    display: flex;
+    flex-wrap: wrap;
+    transform: translateX(-16px);
+    width: calc(100% + 32px);
+  }
+
+  .letter {
+    @include font-size(28);
+    @include flex-basis(100%);
+    color: $dusk-blue;
+    font-family: $avenirDemiBold;
+    line-height: 1.25;
+    margin-bottom: 30px;
+
+    &:not(:first-child) {
+      margin-top: 40px;
+    }
+
+    @include media-q(min, 768) {
+      padding: 0 16px;
+
+      &:not(:first-child) {
+        margin-top: 10px;
+      }
     }
   }
 
-  sup {
-    align-self: flex-start;
-    margin-top: 5px;
-  }
+  .cart {
+    margin-bottom: 16px;
 
-  sub {
-    align-self: flex-end;
-    margin-bottom: 5px;
+    @include media-q(min, 768) {
+      @include flex-basis(33.333%);
+      margin-bottom: 32px;
+      padding: 0 16px;
+    }
   }
 }

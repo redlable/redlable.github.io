@@ -1,3 +1,114 @@
 .cart {
+  &__content {
+    background: #f9f9f9;
+    border-radius: 4px;
+    box-shadow: 0 2px 7px rgba($black, .17);
+    display: flex;
+    overflow: hidden;
+    position: relative;
 
+    @include media-q(min, 768) {
+      min-height: 190px;
+    }
+  }
+
+  &__body {
+    border-left: 4px solid #6979f8;
+    padding: 24px 16px;
+
+    @include media-q(min, 768) {
+      padding: 16px;
+    }
+  }
+
+  &__link {
+    @include absolute();
+  }
+
+  .generic-name {
+    @include font-size(16);
+    color: $dusk-blue;
+    font-family: $avenirBold;
+    font-weight: $bold;
+    margin-bottom: 4px;
+    text-transform: uppercase;
+  }
+
+  .brand-name {
+    @include font-size(14);
+    color: $dusk-blue;
+    font-family: $avenirRegular;
+    font-weight: $normal;
+    margin-bottom: 8px;
+  }
+
+  .updates {
+    @include font-size(12);
+    margin-bottom: 20px;
+    min-height: 17px;
+    text-decoration: underline;
+    position: relative;
+
+    &:hover {
+      text-decoration: none;
+    }
+
+    @include media-q(min, 768) {
+      margin-bottom: 16px;
+    }
+  }
+
+  .products {
+    @include font-size(12);
+    display: flex;
+    flex-wrap: wrap;
+    font-family: $avenirMedium;
+
+    &__item {
+      border-radius: 12px;
+      margin-right: 8px;
+      padding: 3px 15px 3px 5px;
+
+      &:before {
+        background-image: url(../img/svg/sprite.svg);
+        background-repeat: no-repeat;
+        background-size: 70px;
+        content: '';
+        display: inline-block;
+        height: 14px;
+        margin: 1px 4px 0 0;
+        vertical-align: top;
+        width: 14px;
+      }
+    }
+  }
+
+  .status {
+    &--in {
+      background: #caf1cd;
+      color: #133e00;
+
+      &:before {
+        background-position: -28px -28px
+      }
+    }
+
+    &--low {
+      background: #f7e9c4;
+      color: #684700;
+
+      &:before {
+        background-position: -28px -56px
+      }
+    }
+
+    &--out {
+      background: #f4c7c6;
+      color: #7f0303;
+
+      &:before {
+        background-position: -28px -83px
+      }
+    }
+  }
 }

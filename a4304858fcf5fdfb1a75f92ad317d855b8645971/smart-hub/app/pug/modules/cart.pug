@@ -1,8 +1,16 @@
 .cart
-  .cart__bg(style="background-image: url(../img/content/" + bgImage + ".png)")
   .cart__content
-    .cart__image
-      img(src="./img/content/" + avatar + ".png")
-
+    a(href="#").cart__link
     .cart__body
-      h2 #{title}
+      //h2.generic-name #{title}
+      h2.generic-name Acliyxion
+
+      h4.brand-name (aquoaltine®)
+
+      .updates
+        a(href="#") Stock update available
+
+      ul.products
+        li.products__item.status--in 40mg
+        li.products__item.status--low 80mg
+        li.products__item.status--out 90mg

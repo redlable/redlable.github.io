@@ -73,7 +73,7 @@
   box-shadow: 0 4px 8px rgba(72, 90, 137, .15);
   background-color: $white;
   color: #717171;
-  padding: 15px 15px 15px 53px;
+  padding: 15px;
 }
 
 select {
@@ -213,8 +213,16 @@ select {
   }
 
   .form-text {
+    background: $white url(../img/svg/search-icon.svg) 15px -32px no-repeat;
     margin-bottom: 32px;
+    padding-left: 40px;
+    transition: none;
     width: 100%;
+
+    @include media-q(min, 768) {
+      background-position: 20px 14px;
+      padding-left: 53px;
+    }
   }
 
   .cart-filter {
