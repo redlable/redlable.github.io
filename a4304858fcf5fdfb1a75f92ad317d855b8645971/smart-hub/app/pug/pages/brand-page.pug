@@ -15,8 +15,44 @@ block content
     include ../modules/search-form
 
     .cart-list
-      include ../modules/product-cart
-      include ../modules/product-cart
-      include ../modules/product-cart
+      //include ../modules/product-cart
+      each val in ['in', 'low', 'out']
+        div(class='cart product status--' + val)
+          .cart__content
+            .cart__body
+              .status-icon In
+              //h2.generic-name #{title}
+              h2.generic-name Acliyxion
+
+              h4.brand-name (aquoaltine®)
+
+              ul.products
+                li(class='products__item status--' + val) 40mg
+
+              .details__content
+                .recieve-updates Receive live stock updates
+
+                .info-list
+                  .label Pack:
+                    span 28
+                  .label EAN Code:
+                    span 2345234521
+                  .label PIP Code:
+                    span 234-2341
+                  .label Basic NHS Price per Pack:
+                    span £9.75
+                  .label Legal Category:
+                    span POM
+                  .label Vat Rate:
+                    span 20%
+                  .label Storage:
+                    span Refrigerated Product
+
+                div
+                  a(href="#").summary Summary of Product Characteristics
+                div
+                  a(href="#").patient-info Patient Information Leaflet
+
+              .details View Details
 
     include ../modules/get-in-touch
