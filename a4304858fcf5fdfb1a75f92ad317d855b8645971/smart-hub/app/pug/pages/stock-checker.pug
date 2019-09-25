@@ -16,16 +16,11 @@ block content
 
     .cart-list
       .letter A
-      include ../modules/cart
-      include ../modules/cart
-      include ../modules/cart
-      include ../modules/cart
-      include ../modules/cart
-      include ../modules/cart
+      .cart(v-for="(card, index) of json")
+        include ../modules/card
 
-      .letter B
-      include ../modules/cart
-      include ../modules/cart
+      //.letter B
+      //include ../modules/cart
 
     include ../modules/supply-info
     include ../modules/get-in-touch

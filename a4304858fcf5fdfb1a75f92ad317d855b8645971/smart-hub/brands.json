@@ -1,0 +1,2626 @@
+[{
+  "type": "brands",
+  "id": "7ecfd7ed-5c6f-4c31-b1ed-6a2fa67c3302",
+  "attributes": {
+    "drupal_internal__nid": 7446,
+    "title": "Aricept®",
+    "path": {"alias": "/ariceptr", "pid": 46, "langcode": "en"},
+    "generic_name": "donepezil hydrochloride",
+    "uuid": "7ecfd7ed-5c6f-4c31-b1ed-6a2fa67c3302",
+    "products": []
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/7ecfd7ed-5c6f-4c31-b1ed-6a2fa67c3302?resourceVersion=id%3A9676"}}
+}, {
+  "type": "brands",
+  "id": "676d8166-dc44-43f1-8535-224d63804e87",
+  "attributes": {
+    "drupal_internal__nid": 7506,
+    "title": "Cabaser™",
+    "path": {"alias": "/cabasertm", "pid": 106, "langcode": "en"},
+    "generic_name": "cabergoline",
+    "uuid": "676d8166-dc44-43f1-8535-224d63804e87",
+    "products": []
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/676d8166-dc44-43f1-8535-224d63804e87?resourceVersion=id%3A9736"}}
+}, {
+  "type": "brands",
+  "id": "6ad7176b-9380-4c94-8bd4-6acd526263d8",
+  "attributes": {
+    "drupal_internal__nid": 7716,
+    "title": "Eliquis®",
+    "path": {"alias": "/eliquisr", "pid": 316, "langcode": "en"},
+    "generic_name": "apixaban",
+    "uuid": "6ad7176b-9380-4c94-8bd4-6acd526263d8",
+    "products": []
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/6ad7176b-9380-4c94-8bd4-6acd526263d8?resourceVersion=id%3A9946"}}
+}, {
+  "type": "brands",
+  "id": "cff9f8cf-459e-4b5d-81ab-6f40e97cc888",
+  "attributes": {
+    "drupal_internal__nid": 7801,
+    "title": "Genotropin",
+    "path": {"alias": "/genotropin", "pid": 401, "langcode": "en"},
+    "generic_name": "somatropin",
+    "uuid": "cff9f8cf-459e-4b5d-81ab-6f40e97cc888",
+    "products": []
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/cff9f8cf-459e-4b5d-81ab-6f40e97cc888?resourceVersion=id%3A10031"}}
+}, {
+  "type": "brands",
+  "id": "246db2a7-6ac7-4e13-8e18-dcc1d31c17b3",
+  "attributes": {
+    "drupal_internal__nid": 8206,
+    "title": "SALAZOPYRIN™",
+    "path": {"alias": "/salazopyrintm", "pid": 806, "langcode": "en"},
+    "generic_name": "sulfasalazine",
+    "uuid": "246db2a7-6ac7-4e13-8e18-dcc1d31c17b3",
+    "products": []
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/246db2a7-6ac7-4e13-8e18-dcc1d31c17b3?resourceVersion=id%3A10436"}}
+}, {
+  "type": "brands",
+  "id": "9f2ffe62-8ea0-4e80-980d-41cc93dcedff",
+  "attributes": {
+    "drupal_internal__nid": 8221,
+    "title": "SEEBRI",
+    "path": {"alias": "/seebri", "pid": 821, "langcode": "en"},
+    "generic_name": "glycopyrronium bromide",
+    "uuid": "9f2ffe62-8ea0-4e80-980d-41cc93dcedff",
+    "products": []
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/9f2ffe62-8ea0-4e80-980d-41cc93dcedff?resourceVersion=id%3A10451"}}
+}, {
+  "type": "brands",
+  "id": "09831a91-da75-48fe-bfb2-97a7158aa890",
+  "attributes": {
+    "drupal_internal__nid": 8246,
+    "title": "Spiriva®",
+    "path": {"alias": "/spirivar", "pid": 846, "langcode": "en"},
+    "generic_name": "spiriva",
+    "uuid": "09831a91-da75-48fe-bfb2-97a7158aa890",
+    "products": []
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/09831a91-da75-48fe-bfb2-97a7158aa890?resourceVersion=id%3A10476"}}
+}, {
+  "type": "brands",
+  "id": "0ad63747-8928-4b2c-ac64-69c28fe4f171",
+  "attributes": {
+    "drupal_internal__nid": 8251,
+    "title": "Spirivarespimat®",
+    "path": {"alias": "/spirivarespimatr", "pid": 851, "langcode": "en"},
+    "generic_name": "spirivarespimat",
+    "uuid": "0ad63747-8928-4b2c-ac64-69c28fe4f171",
+    "products": []
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/0ad63747-8928-4b2c-ac64-69c28fe4f171?resourceVersion=id%3A10481"}}
+}, {
+  "type": "brands",
+  "id": "670c5014-4160-4b29-bb05-b18afd855589",
+  "attributes": {
+    "drupal_internal__nid": 8256,
+    "title": "Sulfite free levophed",
+    "path": {"alias": "/sulfite-free-levophed", "pid": 856, "langcode": "en"},
+    "generic_name": "Sulfite free levophed",
+    "uuid": "670c5014-4160-4b29-bb05-b18afd855589",
+    "products": []
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/670c5014-4160-4b29-bb05-b18afd855589?resourceVersion=id%3A10486"}}
+}, {
+  "type": "brands",
+  "id": "3c6e96b8-1993-4ea6-85b0-4ff599e2a403",
+  "attributes": {
+    "drupal_internal__nid": 8341,
+    "title": "ULTIBRO",
+    "path": {"alias": "/ultibro", "pid": 941, "langcode": "en"},
+    "generic_name": "indacaterol + glycopyrronium bromide",
+    "uuid": "3c6e96b8-1993-4ea6-85b0-4ff599e2a403",
+    "products": []
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/3c6e96b8-1993-4ea6-85b0-4ff599e2a403?resourceVersion=id%3A10571"}}
+}, {
+  "type": "brands",
+  "id": "afb0b204-2edf-42cf-baeb-618a0750a129",
+  "attributes": {
+    "drupal_internal__nid": 8351,
+    "title": "valaciclovir",
+    "path": {"alias": "/valaciclovir", "pid": 951, "langcode": "en"},
+    "generic_name": "valaciclovir hydrochloride",
+    "uuid": "afb0b204-2edf-42cf-baeb-618a0750a129",
+    "products": []
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/afb0b204-2edf-42cf-baeb-618a0750a129?resourceVersion=id%3A10581"}}
+}, {
+  "type": "brands",
+  "id": "9774d271-2bce-403d-941a-c74e4587e9a4",
+  "attributes": {
+    "drupal_internal__nid": 8391,
+    "title": "VIZIMPRO",
+    "path": {"alias": "/vizimpro", "pid": 991, "langcode": "en"},
+    "generic_name": "Dacomitinib",
+    "uuid": "9774d271-2bce-403d-941a-c74e4587e9a4",
+    "products": []
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/9774d271-2bce-403d-941a-c74e4587e9a4?resourceVersion=id%3A10621"}}
+}, {
+  "type": "brands",
+  "id": "2eb62e52-7bff-480a-9cc1-e00bbfcf4c37",
+  "attributes": {
+    "drupal_internal__nid": 7406,
+    "title": "ACCUPRO™",
+    "path": {"alias": "/accuprotm", "pid": 6, "langcode": "en"},
+    "generic_name": "quinapril hydrochloride",
+    "uuid": "2eb62e52-7bff-480a-9cc1-e00bbfcf4c37",
+    "products": [{
+      "drupal_internal__nid": 8476,
+      "title": "F000775105",
+      "path": null,
+      "description": "Tabs 10mg",
+      "ean_code": "5013457011210",
+      "nhs_price_per_pack": 8.6,
+      "pack": "28",
+      "pip_code": "025-8780",
+      "vat_rate": 20,
+      "uuid": "54e15617-0015-4c07-ab59-d38ae27b68c3",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "e2b699fc-5a33-4ad9-b3a1-543d86af3c4a"
+      }
+    }, {
+      "drupal_internal__nid": 8486,
+      "title": "F000775157",
+      "path": null,
+      "description": "Tabs 40mg",
+      "ean_code": "5013457011234",
+      "nhs_price_per_pack": 9.75,
+      "pack": "28",
+      "pip_code": "203-5467",
+      "vat_rate": 20,
+      "uuid": "f3b5222d-fd22-40f2-a025-9c3b0ce22036",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "7cf7159d-c9e5-4ddf-b6f2-7193463d7be3"
+      }
+    }, {
+      "drupal_internal__nid": 8496,
+      "title": "F000775205",
+      "path": null,
+      "description": "Tabs 5mg",
+      "ean_code": "5013457011203",
+      "nhs_price_per_pack": 8.6,
+      "pack": "28",
+      "pip_code": "025-8764",
+      "vat_rate": 20,
+      "uuid": "eb8af985-f4a3-4650-9c53-9543de299f77",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "2810e7e0-3948-46ea-800e-bad9f8ff876d"
+      }
+    }, {
+      "drupal_internal__nid": 8506,
+      "title": "F000775405",
+      "path": null,
+      "description": "Tabs 20mg",
+      "ean_code": "5013457011227",
+      "nhs_price_per_pack": 10.79,
+      "pack": "28",
+      "pip_code": "025-8822",
+      "vat_rate": 20,
+      "uuid": "f3ad1d49-aaf9-4c60-968f-3fffe4dd5ada",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "7bee7fad-4897-4a6a-be52-64f002d4b744"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/2eb62e52-7bff-480a-9cc1-e00bbfcf4c37?resourceVersion=id%3A19331"}}
+}, {
+  "type": "brands",
+  "id": "fad61af0-dcd5-4755-83c1-5117aefc4593",
+  "attributes": {
+    "drupal_internal__nid": 7461,
+    "title": "ARTHROTEC® 75",
+    "path": {"alias": "/arthrotecr-75", "pid": 61, "langcode": "en"},
+    "generic_name": "diclofenac / misoprostol",
+    "uuid": "fad61af0-dcd5-4755-83c1-5117aefc4593",
+    "products": [{
+      "drupal_internal__nid": 8516,
+      "title": "F400703224",
+      "path": null,
+      "description": "Tabs 75mg",
+      "ean_code": "5013457025170",
+      "nhs_price_per_pack": 15.83,
+      "pack": "60",
+      "pip_code": "232-4564",
+      "vat_rate": 20,
+      "uuid": "020b3356-19c1-466c-8da8-ccd3dc8a84d9",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "4be65661-c88d-4cb8-b678-92937cf43be9"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/fad61af0-dcd5-4755-83c1-5117aefc4593?resourceVersion=id%3A19341"}}
+}, {
+  "type": "brands",
+  "id": "64419f23-8dd1-48f1-979e-67e5831c8463",
+  "attributes": {
+    "drupal_internal__nid": 8176,
+    "title": "REFACTO AF®",
+    "path": {"alias": "/refacto-afr", "pid": 776, "langcode": "en"},
+    "generic_name": "(moroctocog alfa (Recombinant coagulation Factor VIII))",
+    "uuid": "64419f23-8dd1-48f1-979e-67e5831c8463",
+    "products": [{
+      "drupal_internal__nid": 8526,
+      "title": "F000032162",
+      "path": null,
+      "description": "Powder & Solvent for Soln for Inj 1000IU",
+      "ean_code": "5415062341018",
+      "nhs_price_per_pack": 502.2,
+      "pack": "1",
+      "pip_code": "346-2637",
+      "vat_rate": 20,
+      "uuid": "0e9998b8-2fa1-4923-9db3-b5be5ea041aa",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "59818288-6881-47e5-9dd8-2bfbe6e3f371"
+      }
+    }, {
+      "drupal_internal__nid": 8536,
+      "title": "F000032163",
+      "path": null,
+      "description": "Powder & Solvent for Soln for Inj 2000IU",
+      "ean_code": "5415062341025",
+      "nhs_price_per_pack": 1004.4,
+      "pack": "1",
+      "pip_code": "346-2645",
+      "vat_rate": 0,
+      "uuid": "119012d6-99ac-4503-a0cf-b0bb2734f38b",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "6275c5d4-7b79-4921-b25c-98702f12b2b5"
+      }
+    }, {
+      "drupal_internal__nid": 8546,
+      "title": "F000031760",
+      "path": null,
+      "description": "Powder & Solvent for Soln for Inj 250IU",
+      "ean_code": "5010981002936",
+      "nhs_price_per_pack": 125.55,
+      "pack": "1",
+      "pip_code": "346-2611",
+      "vat_rate": 20,
+      "uuid": "fd0ccef8-54de-49bc-aeca-c6f82516469b",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "c273bffe-4a1b-444e-a84b-6439815709d3"
+      }
+    }, {
+      "drupal_internal__nid": 8556,
+      "title": "F000031761",
+      "path": null,
+      "description": "Powder & solvent for Soln for Inj 500IU",
+      "ean_code": "5415062341001",
+      "nhs_price_per_pack": 251.1,
+      "pack": "1",
+      "pip_code": "346-2629",
+      "vat_rate": 20,
+      "uuid": "ca4bda7b-3bda-436b-b818-1f9232a922b1",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "f5ad9fc3-6a95-460d-9dc1-dd5e429894df"
+      }
+    }, {
+      "drupal_internal__nid": 8566,
+      "title": "F000010241",
+      "path": null,
+      "description": "Powder & Solvent for Soln for Inj 250IU",
+      "ean_code": "5010981002936",
+      "nhs_price_per_pack": 125.55,
+      "pack": "1",
+      "pip_code": "346-2611",
+      "vat_rate": 20,
+      "uuid": "a895de4f-fd00-4ba1-a74e-0d35249336e9",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "8d61f09c-a18d-44fd-982a-d516fe474f36"
+      }
+    }, {
+      "drupal_internal__nid": 8576,
+      "title": "F000010242",
+      "path": null,
+      "description": "Powder & solvent for Soln for Inj 500IU",
+      "ean_code": "5010981002943",
+      "nhs_price_per_pack": 251.1,
+      "pack": "1",
+      "pip_code": "346-2629",
+      "vat_rate": 20,
+      "uuid": "44d8cb42-3678-45a2-bafc-1aec079e911a",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "8197d3b7-2b86-4dbb-b7a7-d62493e59d2d"
+      }
+    }, {
+      "drupal_internal__nid": 8586,
+      "title": "F000010243",
+      "path": null,
+      "description": "Powder & Solvent for Soln for Inj 1000IU",
+      "ean_code": "5010981002950",
+      "nhs_price_per_pack": 502.2,
+      "pack": "1",
+      "pip_code": "346-2637",
+      "vat_rate": 20,
+      "uuid": "6786b379-cfa0-49ff-814e-337ad2537e74",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "86f98e65-ef76-4a95-8cbc-0fa0c4e5652e"
+      }
+    }, {
+      "drupal_internal__nid": 8596,
+      "title": "F000010244",
+      "path": null,
+      "description": "Powder & Solvent for Soln for Inj 2000IU",
+      "ean_code": "5010981002967",
+      "nhs_price_per_pack": 1004.4,
+      "pack": "1",
+      "pip_code": "346-2645",
+      "vat_rate": 20,
+      "uuid": "0712d3a1-6170-4e27-8c6e-7247a0ee1c57",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "8d41f4fb-ca4f-4421-b0fd-031a428793b5"
+      }
+    }, {
+      "drupal_internal__nid": 8606,
+      "title": "F000007425",
+      "path": null,
+      "description": "Powder & Solvent for Soln for Inj FuseNGo 250IU",
+      "ean_code": "5013457021783",
+      "nhs_price_per_pack": 125.55,
+      "pack": "1",
+      "pip_code": "402-1887",
+      "vat_rate": 20,
+      "uuid": "409f8778-0b91-49bd-ae4a-ea6bd640c54b",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "4339ea03-15e5-4295-b7d2-7dd70a205c55"
+      }
+    }, {
+      "drupal_internal__nid": 8616,
+      "title": "F000007426",
+      "path": null,
+      "description": "Powder & Solvent for Soln for Inj FuseNGo 500IU",
+      "ean_code": "5013457021790",
+      "nhs_price_per_pack": 251.1,
+      "pack": "1",
+      "pip_code": "402-1879",
+      "vat_rate": 0,
+      "uuid": "e1c688d8-409e-4680-8f4d-399e729108e8",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "8c5610ab-3901-4dad-979c-8f3f06fbcc8d"
+      }
+    }, {
+      "drupal_internal__nid": 8626,
+      "title": "F000007427",
+      "path": null,
+      "description": "Powder & Solvent for Soln for Inj FuseNGo 1000IU",
+      "ean_code": "5013457021806",
+      "nhs_price_per_pack": 502.2,
+      "pack": "1",
+      "pip_code": "402-1895",
+      "vat_rate": 0,
+      "uuid": "b63166c5-55d4-48a5-960e-99759f830249",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "3ccc2326-b1e9-4fc5-94ff-2c28cfc99892"
+      }
+    }, {
+      "drupal_internal__nid": 8636,
+      "title": "F000007428",
+      "path": null,
+      "description": "Powder & Solvent for Soln for Inj FuseNGo 2000IU",
+      "ean_code": "5013457021813",
+      "nhs_price_per_pack": 1004.4,
+      "pack": "1",
+      "pip_code": "402-1903",
+      "vat_rate": 0,
+      "uuid": "2aa2c531-8c4d-446f-afe9-14bb746047cd",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "fb839dd9-7572-49a3-9881-fec8abe6f484"
+      }
+    }, {
+      "drupal_internal__nid": 8646,
+      "title": "F000007429",
+      "path": null,
+      "description": "Powder & Solvent for Soln for Inj FuseNGo 3000IU",
+      "ean_code": "5013457021820",
+      "nhs_price_per_pack": 1506.6,
+      "pack": "1",
+      "pip_code": "812-2731",
+      "vat_rate": 20,
+      "uuid": "bf68f403-6d7f-4363-8b16-4f2c40e4668f",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "7ee39bfe-981a-4513-830e-643e9433f8f2"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/64419f23-8dd1-48f1-979e-67e5831c8463?resourceVersion=id%3A19471"}}
+}, {
+  "type": "brands",
+  "id": "d2a042f8-64c6-4b75-bc67-b1d4f07f6634",
+  "attributes": {
+    "drupal_internal__nid": 8181,
+    "title": "REFOLINON®",
+    "path": {"alias": "/refolinonr", "pid": 781, "langcode": "en"},
+    "generic_name": "calcium folinate",
+    "uuid": "d2a042f8-64c6-4b75-bc67-b1d4f07f6634",
+    "products": [{
+      "drupal_internal__nid": 8656,
+      "title": "F000009417",
+      "path": null,
+      "description": "Tabs 15mg",
+      "ean_code": "5013457026924",
+      "nhs_price_per_pack": 85.74,
+      "pack": "30",
+      "pip_code": "090-2619",
+      "vat_rate": 20,
+      "uuid": "65101608-be8a-48ae-9bf5-84118ffdb562",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "c60b9858-7bcc-40fc-8d3e-6bd5b178326e"
+      }
+    }, {
+      "drupal_internal__nid": 8666,
+      "title": "F000009418",
+      "path": null,
+      "description": "Inj 30mg in 10ml",
+      "ean_code": "5013457026931",
+      "nhs_price_per_pack": 23.12,
+      "pack": "5",
+      "pip_code": "090-2601",
+      "vat_rate": 20,
+      "uuid": "a7536d5e-f009-45f3-9f7a-ba06ff469fbb",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "31a0e2f3-a338-4365-97ff-458be455cfc7"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/d2a042f8-64c6-4b75-bc67-b1d4f07f6634?resourceVersion=id%3A19491"}}
+}, {
+  "type": "brands",
+  "id": "147be2bb-4079-4869-8297-405731fd2f58",
+  "attributes": {
+    "drupal_internal__nid": 8186,
+    "title": "RELPAX™",
+    "path": {"alias": "/relpaxtm", "pid": 786, "langcode": "en"},
+    "generic_name": "eletriptan",
+    "uuid": "147be2bb-4079-4869-8297-405731fd2f58",
+    "products": [{
+      "drupal_internal__nid": 8676,
+      "title": "F000038846",
+      "path": null,
+      "description": "Tabs 20mg",
+      "ean_code": "5013457011166",
+      "nhs_price_per_pack": 22.5,
+      "pack": "1",
+      "pip_code": "284-2995",
+      "vat_rate": 20,
+      "uuid": "35e8f47f-94d0-47a1-a097-0104ccfea15b",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "ac5f4414-1098-4a30-b952-f4c04f110f22"
+      }
+    }, {
+      "drupal_internal__nid": 8686,
+      "title": "F000038912",
+      "path": null,
+      "description": "Tabs 40mg",
+      "ean_code": "5013457011173",
+      "nhs_price_per_pack": 22.5,
+      "pack": "6",
+      "pip_code": "284-3001",
+      "vat_rate": 20,
+      "uuid": "9e1023d3-bb7a-42bd-be39-97400fa0600a",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "0b437db9-37f2-4287-8533-c21979f35b3d"
+      }
+    }, {
+      "drupal_internal__nid": 8696,
+      "title": "F000514310",
+      "path": null,
+      "description": "Tabs 20mg",
+      "ean_code": "5013457011166",
+      "nhs_price_per_pack": 22.5,
+      "pack": "6",
+      "pip_code": "284-2995",
+      "vat_rate": 20,
+      "uuid": "f7631e9d-e81f-414c-8ad1-63d836bb5b2b",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "5c9ab18f-3df3-4be2-97d9-90e41d7f4553"
+      }
+    }, {
+      "drupal_internal__nid": 8706,
+      "title": "F000514670",
+      "path": null,
+      "description": "Tabs 40mg",
+      "ean_code": "5013457011173",
+      "nhs_price_per_pack": 22.5,
+      "pack": "6",
+      "pip_code": "284-3001",
+      "vat_rate": 20,
+      "uuid": "8368ddd9-5227-40a0-9def-c1cfd64dae63",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "acff3386-0819-4cc4-8cfa-e07b1180ed28"
+      }
+    }, {
+      "drupal_internal__nid": 8716,
+      "title": "F000296280",
+      "path": null,
+      "description": "Tabs 40mg",
+      "ean_code": "5013457011173",
+      "nhs_price_per_pack": 22.5,
+      "pack": "6",
+      "pip_code": "284-3001",
+      "vat_rate": 20,
+      "uuid": "7b5139a3-bce6-4ef0-8cef-c020b2eddaae",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "f5bdeb1a-3dfc-4910-b411-e6953def1800"
+      }
+    }, {
+      "drupal_internal__nid": 8726,
+      "title": "F000300360",
+      "path": null,
+      "description": "Tabs 20mg",
+      "ean_code": "5013457011166",
+      "nhs_price_per_pack": 22.5,
+      "pack": "6",
+      "pip_code": "284-2995",
+      "vat_rate": 20,
+      "uuid": "c4fddbf5-dc1e-4647-91fc-c60f048a20e8",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "f0d38ad6-656c-44a4-83a9-de9803e5cf17"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/147be2bb-4079-4869-8297-405731fd2f58?resourceVersion=id%3A19551"}}
+}, {
+  "type": "brands",
+  "id": "7197c447-de43-4425-bcf9-be9fa20a9fdc",
+  "attributes": {
+    "drupal_internal__nid": 8196,
+    "title": "REVATIO®",
+    "path": {"alias": "/revatior", "pid": 796, "langcode": "en"},
+    "generic_name": "sildenafil",
+    "uuid": "7197c447-de43-4425-bcf9-be9fa20a9fdc",
+    "products": [{
+      "drupal_internal__nid": 8736,
+      "title": "F000009051",
+      "path": null,
+      "description": "Tabs 20mg",
+      "ean_code": "5013457019544",
+      "nhs_price_per_pack": 446.33,
+      "pack": "90",
+      "pip_code": "211-6903",
+      "vat_rate": 20,
+      "uuid": "73dfb981-7b2b-4432-8357-e808b409c54b",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "174b306d-0780-441e-b445-ec8ace2589d2"
+      }
+    }, {
+      "drupal_internal__nid": 8746,
+      "title": "F000008583",
+      "path": null,
+      "description": "0.8 mg/ml solution for Injection",
+      "ean_code": "5013457019490",
+      "nhs_price_per_pack": 45.28,
+      "pack": "1",
+      "pip_code": "356-3327",
+      "vat_rate": 20,
+      "uuid": "7ecbddbd-628b-4306-bdf1-12e1e413939d",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "c1030739-67fa-4108-9a3e-323a18e232ad"
+      }
+    }, {
+      "drupal_internal__nid": 8756,
+      "title": "F000014943",
+      "path": null,
+      "description": "10mg/ml Powder for Oral Suspension",
+      "ean_code": "5013457019476",
+      "nhs_price_per_pack": 186.75,
+      "pack": "112ml",
+      "pip_code": "373-5222",
+      "vat_rate": 20,
+      "uuid": "6e75ae77-5bbd-4634-a879-cc66ffcf6c48",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "a2f832c8-cab6-4135-a977-39587d1d1c6f"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/7197c447-de43-4425-bcf9-be9fa20a9fdc?resourceVersion=id%3A19581"}}
+}, {
+  "type": "brands",
+  "id": "c0a614c7-d671-42ef-8105-5fe527bf5fdb",
+  "attributes": {
+    "drupal_internal__nid": 8201,
+    "title": "SALAZOPYRIN®",
+    "path": {"alias": "/salazopyrinr", "pid": 801, "langcode": "en"},
+    "generic_name": "sulfasalazine",
+    "uuid": "c0a614c7-d671-42ef-8105-5fe527bf5fdb",
+    "products": [{
+      "drupal_internal__nid": 8766,
+      "title": "F000009375",
+      "path": null,
+      "description": "Suppositories",
+      "ean_code": "5013457027006",
+      "nhs_price_per_pack": 3.3,
+      "pack": "10",
+      "pip_code": "024-7981",
+      "vat_rate": 20,
+      "uuid": "1bc36ef7-beb8-4d5b-82fa-5788c7644df7",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "70c6264c-831f-4ebf-8b0a-866cdc62994f"
+      }
+    }, {
+      "drupal_internal__nid": 8776,
+      "title": "F000009376",
+      "path": null,
+      "description": "EN Tabs 500mg",
+      "ean_code": "5013457026986",
+      "nhs_price_per_pack": 8.43,
+      "pack": "112",
+      "pip_code": "237-2910",
+      "vat_rate": 20,
+      "uuid": "7b8c4fa1-bb62-4c4c-8883-bd7400c164d3",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "be7b0026-0e77-44ed-b353-22da8ca75a87"
+      }
+    }, {
+      "drupal_internal__nid": 8786,
+      "title": "F000009377",
+      "path": null,
+      "description": "Tabs 500mg",
+      "ean_code": "5013457027020",
+      "nhs_price_per_pack": 6.97,
+      "pack": "112",
+      "pip_code": "237-2928",
+      "vat_rate": 20,
+      "uuid": "45f4356d-fa7c-437a-9f7f-04299c9dca5d",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "a710166a-ac0f-4b69-b814-be3d551cce8d"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/c0a614c7-d671-42ef-8105-5fe527bf5fdb?resourceVersion=id%3A19611"}}
+}, {
+  "type": "brands",
+  "id": "cdbc5fd4-5e16-4561-8b9f-33263441959d",
+  "attributes": {
+    "drupal_internal__nid": 8231,
+    "title": "SOLU-CORTEF®",
+    "path": {"alias": "/solu-cortefr", "pid": 831, "langcode": "en"},
+    "generic_name": "hydrocortisone sodium succinate",
+    "uuid": "cdbc5fd4-5e16-4561-8b9f-33263441959d",
+    "products": [{
+      "drupal_internal__nid": 8796,
+      "title": "F000010773",
+      "path": null,
+      "description": "Vial with Diluent 100mg",
+      "ean_code": "5013457027037",
+      "nhs_price_per_pack": 1.16,
+      "pack": "1",
+      "pip_code": "026-6619",
+      "vat_rate": 20,
+      "uuid": "0f785edc-dfcc-4288-92d6-07540aa23638",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "e677d29b-f90c-4218-b492-01ef3f603bf2"
+      }
+    }, {
+      "drupal_internal__nid": 8806,
+      "title": "F000010774",
+      "path": null,
+      "description": "Vial without Diluent 100mg",
+      "ean_code": "5013457027044",
+      "nhs_price_per_pack": 9.17,
+      "pack": "10",
+      "pip_code": "001-8010",
+      "vat_rate": 20,
+      "uuid": "91a1bf49-ecb2-43ae-bf6c-c0a24b87e2b4",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "dbceae0f-9e9a-4766-b9fb-9116115c97f0"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/cdbc5fd4-5e16-4561-8b9f-33263441959d?resourceVersion=id%3A19631"}}
+}, {
+  "type": "brands",
+  "id": "e05b53f4-d90a-428c-b56f-ddffe0316ae7",
+  "attributes": {
+    "drupal_internal__nid": 8236,
+    "title": "SOLU-MEDRONE®",
+    "path": {"alias": "/solu-medroner", "pid": 836, "langcode": "en"},
+    "generic_name": "methylprednisolone sodium succinate",
+    "uuid": "e05b53f4-d90a-428c-b56f-ddffe0316ae7",
+    "products": [{
+      "drupal_internal__nid": 8816,
+      "title": "F000010775",
+      "path": null,
+      "description": "Vial with Diluent 32ml",
+      "ean_code": "5013457027075",
+      "nhs_price_per_pack": 32.86,
+      "pack": "2g",
+      "pip_code": "032-6678",
+      "vat_rate": 20,
+      "uuid": "97d61f0b-fc95-4223-a2e1-c8390e0ddc2a",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "7506880d-dcd5-40bf-9c92-e7e4a84aa2af"
+      }
+    }, {
+      "drupal_internal__nid": 8826,
+      "title": "F000010776",
+      "path": null,
+      "description": "Vial with Diluent 2ml",
+      "ean_code": "5013457027051",
+      "nhs_price_per_pack": 4.75,
+      "pack": "125mg",
+      "pip_code": "026-6635",
+      "vat_rate": 20,
+      "uuid": "cb3292d7-2911-43e4-b067-80982a6373fc",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "a2d435f7-dfba-4f2f-8fc7-fb5aa9d548c0"
+      }
+    }, {
+      "drupal_internal__nid": 8836,
+      "title": "F000010777",
+      "path": null,
+      "description": "Vial with Diluent 16ml",
+      "ean_code": "5013457027068",
+      "nhs_price_per_pack": 17.3,
+      "pack": "1g",
+      "pip_code": "036-3424",
+      "vat_rate": 20,
+      "uuid": "3f45bd23-c62b-43f7-9d44-45300cd07712",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "89130295-f485-4864-851f-b773a0c119d1"
+      }
+    }, {
+      "drupal_internal__nid": 8846,
+      "title": "F000010778",
+      "path": null,
+      "description": "Vial with Diluent 1ml",
+      "ean_code": "5013457027082",
+      "nhs_price_per_pack": 1.58,
+      "pack": "40mg",
+      "pip_code": "026-6627",
+      "vat_rate": 20,
+      "uuid": "7cdb5c9d-0482-4250-8a26-de5921152dcc",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "1b37b7d1-2b6e-42ca-9157-3a0916a1e1f0"
+      }
+    }, {
+      "drupal_internal__nid": 8856,
+      "title": "F000010779",
+      "path": null,
+      "description": "Vial with Diluent 8ml",
+      "ean_code": "5013457027099",
+      "nhs_price_per_pack": 9.6,
+      "pack": "500mg",
+      "pip_code": "026-6643",
+      "vat_rate": 20,
+      "uuid": "b24a2f6f-7dda-459d-bdac-6012156f7ea3",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "c8d1cdb1-b5cb-451f-8bf4-7b79044a3eb5"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/e05b53f4-d90a-428c-b56f-ddffe0316ae7?resourceVersion=id%3A19681"}}
+}, {
+  "type": "brands",
+  "id": "8c073f9a-7082-49f0-8ce2-3ff834cb0f62",
+  "attributes": {
+    "drupal_internal__nid": 8241,
+    "title": "SOMAVERT®",
+    "path": {"alias": "/somavertr", "pid": 841, "langcode": "en"},
+    "generic_name": "pegvisomant",
+    "uuid": "8c073f9a-7082-49f0-8ce2-3ff834cb0f62",
+    "products": [{
+      "drupal_internal__nid": 8866,
+      "title": "F000009028",
+      "path": null,
+      "description": "Vial 20mg",
+      "ean_code": "5013457027631",
+      "nhs_price_per_pack": 3000,
+      "pack": "30",
+      "pip_code": "305-3006",
+      "vat_rate": 20,
+      "uuid": "b5d61775-0fa3-4aeb-bc01-f5cf1b13a720",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "5b6f29db-7b90-4dfc-a4a9-6c0d3f74e9d1"
+      }
+    }, {
+      "drupal_internal__nid": 8876,
+      "title": "F000009038",
+      "path": null,
+      "description": "Vial 10mg",
+      "ean_code": "5013457027600",
+      "nhs_price_per_pack": 1500,
+      "pack": "30",
+      "pip_code": "305-2925",
+      "vat_rate": 20,
+      "uuid": "4d72842c-ef8e-44eb-bc7b-158b689b5f43",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "c7ca2e23-d9f8-497d-878c-9291691c6f89"
+      }
+    }, {
+      "drupal_internal__nid": 8886,
+      "title": "F000009039",
+      "path": null,
+      "description": "Vial 15mg",
+      "ean_code": "5013457027617",
+      "nhs_price_per_pack": 2250,
+      "pack": "30",
+      "pip_code": "305-2982",
+      "vat_rate": 20,
+      "uuid": "7dfce065-ecf9-4448-b251-716f1b08a868",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "8ef446c0-17d0-4253-99b9-24e7eaf1e3cc"
+      }
+    }, {
+      "drupal_internal__nid": 8896,
+      "title": "F000008884",
+      "path": null,
+      "description": "Vial 20mg",
+      "ean_code": "5013457027624",
+      "nhs_price_per_pack": 100,
+      "pack": "1",
+      "pip_code": "305-3022",
+      "vat_rate": 20,
+      "uuid": "dbc6c752-fa92-4db4-9c20-612e88f734d8",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "f2ed6bc4-ca2c-49b3-83b1-f5c79ba9bf7b"
+      }
+    }, {
+      "drupal_internal__nid": 8906,
+      "title": "F000029764",
+      "path": null,
+      "description": "25mg 30X1ml Vial Syringe",
+      "ean_code": "5013457022094",
+      "nhs_price_per_pack": 3750,
+      "pack": "30",
+      "pip_code": "403-7404",
+      "vat_rate": 0,
+      "uuid": "93689f48-5f12-4b0b-9581-2f0a0b54f1a6",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "c4a64aff-b027-47fa-b2dd-6ac8f71d0cf9"
+      }
+    }, {
+      "drupal_internal__nid": 8916,
+      "title": "F000029765",
+      "path": null,
+      "description": "30mg 30X1ml Vial Syringe",
+      "ean_code": "5013457022100",
+      "nhs_price_per_pack": 4500,
+      "pack": "30",
+      "pip_code": "403-7412",
+      "vat_rate": 0,
+      "uuid": "464bf724-3949-4977-bb91-6210a7d766ee",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "d940e986-84ad-4e64-bf16-c11f0a4d9335"
+      }
+    }, {
+      "drupal_internal__nid": 8926,
+      "title": "F000026352",
+      "path": null,
+      "description": "15mg 30X1ml Vial Syringe",
+      "ean_code": "5013457022063",
+      "nhs_price_per_pack": 2250,
+      "pack": "30",
+      "pip_code": "403-7396",
+      "vat_rate": 20,
+      "uuid": "cf75ed20-67d5-46fb-abc6-86eddabec146",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "2f66a544-2e7e-4f73-9037-0f76f14e2db1"
+      }
+    }, {
+      "drupal_internal__nid": 8936,
+      "title": "F000025771",
+      "path": null,
+      "description": "30mg Vials 30 x 1ml",
+      "ean_code": "5013457022025",
+      "nhs_price_per_pack": 4500,
+      "pack": "30",
+      "pip_code": "399-0264",
+      "vat_rate": 20,
+      "uuid": "dbf06851-d8c2-426d-836e-488bae0f94ba",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "4879cb58-95f3-47e0-91d4-e6918680fd0e"
+      }
+    }, {
+      "drupal_internal__nid": 8946,
+      "title": "F000025882",
+      "path": null,
+      "description": "25mg vials 30 x 1ml",
+      "ean_code": "5013457022018",
+      "nhs_price_per_pack": 3750,
+      "pack": "30",
+      "pip_code": "399-0256",
+      "vat_rate": 20,
+      "uuid": "3fd6d728-9305-4be4-8e2e-b279e7004f5f",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "cb8f73b8-fda6-419e-884c-80d03a3e8915"
+      }
+    }, {
+      "drupal_internal__nid": 8956,
+      "title": "F000026191",
+      "path": null,
+      "description": "10mg 30X1ml Vial Syringe",
+      "ean_code": "5013457022056",
+      "nhs_price_per_pack": 1500,
+      "pack": "30",
+      "pip_code": "403-7438",
+      "vat_rate": 20,
+      "uuid": "956a93c0-c61d-48b9-b984-33797fd3e177",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "e675f89c-314f-4c73-96f9-6dd1c05438fa"
+      }
+    }, {
+      "drupal_internal__nid": 8966,
+      "title": "F000026310",
+      "path": null,
+      "description": "20mg 30X1ml Vial Syringe",
+      "ean_code": "5013457022070",
+      "nhs_price_per_pack": 3000,
+      "pack": "30",
+      "pip_code": "403-7420",
+      "vat_rate": 0,
+      "uuid": "a41ed52a-4726-4049-b6f3-317a9b326ba5",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "d45f01cc-a5ce-49d1-8216-2c2b7408e8a4"
+      }
+    }, {
+      "drupal_internal__nid": 8976,
+      "title": "F000026332",
+      "path": null,
+      "description": "20mg 1X1ml Vial Syringe",
+      "ean_code": "5013457022087",
+      "nhs_price_per_pack": 100,
+      "pack": "1",
+      "pip_code": "403-7446",
+      "vat_rate": 0,
+      "uuid": "c8da31cc-c75a-4b45-9b7a-1e928086f52d",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "3a09c8c1-dd7d-457a-afdc-a6596f135ba2"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/8c073f9a-7082-49f0-8ce2-3ff834cb0f62?resourceVersion=id%3A19801"}}
+}, {
+  "type": "brands",
+  "id": "74688c2f-2c0e-4947-882a-ad0a935e2d98",
+  "attributes": {
+    "drupal_internal__nid": 7466,
+    "title": "ATIVAN®",
+    "path": {"alias": "/ativanr", "pid": 66, "langcode": "en"},
+    "generic_name": "lorazepam",
+    "uuid": "74688c2f-2c0e-4947-882a-ad0a935e2d98",
+    "products": [{
+      "drupal_internal__nid": 8986,
+      "title": "F000001083",
+      "path": null,
+      "description": "Soln for Inj 4mg/1ml",
+      "ean_code": "5013457021004",
+      "nhs_price_per_pack": 3.54,
+      "pack": "10",
+      "pip_code": "019-7665",
+      "vat_rate": 20,
+      "uuid": "ce933cb8-70d2-4ac1-bbce-5826e54c74f6",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "cbb060b7-8f2a-493c-9a96-ea603ea68676"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/74688c2f-2c0e-4947-882a-ad0a935e2d98?resourceVersion=id%3A19811"}}
+}, {
+  "type": "brands",
+  "id": "7d3ce7f1-2472-4c4b-bfcc-1e0e82153dc8",
+  "attributes": {
+    "drupal_internal__nid": 8261,
+    "title": "SUTENT®",
+    "path": {"alias": "/sutentr", "pid": 861, "langcode": "en"},
+    "generic_name": "sunitinib malate",
+    "uuid": "7d3ce7f1-2472-4c4b-bfcc-1e0e82153dc8",
+    "products": [{
+      "drupal_internal__nid": 8996,
+      "title": "F640002500",
+      "path": null,
+      "description": "Caps 12.5mg",
+      "ean_code": "5013457028058",
+      "nhs_price_per_pack": 784.7,
+      "pack": "28",
+      "pip_code": "338-3478",
+      "vat_rate": 20,
+      "uuid": "c0f81da9-888d-4162-ba40-354f72bcaefb",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "71a5df61-b0db-4e1c-a142-5836113c918e"
+      }
+    }, {
+      "drupal_internal__nid": 9006,
+      "title": "F640002501",
+      "path": null,
+      "description": "Caps 25mg",
+      "ean_code": "5013457028034",
+      "nhs_price_per_pack": 1569.4,
+      "pack": "28",
+      "pip_code": "338-3486",
+      "vat_rate": 20,
+      "uuid": "970445cf-36bc-442b-ae51-9085862aa894",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "a34ab59d-5dd0-47a0-a8f5-755c4f106d5b"
+      }
+    }, {
+      "drupal_internal__nid": 9016,
+      "title": "F640002502",
+      "path": null,
+      "description": "Caps 50mg",
+      "ean_code": "5013457027990",
+      "nhs_price_per_pack": 3138.8,
+      "pack": "28",
+      "pip_code": "338-3528",
+      "vat_rate": 20,
+      "uuid": "9cb23edc-3be2-4552-ab06-0ce9de03e779",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "5030c3e2-e237-47cb-8212-7149765b855e"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/7d3ce7f1-2472-4c4b-bfcc-1e0e82153dc8?resourceVersion=id%3A19841"}}
+}, {
+  "type": "brands",
+  "id": "c6c32ea2-d319-46d3-8e2f-2d124c82b625",
+  "attributes": {
+    "drupal_internal__nid": 8266,
+    "title": "SYNAREL®",
+    "path": {"alias": "/synarelr", "pid": 866, "langcode": "en"},
+    "generic_name": "naferelin acetate",
+    "uuid": "c6c32ea2-d319-46d3-8e2f-2d124c82b625",
+    "products": [{
+      "drupal_internal__nid": 9026,
+      "title": "F063504802",
+      "path": null,
+      "description": "Nasal Spray 30 dose",
+      "ean_code": "5013457027129",
+      "nhs_price_per_pack": 30.41,
+      "pack": "4ml",
+      "pip_code": "205-8303",
+      "vat_rate": 20,
+      "uuid": "194736f8-d79f-4436-8d9e-297361160ad9",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "dcefa0da-27f6-4e92-82f0-6c3a14abbff5"
+      }
+    }, {
+      "drupal_internal__nid": 9036,
+      "title": "F063508813",
+      "path": null,
+      "description": "Nasal Spray 60 dose",
+      "ean_code": "5012882007829",
+      "nhs_price_per_pack": 52.43,
+      "pack": "8ml",
+      "pip_code": "029-8141",
+      "vat_rate": 20,
+      "uuid": "2e554249-99e9-429c-901b-494e2d7ea42d",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "4aa9c65c-6ea0-4257-ab61-069ab608802e"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/c6c32ea2-d319-46d3-8e2f-2d124c82b625?resourceVersion=id%3A19861"}}
+}, {
+  "type": "brands",
+  "id": "b762c6bd-1719-496c-926f-6601af19e345",
+  "attributes": {
+    "drupal_internal__nid": 8271,
+    "title": "SYNPHASE®",
+    "path": {"alias": "/synphaser", "pid": 871, "langcode": "en"},
+    "generic_name": "norethisterone ethinylestradiol",
+    "uuid": "b762c6bd-1719-496c-926f-6601af19e345",
+    "products": [{
+      "drupal_internal__nid": 9046,
+      "title": "F000009370",
+      "path": null,
+      "description": "Tabs",
+      "ean_code": "5013457027143",
+      "nhs_price_per_pack": 1.2,
+      "pack": "21",
+      "pip_code": "006-5656",
+      "vat_rate": 5,
+      "uuid": "dffb6312-3726-4fac-9f32-4195d3606438",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "2632451a-a922-4727-bc79-59f6d4e57d3d"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/b762c6bd-1719-496c-926f-6601af19e345?resourceVersion=id%3A19871"}}
+}, {
+  "type": "brands",
+  "id": "71d1d71e-9fa8-46f1-82c3-4bc02db83572",
+  "attributes": {
+    "drupal_internal__nid": 8276,
+    "title": "TAZOCIN®",
+    "path": {"alias": "/tazocinr", "pid": 876, "langcode": "en"},
+    "generic_name": "piperacillin sodium + tazobactam sodium",
+    "uuid": "71d1d71e-9fa8-46f1-82c3-4bc02db83572",
+    "products": [{
+      "drupal_internal__nid": 9056,
+      "title": "F00206985813",
+      "path": null,
+      "description": "Powder for Soln for Inj or Infusion 2g/0.25g",
+      "ean_code": "5010981002806",
+      "nhs_price_per_pack": 7.65,
+      "pack": null,
+      "pip_code": "335-3877",
+      "vat_rate": 20,
+      "uuid": "f334c958-9a42-4121-b9d2-a3756007f72c",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "5e748bbe-02e3-4778-bd28-a298e2e7cb66"
+      }
+    }, {
+      "drupal_internal__nid": 9066,
+      "title": "F00206985928",
+      "path": null,
+      "description": "Powder for Soln for Inj or Infusion 4g/0.5g",
+      "ean_code": "5010981002813",
+      "nhs_price_per_pack": 15.17,
+      "pack": "1",
+      "pip_code": "335-3885",
+      "vat_rate": 20,
+      "uuid": "96ba764d-7d6a-4746-8fa8-39a8a297a16b",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "8a735599-1087-4320-b84f-ecda6ac7448e"
+      }
+    }, {
+      "drupal_internal__nid": 9076,
+      "title": "F000030121",
+      "path": null,
+      "description": "Powder for Soln for Inj or Infusion 2g/0.25g",
+      "ean_code": "5010981002806",
+      "nhs_price_per_pack": 7.65,
+      "pack": "1",
+      "pip_code": "335-3877",
+      "vat_rate": 20,
+      "uuid": "98f033cc-9d50-48e2-bece-e2ea3a6198dd",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "b9b3340f-ee18-472f-a8be-689be37f3d46"
+      }
+    }, {
+      "drupal_internal__nid": 9086,
+      "title": "F000030184",
+      "path": null,
+      "description": "Powder for Soln for Inj or Infusion 4g/0.5g",
+      "ean_code": "5010981002813",
+      "nhs_price_per_pack": 15.17,
+      "pack": "1",
+      "pip_code": "335-3885",
+      "vat_rate": 20,
+      "uuid": "50c06450-9f86-4394-b596-77029bfd0b10",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "e5254a40-0572-4ea3-80bb-35b4d269e9c1"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/71d1d71e-9fa8-46f1-82c3-4bc02db83572?resourceVersion=id%3A19911"}}
+}, {
+  "type": "brands",
+  "id": "da63efd7-f188-4cde-a993-1ed54b047359",
+  "attributes": {
+    "drupal_internal__nid": 8301,
+    "title": "Topiramate",
+    "path": {"alias": "/topiramate", "pid": 901, "langcode": "en"},
+    "generic_name": "topiramate",
+    "uuid": "da63efd7-f188-4cde-a993-1ed54b047359",
+    "products": [{
+      "drupal_internal__nid": 9096,
+      "title": "F000011548",
+      "path": null,
+      "description": "Tabs 25mg film-coated",
+      "ean_code": "5013457015317",
+      "nhs_price_per_pack": 6.59,
+      "pack": "60",
+      "pip_code": "116-2841",
+      "vat_rate": 20,
+      "uuid": "603762e6-ebf2-4947-b11c-cc420a9c376c",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "8101cccb-87ac-4f9e-b442-ca34acf497b7"
+      }
+    }, {
+      "drupal_internal__nid": 9106,
+      "title": "F000011549",
+      "path": null,
+      "description": "Tabs 50mg film-coated",
+      "ean_code": "5013457015324",
+      "nhs_price_per_pack": 8.41,
+      "pack": "60",
+      "pip_code": "116-2858",
+      "vat_rate": 20,
+      "uuid": "3871e88f-cc19-48d7-87ef-81b71bc5d41b",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "07b713b0-9a68-4b08-8da5-23fac0fadd23"
+      }
+    }, {
+      "drupal_internal__nid": 9116,
+      "title": "F000011550",
+      "path": null,
+      "description": "Tabs 100mg film-coated",
+      "ean_code": "5013457015331",
+      "nhs_price_per_pack": 8.94,
+      "pack": "60",
+      "pip_code": "116-2866",
+      "vat_rate": 20,
+      "uuid": "49900916-7850-470f-94e7-743b11640cf3",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "99bdfbb8-eb3a-4dc5-b4f7-cb8724261580"
+      }
+    }, {
+      "drupal_internal__nid": 9126,
+      "title": "F000011551",
+      "path": null,
+      "description": "Tabs 200mg film-coated",
+      "ean_code": "5013457015348",
+      "nhs_price_per_pack": 12.84,
+      "pack": "60",
+      "pip_code": "116-2874",
+      "vat_rate": 20,
+      "uuid": "2129d662-7247-4617-9749-f8562ed23f94",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "2e6581d0-2fc6-4cbe-aa69-9f678d26a74d"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/da63efd7-f188-4cde-a993-1ed54b047359?resourceVersion=id%3A19951"}}
+}, {
+  "type": "brands",
+  "id": "c2cf829e-9ade-4d4c-9a7f-19812ce10358",
+  "attributes": {
+    "drupal_internal__nid": 8311,
+    "title": "TORISEL®",
+    "path": {"alias": "/toriselr", "pid": 911, "langcode": "en"},
+    "generic_name": "temsirolimus",
+    "uuid": "c2cf829e-9ade-4d4c-9a7f-19812ce10358",
+    "products": [{
+      "drupal_internal__nid": 9136,
+      "title": "F000010390",
+      "path": null,
+      "description": "concentrate and diluent for soln for infusion 25mg/ml",
+      "ean_code": "5010981002868",
+      "nhs_price_per_pack": 620,
+      "pack": "1",
+      "pip_code": "354-4103",
+      "vat_rate": 20,
+      "uuid": "0295fe6e-6f61-4429-8994-f02e32229590",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "ac2acbe6-9a55-4a44-84e5-f7420df711d1"
+      }
+    }, {
+      "drupal_internal__nid": 9146,
+      "title": "F000168742",
+      "path": null,
+      "description": "Inj 30mg in 10ml",
+      "ean_code": "5010981002868",
+      "nhs_price_per_pack": 620,
+      "pack": "1",
+      "pip_code": "354-4103",
+      "vat_rate": 20,
+      "uuid": "7866436d-6744-4047-b5a1-362518ec4d3e",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "bcc2684e-d5ec-4ca4-a073-fc3093b2f122"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/c2cf829e-9ade-4d4c-9a7f-19812ce10358?resourceVersion=id%3A19971"}}
+}, {
+  "type": "brands",
+  "id": "0652f439-0e3c-4a4c-9366-2875866480aa",
+  "attributes": {
+    "drupal_internal__nid": 8316,
+    "title": "TOVIAZ®",
+    "path": {"alias": "/toviazr", "pid": 916, "langcode": "en"},
+    "generic_name": "fesoterodine fumarate",
+    "uuid": "0652f439-0e3c-4a4c-9366-2875866480aa",
+    "products": [{
+      "drupal_internal__nid": 9156,
+      "title": "F000439620",
+      "path": null,
+      "description": "Tabs 8mg",
+      "ean_code": "5013457027983",
+      "nhs_price_per_pack": 25.78,
+      "pack": "28",
+      "pip_code": "338-3569",
+      "vat_rate": 20,
+      "uuid": "90f9ed83-5366-4907-8534-1f8264817031",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "3d72587e-4c6b-4d1e-95e4-f54b531b2a0c"
+      }
+    }, {
+      "drupal_internal__nid": 9166,
+      "title": "F000439650",
+      "path": null,
+      "description": "Tabs 4mg",
+      "ean_code": "5013457028065",
+      "nhs_price_per_pack": 25.78,
+      "pack": "28",
+      "pip_code": "338-3577",
+      "vat_rate": 20,
+      "uuid": "f7d1860f-b541-43fa-9244-ce90fecf735b",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "a820961f-07a2-42fc-9c20-77c5c39f85a5"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/0652f439-0e3c-4a4c-9366-2875866480aa?resourceVersion=id%3A19991"}}
+}, {
+  "type": "brands",
+  "id": "fabea780-80d5-460e-8329-16e5d3e9f9e0",
+  "attributes": {
+    "drupal_internal__nid": 8326,
+    "title": "TROSYL®",
+    "path": {"alias": "/trosylr", "pid": 926, "langcode": "en"},
+    "generic_name": "tioconazole",
+    "uuid": "fabea780-80d5-460e-8329-16e5d3e9f9e0",
+    "products": [{
+      "drupal_internal__nid": 9176,
+      "title": "F000008764",
+      "path": null,
+      "description": "Nail Solution 283mg/ml",
+      "ean_code": "5013457017601",
+      "nhs_price_per_pack": 27.38,
+      "pack": "12ml",
+      "pip_code": "000-1990",
+      "vat_rate": 20,
+      "uuid": "28d7997c-8259-44a8-b934-243b93a53e3f",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "de615ab9-3421-4ab9-a77e-7c395c62530e"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/fabea780-80d5-460e-8329-16e5d3e9f9e0?resourceVersion=id%3A20001"}}
+}, {
+  "type": "brands",
+  "id": "01d454ea-31e8-481d-843c-ec9c815f437f",
+  "attributes": {
+    "drupal_internal__nid": 8336,
+    "title": "TYGACIL®",
+    "path": {"alias": "/tygacilr", "pid": 936, "langcode": "en"},
+    "generic_name": "tigecycline",
+    "uuid": "01d454ea-31e8-481d-843c-ec9c815f437f",
+    "products": [{
+      "drupal_internal__nid": 9186,
+      "title": "F000001064",
+      "path": null,
+      "description": "Powder for Soln for infusion 50mg in 5ml",
+      "ean_code": "5013457021646",
+      "nhs_price_per_pack": 323.1,
+      "pack": "10",
+      "pip_code": "339-9722",
+      "vat_rate": 20,
+      "uuid": "2b9d2e7b-3688-4422-968d-0a8669b3d465",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "e41d9fdb-7894-4b50-9bd4-1aec1ef88c91"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/01d454ea-31e8-481d-843c-ec9c815f437f?resourceVersion=id%3A20011"}}
+}, {
+  "type": "brands",
+  "id": "1245f870-4e2a-4e80-8874-9e771f2ac96b",
+  "attributes": {
+    "drupal_internal__nid": 8346,
+    "title": "UTOVLAN®",
+    "path": {"alias": "/utovlanr", "pid": 946, "langcode": "en"},
+    "generic_name": "norethisterone",
+    "uuid": "1245f870-4e2a-4e80-8874-9e771f2ac96b",
+    "products": [{
+      "drupal_internal__nid": 9196,
+      "title": "F000009360",
+      "path": null,
+      "description": "Tabs 5mg",
+      "ean_code": "5013457027174",
+      "nhs_price_per_pack": 4.21,
+      "pack": "90",
+      "pip_code": "232-5801",
+      "vat_rate": 20,
+      "uuid": "2169e145-7440-4e0e-a3cc-7e5f87d24b42",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "63bd48fc-f280-432f-8409-9b8a63b2bb75"
+      }
+    }, {
+      "drupal_internal__nid": 9206,
+      "title": "F400696005",
+      "path": null,
+      "description": "Tabs 5mg",
+      "ean_code": "5013457027181",
+      "nhs_price_per_pack": 1.4,
+      "pack": "30",
+      "pip_code": "232-5793",
+      "vat_rate": 20,
+      "uuid": "78885730-347c-49c6-8894-f916240cf29f",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "68412760-b1ad-485b-b010-f12367156981"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/1245f870-4e2a-4e80-8874-9e771f2ac96b?resourceVersion=id%3A20031"}}
+}, {
+  "type": "brands",
+  "id": "6578ff83-9c7b-476a-a5cf-d89ab4f3f2b1",
+  "attributes": {
+    "drupal_internal__nid": 7481,
+    "title": "BENEFIX®",
+    "path": {"alias": "/benefixr", "pid": 81, "langcode": "en"},
+    "generic_name": "nonacog alfa (Recombinant coagulation)",
+    "uuid": "6578ff83-9c7b-476a-a5cf-d89ab4f3f2b1",
+    "products": [{
+      "drupal_internal__nid": 9216,
+      "title": "F000013717",
+      "path": null,
+      "description": "Injection 3000IU",
+      "ean_code": "5013457021905",
+      "nhs_price_per_pack": 1821.6,
+      "pack": "1",
+      "pip_code": "680-1567",
+      "vat_rate": 20,
+      "uuid": "5ba301a8-64b2-4b23-a034-b5e11538d127",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "93ea0514-8f65-4d69-a6d1-1323fbb852ff"
+      }
+    }, {
+      "drupal_internal__nid": 9226,
+      "title": "F000011466",
+      "path": null,
+      "description": "Injection 250IU",
+      "ean_code": "5013457021851",
+      "nhs_price_per_pack": 151.8,
+      "pack": "1",
+      "pip_code": "366-9017",
+      "vat_rate": 20,
+      "uuid": "ac158627-3009-4fa6-9342-4c901f6b2d1e",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "74c023d6-5c8d-4237-9383-cad4a06877af"
+      }
+    }, {
+      "drupal_internal__nid": 9236,
+      "title": "F000011467",
+      "path": null,
+      "description": "Injection 500IU",
+      "ean_code": "5013457021868",
+      "nhs_price_per_pack": 303.6,
+      "pack": "1",
+      "pip_code": "366-9025",
+      "vat_rate": 20,
+      "uuid": "7927753e-37d2-46bb-a9b2-a037e2fae11b",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "a50d55f0-df9a-4572-8c36-f6bd7c32ecaf"
+      }
+    }, {
+      "drupal_internal__nid": 9246,
+      "title": "F000011468",
+      "path": null,
+      "description": "Injection 1000IU",
+      "ean_code": "5013457021875",
+      "nhs_price_per_pack": 607.2,
+      "pack": "1",
+      "pip_code": "366-9033",
+      "vat_rate": 20,
+      "uuid": "5f2e3be1-3c4d-433e-9a8d-53fa6b89646a",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "c685b937-e85f-47f2-b3f6-ad13db72f27f"
+      }
+    }, {
+      "drupal_internal__nid": 9256,
+      "title": "F000011469",
+      "path": null,
+      "description": "Injection 2000IU",
+      "ean_code": "5013457021882",
+      "nhs_price_per_pack": 1214.4,
+      "pack": "1",
+      "pip_code": "366-9041",
+      "vat_rate": 20,
+      "uuid": "1555f912-2088-4f7a-a473-ffa04e229c6d",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "8a35bf13-45fd-4a5f-9bef-b9aaedb34792"
+      }
+    }, {
+      "drupal_internal__nid": 9266,
+      "title": "F000010009",
+      "path": null,
+      "description": "Powder & Solvent for Soln for Inj 1000IU",
+      "ean_code": "5010981002738",
+      "nhs_price_per_pack": 607.2,
+      "pack": "1",
+      "pip_code": "332-9919",
+      "vat_rate": 20,
+      "uuid": "258b2056-5634-48cd-87a9-09b72fae41f2",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "41a8bd8f-e4f9-4cc2-beda-66530d028e56"
+      }
+    }, {
+      "drupal_internal__nid": 9276,
+      "title": "F000010024",
+      "path": null,
+      "description": "Powder & Solvent for Soln for Inj 2000IU",
+      "ean_code": "5010981002745",
+      "nhs_price_per_pack": 1214.4,
+      "pack": "1",
+      "pip_code": "332-9927",
+      "vat_rate": 20,
+      "uuid": "3f81f2c1-e02d-48f1-ba80-0f4e41a25b13",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "a071ac20-64b3-4c63-a450-b5a7b1c74a85"
+      }
+    }, {
+      "drupal_internal__nid": 9286,
+      "title": "F000010040",
+      "path": null,
+      "description": "Powder & Solvent for Soln for Inj 250IU",
+      "ean_code": "5010981002714",
+      "nhs_price_per_pack": 151.8,
+      "pack": "1",
+      "pip_code": "332-9893",
+      "vat_rate": 20,
+      "uuid": "9ae4cf07-d167-4582-9651-f98d7077c26a",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "c15264d5-7ae0-47c1-beb1-ce5c67f71ecf"
+      }
+    }, {
+      "drupal_internal__nid": 9296,
+      "title": "F000010057",
+      "path": null,
+      "description": "Powder & Solvent for Soln for Inj 500IU",
+      "ean_code": "5010981002721",
+      "nhs_price_per_pack": 303.6,
+      "pack": "1",
+      "pip_code": "332-9901",
+      "vat_rate": 20,
+      "uuid": "dd0da6d8-5a85-4e1d-a087-740d658c8d08",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "db7f9609-2ce3-4dcb-995d-01c6f8e0e187"
+      }
+    }, {
+      "drupal_internal__nid": 9306,
+      "title": "F000032102",
+      "path": null,
+      "description": "Injection 500IU",
+      "ean_code": "5013457021868",
+      "nhs_price_per_pack": 303.6,
+      "pack": "1",
+      "pip_code": "366-9025",
+      "vat_rate": 20,
+      "uuid": "468c879c-0593-4f3d-ad7a-47aee827375f",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "06aa003a-4584-4c61-9732-ea50d5f85dae"
+      }
+    }, {
+      "drupal_internal__nid": 9316,
+      "title": "F000032103",
+      "path": null,
+      "description": "Injection 1000IU",
+      "ean_code": "5013457021875",
+      "nhs_price_per_pack": 607.2,
+      "pack": "1",
+      "pip_code": "366-9033",
+      "vat_rate": 20,
+      "uuid": "43e6be0b-77c8-4761-9cde-22f5bf4e08f3",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "723e1e14-ad72-4f28-94b7-8efb61d89b54"
+      }
+    }, {
+      "drupal_internal__nid": 9326,
+      "title": "F000032104",
+      "path": null,
+      "description": "Injection 2000IU",
+      "ean_code": "5013457021882",
+      "nhs_price_per_pack": 1214.4,
+      "pack": "1",
+      "pip_code": "366-9041",
+      "vat_rate": 20,
+      "uuid": "c7c21272-4a1f-44c8-8beb-337837693a01",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "ba39f99e-28db-4b8d-bd9d-b8faf20d534e"
+      }
+    }, {
+      "drupal_internal__nid": 9336,
+      "title": "F000032105",
+      "path": null,
+      "description": "Injection 3000IU",
+      "ean_code": "5013457021905",
+      "nhs_price_per_pack": 1821.6,
+      "pack": "1",
+      "pip_code": "680-1567",
+      "vat_rate": 20,
+      "uuid": "24e2afcf-46b0-4c79-afb8-d125bea51fbf",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "d21f1c77-f491-4b52-8510-e89111781f72"
+      }
+    }, {
+      "drupal_internal__nid": 9346,
+      "title": "F00003",
+      "path": null,
+      "description": "Inj 1000 UI",
+      "ean_code": "5013457021875",
+      "nhs_price_per_pack": 607.2,
+      "pack": "1",
+      "pip_code": "366-9033",
+      "vat_rate": 20,
+      "uuid": "8641d371-9d43-4a61-8983-63eb7ed560dc",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "d84cca38-ff07-4be8-aa6f-6cb1c655151b"
+      }
+    }, {
+      "drupal_internal__nid": 9356,
+      "title": "F000031781",
+      "path": null,
+      "description": "Injection 250IU",
+      "ean_code": "5013457021851",
+      "nhs_price_per_pack": 151.8,
+      "pack": "1",
+      "pip_code": "366-9017",
+      "vat_rate": 20,
+      "uuid": "16c03475-810d-4eca-9bb3-005fd98e043b",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "de98797f-d537-496b-be45-5da218714bca"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/6578ff83-9c7b-476a-a5cf-d89ab4f3f2b1?resourceVersion=id%3A20181"}}
+}, {
+  "type": "brands",
+  "id": "74a0a8a2-ce42-4c03-9b92-003f5e6cdf6b",
+  "attributes": {
+    "drupal_internal__nid": 8356,
+    "title": "VANCOMYCIN",
+    "path": {"alias": "/vancomycin", "pid": 956, "langcode": "en"},
+    "generic_name": "vancomycin",
+    "uuid": "74a0a8a2-ce42-4c03-9b92-003f5e6cdf6b",
+    "products": [{
+      "drupal_internal__nid": 9366,
+      "title": "F000212188",
+      "path": null,
+      "description": "Powder for Injection 500mg",
+      "ean_code": "5015997834816",
+      "nhs_price_per_pack": 8.5,
+      "pack": "10",
+      "pip_code": "104-5343",
+      "vat_rate": 20,
+      "uuid": "f75cd873-9763-4ad9-b4af-16d0385703f8",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "4aa71ef8-b6db-420b-87b1-e134e9c913ac"
+      }
+    }, {
+      "drupal_internal__nid": 9376,
+      "title": "F000212190",
+      "path": null,
+      "description": "Powder for Injection 1000mg",
+      "ean_code": "5015997834915",
+      "nhs_price_per_pack": 17.25,
+      "pack": "10",
+      "pip_code": "105-4253",
+      "vat_rate": 20,
+      "uuid": "56fa5644-c091-4ea6-9779-5d0c91864d12",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "a600782f-5004-4925-a4f1-7ef7ac219010"
+      }
+    }, {
+      "drupal_internal__nid": 9386,
+      "title": "F000012021",
+      "path": null,
+      "description": "Inj 1g",
+      "ean_code": "5013457015942",
+      "nhs_price_per_pack": 14.5,
+      "pack": "1",
+      "pip_code": "116-1280",
+      "vat_rate": 20,
+      "uuid": "67f9d473-078a-48c6-996f-e9c9110fa8e7",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "34913f70-d8c2-4029-9a7e-8bb624b6418e"
+      }
+    }, {
+      "drupal_internal__nid": 9396,
+      "title": "F000012022",
+      "path": null,
+      "description": "Inj 500mg",
+      "ean_code": "5013457015935",
+      "nhs_price_per_pack": 7.25,
+      "pack": "1",
+      "pip_code": "116-1298",
+      "vat_rate": 20,
+      "uuid": "b3a3184a-5b33-468c-b4a9-cdb04b4b6f4d",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "f1f3ce47-1687-4077-b023-50c0f12168fd"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/74a0a8a2-ce42-4c03-9b92-003f5e6cdf6b?resourceVersion=id%3A20221"}}
+}, {
+  "type": "brands",
+  "id": "24a0128d-eb21-4b80-9810-109d3e019947",
+  "attributes": {
+    "drupal_internal__nid": 8366,
+    "title": "VFEND®",
+    "path": {"alias": "/vfendr", "pid": 966, "langcode": "en"},
+    "generic_name": "voriconazole",
+    "uuid": "24a0128d-eb21-4b80-9810-109d3e019947",
+    "products": [{
+      "drupal_internal__nid": 9406,
+      "title": "F000008866",
+      "path": null,
+      "description": "Powder for Oral Susp 40mg/ml",
+      "ean_code": "5013457019513",
+      "nhs_price_per_pack": 551.37,
+      "pack": "1",
+      "pip_code": "306-3781",
+      "vat_rate": 20,
+      "uuid": "6c167cb7-75cb-4aa3-93a4-cfb0c869e482",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "25c56b15-83dd-4f5c-98ad-1f73fa7190a8"
+      }
+    }, {
+      "drupal_internal__nid": 9416,
+      "title": "F000008752",
+      "path": null,
+      "description": "Vial 200mg",
+      "ean_code": "5013457010541",
+      "nhs_price_per_pack": 77.14,
+      "pack": "1",
+      "pip_code": "289-3675",
+      "vat_rate": 20,
+      "uuid": "09b6ffd6-0f66-409f-96d9-3514c25b3d91",
+      "stock": {
+        "stock_croydon": 1,
+        "uuid": "ff7db846-6426-4e2d-8009-2fb1d167dd46"
+      }
+    }, {
+      "drupal_internal__nid": 9426,
+      "title": "F000328010",
+      "path": null,
+      "description": "Tabs 50mg",
+      "ean_code": "5013457010510",
+      "nhs_price_per_pack": 275.68,
+      "pack": "28",
+      "pip_code": "289-3683",
+      "vat_rate": 20,
+      "uuid": "293d08e9-49d2-46ed-9e24-14283d9833e5",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "1d2be73c-24f2-40bc-a5a3-ebbd9507267f"
+      }
+    }, {
+      "drupal_internal__nid": 9436,
+      "title": "F000328030",
+      "path": null,
+      "description": "Tabs 200mg",
+      "ean_code": "5013457010534",
+      "nhs_price_per_pack": 1102.74,
+      "pack": "28",
+      "pip_code": "289-3691",
+      "vat_rate": 20,
+      "uuid": "d9282753-895e-4eb7-b802-c3d7d9cb7e5b",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "72f67c9a-e0a0-444f-aed3-56b7b1b3ec0f"
+      }
+    }, {
+      "drupal_internal__nid": 9446,
+      "title": "F000017783",
+      "path": null,
+      "description": "200mg Powder & Solvent for Solution for Infusion",
+      "ean_code": "5013457019407",
+      "nhs_price_per_pack": 77.14,
+      "pack": "1",
+      "pip_code": "378-5300",
+      "vat_rate": 20,
+      "uuid": "f71d061d-01f5-40f8-905b-56d11f253168",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "05a9745c-c3b6-4f6f-8e05-f3814f28b376"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/24a0128d-eb21-4b80-9810-109d3e019947?resourceVersion=id%3A20271"}}
+}, {
+  "type": "brands",
+  "id": "23c6b6c2-1c83-4aab-9d8b-586e8bd32147",
+  "attributes": {
+    "drupal_internal__nid": 8371,
+    "title": "VIAGRA®",
+    "path": {"alias": "/viagrar", "pid": 971, "langcode": "en"},
+    "generic_name": "sildenafil",
+    "uuid": "23c6b6c2-1c83-4aab-9d8b-586e8bd32147",
+    "products": [{
+      "drupal_internal__nid": 9456,
+      "title": "F000009253",
+      "path": null,
+      "description": "Tabs 50mg",
+      "ean_code": "5013457010831",
+      "nhs_price_per_pack": 42.54,
+      "pack": "8",
+      "pip_code": "255-1653",
+      "vat_rate": 20,
+      "uuid": "2484b9c5-5401-4970-9fb9-2bd532a3a651",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "942fdf81-f407-47eb-8754-56a3b4ea4547"
+      }
+    }, {
+      "drupal_internal__nid": 9466,
+      "title": "F000009254",
+      "path": null,
+      "description": "Tabs 100mg",
+      "ean_code": "5013457010848",
+      "nhs_price_per_pack": 23.5,
+      "pack": "4",
+      "pip_code": "255-1661",
+      "vat_rate": 20,
+      "uuid": "e100ab02-c5fd-4414-8035-4cb500fe82c1",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "ddaebb73-19a3-4b60-80ab-6515e5afae06"
+      }
+    }, {
+      "drupal_internal__nid": 9476,
+      "title": "F000009255",
+      "path": null,
+      "description": "Tabs 100mg",
+      "ean_code": "5013457010855",
+      "nhs_price_per_pack": 46.99,
+      "pack": "8",
+      "pip_code": "255-1679",
+      "vat_rate": 20,
+      "uuid": "fc2455a6-61a7-42ab-9535-dbe13c7ce799",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "1e7d5c6c-1a54-4aab-a674-f177b0530d10"
+      }
+    }, {
+      "drupal_internal__nid": 9486,
+      "title": "F000009262",
+      "path": null,
+      "description": "Tabs 25mg",
+      "ean_code": "5013457010800",
+      "nhs_price_per_pack": 16.59,
+      "pack": "4",
+      "pip_code": "255-1620",
+      "vat_rate": 20,
+      "uuid": "ddb3632b-d892-4213-80af-2a4508bd62d5",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "ba9ee0bc-a2b4-44b6-b392-ca43aeca1dfb"
+      }
+    }, {
+      "drupal_internal__nid": 9496,
+      "title": "F000009263",
+      "path": null,
+      "description": "Tabs 25mg",
+      "ean_code": "5013457010817",
+      "nhs_price_per_pack": 33.19,
+      "pack": "8",
+      "pip_code": "255-1638",
+      "vat_rate": 20,
+      "uuid": "59e3cfb1-6ff3-4dd6-8cb5-d9cc339e57f1",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "20c5d877-6761-4e28-896d-d1d1dfab5293"
+      }
+    }, {
+      "drupal_internal__nid": 9506,
+      "title": "F000009264",
+      "path": null,
+      "description": "Tabs 50mg",
+      "ean_code": "5013457010824",
+      "nhs_price_per_pack": 21.27,
+      "pack": "4",
+      "pip_code": "255-1646",
+      "vat_rate": 20,
+      "uuid": "2aec6a89-af39-48ef-845c-c1be34367bdd",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "45424d7a-5f17-49dc-be7a-60f0a61785a1"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/23c6b6c2-1c83-4aab-9d8b-586e8bd32147?resourceVersion=id%3A20331"}}
+}, {
+  "type": "brands",
+  "id": "5caf6dfe-b7e0-4167-8056-fff02110a544",
+  "attributes": {
+    "drupal_internal__nid": 8376,
+    "title": "VIBRAMYCIN™-D",
+    "path": {"alias": "/vibramycintm-d", "pid": 976, "langcode": "en"},
+    "generic_name": "doxycycline monohydrate",
+    "uuid": "5caf6dfe-b7e0-4167-8056-fff02110a544",
+    "products": [{
+      "drupal_internal__nid": 9516,
+      "title": "F000008754",
+      "path": null,
+      "description": "Disp Tabs 100mg",
+      "ean_code": "5013457019360",
+      "nhs_price_per_pack": 4.91,
+      "pack": "8",
+      "pip_code": "006-0103",
+      "vat_rate": 20,
+      "uuid": "58ddfb63-bbed-42c0-943d-55044e965dd7",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "519f500b-ad5f-46cb-b765-c40de9eaa9bd"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/5caf6dfe-b7e0-4167-8056-fff02110a544?resourceVersion=id%3A20341"}}
+}, {
+  "type": "brands",
+  "id": "8069c6fd-2ba2-4a53-8584-afd47d8735ad",
+  "attributes": {
+    "drupal_internal__nid": 8406,
+    "title": "XALACOM®",
+    "path": {"alias": "/xalacomr", "pid": 1006, "langcode": "en"},
+    "generic_name": "latanoprost timolol maleate",
+    "uuid": "8069c6fd-2ba2-4a53-8584-afd47d8735ad",
+    "products": [{
+      "drupal_internal__nid": 9526,
+      "title": "F000010780",
+      "path": null,
+      "description": "Eye Drops 2.5ml",
+      "ean_code": "5013457027204",
+      "nhs_price_per_pack": 14.32,
+      "pack": "1",
+      "pip_code": "282-3474",
+      "vat_rate": 20,
+      "uuid": "e2fea2ce-42b5-46b7-a776-c6b893ad3d7d",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "6e4646d7-9f8a-43f5-a939-150a6aa63d4f"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/8069c6fd-2ba2-4a53-8584-afd47d8735ad?resourceVersion=id%3A20351"}}
+}, {
+  "type": "brands",
+  "id": "a292f083-3aaa-4289-bac1-9fcdfc97cc27",
+  "attributes": {
+    "drupal_internal__nid": 8411,
+    "title": "XALATAN®",
+    "path": {"alias": "/xalatanr", "pid": 1011, "langcode": "en"},
+    "generic_name": "latanoprost",
+    "uuid": "a292f083-3aaa-4289-bac1-9fcdfc97cc27",
+    "products": [{
+      "drupal_internal__nid": 9536,
+      "title": "F000016299",
+      "path": null,
+      "description": "Eye Drops 2.5ml (Room Temperature)",
+      "ean_code": "5013457021912",
+      "nhs_price_per_pack": 12.48,
+      "pack": "1",
+      "pip_code": "375-2946",
+      "vat_rate": 20,
+      "uuid": "8ac4a344-fb71-4781-bc31-1b82d45868cf",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "4c92ae35-319f-4655-9e7e-7e8525f78ff0"
+      }
+    }, {
+      "drupal_internal__nid": 9546,
+      "title": "F000009362",
+      "path": null,
+      "description": "Eye Drops 2.5ml",
+      "ean_code": "5013457027211",
+      "nhs_price_per_pack": 12.48,
+      "pack": "1",
+      "pip_code": "237-3983",
+      "vat_rate": 20,
+      "uuid": "ef013713-51e2-4621-90ea-b468a8fc6d02",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "a32189a4-9d1e-4735-97bc-f0797c6a9696"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/a292f083-3aaa-4289-bac1-9fcdfc97cc27?resourceVersion=id%3A20371"}}
+}, {
+  "type": "brands",
+  "id": "2d8d706f-1a4e-4d2d-adac-787afe4f7b27",
+  "attributes": {
+    "drupal_internal__nid": 8421,
+    "title": "XANAX®",
+    "path": {"alias": "/xanaxr", "pid": 1021, "langcode": "en"},
+    "generic_name": "alprazolam",
+    "uuid": "2d8d706f-1a4e-4d2d-adac-787afe4f7b27",
+    "products": [{
+      "drupal_internal__nid": 9556,
+      "title": "F120004375",
+      "path": null,
+      "description": "Tabs 0.25mg",
+      "ean_code": "5013457027228",
+      "nhs_price_per_pack": 3.18,
+      "pack": "60",
+      "pip_code": "003-2425",
+      "vat_rate": 20,
+      "uuid": "2578a773-9881-4b6e-a015-b3a19c4139d1",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "1a06862a-b5a2-4a46-b230-022bcda0cf15"
+      }
+    }, {
+      "drupal_internal__nid": 9566,
+      "title": "F120004376",
+      "path": null,
+      "description": "Tabs 0.5mg",
+      "ean_code": "5013457027433",
+      "nhs_price_per_pack": 6.09,
+      "pack": "60",
+      "pip_code": "003-2680",
+      "vat_rate": 20,
+      "uuid": "b8f15dbe-b1ea-467b-930d-e38707ca671e",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "9076fa1c-f0fb-408c-b6d9-15ad1ae5a8b2"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/2d8d706f-1a4e-4d2d-adac-787afe4f7b27?resourceVersion=id%3A20391"}}
+}, {
+  "type": "brands",
+  "id": "03cbc595-a1ea-4fb6-ae3c-0a674d851847",
+  "attributes": {
+    "drupal_internal__nid": 8431,
+    "title": "Xiapex®",
+    "path": {"alias": "/xiapexr", "pid": 1031, "langcode": "en"},
+    "generic_name": "collagenese clostridium histolyticum",
+    "uuid": "03cbc595-a1ea-4fb6-ae3c-0a674d851847",
+    "products": [{
+      "drupal_internal__nid": 9576,
+      "title": "F000011555",
+      "path": null,
+      "description": "0.9mg Vial",
+      "ean_code": "5013457027648",
+      "nhs_price_per_pack": 650,
+      "pack": null,
+      "pip_code": "839-6533",
+      "vat_rate": 20,
+      "uuid": "ad97a8a7-e9bc-43c0-938a-7b2831aeebc6",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "b51d7048-058e-4f2e-9cab-18092df2347b"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/03cbc595-a1ea-4fb6-ae3c-0a674d851847?resourceVersion=id%3A20401"}}
+}, {
+  "type": "brands",
+  "id": "f1b5ce33-00e2-4a82-a326-a660fbbb1244",
+  "attributes": {
+    "drupal_internal__nid": 8436,
+    "title": "Zarontin™",
+    "path": {"alias": "/zarontintm", "pid": 1036, "langcode": "en"},
+    "generic_name": "ethosuximide",
+    "uuid": "f1b5ce33-00e2-4a82-a326-a660fbbb1244",
+    "products": [{
+      "drupal_internal__nid": 9586,
+      "title": "F000009243",
+      "path": null,
+      "description": "Syrup 250mg in 5ml",
+      "ean_code": "5013457011562",
+      "nhs_price_per_pack": 4.22,
+      "pack": "200ml",
+      "pip_code": "262-5374",
+      "vat_rate": 20,
+      "uuid": "be62f3e7-94d3-4e0d-bc68-36bedcc0445f",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "e1c97c28-8c21-44b2-8121-2c4a310f8c66"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/f1b5ce33-00e2-4a82-a326-a660fbbb1244?resourceVersion=id%3A20411"}}
+}, {
+  "type": "brands",
+  "id": "8b874266-7b84-42aa-9ed2-e972a7338855",
+  "attributes": {
+    "drupal_internal__nid": 8441,
+    "title": "ZAVEDOS®",
+    "path": {"alias": "/zavedosr", "pid": 1041, "langcode": "en"},
+    "generic_name": "idarubicin",
+    "uuid": "8b874266-7b84-42aa-9ed2-e972a7338855",
+    "products": [{
+      "drupal_internal__nid": 9596,
+      "title": "F000009363",
+      "path": null,
+      "description": "Caps 10mg",
+      "ean_code": "5013457027235",
+      "nhs_price_per_pack": 69.12,
+      "pack": "1",
+      "pip_code": "085-7474",
+      "vat_rate": 20,
+      "uuid": "385f60b2-a5b9-4079-a17b-2903b01622a0",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "3f7d0833-0b1b-4823-a19b-eefd2fb5a15a"
+      }
+    }, {
+      "drupal_internal__nid": 9606,
+      "title": "F000009364",
+      "path": null,
+      "description": "Vial 10mg",
+      "ean_code": "5013457027266",
+      "nhs_price_per_pack": 174.72,
+      "pack": "1",
+      "pip_code": "036-9249",
+      "vat_rate": 20,
+      "uuid": "63bef21c-ea7b-4c65-9d0e-12ba3fa67ad8",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "4ebc54a5-a770-45ed-986c-530dbc147c7c"
+      }
+    }, {
+      "drupal_internal__nid": 9616,
+      "title": "F000009354",
+      "path": null,
+      "description": "Caps 5mg",
+      "ean_code": "5013457027259",
+      "nhs_price_per_pack": 41.47,
+      "pack": "1",
+      "pip_code": "085-7466",
+      "vat_rate": 20,
+      "uuid": "4b69927a-58e2-483f-96e6-f1a629a9d154",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "e66e73d9-250c-4883-a46b-112f8ad0be2e"
+      }
+    }, {
+      "drupal_internal__nid": 9626,
+      "title": "F000009355",
+      "path": null,
+      "description": "Vial 5mg",
+      "ean_code": "5013457027273",
+      "nhs_price_per_pack": 87.36,
+      "pack": "1",
+      "pip_code": "036-8936",
+      "vat_rate": 20,
+      "uuid": "19ab8f3a-766b-4079-8d8e-c6b8d5b1aaa9",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "2c1f1b77-da71-4834-bfe9-849ae7277007"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/8b874266-7b84-42aa-9ed2-e972a7338855?resourceVersion=id%3A20451"}}
+}, {
+  "type": "brands",
+  "id": "7d71c748-435a-4f1f-984a-f2e3e0b55fc4",
+  "attributes": {
+    "drupal_internal__nid": 7496,
+    "title": "BREVINOR®",
+    "path": {"alias": "/brevinorr", "pid": 96, "langcode": "en"},
+    "generic_name": "norethisterone / ethinylestradiol",
+    "uuid": "7d71c748-435a-4f1f-984a-f2e3e0b55fc4",
+    "products": [{
+      "drupal_internal__nid": 9636,
+      "title": "F000009402",
+      "path": null,
+      "description": "Tabs",
+      "ean_code": "5013457025194",
+      "nhs_price_per_pack": 1.99,
+      "pack": "3 x 21",
+      "pip_code": "048-6100",
+      "vat_rate": 5,
+      "uuid": "9e7156a0-95ca-46b2-9737-df2516507f33",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "3bca04a8-dd4c-4714-a3ad-af9cdee831d4"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/7d71c748-435a-4f1f-984a-f2e3e0b55fc4?resourceVersion=id%3A20461"}}
+}, {
+  "type": "brands",
+  "id": "00cad557-0e29-49ef-96f0-cb847af3a135",
+  "attributes": {
+    "drupal_internal__nid": 8456,
+    "title": "ZITHROMAX™",
+    "path": {"alias": "/zithromaxtm", "pid": 1056, "langcode": "en"},
+    "generic_name": "azithromycin",
+    "uuid": "00cad557-0e29-49ef-96f0-cb847af3a135",
+    "products": [{
+      "drupal_internal__nid": 9646,
+      "title": "F000008767",
+      "path": null,
+      "description": "Caps 250mg",
+      "ean_code": "5013457016239",
+      "nhs_price_per_pack": 10.74,
+      "pack": "6",
+      "pip_code": "008-3600",
+      "vat_rate": 20,
+      "uuid": "5cb8ba6d-fdd7-4bfb-a4ea-c53aeeac7ddf",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "e45d7303-e655-4184-898b-d6798a27e969"
+      }
+    }, {
+      "drupal_internal__nid": 9656,
+      "title": "F000008768",
+      "path": null,
+      "description": "Caps 250mg",
+      "ean_code": "5013457016253",
+      "nhs_price_per_pack": 7.16,
+      "pack": "4",
+      "pip_code": "008-3535",
+      "vat_rate": 20,
+      "uuid": "64cbc0b7-38ac-485c-a4ec-9e19fb340152",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "d57a52fd-9175-4609-b9d9-567edfd5fa36"
+      }
+    }, {
+      "drupal_internal__nid": 9666,
+      "title": "F000008769",
+      "path": null,
+      "description": "Oral Suspension 200mg/5ml",
+      "ean_code": "5013457016406",
+      "nhs_price_per_pack": 4.06,
+      "pack": "15ml",
+      "pip_code": "008-3618",
+      "vat_rate": 20,
+      "uuid": "1ad40d56-41f9-48d7-8af6-35f1fe5f7da8",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "d05babd4-86e9-4aad-9467-3296ec91a51c"
+      }
+    }, {
+      "drupal_internal__nid": 9676,
+      "title": "F000008770",
+      "path": null,
+      "description": "Oral Suspension 200mg/5ml",
+      "ean_code": "5013457016413",
+      "nhs_price_per_pack": 6.1,
+      "pack": "22.5ml",
+      "pip_code": "008-3659",
+      "vat_rate": 20,
+      "uuid": "9254da9f-5af9-4434-9332-80383d5af62e",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "faec8fd9-84cf-4558-bc9f-bea41c470a0c"
+      }
+    }, {
+      "drupal_internal__nid": 9686,
+      "title": "F000008771",
+      "path": null,
+      "description": "Oral Suspension 200mg/5ml",
+      "ean_code": "5013457016420",
+      "nhs_price_per_pack": 11.04,
+      "pack": "30ml",
+      "pip_code": "008-3667",
+      "vat_rate": 20,
+      "uuid": "26041d67-e882-4847-9dbd-29f2bdec3ea7",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "8a1b510f-936d-49ec-b51b-bbba6ff3f856"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/00cad557-0e29-49ef-96f0-cb847af3a135?resourceVersion=id%3A20511"}}
+}, {
+  "type": "brands",
+  "id": "0616bdfc-3a3f-40b1-b5fe-d06bb659d0e4",
+  "attributes": {
+    "drupal_internal__nid": 8466,
+    "title": "ZOTON FASTAB™",
+    "path": {"alias": "/zoton-fastabtm", "pid": 1066, "langcode": "en"},
+    "generic_name": "zotonfastab",
+    "uuid": "0616bdfc-3a3f-40b1-b5fe-d06bb659d0e4",
+    "products": [{
+      "drupal_internal__nid": 9696,
+      "title": "F000022706",
+      "path": null,
+      "description": "FasTab 15mg",
+      "ean_code": "5013457021653",
+      "nhs_price_per_pack": 2.99,
+      "pack": "28",
+      "pip_code": "292-2334",
+      "vat_rate": 20,
+      "uuid": "1b1f0539-3d46-40ec-82b5-517a543badfc",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "77c14f98-7c16-4b23-9b6a-90c51fdab8e4"
+      }
+    }, {
+      "drupal_internal__nid": 9706,
+      "title": "F000022707",
+      "path": null,
+      "description": "FasTab 30mg",
+      "ean_code": "5013457021677",
+      "nhs_price_per_pack": 5.5,
+      "pack": "28",
+      "pip_code": "292-2516",
+      "vat_rate": 20,
+      "uuid": "32ab84e8-949e-4fec-aac2-e5147d9dc860",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "95f9b1e2-f497-478b-9ed4-7065eb20b063"
+      }
+    }, {
+      "drupal_internal__nid": 9716,
+      "title": "F86806IQ",
+      "path": null,
+      "description": "FasTab 15mg",
+      "ean_code": "5013457021653",
+      "nhs_price_per_pack": 2.99,
+      "pack": "28",
+      "pip_code": "292-2334",
+      "vat_rate": 20,
+      "uuid": "67be7850-9388-4a51-89e4-25210714a1d9",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "53600f7c-0fd4-4ec6-bddb-cdc88bf6dc3d"
+      }
+    }, {
+      "drupal_internal__nid": 9726,
+      "title": "F86810IC",
+      "path": null,
+      "description": "FasTab 30mg",
+      "ean_code": "5013457021677",
+      "nhs_price_per_pack": 5.5,
+      "pack": "28",
+      "pip_code": "292-2516",
+      "vat_rate": 20,
+      "uuid": "0d19b297-8f21-4215-959d-2834b8adeea4",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "ac9e5f5a-4163-4a4e-bd6e-27c84a36ad4f"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/0616bdfc-3a3f-40b1-b5fe-d06bb659d0e4?resourceVersion=id%3A20551"}}
+}, {
+  "type": "brands",
+  "id": "c256ea5c-7f99-40f5-a4d3-26ef1ce80531",
+  "attributes": {
+    "drupal_internal__nid": 8471,
+    "title": "ZYVOX®",
+    "path": {"alias": "/zyvoxr", "pid": 1071, "langcode": "en"},
+    "generic_name": "linezolid",
+    "uuid": "c256ea5c-7f99-40f5-a4d3-26ef1ce80531",
+    "products": [{
+      "drupal_internal__nid": 9736,
+      "title": "F482068008",
+      "path": null,
+      "description": "Susp 100mg in 5ml",
+      "ean_code": "5013457027426",
+      "nhs_price_per_pack": 222.5,
+      "pack": "150ml",
+      "pip_code": "287-0111",
+      "vat_rate": 20,
+      "uuid": "83e5ac4f-e812-49bb-a1d9-a883f3f6f5f4",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "bafa283a-2306-48a1-932d-ae5149e26eeb"
+      }
+    }, {
+      "drupal_internal__nid": 9746,
+      "title": "F000017899",
+      "path": null,
+      "description": "Tabs 600mg",
+      "ean_code": "5013457027402",
+      "nhs_price_per_pack": 445,
+      "pack": "10",
+      "pip_code": "277-1087",
+      "vat_rate": 20,
+      "uuid": "bcdceaeb-773f-4368-a066-3e6e813e002c",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "6140d63e-78d2-424e-b836-0c3e26268c9b"
+      }
+    }, {
+      "drupal_internal__nid": 9756,
+      "title": "F000023930",
+      "path": null,
+      "description": "Tabs 600mg",
+      "ean_code": "5013457027402",
+      "nhs_price_per_pack": 445,
+      "pack": "10",
+      "pip_code": "277-1087",
+      "vat_rate": 20,
+      "uuid": "9ec33a40-0f6c-4869-8796-50c953e5fe11",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "4462e3f2-1601-4aae-a088-9486edb7fe85"
+      }
+    }, {
+      "drupal_internal__nid": 9766,
+      "title": "F048195852",
+      "path": null,
+      "description": "Tabs 600mg",
+      "ean_code": "5013457027402",
+      "nhs_price_per_pack": 445,
+      "pack": "10",
+      "pip_code": "277-1087",
+      "vat_rate": 20,
+      "uuid": "c85fd3e7-d7ab-4953-b0d0-b4aa171df2c6",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "14aabb62-b076-4877-8744-cb85d566395d"
+      }
+    }, {
+      "drupal_internal__nid": 9776,
+      "title": "F000009344",
+      "path": null,
+      "description": "Infusion Bags 600mg in 300ml",
+      "ean_code": "5013457027419",
+      "nhs_price_per_pack": 445,
+      "pack": "10",
+      "pip_code": "277-1095",
+      "vat_rate": 20,
+      "uuid": "bee5ce6c-724d-461b-bff6-0f38006f6dea",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "57ed2737-9905-415c-94a6-4fc5a40d7891"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/c256ea5c-7f99-40f5-a4d3-26ef1ce80531?resourceVersion=id%3A20601"}}
+}, {
+  "type": "brands",
+  "id": "0185f492-7431-427b-9888-b29595c6f53d",
+  "attributes": {
+    "drupal_internal__nid": 7501,
+    "title": "CABASER®",
+    "path": {"alias": "/cabaserr", "pid": 101, "langcode": "en"},
+    "generic_name": "cabaser®",
+    "uuid": "0185f492-7431-427b-9888-b29595c6f53d",
+    "products": [{
+      "drupal_internal__nid": 9786,
+      "title": "F808061200",
+      "path": null,
+      "description": "Tabs 1mg",
+      "ean_code": "5013457025200",
+      "nhs_price_per_pack": 83,
+      "pack": "20",
+      "pip_code": "240-7120",
+      "vat_rate": 20,
+      "uuid": "2bdbe474-deb8-4585-b44c-7b732c0caea3",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "0a11e816-12ed-49e1-9a39-a3b72f447d07"
+      }
+    }, {
+      "drupal_internal__nid": 9796,
+      "title": "F808061300",
+      "path": null,
+      "description": "Tabs 2mg",
+      "ean_code": "5013457025217",
+      "nhs_price_per_pack": 83,
+      "pack": "20",
+      "pip_code": "240-7138",
+      "vat_rate": 20,
+      "uuid": "43f80982-80b1-49f0-8b2b-19017348ee2b",
+      "stock": {
+        "stock_croydon": 2,
+        "uuid": "ae380abe-a6f4-4d9d-a656-0734f3234624"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/0185f492-7431-427b-9888-b29595c6f53d?resourceVersion=id%3A20621"}}
+}, {
+  "type": "brands",
+  "id": "29142e26-91e5-4c13-8cce-380de6aa9aa4",
+  "attributes": {
+    "drupal_internal__nid": 7671,
+    "title": "DONEPEZIL",
+    "path": {"alias": "/donepezil", "pid": 271, "langcode": "en"},
+    "generic_name": "DONEPEZIL",
+    "uuid": "29142e26-91e5-4c13-8cce-380de6aa9aa4",
+    "products": [{
+      "drupal_internal__nid": 9806,
+      "title": "F000013558",
+      "path": null,
+      "description": "5mg x 28 tablets",
+      "ean_code": "5036519000557",
+      "nhs_price_per_pack": 59.85,
+      "pack": "28",
+      "pip_code": "116-9564",
+      "vat_rate": 20,
+      "uuid": "a87afc40-f0af-4cc1-89d8-103737294aab",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "d53476a9-bf43-4144-ad45-0ed5668ba43f"
+      }
+    }, {
+      "drupal_internal__nid": 9816,
+      "title": "F000013559",
+      "path": null,
+      "description": "10mg x 28 tablets",
+      "ean_code": "5036519000540",
+      "nhs_price_per_pack": 83.89,
+      "pack": "28",
+      "pip_code": "116-9572",
+      "vat_rate": 20,
+      "uuid": "49340489-faba-45a6-9eff-be05890510c3",
+      "stock": {
+        "stock_croydon": 0,
+        "uuid": "cb044774-4b97-4c46-9b46-2c532afd0347"
+      }
+    }]
+  },
+  "links": {"self": {"href": "https://pfpfizersmart.local/jsonapi/brands/29142e26-91e5-4c13-8cce-380de6aa9aa4?resourceVersion=id%3A20641"}}
+}]

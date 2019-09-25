@@ -1,6 +1,10 @@
 .cart {
-  &:not(.product):not(.notify):hover {
-    transform: scale(1.01);
+  &:not(.product):not(.notify) {
+    .cart__content {
+      &:hover {
+        transform: scale(1.01);
+      }
+    }
   }
 
   &__content {
@@ -8,6 +12,7 @@
     border-radius: 4px;
     box-shadow: 0 2px 7px rgba($black, .17);
     display: flex;
+    height: 100%;
     overflow: hidden;
     position: relative;
 
@@ -71,7 +76,7 @@
 
     &__item {
       border-radius: 12px;
-      margin-right: 8px;
+      margin: 0 8px 8px 0;
       padding: 3px 15px 3px 5px;
 
       &:before {
@@ -89,7 +94,7 @@
   }
 
   .status {
-    &--in {
+    &--2 {
       background: #caf1cd;
       color: #133e00;
 
@@ -98,7 +103,7 @@
       }
     }
 
-    &--low {
+    &--1 {
       background: #f7e9c4;
       color: #684700;
 
@@ -107,7 +112,7 @@
       }
     }
 
-    &--out {
+    &--0 {
       background: #f4c7c6;
       color: #7f0303;
 

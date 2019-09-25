@@ -255,5 +255,20 @@ if (window.location.hash.length) {
 
 })(jQuery);
 
-
-
+const app = new Vue({
+  el: '#main-wrapper',
+  delimiters: ['${', '}'],
+  data() {
+    return {
+      json: null
+    }
+  },
+  mounted() {
+    axios
+      .get('../brands.json')
+      .then(response => (this.json = response.data))
+      .catch(function(error) {
+        console.log(error);
+      });
+  }
+});

@@ -230,4 +230,23 @@ if (window.location.hash.length) {
     });
   })();
 })(jQuery);
+
+var app = new Vue({
+  el: '#main-wrapper',
+  delimiters: ['${', '}'],
+  data: function data() {
+    return {
+      json: null
+    };
+  },
+  mounted: function mounted() {
+    var _this = this;
+
+    axios.get('../brands.json').then(function (response) {
+      return _this.json = response.data;
+    }).catch(function (error) {
+      console.log(error);
+    });
+  }
+});
 //# sourceMappingURL=main.js.map

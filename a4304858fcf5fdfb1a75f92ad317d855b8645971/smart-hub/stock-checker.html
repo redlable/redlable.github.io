@@ -12,7 +12,7 @@
     <link rel="stylesheet" type="text/css" href="css/screen.css">
   </head>
   <body class="stock-checker">
-    <main class="main-wrapper">
+    <main class="main-wrapper" id="main-wrapper">
       <div class="disclaimer">
         <div class="section-layout">
           <p>This site is intended only for healthcare professionals resident in the United Kingdom</p>
@@ -144,127 +144,21 @@
           </div>
           <div class="cart-list">
             <div class="letter">A</div>
-            <div class="cart">
+            <div class="cart" v-for="(card, index) of json">
+              <!--.cart-->
               <div class="cart__content"><a class="cart__link" href="/a4304858fcf5fdfb1a75f92ad317d855b8645971/smart-hub/brand-page.html"></a>
                 <div class="cart__body">
-                  <!--h2.generic-name #{title}-->
-                  <h2 class="generic-name">Acliyxion</h2>
-                  <h4 class="brand-name">(aquoaltine®)</h4>
+                  <h2 class="generic-name">${ card.attributes.title }</h2>
+                  <h4 class="brand-name">(${ card.attributes.generic_name })</h4>
                   <div class="updates"><a href="#">Stock update available</a></div>
                   <ul class="products">
-                    <li class="products__item status--in">40mg</li>
-                    <li class="products__item status--low">80mg</li>
-                    <li class="products__item status--out">90mg</li>
+                    <li class="products__item" v-for="(product, index) of card.attributes.products" :class="'status--' + product.stock.stock_croydon">${ product.description }</li>
                   </ul>
                 </div>
               </div>
             </div>
-            <div class="cart">
-              <div class="cart__content"><a class="cart__link" href="/a4304858fcf5fdfb1a75f92ad317d855b8645971/smart-hub/brand-page.html"></a>
-                <div class="cart__body">
-                  <!--h2.generic-name #{title}-->
-                  <h2 class="generic-name">Acliyxion</h2>
-                  <h4 class="brand-name">(aquoaltine®)</h4>
-                  <div class="updates"><a href="#">Stock update available</a></div>
-                  <ul class="products">
-                    <li class="products__item status--in">40mg</li>
-                    <li class="products__item status--low">80mg</li>
-                    <li class="products__item status--out">90mg</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="cart">
-              <div class="cart__content"><a class="cart__link" href="/a4304858fcf5fdfb1a75f92ad317d855b8645971/smart-hub/brand-page.html"></a>
-                <div class="cart__body">
-                  <!--h2.generic-name #{title}-->
-                  <h2 class="generic-name">Acliyxion</h2>
-                  <h4 class="brand-name">(aquoaltine®)</h4>
-                  <div class="updates"><a href="#">Stock update available</a></div>
-                  <ul class="products">
-                    <li class="products__item status--in">40mg</li>
-                    <li class="products__item status--low">80mg</li>
-                    <li class="products__item status--out">90mg</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="cart">
-              <div class="cart__content"><a class="cart__link" href="/a4304858fcf5fdfb1a75f92ad317d855b8645971/smart-hub/brand-page.html"></a>
-                <div class="cart__body">
-                  <!--h2.generic-name #{title}-->
-                  <h2 class="generic-name">Acliyxion</h2>
-                  <h4 class="brand-name">(aquoaltine®)</h4>
-                  <div class="updates"><a href="#">Stock update available</a></div>
-                  <ul class="products">
-                    <li class="products__item status--in">40mg</li>
-                    <li class="products__item status--low">80mg</li>
-                    <li class="products__item status--out">90mg</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="cart">
-              <div class="cart__content"><a class="cart__link" href="/a4304858fcf5fdfb1a75f92ad317d855b8645971/smart-hub/brand-page.html"></a>
-                <div class="cart__body">
-                  <!--h2.generic-name #{title}-->
-                  <h2 class="generic-name">Acliyxion</h2>
-                  <h4 class="brand-name">(aquoaltine®)</h4>
-                  <div class="updates"><a href="#">Stock update available</a></div>
-                  <ul class="products">
-                    <li class="products__item status--in">40mg</li>
-                    <li class="products__item status--low">80mg</li>
-                    <li class="products__item status--out">90mg</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="cart">
-              <div class="cart__content"><a class="cart__link" href="/a4304858fcf5fdfb1a75f92ad317d855b8645971/smart-hub/brand-page.html"></a>
-                <div class="cart__body">
-                  <!--h2.generic-name #{title}-->
-                  <h2 class="generic-name">Acliyxion</h2>
-                  <h4 class="brand-name">(aquoaltine®)</h4>
-                  <div class="updates"><a href="#">Stock update available</a></div>
-                  <ul class="products">
-                    <li class="products__item status--in">40mg</li>
-                    <li class="products__item status--low">80mg</li>
-                    <li class="products__item status--out">90mg</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="letter">B</div>
-            <div class="cart">
-              <div class="cart__content"><a class="cart__link" href="/a4304858fcf5fdfb1a75f92ad317d855b8645971/smart-hub/brand-page.html"></a>
-                <div class="cart__body">
-                  <!--h2.generic-name #{title}-->
-                  <h2 class="generic-name">Acliyxion</h2>
-                  <h4 class="brand-name">(aquoaltine®)</h4>
-                  <div class="updates"><a href="#">Stock update available</a></div>
-                  <ul class="products">
-                    <li class="products__item status--in">40mg</li>
-                    <li class="products__item status--low">80mg</li>
-                    <li class="products__item status--out">90mg</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="cart">
-              <div class="cart__content"><a class="cart__link" href="/a4304858fcf5fdfb1a75f92ad317d855b8645971/smart-hub/brand-page.html"></a>
-                <div class="cart__body">
-                  <!--h2.generic-name #{title}-->
-                  <h2 class="generic-name">Acliyxion</h2>
-                  <h4 class="brand-name">(aquoaltine®)</h4>
-                  <div class="updates"><a href="#">Stock update available</a></div>
-                  <ul class="products">
-                    <li class="products__item status--in">40mg</li>
-                    <li class="products__item status--low">80mg</li>
-                    <li class="products__item status--out">90mg</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
+            <!--.letter B-->
+            <!--include ../modules/cart-->
           </div>
           <div class="supply-info"><a href="#">Supply information</a></div>
           <div class="get-in-touch">
