@@ -242,7 +242,7 @@ var app = new Vue({
   mounted: function mounted() {
     var _this = this;
 
-    axios.get('../brands.json').then(function (response) {
+    axios.get('/' + projectUrl + '../brands.json').then(function (response) {
       return _this.json = response.data;
     }).catch(function (error) {
       console.log(error);
